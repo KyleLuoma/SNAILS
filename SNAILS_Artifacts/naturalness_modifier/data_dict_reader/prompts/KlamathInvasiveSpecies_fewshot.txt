@@ -1,0 +1,49 @@
+
+Using the following text extracted from a data dictionary:
+<attrlabl> loc_name </attrlabl> <attrdef> unique name for the location- in this case the location is the
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier Loc_Name:
+
+loc_name, location_name
+
+Using the following text extracted from a data dictionary:
+<enttypl> tbl_events </enttypl> <enttypd> information about sampling events </enttypd> <enttypds> nps </enttypds> </enttyp> <attr> <attrlabl> event_id
+to tbl_events </attrdef> <attrdefs> nps </attrdefs> <attrtype> short text </attrtype> <attwidth> 50 </attwidth> </attr> <attr> <attrlabl>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier tbl_Events:
+
+tbl_Events, table_Events
+
+Using the following text extracted from a data dictionary:
+<attrlabl> dsc_guid </attrlabl> <attrdef> link to i&amp;m dataset catalog desktop metadata tool </attrdef> <attrdefs> nps </attrdefs>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier DSC_GUID:
+
+dsc_guid, dataset_catalog_guid
+
+Using the following text extracted from a data dictionary:
+<attrlabl> db_desc </attrlabl> <attrdef> description of the database purpose </attrdef> <attrdefs> nps </attrdefs> <attrtype> long text
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier DB_Desc:
+
+DB_Desc, Database_Description
+
+Using the following text extracted from a data dictionary:
+<unitcode> redw </unitcode> <unittype> national and state parks </unittype> </nps_unit> <nps_unit> <unitcode> whis </unitcode> <unittype> national
+<placekey> redw </placekey> <placekey> whis </placekey> </place> </keywords> <useconst> the national park service shall not be
+<edomv> redw </edomv> <edomvd> redwood nsp </edomvd> <edomvds> nps </edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv> whis
+<edomv> redw </edomv> <edomvd> redwood national and state parks </edomvd> <edomvds> nps </edomvds> </edom> </attrdomv> <attrdomv>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier REDW:
+
+redw, redwood_nsp
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:

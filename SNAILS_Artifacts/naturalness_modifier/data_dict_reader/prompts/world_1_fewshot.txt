@@ -1,0 +1,52 @@
+
+Using the following text extracted from a data dictionary:
+" seq " : { " column_description " : " the column \ " seq \ " in the sqlite_sequence table stores the current highest value of the autoincrement field for each table in the database. this value is used to ensure that the next autoincrement value is unique and sequential. it is updated automatically by sqlite whenever a new row
+" seq \ " in the sqlite_sequence table stores the current highest value of the autoincrement field for each table in the database. this value is used to ensure that the next autoincrement value is unique and sequential. it is updated automatically by sqlite whenever a new row is inserted into a table with an autoincrement column. " , " type
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier seq:
+
+seq, sequence
+
+Using the following text extracted from a data dictionary:
+" indepyear " : { " column_description " : " the column \ " indepyear \ " in the \ " country \ " table represents the year in which a country gained its independence. this column is of the integer type and stores four-digit years. it is used to record and reference the historical year of independence for each country
+" indepyear \ " in the \ " country \ " table represents the year in which a country gained its independence. this column is of the integer type and stores four-digit years. it is used to record and reference the historical year of independence for each country listed in the table. " , " type " : " integer "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier indepyear:
+
+indepyear, independence_year
+
+Using the following text extracted from a data dictionary:
+" gnp " : { " column_description " : " the gnp column in the country table represents the gross national product of a country, measured in billions of dollars, with a precision of up to two decimal places. this column stores economic data reflecting the total value of goods and services produced by a country's residents, both domestically and abroad,
+the gnp column in the country table represents the gross national product of a country, measured in billions of dollars, with a precision of up to two decimal places. this column stores economic data reflecting the total value of goods and services produced by a country's residents, both domestically and abroad, within a specific time period. the values are of the
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier gnp:
+
+gnp, gross_national_product
+
+Using the following text extracted from a data dictionary:
+" code2 " : { " column_description " : " the column \ " code2 \ " in the \ " country \ " table contains two-character country codes that adhere to the iso 3166-1 alpha-2 standard. these codes uniquely identify countries and are commonly used in international data exchange. examples include \ " us \ " for the united states
+" code2 \ " in the \ " country \ " table contains two-character country codes that adhere to the iso 3166-1 alpha-2 standard. these codes uniquely identify countries and are commonly used in international data exchange. examples include \ " us \ " for the united states and \ " fr \ " for france. " , " type "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier code2:
+
+code2, country_code
+
+Using the following text extracted from a data dictionary:
+the district it is located in, and its population. this table is useful for querying and analyzing demographic and geographic data related to urban areas. " , " columns " : { " id " : { " column_description " : " the column \ " id \ " in the \ " city \ " table is of type integer
+" district " : { " column_description " : " the \ " district \ " column in the \ " city \ " table represents the administrative or political subdivision within which the city is located. it typically includes names of regions, provinces, states, or other local government areas. this column is of type char(20) and stores up to 20
+" district \ " column in the \ " city \ " table represents the administrative or political subdivision within which the city is located. it typically includes names of regions, provinces, states, or other local government areas. this column is of type char(20) and stores up to 20 characters of text. " , " type " : " char(20) "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier district:
+
+district, district
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

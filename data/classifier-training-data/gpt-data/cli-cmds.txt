@@ -1,0 +1,19 @@
+# For identifier class transformations:
+openai api fine_tunes.create -t .\manual-scoring\N1-to-N2N3-tng\N1-to-N2_prepared.jsonl -m davinci --suffix "N1-to-N2-Transform" 
+
+openai api fine_tunes.create -t .\manual-scoring\N1-to-N2N3-tng\N1-to-N3_prepared.jsonl -m davinci --suffix "N1-to-N3-Transform" 
+
+openai api fine_tunes.create -t .\manual-scoring\N1-to-N2N3-tng\N2-to-N3_prepared.jsonl -m davinci --suffix "N2-to-N3-Transform"
+
+openai api fine_tunes.create -t .\manual-scoring\N1-to-N2N3-tng\N2-to-N1_prepared.jsonl -m davinci --suffix "N2-to-N1-Transform" 
+
+
+# For classifier training
+openai api fine_tunes.create -t .\manual-scoring\gpt-data\train_tagged_prepared.jsonl -m davinci --suffix "tagged_classifier" 
+
+
+# For data test_prep
+openai tools fine_tunes.prepare_data -f .\manual-scoring\N1-to-N2N3-tng\N2-to-N1.csv
+
+#List models:
+openai api fine_tunes.list

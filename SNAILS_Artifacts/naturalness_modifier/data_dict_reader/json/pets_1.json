@@ -1,0 +1,73 @@
+{
+    "Student": {
+        "table_description": "The Student table stores essential information about students enrolled at an educational institution. It includes unique identifiers, personal details, academic information, and location codes to facilitate student management and record-keeping. This table is crucial for administrative tasks, reporting, and advising purposes.",
+        "columns": {
+            "StuID": {
+                "column_description": "The column **StuID** in the **Student** table contains unique integer values that serve as the primary identifier for each student. These values are used to distinguish individual student records within the database. The **StuID** is essential for maintaining data integrity and enabling efficient data retrieval and management.",
+                "type": "INTEGER"
+            },
+            "LName": {
+                "column_description": "The column \"LName\" in the Student table contains the last names of students, with a maximum length of 12 characters. This column stores the family or surname of each student, which is used for identification and record-keeping purposes. The data type is VARCHAR(12), allowing for a variety of last names up to 12 characters in length.",
+                "type": "VARCHAR(12)"
+            },
+            "Fname": {
+                "column_description": "The column \"Fname\" in the Student table contains the first names of students, with a maximum length of 12 characters. This column stores individual first names in a VARCHAR format, ensuring that each entry is a string of text. The values are used to identify and differentiate students by their given names.",
+                "type": "VARCHAR(12)"
+            },
+            "Age": {
+                "column_description": "The \"Age\" column in the \"Student\" table represents the age of each student in years. It is an INTEGER type, ensuring that only whole numbers are stored. This column is used to record and track the age of students for various administrative and analytical purposes.",
+                "type": "INTEGER"
+            },
+            "Sex": {
+                "column_description": "The column \"Sex\" in the Student table contains single-character values representing the gender of the student. The possible values are 'M' for male and 'F' for female. This column is used to identify the gender of each student in the database.",
+                "type": "VARCHAR(1)"
+            },
+            "Major": {
+                "column_description": "The \"Major\" column in the Student table represents the unique identifier for each student's major field of study, with values corresponding to specific academic disciplines. This INTEGER type column is used to link students to their respective majors through a foreign key relationship with a separate Majors table. The values in this column are numeric codes that map to predefined major categories.",
+                "type": "INTEGER"
+            },
+            "Advisor": {
+                "column_description": "The \"Advisor\" column in the \"Student\" table contains INTEGER values that represent the unique identifiers (IDs) of faculty members assigned as academic advisors to students. Each ID corresponds to a specific advisor in the faculty database. This column establishes a relationship between students and their respective academic advisors.",
+                "type": "INTEGER"
+            },
+            "city_code": {
+                "column_description": "The `city_code` column in the Student table is a three-character VARCHAR field representing the unique code for each city. The values in this column correspond to standardized city abbreviations used for identifying student locations. This code helps in categorizing and filtering students based on their city of residence.",
+                "type": "VARCHAR(3)"
+            }
+        }
+    },
+    "Has_Pet": {
+        "table_description": "The Has_Pet table records the relationship between students and their pets. Each entry in the table represents a unique pairing of a student and a pet, identified by their respective IDs. This table is used to track which students own which pets.",
+        "columns": {
+            "StuID": {
+                "column_description": "The column `StuID` in the `Has_Pet` table contains unique integer identifiers for students who own pets. Each value in this column corresponds to a specific student, linking them to their respective pets. This column serves as a foreign key to the primary student records in the database.",
+                "type": "INTEGER"
+            },
+            "PetID": {
+                "column_description": "The column `PetID` in the `Has_Pet` table is an INTEGER type that uniquely identifies each pet associated with a person or entity. This column serves as a primary key to ensure that each pet has a distinct identifier. The values in this column are used to reference pets in other related tables within the database.",
+                "type": "INTEGER"
+            }
+        }
+    },
+    "Pets": {
+        "table_description": "The Pets table is designed to store information about various pets, including their unique identifiers, types, ages, and weights. It serves as a centralized repository for pet-related data, facilitating easy retrieval and management of pet records. This table is essential for applications that need to track and analyze pet demographics and health metrics.",
+        "columns": {
+            "PetID": {
+                "column_description": "The PetID column in the Pets table is an INTEGER type that uniquely identifies each pet in the database. It serves as the primary key for the table, ensuring that each pet record is distinct. This column is essential for referencing pets in other related tables and for performing operations like updates and deletions.",
+                "type": "INTEGER"
+            },
+            "PetType": {
+                "column_description": "The PetType column in the Pets table categorizes the type of pet, with values such as 'Dog', 'Cat', 'Bird', 'Fish', 'Reptile', and 'Rodent'. This column helps in identifying and grouping pets based on their species. It is a VARCHAR(20) type, allowing for a variety of pet types to be recorded.",
+                "type": "VARCHAR(20)"
+            },
+            "pet_age": {
+                "column_description": "The column `pet_age` in the Pets table represents the age of the pets in years. The values in this column are integers ranging from 0 to 15, indicating the age of each pet. This column helps in identifying the age group and life stage of the pets.",
+                "type": "INTEGER"
+            },
+            "weight": {
+                "column_description": "The column \"weight\" in the Pets table, of type REAL, represents the weight of each pet in kilograms. The values in this column are numerical and can include decimal points to account for precise measurements. This column is essential for tracking the physical health and growth of the pets.",
+                "type": "REAL"
+            }
+        }
+    }
+}

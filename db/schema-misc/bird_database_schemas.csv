@@ -1,0 +1,695 @@
+DATABASE_NAME,TABLE_NAME,Count of COLUMN_NAME
+bird-dev-california_schools,frpm,29
+,satscores,11
+,schools,49
+bird-dev-california_schools Total,,89
+bird-dev-card_games,cards,74
+,foreign_data,8
+,legalities,4
+,rulings,4
+,set_translations,4
+,sets,21
+,sqlite_sequence,2
+bird-dev-card_games Total,,117
+bird-dev-codebase_community,badges,4
+,comments,7
+,postHistory,9
+,postLinks,5
+,posts,21
+,tags,5
+,users,14
+,votes,6
+bird-dev-codebase_community Total,,71
+bird-dev-debit_card_specializing,customers,3
+,gasstations,4
+,products,2
+,sqlite_sequence,2
+,transactions_1k,9
+,yearmonth,3
+bird-dev-debit_card_specializing Total,,23
+bird-dev-european_football_2,Country,2
+,League,3
+,Match,115
+,Player,7
+,Player_Attributes,42
+,sqlite_sequence,2
+,Team,5
+,Team_Attributes,25
+bird-dev-european_football_2 Total,,201
+bird-dev-financial,account,4
+,card,4
+,client,4
+,disp,4
+,district,16
+,loan,7
+,order,6
+,trans,10
+bird-dev-financial Total,,55
+bird-dev-formula_1,circuits,9
+,constructorResults,5
+,constructors,5
+,constructorStandings,7
+,drivers,9
+,driverStandings,7
+,lapTimes,6
+,pitStops,7
+,qualifying,9
+,races,8
+,results,18
+,seasons,2
+,sqlite_sequence,2
+,status,2
+bird-dev-formula_1 Total,,96
+bird-dev-student_club,attendance,2
+,budget,7
+,event,7
+,expense,7
+,income,6
+,major,4
+,member,9
+,zip_code,6
+bird-dev-student_club Total,,48
+bird-dev-superhero,alignment,2
+,attribute,2
+,colour,2
+,gender,2
+,hero_attribute,3
+,hero_power,2
+,publisher,2
+,race,2
+,superhero,12
+,superpower,2
+bird-dev-superhero Total,,31
+bird-dev-thrombosis_prediction,Examination,13
+,Laboratory,44
+,Patient,7
+bird-dev-thrombosis_prediction Total,,64
+bird-dev-toxicology,atom,3
+,bond,3
+,connected,3
+,molecule,2
+bird-dev-toxicology Total,,11
+bird-train-address,alias,2
+,area_code,2
+,avoid,2
+,CBSA,3
+,congress,10
+,Country,3
+,state,2
+,zip_congress,2
+,zip_data,55
+bird-train-address Total,,81
+bird-train-airline,Air Carriers,2
+,Airlines,28
+,Airports,2
+bird-train-airline Total,,32
+bird-train-app_store,playstore,10
+,user_reviews,5
+bird-train-app_store Total,,15
+bird-train-authors,Author,3
+,Conference,4
+,Journal,4
+,Paper,6
+,PaperAuthor,4
+bird-train-authors Total,,21
+bird-train-beer_factory,customers,12
+,geolocation,3
+,location,6
+,rootbeer,5
+,rootbeerbrand,22
+,rootbeerreview,5
+,transaction,8
+bird-train-beer_factory Total,,61
+bird-train-bike_share_1,station,7
+,status,4
+,trip,11
+,weather,24
+bird-train-bike_share_1 Total,,46
+bird-train-book_publishing_company,authors,9
+,discounts,5
+,employee,8
+,jobs,4
+,pub_info,3
+,publishers,5
+,roysched,4
+,sales,6
+,stores,6
+,titleauthor,4
+,titles,10
+bird-train-book_publishing_company Total,,64
+bird-train-books,address,5
+,address_status,2
+,Author,2
+,book,7
+,book_author,2
+,book_language,3
+,Country,2
+,cust_order,5
+,customer,4
+,customer_address,3
+,order_history,4
+,order_line,4
+,order_status,2
+,publisher,2
+,shipping_method,3
+,sqlite_sequence,2
+bird-train-books Total,,52
+bird-train-car_retails,customers,13
+,employees,8
+,offices,9
+,orderdetails,5
+,orders,7
+,payments,4
+,productlines,4
+,products,9
+bird-train-car_retails Total,,59
+bird-train-cars,Country,2
+,data,9
+,price,2
+,production,3
+bird-train-cars Total,,16
+bird-train-chicago_crime,Community_Area,4
+,Crime,15
+,district,10
+,FBI_Code,4
+,IUCR,4
+,Neighborhood,2
+,Ward,13
+bird-train-chicago_crime Total,,52
+bird-train-citeseer,cites,2
+,content,2
+,Paper,2
+bird-train-citeseer Total,,6
+bird-train-codebase_comments,Method,10
+,MethodParameter,4
+,Repo,6
+,Solution,5
+,sqlite_sequence,2
+bird-train-codebase_comments Total,,27
+bird-train-coinmarketcap,coins,15
+,historical,19
+bird-train-coinmarketcap Total,,34
+bird-train-college_completion,institution_details,62
+,institution_grads,10
+,state_sector_details,15
+,state_sector_grads,15
+bird-train-college_completion Total,,102
+bird-train-computer_student,advisedBy,2
+,course,2
+,person,6
+,taughtBy,2
+bird-train-computer_student Total,,12
+bird-train-cookbook,Ingredient,4
+,Nutrition,16
+,Quantity,8
+,Recipe,11
+bird-train-cookbook Total,,39
+bird-train-craftbeer,beers,7
+,breweries,4
+bird-train-craftbeer Total,,11
+bird-train-cs_semester,course,4
+,prof,8
+,RA,4
+,registration,4
+,student,8
+bird-train-cs_semester Total,,28
+bird-train-disney,characters,5
+,director,2
+,movies_total_gross,6
+,revenue,7
+,voice-actors,3
+bird-train-disney Total,,23
+bird-train-donor,donations,21
+,essays,6
+,projects,35
+,resources,9
+,sqlite_sequence,2
+bird-train-donor Total,,73
+bird-train-european_football_1,divisions,3
+,matchs,8
+bird-train-european_football_1 Total,,11
+bird-train-food_inspection,businesses,16
+,inspections,4
+,violations,5
+bird-train-food_inspection Total,,25
+bird-train-food_inspection_2,employee,11
+,establishment,12
+,inspection,7
+,inspection_point,6
+,violation,4
+bird-train-food_inspection_2 Total,,40
+bird-train-genes,Classification,2
+,Genes,9
+,Interactions,4
+bird-train-genes Total,,15
+bird-train-hockey,abbrev,3
+,AwardsCoaches,5
+,AwardsMisc,6
+,AwardsPlayers,6
+,Coaches,14
+,CombinedShutouts,8
+,Goalies,23
+,GoaliesSC,11
+,GoaliesShootout,8
+,HOF,4
+,Master,31
+,Scoring,31
+,ScoringSC,10
+,ScoringShootout,7
+,ScoringSup,4
+,SeriesPost,13
+,Teams,27
+,TeamsHalf,11
+,TeamSplits,43
+,TeamsPost,17
+,TeamsSC,10
+,TeamVsTeam,8
+bird-train-hockey Total,,300
+bird-train-human_resources,employee,9
+,location,6
+,position,5
+bird-train-human_resources Total,,20
+bird-train-ice_hockey_draft,height_info,3
+,PlayerInfo,20
+,SeasonStatus,11
+,weight_info,3
+bird-train-ice_hockey_draft Total,,37
+bird-train-image_and_language,ATT_CLASSES,2
+,IMG_OBJ,7
+,IMG_OBJ_ATT,3
+,IMG_REL,4
+,OBJ_CLASSES,2
+,PRED_CLASSES,2
+bird-train-image_and_language Total,,20
+bird-train-language_corpus,biwords,4
+,langs,5
+,langs_words,3
+,pages,6
+,pages_words,3
+,sqlite_sequence,2
+,words,3
+bird-train-language_corpus Total,,26
+bird-train-law_episode,Award,10
+,Credit,5
+,Episode,11
+,Keyword,2
+,person,9
+,Vote,4
+bird-train-law_episode Total,,41
+bird-train-legislator,current,24
+,current-terms,23
+,historical,26
+,historical-terms,23
+,social-media,11
+bird-train-legislator Total,,107
+bird-train-mental_health_survey,Answer,4
+,Question,2
+,Survey,2
+bird-train-mental_health_survey Total,,8
+bird-train-menu,Dish,9
+,Menu,20
+,MenuItem,9
+,MenuPage,7
+bird-train-menu Total,,45
+bird-train-mondial_geo,borders,3
+,city,6
+,continent,2
+,Country,6
+,desert,4
+,economy,6
+,encompasses,3
+,ethnicGroup,3
+,geo_desert,3
+,geo_estuary,3
+,geo_island,3
+,geo_lake,3
+,geo_mountain,3
+,geo_river,3
+,geo_sea,3
+,geo_source,3
+,island,7
+,islandIn,4
+,isMember,3
+,lake,8
+,language,3
+,located,6
+,locatedOn,4
+,mergesWith,2
+,mountain,6
+,mountainOnIsland,2
+,organization,6
+,politics,4
+,population,3
+,province,6
+,religion,3
+,river,11
+,sea,2
+,target,2
+bird-train-mondial_geo Total,,139
+bird-train-movie,actor,10
+,characters,6
+,movie,11
+bird-train-movie Total,,27
+bird-train-movie_3,actor,4
+,address,8
+,category,3
+,city,4
+,Country,3
+,customer,9
+,film,13
+,film_actor,3
+,film_category,3
+,film_text,3
+,inventory,4
+,language,3
+,payment,7
+,rental,7
+,sqlite_sequence,2
+,staff,11
+,store,4
+bird-train-movie_3 Total,,91
+bird-train-movie_platform,lists,14
+,lists_users,10
+,movies,10
+,ratings,13
+,ratings_users,8
+bird-train-movie_platform Total,,55
+bird-train-movielens,actors,3
+,directors,3
+,movies,5
+,movies2actors,3
+,movies2directors,3
+,u2base,3
+,users,4
+bird-train-movielens Total,,24
+bird-train-movies_4,Country,3
+,department,2
+,gender,2
+,genre,2
+,Keyword,2
+,language,3
+,language_role,2
+,movie,13
+,movie_cast,5
+,movie_company,2
+,movie_crew,4
+,movie_genres,2
+,movie_keywords,2
+,movie_languages,3
+,person,2
+,production_company,2
+,production_country,2
+bird-train-movies_4 Total,,53
+bird-train-music_platform_2,categories,2
+,podcasts,5
+,reviews,6
+,runs,3
+bird-train-music_platform_2 Total,,16
+bird-train-music_tracker,tags,3
+,torrents,7
+bird-train-music_tracker Total,,10
+bird-train-olympics,city,2
+,competitor_event,3
+,event,3
+,games,4
+,games_city,2
+,games_competitor,4
+,medal,2
+,noc_region,3
+,person,5
+,person_region,2
+,sport,2
+bird-train-olympics Total,,32
+bird-train-professional_basketball,awards_coaches,6
+,awards_players,6
+,Coaches,9
+,draft,12
+,player_allstar,23
+,players,26
+,players_teams,43
+,series_post,10
+,sqlite_sequence,2
+,Teams,22
+bird-train-professional_basketball Total,,159
+bird-train-public_review_platform,Attributes,2
+,Business,6
+,Business_Attributes,3
+,Business_Categories,2
+,Business_Hours,4
+,categories,2
+,Checkins,26
+,Compliments,2
+,Days,2
+,Elite,2
+,reviews,7
+,Tips,4
+,users,8
+,Users_Compliments,3
+,Years,2
+bird-train-public_review_platform Total,,75
+bird-train-regional_sales,customers,2
+,products,2
+,Regions,3
+,Sales Orders,16
+,Sales Team,3
+,Store Locations,15
+bird-train-regional_sales Total,,41
+bird-train-restaurant,generalinfo,5
+,geographic,3
+,location,4
+bird-train-restaurant Total,,12
+bird-train-retail_complains,callcenterlogs,13
+,client,18
+,district,4
+,events,15
+,reviews,5
+,state,3
+bird-train-retail_complains Total,,58
+bird-train-retail_world,categories,3
+,customers,7
+,employees,6
+,orderdetails,4
+,orders,5
+,products,6
+,Shippers,3
+,sqlite_sequence,2
+,Suppliers,8
+bird-train-retail_world Total,,44
+bird-train-retails,customer,8
+,lineitem,16
+,nation,4
+,orders,9
+,part,9
+,partsupp,5
+,region,3
+,supplier,7
+bird-train-retails Total,,61
+bird-train-sales,customers,4
+,employees,4
+,products,3
+,sales,5
+bird-train-sales Total,,16
+bird-train-sales_in_weather,relation,2
+,sales_in_weather,4
+,weather,20
+bird-train-sales_in_weather Total,,26
+bird-train-shakespeare,chapters,5
+,characters,4
+,paragraphs,5
+,sqlite_sequence,2
+,works,5
+bird-train-shakespeare Total,,21
+bird-train-shipping,city,5
+,customer,9
+,driver,8
+,shipment,7
+,truck,3
+bird-train-shipping Total,,32
+bird-train-shooting,incidents,8
+,officers,6
+,subjects,6
+bird-train-shooting Total,,20
+bird-train-simpson_episodes,Award,11
+,Character_Award,2
+,Credit,5
+,Episode,10
+,Keyword,2
+,person,8
+,Vote,4
+bird-train-simpson_episodes Total,,42
+bird-train-soccer_2016,Ball_by_Ball,10
+,Batsman_Scored,5
+,Batting_Style,2
+,Bowling_Style,2
+,city,3
+,Country,2
+,Extra_Runs,6
+,Extra_Type,2
+,Match,13
+,Out_Type,2
+,Outcome,2
+,Player,6
+,Player_Match,4
+,Rolee,2
+,Season,5
+,Team,2
+,Toss_Decision,2
+,Umpire,3
+,Venue,3
+,Wicket_Taken,7
+,Win_By,2
+bird-train-soccer_2016 Total,,85
+bird-train-social_media,location,5
+,twitter,14
+,user,2
+bird-train-social_media Total,,21
+bird-train-software_company,customers,7
+,Demog,21
+,Mailings1_2,3
+,mailings3,3
+,sales,4
+bird-train-software_company Total,,38
+bird-train-student_loan,bool,1
+,disabled,1
+,enlist,2
+,enrolled,3
+,filed_for_bankrupcy,1
+,longest_absense_from_school,2
+,male,1
+,no_payment_due,2
+,person,1
+,unemployed,1
+bird-train-student_loan Total,,15
+bird-train-superstore,central_superstore,12
+,east_superstore,12
+,people,8
+,product,5
+,south_superstore,12
+,west_superstore,12
+bird-train-superstore Total,,61
+bird-train-synthea,all_prevalences,6
+,allergies,6
+,careplans,9
+,claims,7
+,conditions,6
+,encounters,7
+,immunizations,5
+,medications,8
+,observations,7
+,patients,17
+,procedures,7
+bird-train-synthea Total,,85
+bird-train-talkingdata,app_all,1
+,app_events,4
+,app_events_relevant,4
+,app_labels,2
+,events,5
+,events_relevant,5
+,gender_age,4
+,gender_age_test,1
+,gender_age_train,4
+,label_categories,2
+,phone_brand_device_model2,3
+,sample_submission,13
+bird-train-talkingdata Total,,48
+bird-train-trains,cars,10
+,trains,2
+bird-train-trains Total,,12
+bird-train-university,Country,2
+,ranking_criteria,3
+,ranking_system,2
+,university,3
+,university_ranking_year,4
+,university_year,6
+bird-train-university Total,,20
+bird-train-video_games,game,3
+,game_platform,4
+,game_publisher,3
+,genre,2
+,platform,2
+,publisher,2
+,region,2
+,region_sales,3
+bird-train-video_games Total,,21
+bird-train-works_cycles,address,9
+,AddressType,4
+,BillOfMaterials,9
+,BusinessEntity,3
+,BusinessEntityAddress,5
+,BusinessEntityContact,5
+,ContactType,3
+,CountryRegion,3
+,CountryRegionCurrency,3
+,CreditCard,6
+,Culture,3
+,Currency,3
+,CurrencyRate,7
+,customer,7
+,department,4
+,Document,14
+,EmailAddress,5
+,employee,16
+,EmployeeDepartmentHistory,6
+,EmployeePayHistory,5
+,JobCandidate,4
+,location,5
+,Password,5
+,person,13
+,PersonCreditCard,3
+,PhoneNumberType,3
+,product,25
+,ProductCategory,4
+,ProductCostHistory,5
+,ProductDescription,4
+,ProductDocument,3
+,ProductInventory,7
+,ProductListPriceHistory,5
+,ProductModel,6
+,ProductModelProductDescriptionCulture,4
+,ProductPhoto,6
+,ProductProductPhoto,4
+,ProductReview,8
+,ProductSubcategory,5
+,ProductVendor,11
+,PurchaseOrderDetail,11
+,PurchaseOrderHeader,13
+,SalesOrderDetail,11
+,SalesOrderHeader,26
+,SalesOrderHeaderSalesReason,3
+,SalesPerson,9
+,SalesPersonQuotaHistory,5
+,SalesReason,4
+,SalesTaxRate,7
+,SalesTerritory,10
+,SalesTerritoryHistory,6
+,ScrapReason,3
+,Shift,5
+,ShipMethod,6
+,ShoppingCartItem,6
+,SpecialOffer,11
+,SpecialOfferProduct,4
+,sqlite_sequence,2
+,StateProvince,8
+,store,6
+,TransactionHistory,9
+,TransactionHistoryArchive,9
+,UnitMeasure,3
+,Vendor,8
+,WorkOrder,10
+,WorkOrderRouting,12
+bird-train-works_cycles Total,,457
+bird-train-world,city,5
+,Country,15
+,CountryLanguage,4
+,sqlite_sequence,2
+bird-train-world Total,,26
+bird-train-world_development_indicators,Country,31
+,CountryNotes,3
+,Footnotes,4
+,Indicators,6
+,Series,20
+,SeriesNotes,3
+bird-train-world_development_indicators Total,,67
+(blank),(blank),
+(blank) Total,,
+Grand Total,,4365

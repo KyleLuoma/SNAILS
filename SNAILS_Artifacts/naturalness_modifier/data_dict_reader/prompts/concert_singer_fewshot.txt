@@ -1,0 +1,59 @@
+
+Using the following text extracted from a data dictionary:
+and average number of attendees for events held at each stadium. this table is useful for analyzing stadium performance and capacity utilization. " , " columns " : { " stadium_id " : { " column_description " : " the column `stadium_id` in the `stadium` table is of type `int` and serves as a unique identifier for each stadium. it ensures
+" average " : { " column_description " : " the \ " average \ " column in the \ " stadium \ " table represents the average attendance figures for events held at the stadium. this column is of type int, indicating it stores integer values. it is used to track and analyze the average number of attendees for performance
+" average \ " column in the \ " stadium \ " table represents the average attendance figures for events held at the stadium. this column is of type int, indicating it stores integer values. it is used to track and analyze the average number of attendees for performance and capacity planning. " , " type " : " int "
+the average attendance figures for events held at the stadium. this column is of type int, indicating it stores integer values. it is used to track and analyze the average number of attendees for performance and capacity planning. " , " type " : " int " } } } , " singer " : { " table_description " : "
+the average number of attendees for performance and capacity planning. " , " type " : " int " } } } , " singer " : { " table_description " : " the \ " singer \ " table stores information about various singers, including their personal details, nationality, and discography. it is designed to facilitate the management and retrieval
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier average:
+
+average, average
+
+Using the following text extracted from a data dictionary:
+the year a song was released. " , " type " : " text " } , " age " : { " column_description " : " the column \ " age \ " in the \ " singer \ " table contains integer values representing the ages of the singers. the values are of type int, indicating whole numbers. this
+" year " : { " column_description " : " the \ " year \ " column in the \ " concert \ " table contains text values representing the year in which each concert took place. this column is of the text data type, allowing for flexibility in formatting. it is used to record and reference the specific year of
+" year \ " column in the \ " concert \ " table contains text values representing the year in which each concert took place. this column is of the text data type, allowing for flexibility in formatting. it is used to record and reference the specific year of each concert event. " , " type " : " text "
+the year in which each concert took place. this column is of the text data type, allowing for flexibility in formatting. it is used to record and reference the specific year of each concert event. " , " type " : " text " } } } , " singer_in_concert " : { " table_description " : " the \ "
+specific year of each concert event. " , " type " : " text " } } } , " singer_in_concert " : { " table_description " : " the \ " singer_in_concert \ " table records the participation of singers in various concerts. each entry in the table represents a unique pairing of a concert and a singer, indicating which
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier year:
+
+year, year
+
+Using the following text extracted from a data dictionary:
+" song_release_year " : { " column_description " : " the column \ " song_release_year \ " in the \ " singer \ " table contains the release years of songs as text values. the data includes four-digit years, such as \ " 1999 \ " and \ " 2005 \ " . this column should be used to identify the
+" song_release_year \ " in the \ " singer \ " table contains the release years of songs as text values. the data includes four-digit years, such as \ " 1999 \ " and \ " 2005 \ " . this column should be used to identify the year a song was released. " , " type " : " text
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier song_release_year:
+
+song_release_year, song_release_year
+
+Using the following text extracted from a data dictionary:
+" singer_id " : { " column_description " : " the column `singer_id` in the `singer` table is of type int and serves as a unique identifier for each singer. it is used to distinguish between different singers in the database. this column is essential for maintaining data integrity and enabling efficient querying and relationship mapping. " , " type "
+" singer_id " : { " column_description " : " the column singer_id in the singer_in_concert table contains unique identifiers for each singer, represented as text strings. these identifiers are used to link singers to their respective concert performances. the values in this column ensure accurate tracking and association of singers within the database. " , " type " : "
+column singer_id in the singer_in_concert table contains unique identifiers for each singer, represented as text strings. these identifiers are used to link singers to their respective concert performances. the values in this column ensure accurate tracking and association of singers within the database. " , " type " : " text " } } } } 
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier singer_id:
+
+singer_id, singer_id
+
+Using the following text extracted from a data dictionary:
+" country " : { " column_description " : " the \ " country \ " column in the \ " singer \ " table contains textual data representing the names of countries. this column is used to specify the country of origin or residence for each singer. the values are stored as text strings. " , " type " :
+" country \ " column in the \ " singer \ " table contains textual data representing the names of countries. this column is used to specify the country of origin or residence for each singer. the values are stored as text strings. " , " type " : " text " } , " song_name " : { " column_description
+the country of origin or residence for each singer. the values are stored as text strings. " , " type " : " text " } , " song_name " : { " column_description " : " the column \ " song_name \ " in the \ " singer \ " table contains the titles of songs performed by the singer.
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier country:
+
+country, country
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

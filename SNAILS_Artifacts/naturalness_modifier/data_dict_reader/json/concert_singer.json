@@ -1,0 +1,106 @@
+{
+    "stadium": {
+        "table_description": "The \"stadium\" table stores information about various stadiums, including their unique identifiers, locations, names, and seating capacities. It also tracks historical attendance data, such as the highest, lowest, and average number of attendees for events held at each stadium. This table is useful for analyzing stadium performance and capacity utilization.",
+        "columns": {
+            "Stadium_ID": {
+                "column_description": "The column `Stadium_ID` in the `stadium` table is of type `INT` and serves as a unique identifier for each stadium. It ensures that each stadium entry can be distinctly referenced within the database. This column is essential for maintaining the integrity and organization of stadium-related data.",
+                "type": "INT"
+            },
+            "Location": {
+                "column_description": "The \"Location\" column in the \"stadium\" database table contains textual data representing the geographical or physical address of the stadium. This may include details such as city, state, country, or specific landmarks. The data type for this column is TEXT, allowing for a wide range of descriptive information.",
+                "type": "TEXT"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"stadium\" table contains textual data representing the names of various stadiums. Examples of values in this column include \"Wembley Stadium,\" \"Camp Nou,\" and \"Madison Square Garden.\" This column is used to store the official names of sports and event venues.",
+                "type": "TEXT"
+            },
+            "Capacity": {
+                "column_description": "The \"Capacity\" column in the \"stadium\" table represents the maximum number of spectators that the stadium can accommodate. It is an integer value indicating the seating capacity. This column is essential for understanding the scale and size of the stadium.",
+                "type": "INT"
+            },
+            "Highest": {
+                "column_description": "The \"Highest\" column in the \"stadium\" table is of type INT and represents the maximum capacity or attendance recorded for events held at the stadium. This column stores integer values indicating the peak number of attendees. It is used for statistical and logistical analysis of stadium usage.",
+                "type": "INT"
+            },
+            "Lowest": {
+                "column_description": "The \"Lowest\" column in the \"stadium\" table is of type INT and represents the minimum attendance recorded for events held at the stadium. This column stores integer values indicating the lowest number of attendees. It is used for statistical analysis and reporting purposes to understand attendance trends.",
+                "type": "INT"
+            },
+            "Average": {
+                "column_description": "The \"Average\" column in the \"stadium\" table represents the average attendance figures for events held at the stadium. This column is of type INT, indicating it stores integer values. It is used to track and analyze the average number of attendees for performance and capacity planning.",
+                "type": "INT"
+            }
+        }
+    },
+    "singer": {
+        "table_description": "The \"singer\" table stores information about various singers, including their personal details, nationality, and discography. It is designed to facilitate the management and retrieval of data related to singers and their songs. The table includes identifiers, demographic information, and song details.",
+        "columns": {
+            "Singer_ID": {
+                "column_description": "The column `Singer_ID` in the `singer` table is of type INT and serves as a unique identifier for each singer. It is used to distinguish between different singers in the database. This column is essential for maintaining data integrity and enabling efficient querying and relationship mapping.",
+                "type": "INT"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"singer\" table contains textual data representing the names of singers. This column includes values such as individual names, stage names, or band names. It is used to identify and differentiate between various singers in the database.",
+                "type": "TEXT"
+            },
+            "Country": {
+                "column_description": "The \"Country\" column in the \"singer\" table contains textual data representing the names of countries. This column is used to specify the country of origin or residence for each singer. The values are stored as text strings.",
+                "type": "TEXT"
+            },
+            "Song_Name": {
+                "column_description": "The column \"Song_Name\" in the \"singer\" table contains the titles of songs performed by the singer. Each entry is a text string representing the name of a song. This column is used to identify and catalog the songs associated with each singer in the database.",
+                "type": "TEXT"
+            },
+            "Song_release_year": {
+                "column_description": "The column \"Song_release_year\" in the \"singer\" table contains the release years of songs as text values. The data includes four-digit years, such as \"1999\" and \"2005\". This column should be used to identify the year a song was released.",
+                "type": "TEXT"
+            },
+            "Age": {
+                "column_description": "The column \"Age\" in the \"singer\" table contains integer values representing the ages of the singers. The values are of type INT, indicating whole numbers. This column is used to store the age information of each singer in the database.",
+                "type": "INT"
+            },
+            "Is_male": {
+                "column_description": "The column \"Is_male\" in the \"singer\" table is a boolean field that indicates the gender of the singer. A value of \"true\" signifies that the singer is male, while a value of \"false\" signifies that the singer is not male. This field helps in categorizing and filtering singers based on their gender.",
+                "type": "bool"
+            }
+        }
+    },
+    "concert": {
+        "table_description": "The \"concert\" table stores information about various concerts, including their unique identifiers, names, themes, associated stadiums, and the years they took place. It serves as a central repository for concert-related data, facilitating easy retrieval and management of concert details. This table is essential for organizing and querying concert information within the database.",
+        "columns": {
+            "concert_ID": {
+                "column_description": "The `concert_ID` column in the `concert` table is an integer type that uniquely identifies each concert entry. It serves as the primary key for the table, ensuring that each concert record is distinct. This column is essential for referencing and managing concert data within the database.",
+                "type": "INT"
+            },
+            "concert_Name": {
+                "column_description": "The column \"concert_Name\" in the \"concert\" table contains textual data representing the names of various concerts. This column stores unique identifiers for each concert event, typically including the artist's name, tour name, or specific event title. The data type is TEXT, allowing for a wide range of characters and lengths to accommodate diverse concert names.",
+                "type": "TEXT"
+            },
+            "Theme": {
+                "column_description": "The \"Theme\" column in the \"concert\" database table categorizes the overarching concept or genre of each concert event. Values in this column include various textual descriptions that define the specific theme of the concert, such as \"Rock,\" \"Classical,\" \"Jazz,\" \"Pop,\" and other musical genres or thematic elements. This helps in organizing and filtering concert events based on their thematic content.",
+                "type": "TEXT"
+            },
+            "Stadium_ID": {
+                "column_description": "The column \"Stadium_ID\" in the \"concert\" table contains unique identifiers for stadiums where concerts are held. Each value in this TEXT column represents a specific stadium, allowing for the association of concert events with their respective venues. This identifier is used to link concert data with stadium details in related tables.",
+                "type": "TEXT"
+            },
+            "Year": {
+                "column_description": "The \"Year\" column in the \"concert\" table contains text values representing the year in which each concert took place. This column is of the TEXT data type, allowing for flexibility in formatting. It is used to record and reference the specific year of each concert event.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "singer_in_concert": {
+        "table_description": "The \"singer_in_concert\" table records the participation of singers in various concerts. Each entry in the table represents a unique pairing of a concert and a singer, indicating which singers performed at which concerts. This table is used to track and manage the association between concerts and the singers who participated in them.",
+        "columns": {
+            "concert_ID": {
+                "column_description": "The column `concert_ID` in the `singer_in_concert` table is an integer type that uniquely identifies each concert. It serves as a foreign key linking to the primary key in the `concerts` table. This column ensures that each singer's participation is associated with a specific concert event.",
+                "type": "INT"
+            },
+            "Singer_ID": {
+                "column_description": "The column Singer_ID in the singer_in_concert table contains unique identifiers for each singer, represented as text strings. These identifiers are used to link singers to their respective concert performances. The values in this column ensure accurate tracking and association of singers within the database.",
+                "type": "TEXT"
+            }
+        }
+    }
+}

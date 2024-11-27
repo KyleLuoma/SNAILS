@@ -1,0 +1,19 @@
+The database element renaming rules for catories N5 through N1:
+N5: Plain english words that communicate semantic meaning of the data within a column
+N4: Plain english words that describe the entity attribute that the column represents
+N3: Abbreviation of N5, omitting most vowels from words
+N2: Abbreviation of N4, omitting most vowels from words
+N1: Abbreviation of original column name not to exceed three characters per original word
+
+Here are some example column renamings:
+COLUMN_NAME,	N5,	N4,	N3,	N2,	N1
+Event_ID,	Event_Identification_Key,	EventID	Evnt_ID_ky,	Evnt_ID,	ev_id
+Station_ID,	Station_Identification_Key,	StationID,	Stat_ID_ky,	statn_ID,	stn_id
+Protocol_Name,	Protocol_Name,	ProtocolName,	Protcl_name,	prtcl_nm,	prt_nm
+Start_Date,	Event_Start_Date,	StartDate,	Strt_Date,	Strt_dt	st_dt,
+
+
+Include only CSV file output. Do not provide any additional text or explanations
+
+Rename the {database_name} database {table_name} table's {element_type}s and put into CSV format with the column headers COLUMN_NAME,	N5,	N4,	N3,	N2,	N1:
+

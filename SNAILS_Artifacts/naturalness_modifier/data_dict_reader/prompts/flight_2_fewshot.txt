@@ -1,0 +1,53 @@
+
+Using the following text extracted from a data dictionary:
+" uid " : { " column_description " : " the column \ " uid \ " in the \ " airlines \ " table contains unique integer identifiers for each airline entry. these identifiers are used to distinguish between different airlines within the database. each \ " uid \ " value is a distinct integer that ensures the uniqueness of
+" uid \ " in the \ " airlines \ " table contains unique integer identifiers for each airline entry. these identifiers are used to distinguish between different airlines within the database. each \ " uid \ " value is a distinct integer that ensures the uniqueness of each record. " , " type " : " integer " } ,
+" uid \ " value is a distinct integer that ensures the uniqueness of each record. " , " type " : " integer " } , " airline " : { " column_description " : " the \ " airline \ " column in the \ " airlines \ " database table contains textual data representing the names of various
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier uid:
+
+uid, unique_id
+
+Using the following text extracted from a data dictionary:
+" countryabbrev " : { " column_description " : " the column \ " countryabbrev \ " in the \ " airports \ " table contains abbreviated country codes, typically in the form of two or three-letter iso 3166-1 alpha-2 or alpha-3 codes. these abbreviations represent the country in which each airport is located. this column is of the type text
+" countryabbrev \ " in the \ " airports \ " table contains abbreviated country codes, typically in the form of two or three-letter iso 3166-1 alpha-2 or alpha-3 codes. these abbreviations represent the country in which each airport is located. this column is of the type text and is used for identifying countries in a standardized, concise format. " ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier countryabbrev:
+
+countryabbrev, CountryAbbreviation
+
+Using the following text extracted from a data dictionary:
+" flightno " : { " column_description " : " the column \ " flightno \ " in the \ " flights \ " table represents the unique identifier for each flight, typically assigned by the airline. this integer value is used to distinguish between different flights in the database. it is essential for tracking and managing flight schedules, bookings, and
+" flightno \ " in the \ " flights \ " table represents the unique identifier for each flight, typically assigned by the airline. this integer value is used to distinguish between different flights in the database. it is essential for tracking and managing flight schedules, bookings, and operations. " , " type " : " integer " } , "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier flightno:
+
+flightno, FlightNumber
+
+Using the following text extracted from a data dictionary:
+" destairport " : { " column_description " : " the column \ " destairport \ " in the \ " flights \ " table represents the destination airport for each flight, identified by its unique iata airport code. this code is a three-letter designation assigned by the international air transport association (iata) to airports around the world. the values in
+" destairport \ " in the \ " flights \ " table represents the destination airport for each flight, identified by its unique iata airport code. this code is a three-letter designation assigned by the international air transport association (iata) to airports around the world. the values in this column indicate the final airport where the flight is scheduled to land.
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier destairport:
+
+destairport, DestinationAirportCode
+
+Using the following text extracted from a data dictionary:
+the city and country where each airport is located, along with the airport's code and name. this table is useful for applications that require airport identification and location data. " , " columns " : { " city " : { " column_description " : " the \ " city \ " column in the \ " airports \ " table
+" city " : { " column_description " : " the \ " city \ " column in the \ " airports \ " table contains textual data representing the names of cities where the airports are located. this column is used to identify the geographical location of each airport within the database. the values in this column are essential for
+" city \ " column in the \ " airports \ " table contains textual data representing the names of cities where the airports are located. this column is used to identify the geographical location of each airport within the database. the values in this column are essential for mapping and logistical purposes. " , " type " : " text
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier city:
+
+city, CityName
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

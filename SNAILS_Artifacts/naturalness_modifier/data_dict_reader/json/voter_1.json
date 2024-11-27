@@ -1,0 +1,53 @@
+{
+    "AREA_CODE_STATE": {
+        "table_description": "The AREA_CODE_STATE table maps telephone area codes to their corresponding U.S. states. It serves as a reference for identifying the state associated with a given area code. This table is useful for applications that require geographic information based on telephone numbers.",
+        "columns": {
+            "area_code": {
+                "column_description": "The column `area_code` in the `AREA_CODE_STATE` table represents the numerical code assigned to specific geographic regions within a state for telephone numbering purposes. These codes are used to route calls to the appropriate local exchanges. Each `area_code` is an integer value that uniquely identifies a distinct area within the state.",
+                "type": "INTEGER"
+            },
+            "state": {
+                "column_description": "The \"state\" column in the AREA_CODE_STATE table, of type varchar(2), represents the two-letter postal abbreviations for U.S. states and territories. This column is used to identify the state or territory associated with a specific area code. Examples of values include \"CA\" for California, \"NY\" for New York, and \"TX\" for Texas.",
+                "type": "varchar(2)"
+            }
+        }
+    },
+    "CONTESTANTS": {
+        "table_description": "The CONTESTANTS table stores information about individuals participating in a contest. Each record in the table represents a unique contestant, identified by a contestant number and their name. This table is used to manage and reference contestant details within the contest management system.",
+        "columns": {
+            "contestant_number": {
+                "column_description": "The `contestant_number` column in the `CONTESTANTS` table is an INTEGER type that uniquely identifies each contestant in a sequential manner. This number is assigned to contestants upon registration and is used for tracking and reference purposes throughout the competition.",
+                "type": "INTEGER"
+            },
+            "contestant_name": {
+                "column_description": "The column `contestant_name` in the `CONTESTANTS` table contains the names of individuals participating in a contest or competition. Each entry is a string of up to 50 characters, representing the full name of a contestant. This column is used to identify and differentiate participants within the database.",
+                "type": "varchar(50)"
+            }
+        }
+    },
+    "VOTES": {
+        "table_description": "The VOTES table records individual votes cast in a contest, capturing essential details about each vote. It includes information such as the unique identifier for each vote, the phone number of the voter, the state from which the vote was cast, the contestant being voted for, and the timestamp of when the vote was created. This table is used to track and analyze voting patterns and results for the contest.",
+        "columns": {
+            "vote_id": {
+                "column_description": "The `vote_id` column in the VOTES table is an INTEGER type that uniquely identifies each vote entry. It serves as the primary key for the table, ensuring that each vote is distinct and can be referenced individually. This column is essential for maintaining the integrity and traceability of voting records within the database.",
+                "type": "INTEGER"
+            },
+            "phone_number": {
+                "column_description": "The column `phone_number` in the `VOTES` table contains integer values representing the last four digits of voters' phone numbers. This column is used for partial anonymization and verification purposes. It ensures that each vote is associated with a unique identifier while maintaining voter privacy.",
+                "type": "INTEGER"
+            },
+            "state": {
+                "column_description": "The \"state\" column in the VOTES table, of type varchar(2), represents the two-letter postal abbreviations for U.S. states and territories. This column is used to identify the geographic location associated with each vote. Examples of values include \"CA\" for California, \"NY\" for New York, and \"TX\" for Texas.",
+                "type": "varchar(2)"
+            },
+            "contestant_number": {
+                "column_description": "The column `contestant_number` in the `VOTES` table represents the unique identifier assigned to each contestant in a competition. This integer value is used to track and tally votes for individual contestants. Each contestant is assigned a distinct number to ensure accurate vote counting and identification.",
+                "type": "INTEGER"
+            },
+            "created": {
+                "column_description": "The \"created\" column in the VOTES table is of the timestamp type and records the exact date and time when a vote was cast. This column is essential for tracking the chronological order of votes and analyzing voting patterns over time. It ensures data integrity by providing a precise temporal context for each vote.",
+                "type": "timestamp"
+            }
+        }
+    }
+}

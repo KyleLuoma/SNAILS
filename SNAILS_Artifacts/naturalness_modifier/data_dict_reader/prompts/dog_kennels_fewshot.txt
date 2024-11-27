@@ -1,0 +1,50 @@
+
+Using the following text extracted from a data dictionary:
+" cost_of_treatment " : { " column_description " : " the column `cost_of_treatment` in the `treatments` table represents the monetary cost associated with each treatment, stored with a precision of up to 19 digits and 4 decimal places. the values in this column are expressed in the relevant currency and include both whole numbers and fractional amounts. this column is essential
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier cost_of_treatment:
+
+cost_of_treatment, cost_of_treatment
+
+Using the following text extracted from a data dictionary:
+" dog_id " : { " column_description " : " the `dog_id` column in the dogs table is an integer type that uniquely identifies each dog in the database. it serves as the primary key for the table, ensuring that each entry is distinct. this column is essential for referencing and managing individual dog records within the database. " , "
+" dog_id " : { " column_description " : " the column `dog_id` in the treatments table is an integer that uniquely identifies each dog receiving treatment. it serves as a foreign key linking to the primary key in the dogs table, ensuring that each treatment record is associated with a specific dog. this column is essential for maintaining the integrity
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier dog_id:
+
+dog_id, dog_id
+
+Using the following text extracted from a data dictionary:
+" zip_code " : { " column_description " : " the `zip_code` column in the `owners` table contains alphanumeric strings representing postal codes. these values can include standard 5-digit u.s. zip codes, extended 9-digit zip+4 codes, and potentially international postal codes. the column is designed to accommodate various formats up to 20 characters in length. " , " type " :
+" zip_code " : { " column_description " : " the `zip_code` column in the professionals table contains alphanumeric strings representing postal codes, which can include formats with or without hyphens. these values are used to identify specific geographic regions for the professionals listed in the database. the column accommodates various international postal code formats, ensuring flexibility for global data entries.
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier zip_code:
+
+zip_code, zip_code
+
+Using the following text extracted from a data dictionary:
+" date_departed " : { " column_description " : " the column `date_departed` in the dogs table, of type datetime, records the date and time when a dog leaves the facility. this could indicate adoption, transfer to another facility, or other forms of departure. the values in this column are used to track the duration of stay and manage the facility's
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier date_departed:
+
+date_departed, date_departed
+
+Using the following text extracted from a data dictionary:
+" weight " : { " column_description " : " the \ " weight \ " column in the dogs table, of type varchar(20), stores the weight of each dog as a string. the values can include numeric weights, potentially with units (e.g., \ " 25 kg \ " or \ " 55 lbs \ " ). this column may also
+" weight \ " column in the dogs table, of type varchar(20), stores the weight of each dog as a string. the values can include numeric weights, potentially with units (e.g., \ " 25 kg \ " or \ " 55 lbs \ " ). this column may also accommodate non-numeric entries such as \ " unknown \ " or \
+the weight of each dog as a string. the values can include numeric weights, potentially with units (e.g., \ " 25 kg \ " or \ " 55 lbs \ " ). this column may also accommodate non-numeric entries such as \ " unknown \ " or \ " not specified. \ " " , " type " : " varchar(20)
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier weight:
+
+weight, weight
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

@@ -1,0 +1,53 @@
+
+Using the following text extracted from a data dictionary:
+" num_of_staff " : { " column_description " : " the column \ " num_of_staff \ " in the \ " museum \ " table, of type int, represents the number of staff members employed at each museum. the values in this column indicate the total count of personnel working in various capacities within the museum. this data is essential for
+" num_of_staff \ " in the \ " museum \ " table, of type int, represents the number of staff members employed at each museum. the values in this column indicate the total count of personnel working in various capacities within the museum. this data is essential for understanding staffing levels and resource allocation across different museums. " , " type
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier num_of_staff:
+
+num_of_staff, number_of_staff
+
+Using the following text extracted from a data dictionary:
+" num_of_ticket " : { " column_description " : " the column `num_of_ticket` in the `visit` table represents the number of tickets associated with each visit. this integer value indicates how many tickets were issued or used for a particular visit. it is used to track ticket usage and manage visitor entries. " , " type " : " int "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier num_of_ticket:
+
+num_of_ticket, number_of_tickets
+
+Using the following text extracted from a data dictionary:
+" total_spent " : { " column_description " : " the column \ " total_spent \ " in the \ " visit \ " table, of type real, represents the total amount of money spent by a customer during a visit. the values in this column are expressed in the local currency and include all applicable taxes and fees. this column
+" total_spent \ " in the \ " visit \ " table, of type real, represents the total amount of money spent by a customer during a visit. the values in this column are expressed in the local currency and include all applicable taxes and fees. this column is essential for tracking customer expenditure and analyzing spending patterns. " , "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier total_spent:
+
+total_spent, total_spent
+
+Using the following text extracted from a data dictionary:
+" open_year " : { " column_description " : " the column \ " open_year \ " in the museum database table, of type text, represents the year in which each museum was opened. the values in this column are formatted as four-digit years (e.g., 1995, 2001). this column provides historical context and helps track the operational timeline of the museums.
+" open_year \ " in the museum database table, of type text, represents the year in which each museum was opened. the values in this column are formatted as four-digit years (e.g., 1995, 2001). this column provides historical context and helps track the operational timeline of the museums. " , " type " : " text " } } } ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier open_year:
+
+open_year, opening_year
+
+Using the following text extracted from a data dictionary:
+" name " : { " column_description " : " the \ " name \ " column in the \ " museum \ " database table contains textual data representing the names of various museums. this column is used to store the official names of museums for identification and reference purposes. it is a key attribute for cataloging and managing museum
+" name \ " column in the \ " museum \ " database table contains textual data representing the names of various museums. this column is used to store the official names of museums for identification and reference purposes. it is a key attribute for cataloging and managing museum records within the database. " , " type " : " text
+" name " : { " column_description " : " the \ " name \ " column in the \ " visitor \ " table contains textual data representing the names of visitors. this column is used to store the full names of individuals who visit the entity being tracked by the database. the data type for this column is text,
+" name \ " column in the \ " visitor \ " table contains textual data representing the names of visitors. this column is used to store the full names of individuals who visit the entity being tracked by the database. the data type for this column is text, allowing for a wide range of characters to accommodate various name formats.
+various name formats. " , " type " : " text " } , " level_of_membership " : { " column_description " : " the column \ " level_of_membership \ " in the \ " visitor \ " table represents the membership tier of the visitor, with values ranging from 1 to 5. each integer corresponds to a specific membership level,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier name:
+
+name, museum_name
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

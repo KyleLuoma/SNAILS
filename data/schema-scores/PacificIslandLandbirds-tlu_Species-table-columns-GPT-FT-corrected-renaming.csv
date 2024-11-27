@@ -1,0 +1,13 @@
+COLUMN_NAME,N1,N2,N3
+BNA_Account,BirdsNorthAmerica_Account,Brd_N_Amer_Account,BNA_Account
+Common_Name,Common_Name,Cmn_Name,C_Nm
+Family,Family,Fam,fm
+Habitat,Habitat,Hbts,Hb
+Origin,Origin,Orig,Or
+Scientific_Name,Scientific_Name,Sci_Name,Sci_Nm
+Source,Source,Srce,Src
+Species_Code,Species_Code,Specs_Cd,Spec_C
+Species_ID,Species_ID,Specs_ID,Spec_ID
+Status,Status,Stat,St
+T&E_Status,Threatened_and_Endangered_Status,Thread_Endgn_Status,T&E_Status
+TSN,Taxonomic_Serial_Number,Taxon_Ser_Num,TSN

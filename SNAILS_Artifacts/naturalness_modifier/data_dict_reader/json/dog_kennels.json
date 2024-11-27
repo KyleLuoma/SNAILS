@@ -1,0 +1,238 @@
+{
+    "Breeds": {
+        "table_description": "The Breeds table is designed to store information about different animal breeds. It contains unique identifiers and names for each breed, facilitating the organization and retrieval of breed-specific data. This table is essential for applications that require detailed breed information for animals.",
+        "columns": {
+            "breed_code": {
+                "column_description": "The `breed_code` column in the Breeds table is a VARCHAR(10) field that uniquely identifies each breed using a specific code. This code is used to categorize and reference different breeds within the database. The values in this column are alphanumeric and can be up to 10 characters long.",
+                "type": "VARCHAR(10)"
+            },
+            "breed_name": {
+                "column_description": "The column \"breed_name\" in the Breeds table contains the names of various dog breeds, each represented as a string of up to 80 characters. This column is used to identify and categorize different breeds within the database. Examples of values include \"Labrador Retriever,\" \"German Shepherd,\" and \"Golden Retriever.\"",
+                "type": "VARCHAR(80)"
+            }
+        }
+    },
+    "Charges": {
+        "table_description": "The Charges table is designed to store information related to various financial charges incurred by users or transactions. It includes unique identifiers for each charge, the type of charge, and the monetary amount associated with each charge. This table is essential for tracking and managing financial transactions within the system.",
+        "columns": {
+            "charge_id": {
+                "column_description": "The column `charge_id` in the Charges table is an INTEGER type that uniquely identifies each charge record. It serves as the primary key for the table, ensuring that each charge entry is distinct. This column is essential for referencing and managing charge data within the database.",
+                "type": "INTEGER"
+            },
+            "charge_type": {
+                "column_description": "The `charge_type` column in the Charges table categorizes the nature of charges applied. It includes values such as 'FEE', 'TAX', 'DISCOUNT', and 'SURCHARGE', indicating whether the charge is a fee, tax, discount, or additional surcharge. This classification helps in identifying and processing different types of financial transactions.",
+                "type": "VARCHAR(10)"
+            },
+            "charge_amount": {
+                "column_description": "The `charge_amount` column in the Charges table, defined as DECIMAL(19,4), represents the monetary value of charges applied to transactions. This column can store values with up to 19 digits in total, including 4 digits after the decimal point, ensuring precise financial calculations. It is used to record the exact amount charged for each transaction.",
+                "type": "DECIMAL(19,4)"
+            }
+        }
+    },
+    "Sizes": {
+        "table_description": "The Sizes table is used to store information about various size options available in a system, such as clothing sizes, product dimensions, or other categorizations that require size specifications. It contains unique codes and corresponding descriptions for each size, facilitating easy reference and consistency across the database. This table helps standardize size-related data and supports efficient querying and reporting.",
+        "columns": {
+            "size_code": {
+                "column_description": "The `size_code` column in the `Sizes` table is a VARCHAR(10) field that represents standardized size identifiers for products. These codes typically include alphanumeric characters that denote specific size categories, such as \"S\" for Small, \"M\" for Medium, and \"L\" for Large. The values are used to facilitate consistent size labeling across different products and inventory systems.",
+                "type": "VARCHAR(10)"
+            },
+            "size_description": {
+                "column_description": "The `size_description` column in the `Sizes` table contains textual descriptions of various size categories, such as \"Small,\" \"Medium,\" \"Large,\" and \"Extra Large.\" These descriptions provide a human-readable format for the size classifications used in the database. The column is of type VARCHAR(80), allowing for detailed and specific size information.",
+                "type": "VARCHAR(80)"
+            }
+        }
+    },
+    "Treatment_Types": {
+        "table_description": "The Treatment_Types table is designed to store information about various types of medical treatments available within a healthcare system. It serves as a reference table that provides standardized codes and descriptions for each treatment type. This table is essential for ensuring consistency and accuracy in the documentation and reporting of treatment procedures.",
+        "columns": {
+            "treatment_type_code": {
+                "column_description": "The column \"treatment_type_code\" in the Treatment_Types table is a VARCHAR(10) field that stores unique alphanumeric codes representing different types of medical treatments. These codes are used to categorize and identify specific treatment protocols within the database. The values in this column are essential for organizing and retrieving treatment-related data efficiently.",
+                "type": "VARCHAR(10)"
+            },
+            "treatment_type_description": {
+                "column_description": "The column \"treatment_type_description\" in the Treatment_Types table contains textual descriptions of various medical treatments. These descriptions provide detailed information about the nature and scope of each treatment type. The data is stored as VARCHAR(80), allowing for up to 80 characters of descriptive text per entry.",
+                "type": "VARCHAR(80)"
+            }
+        }
+    },
+    "Owners": {
+        "table_description": "The Owners table stores information about individuals who own properties or assets. It includes personal and contact details such as names, addresses, and phone numbers. This table is essential for managing and referencing owner-related data within the database.",
+        "columns": {
+            "owner_id": {
+                "column_description": "The `owner_id` column in the `Owners` table is an INTEGER type that uniquely identifies each owner within the database. This column serves as the primary key for the `Owners` table, ensuring that each owner has a distinct and unique identifier. It is used to establish relationships with other tables that reference owner information.",
+                "type": "INTEGER"
+            },
+            "first_name": {
+                "column_description": "The `first_name` column in the `Owners` table is a VARCHAR(50) field that stores the given names of the owners. This column contains individual first names, which are used to identify and address the owners personally. It is essential for personalizing communication and maintaining accurate records of ownership.",
+                "type": "VARCHAR(50)"
+            },
+            "last_name": {
+                "column_description": "The `last_name` column in the `Owners` table contains the surname of the owner, stored as a string with a maximum length of 50 characters. This column is used to identify and differentiate between individual owners. It is a mandatory field and should be populated with the owner's family name.",
+                "type": "VARCHAR(50)"
+            },
+            "street": {
+                "column_description": "The \"street\" column in the Owners table contains the street addresses of the owners, formatted as alphanumeric strings up to 50 characters in length. This column includes various street names, numbers, and potentially apartment or unit identifiers. It is used to store the primary street address information for each owner in the database.",
+                "type": "VARCHAR(50)"
+            },
+            "city": {
+                "column_description": "The \"city\" column in the Owners table is a VARCHAR(50) field that stores the name of the city where the owner resides. This column is used to identify and categorize owners based on their geographical location. It supports up to 50 characters to accommodate various city names.",
+                "type": "VARCHAR(50)"
+            },
+            "state": {
+                "column_description": "The \"state\" column in the Owners table, of type VARCHAR(20), represents the U.S. state or territory where the owner resides. It stores the standard two-letter postal abbreviations for states and territories, such as 'CA' for California and 'NY' for New York. This column is used to identify the geographical location of the owner within the United States.",
+                "type": "VARCHAR(20)"
+            },
+            "zip_code": {
+                "column_description": "The `zip_code` column in the `Owners` table contains alphanumeric strings representing postal codes. These values can include standard 5-digit U.S. ZIP codes, extended 9-digit ZIP+4 codes, and potentially international postal codes. The column is designed to accommodate various formats up to 20 characters in length.",
+                "type": "VARCHAR(20)"
+            },
+            "email_address": {
+                "column_description": "The `email_address` column in the `Owners` table stores the email addresses of the owners, with a maximum length of 50 characters. This column ensures that each owner's contact information is recorded for communication purposes. The values in this column follow the standard email format (e.g., user@example.com).",
+                "type": "VARCHAR(50)"
+            },
+            "home_phone": {
+                "column_description": "The `home_phone` column in the `Owners` table contains phone numbers formatted as strings, with a maximum length of 20 characters. This column is intended to store the home phone numbers of the owners. The values may include digits, spaces, parentheses, and hyphens to accommodate various phone number formats.",
+                "type": "VARCHAR(20)"
+            },
+            "cell_number": {
+                "column_description": "The `cell_number` column in the `Owners` table contains 20-character long strings representing the mobile phone numbers of the owners. These values typically include country codes and may contain special characters such as dashes or spaces for formatting. The column is used to store contact information for communication purposes.",
+                "type": "VARCHAR(20)"
+            }
+        }
+    },
+    "Dogs": {
+        "table_description": "The Dogs table stores information about dogs in a shelter or adoption center. It includes details about each dog's identification, ownership, physical characteristics, and key dates related to their arrival, adoption, and departure. This table is essential for managing and tracking the status and history of dogs within the facility.",
+        "columns": {
+            "dog_id": {
+                "column_description": "The `dog_id` column in the Dogs table is an INTEGER type that uniquely identifies each dog in the database. It serves as the primary key for the table, ensuring that each entry is distinct. This column is essential for referencing and managing individual dog records within the database.",
+                "type": "INTEGER"
+            },
+            "owner_id": {
+                "column_description": "The `owner_id` column in the Dogs table is an INTEGER type that uniquely identifies the owner of each dog. It serves as a foreign key linking to the Owners table, ensuring each dog is associated with a specific owner. This column is essential for maintaining the relationship between dogs and their respective owners in the database.",
+                "type": "INTEGER"
+            },
+            "abandoned_yn": {
+                "column_description": "The column `abandoned_yn` in the `Dogs` table is a VARCHAR(1) field that indicates whether a dog has been abandoned. The possible values are 'Y' for yes and 'N' for no. This column helps in identifying the abandonment status of each dog in the database.",
+                "type": "VARCHAR(1)"
+            },
+            "breed_code": {
+                "column_description": "The `breed_code` column in the Dogs table is a VARCHAR(10) field that stores a unique alphanumeric code representing the breed of each dog. This code is used to identify and categorize different dog breeds within the database.",
+                "type": "VARCHAR(10)"
+            },
+            "size_code": {
+                "column_description": "The `size_code` column in the Dogs table categorizes the size of the dogs using specific codes. The values in this column are: 'XS' for extra small, 'S' for small, 'M' for medium, 'L' for large, and 'XL' for extra large. This column helps in quickly identifying the size category of each dog.",
+                "type": "VARCHAR(10)"
+            },
+            "name": {
+                "column_description": "The column \"name\" in the Dogs table contains the names of individual dogs, with each name being a string of up to 50 characters. This column uniquely identifies each dog by its given name. It is used for record-keeping and identification purposes within the database.",
+                "type": "VARCHAR(50)"
+            },
+            "age": {
+                "column_description": "The \"age\" column in the Dogs table, of type VARCHAR(20), contains the age of the dogs, represented as a string. The values can include numeric ages, age ranges, or descriptive terms such as \"puppy\" or \"senior.\" This column provides flexibility in describing the age of the dogs in various formats.",
+                "type": "VARCHAR(20)"
+            },
+            "date_of_birth": {
+                "column_description": "The `date_of_birth` column in the Dogs table is of the DATETIME type and records the birth date and time of each dog. This column is essential for tracking the age and life stages of the dogs. The format follows the standard 'YYYY-MM-DD HH:MM:SS'.",
+                "type": "DATETIME"
+            },
+            "gender": {
+                "column_description": "The column \"gender\" in the Dogs table is of type VARCHAR(1) and contains values representing the gender of the dogs. The possible values are 'M' for male and 'F' for female. This column is used to identify the sex of each dog in the database.",
+                "type": "VARCHAR(1)"
+            },
+            "weight": {
+                "column_description": "The \"weight\" column in the Dogs table, of type VARCHAR(20), stores the weight of each dog as a string. The values can include numeric weights, potentially with units (e.g., \"25 kg\" or \"55 lbs\"). This column may also accommodate non-numeric entries such as \"unknown\" or \"not specified.\"",
+                "type": "VARCHAR(20)"
+            },
+            "date_arrived": {
+                "column_description": "The `date_arrived` column in the Dogs table, of type DATETIME, records the exact date and time when each dog was admitted to the facility. This information is crucial for tracking the duration of stay and managing the care schedule for each dog.",
+                "type": "DATETIME"
+            },
+            "date_adopted": {
+                "column_description": "The `date_adopted` column in the Dogs table, of type DATETIME, records the exact date and time when a dog was adopted. This column helps track the adoption history and timeline for each dog in the database. It is essential for monitoring adoption trends and managing records accurately.",
+                "type": "DATETIME"
+            },
+            "date_departed": {
+                "column_description": "The column `date_departed` in the Dogs table, of type DATETIME, records the date and time when a dog leaves the facility. This could indicate adoption, transfer to another facility, or other forms of departure. The values in this column are used to track the duration of stay and manage the facility's population.",
+                "type": "DATETIME"
+            }
+        }
+    },
+    "Professionals": {
+        "table_description": "The Professionals table stores detailed information about individuals in various professional roles. It includes personal and contact information such as names, addresses, and phone numbers, as well as a unique identifier and role code for each professional. This table is essential for managing and accessing professional contact details within the database.",
+        "columns": {
+            "professional_id": {
+                "column_description": "The column `professional_id` in the Professionals table is an INTEGER type that uniquely identifies each professional within the database. This column serves as the primary key for the table, ensuring that each professional has a distinct and unique identifier.",
+                "type": "INTEGER"
+            },
+            "role_code": {
+                "column_description": "The `role_code` column in the Professionals table is a VARCHAR(10) field that categorizes the professional roles within the organization. It contains codes such as 'DEV' for Developer, 'PM' for Project Manager, 'QA' for Quality Assurance, and 'BA' for Business Analyst. This column is used to identify and differentiate the various roles assigned to professionals.",
+                "type": "VARCHAR(10)"
+            },
+            "first_name": {
+                "column_description": "The `first_name` column in the `Professionals` table is a VARCHAR(50) field that stores the given names of individuals. This column is used to record the first name of each professional, ensuring it does not exceed 50 characters in length. It is essential for identifying and differentiating between professionals in the database.",
+                "type": "VARCHAR(50)"
+            },
+            "street": {
+                "column_description": "The \"street\" column in the Professionals table contains the street addresses of professionals, formatted as alphanumeric strings up to 50 characters in length. This column includes various street names, numbers, and potentially apartment or suite identifiers. It is used to store the primary street address component of each professional's contact information.",
+                "type": "VARCHAR(50)"
+            },
+            "city": {
+                "column_description": "The column \"city\" in the Professionals table contains the names of cities where the professionals are located, with a maximum length of 50 characters. This column is used to identify the geographical location of each professional. It is essential for regional analysis and location-based queries.",
+                "type": "VARCHAR(50)"
+            },
+            "state": {
+                "column_description": "The \"state\" column in the Professionals table, of type VARCHAR(20), represents the current status of a professional's engagement or employment. Possible values include \"Active,\" \"Inactive,\" \"Pending,\" and \"Retired.\" This column is used to track and manage the professional's current work status within the organization.",
+                "type": "VARCHAR(20)"
+            },
+            "zip_code": {
+                "column_description": "The `zip_code` column in the Professionals table contains alphanumeric strings representing postal codes, which can include formats with or without hyphens. These values are used to identify specific geographic regions for the professionals listed in the database. The column accommodates various international postal code formats, ensuring flexibility for global data entries.",
+                "type": "VARCHAR(20)"
+            },
+            "last_name": {
+                "column_description": "The `last_name` column in the `Professionals` table stores the surname or family name of individuals, with a maximum length of 50 characters. This column is used to identify and differentiate between professionals based on their last names. It is a mandatory field and should contain alphabetic characters only.",
+                "type": "VARCHAR(50)"
+            },
+            "email_address": {
+                "column_description": "The `email_address` column in the `Professionals` table stores the email addresses of professionals, with a maximum length of 50 characters. This column ensures that each professional has a unique and valid email address for communication purposes. The format typically follows the standard email structure (e.g., username@domain.com).",
+                "type": "VARCHAR(50)"
+            },
+            "home_phone": {
+                "column_description": "The `home_phone` column in the `Professionals` table stores the home phone numbers of professionals, formatted as strings with a maximum length of 20 characters. This column may include various phone number formats, such as those with country codes, area codes, and separators like dashes or spaces. It is intended to capture the primary residential contact number for each professional.",
+                "type": "VARCHAR(20)"
+            },
+            "cell_number": {
+                "column_description": "The `cell_number` column in the `Professionals` table contains the mobile phone numbers of professionals, formatted as strings with a maximum length of 20 characters. The values typically include country codes, area codes, and the subscriber number, and may contain special characters such as '+' or '-'. This column is used for storing contact information for direct communication with the professionals.",
+                "type": "VARCHAR(20)"
+            }
+        }
+    },
+    "Treatments": {
+        "table_description": "The Treatments table records detailed information about medical treatments administered to dogs. It captures data on each treatment event, including the dog receiving the treatment, the professional administering it, the type of treatment, the date it occurred, and the associated cost. This table is essential for tracking veterinary care and financial transactions related to dog treatments.",
+        "columns": {
+            "treatment_id": {
+                "column_description": "The column `treatment_id` in the Treatments table is an INTEGER that uniquely identifies each treatment record. It serves as the primary key for the table, ensuring that each treatment entry is distinct. This identifier is used to reference specific treatments in related tables and queries.",
+                "type": "INTEGER"
+            },
+            "dog_id": {
+                "column_description": "The column `dog_id` in the Treatments table is an INTEGER that uniquely identifies each dog receiving treatment. It serves as a foreign key linking to the primary key in the Dogs table, ensuring that each treatment record is associated with a specific dog. This column is essential for maintaining the integrity of the relationship between dogs and their treatments.",
+                "type": "INTEGER"
+            },
+            "professional_id": {
+                "column_description": "The column \"professional_id\" in the Treatments table is an INTEGER type that uniquely identifies the healthcare professional responsible for administering the treatment. This ID corresponds to the primary key in the Professionals table, ensuring referential integrity between treatments and professionals. It is used to track and manage the association between treatments and the professionals who provide them.",
+                "type": "INTEGER"
+            },
+            "treatment_type_code": {
+                "column_description": "The `treatment_type_code` column in the Treatments table categorizes the type of medical treatment administered. It is a VARCHAR(10) field that includes codes representing various treatment modalities, such as 'SURG' for surgery, 'MED' for medication, and 'THER' for therapy. This column is essential for identifying and differentiating between the types of treatments provided to patients.",
+                "type": "VARCHAR(10)"
+            },
+            "date_of_treatment": {
+                "column_description": "The `date_of_treatment` column in the Treatments table records the exact date and time when a treatment was administered to a patient. This column is of the DATETIME type, ensuring precise tracking of treatment events. It is crucial for maintaining accurate medical records and scheduling follow-up care.",
+                "type": "DATETIME"
+            },
+            "cost_of_treatment": {
+                "column_description": "The column `cost_of_treatment` in the `Treatments` table represents the monetary cost associated with each treatment, stored with a precision of up to 19 digits and 4 decimal places. The values in this column are expressed in the relevant currency and include both whole numbers and fractional amounts. This column is essential for financial analysis and billing purposes.",
+                "type": "DECIMAL(19,4)"
+            }
+        }
+    }
+}

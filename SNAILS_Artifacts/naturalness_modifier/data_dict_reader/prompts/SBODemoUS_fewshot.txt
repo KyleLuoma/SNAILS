@@ -1,0 +1,291 @@
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+ReqDate,Required Date,date,8,Administration
+ReqDate,Required Date,date,8,InventoryandProduction
+ReqDate,Required Date,date,8,InventoryandProduction
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ReqDate:
+
+ReqDate, required_date
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+ReqDate,Required Date,date,8,Administration
+ReqDate,Required Date,date,8,InventoryandProduction
+ReqDate,Required Date,date,8,InventoryandProduction
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ReqDate:
+
+ReqDate, required_date
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+KBLayout,Keyboard layout,int,11,General
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier KBLayout:
+
+KeyboardLayout
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+ReqDate,Required Date,date,8,Administration
+ReqDate,Required Date,date,8,InventoryandProduction
+ReqDate,Required Date,date,8,InventoryandProduction
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ReqDate:
+
+ReqDate, required_date
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+ReqDate,Required Date,date,8,Administration
+ReqDate,Required Date,date,8,InventoryandProduction
+ReqDate,Required Date,date,8,InventoryandProduction
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ReqDate:
+
+ReqDate, required_date
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+KBLayout,Keyboard layout,int,11,General
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier KBLayout:
+
+KeyboardLayout
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+PCH13,A/P Invoice Rows - Distributed Expenses,table,Marketing Documents,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier PCH13:
+
+PCH13, ap_invoice_rows_distributed_expenses
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+ReqDate,Required Date,date,8,Administration
+ReqDate,Required Date,date,8,InventoryandProduction
+ReqDate,Required Date,date,8,InventoryandProduction
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ReqDate:
+
+ReqDate, required_date
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+ReqDate,Required Date,date,8,Administration
+ReqDate,Required Date,date,8,InventoryandProduction
+ReqDate,Required Date,date,8,InventoryandProduction
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ReqDate:
+
+ReqDate, required_date
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+KBLayout,Keyboard layout,int,11,General
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier KBLayout:
+
+KeyboardLayout
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+ReqDate,Required Date,date,8,Administration
+ReqDate,Required Date,date,8,InventoryandProduction
+ReqDate,Required Date,date,8,InventoryandProduction
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ReqDate:
+
+ReqDate, required_date
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OPMX,Payroll,table,General,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OPMX:
+
+OPMX, payroll_table
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+ReqDate,Required Date,date,8,Administration
+ReqDate,Required Date,date,8,InventoryandProduction
+ReqDate,Required Date,date,8,InventoryandProduction
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ReqDate:
+
+ReqDate, required_date
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+KBLayout,Keyboard layout,int,11,General
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier KBLayout:
+
+KeyboardLayout
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+PCH13,A/P Invoice Rows - Distributed Expenses,table,Marketing Documents,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier PCH13:
+
+PCH13, ap_invoice_rows_distributed_expenses
+
+Using the following text extracted from a data dictionary:
+field,description,type,length,module
+OExpAlloc,Open Expenses Allocation Value,num,19,InventoryandProduction
+OExpAlloc,Open Expenses Allocation Value,num,19,InventoryandProduction
+OExpAlloc,Open Expenses Allocation Value,num,19,InventoryandProduction
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier OExpAlloc:
+
+open_expenses_allocation
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:

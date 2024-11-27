@@ -1,0 +1,8 @@
+{
+    "api_key": "PASTE YOUR KEY HERE",
+    "model": "gemini-1.5-pro-latest",
+    "max_tokens": 8000,
+    "temperature": 0,
+    "top_p": 1,
+    "top_k": 1
+}

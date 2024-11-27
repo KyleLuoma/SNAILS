@@ -1,0 +1,27 @@
+The following is a list of database identifiers and labels that indicate how closely they resemble natural english words:
+N1: most natural english words
+N2: second most natural english words (e.g. abbreviations or combinations of natural words and acronyms)
+N3: third most natural english words (e.g. very short abbreviations with obscured meaning or acronyms)
+
+identifier:	CASENO	Label:	N1
+identifier:	BENTHOS_TotalAreaSampled_m2	Label:	N2
+identifier:	CAUSE3	Label:	N1
+identifier:	MT_RIVPACS_2011_OTU	Label:	N3
+identifier:	ACTIVATE	Label:	N1
+identifier:	MotorcycleChassisTypeId	Label:	N1
+identifier:	First_Name	Label:	N1
+identifier:	IPCAREA_2ND	Label:	N2
+identifier:	INJNO	Label:	N2
+identifier:	tbl_MicroHabitat	Label:	N2
+identifier:	EMSGCSEYE	Label:	N3
+identifier:	HEADRESTDAM	Label:	N2
+identifier:	AutoPedestrianAlertingSound	Label:	N1
+identifier:	ModelTest	Label:	N1
+identifier:	tlu_topo_position	Label:	N2
+identifier:	Understory_Comp	Label:	N1
+identifier:	BAGDAMAGE	Label:	N1
+identifier:	HARNESSDESIGN	Label:	N1
+identifier:	Coord_Syst	Label:	N2
+identifier:	CINJSEV	Label:	N2
+identifier:	JKWGT12	Label:	N3
+identifier: _IDENTIFIER_ Label:

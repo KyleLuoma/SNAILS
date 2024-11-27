@@ -1,0 +1,53 @@
+
+Using the following text extracted from a data dictionary:
+" height " : { " column_description " : " the \ " height \ " column in the \ " people \ " table, of type real, represents the height of individuals measured in meters. the values in this column are floating-point numbers, allowing for precise measurements. this column is essential for analyses involving physical characteristics and demographic studies. "
+" height \ " column in the \ " people \ " table, of type real, represents the height of individuals measured in meters. the values in this column are floating-point numbers, allowing for precise measurements. this column is essential for analyses involving physical characteristics and demographic studies. " , " type " : " real " } } } }
+the height of individuals measured in meters. the values in this column are floating-point numbers, allowing for precise measurements. this column is essential for analyses involving physical characteristics and demographic studies. " , " type " : " real " } } } } 
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier height:
+
+height, height
+
+Using the following text extracted from a data dictionary:
+" nationality " : { " column_description " : " the \ " nationality \ " column in the \ " people \ " table contains textual data representing the country or nation to which an individual belongs or identifies with. this column includes values such as \ " american, \ " \ " canadian, \ " \ " british, \
+" nationality \ " column in the \ " people \ " table contains textual data representing the country or nation to which an individual belongs or identifies with. this column includes values such as \ " american, \ " \ " canadian, \ " \ " british, \ " \ " australian, \ " and other nationalities. it is used
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier nationality:
+
+nationality, nationality
+
+Using the following text extracted from a data dictionary:
+" people_id " : { " column_description " : " the column **people_id** in the **poker_player** table is of type int and serves as a unique identifier for each poker player in the database. this column ensures that each player can be distinctly recognized and referenced within the system. it is likely an auto-incrementing primary key used for indexing and relational
+" people_id " : { " column_description " : " the column \ " people_id \ " in the \ " people \ " table is of type int and serves as a unique identifier for each individual in the database. this column ensures that each person can be distinctly referenced and managed within the system. it is a primary key
+" people_id \ " in the \ " people \ " table is of type int and serves as a unique identifier for each individual in the database. this column ensures that each person can be distinctly referenced and managed within the system. it is a primary key that auto-increments with each new entry, ensuring no two individuals share the same
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier people_id:
+
+people_id, people_id
+
+Using the following text extracted from a data dictionary:
+" birth_date " : { " column_description " : " the column \ " birth_date \ " in the \ " people \ " table contains dates of birth formatted as text strings. the values typically follow the \ " yyyy-mm-dd \ " format, representing the year, month, and day of birth. this column is used to store and reference the
+" birth_date \ " in the \ " people \ " table contains dates of birth formatted as text strings. the values typically follow the \ " yyyy-mm-dd \ " format, representing the year, month, and day of birth. this column is used to store and reference the birth dates of individuals in the database. " , " type " :
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier birth_date:
+
+birth_date, birth_date
+
+Using the following text extracted from a data dictionary:
+" best_finish " : { " column_description " : " the \ " best_finish \ " column in the \ " poker_player \ " table represents the highest position a player has achieved in a poker tournament, with values ranging from 1.0 to 100.0. this column is of type real, indicating that it can store fractional positions, though typically it will
+" best_finish \ " column in the \ " poker_player \ " table represents the highest position a player has achieved in a poker tournament, with values ranging from 1.0 to 100.0. this column is of type real, indicating that it can store fractional positions, though typically it will contain whole numbers. the values reflect the player's best performance, with 1.0
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier best_finish:
+
+best_finish, best_finish
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

@@ -1,0 +1,47 @@
+
+Using the following text extracted from a data dictionary:
+" apt_feature_1 " : { " column_description " : " the column `apt_feature_1` in the `properties` table contains specific features or amenities of an apartment, such as \ " balcony, \ " \ " fireplace, \ " \ " hardwood floors, \ " and \ " stainless steel appliances. \ " this column is used to highlight key selling points or
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier apt_feature_1:
+
+apt_feature_1, apartment_feature_1
+
+Using the following text extracted from a data dictionary:
+" fld_feature_2 " : { " column_description " : " the column `fld_feature_2` in the `properties` table appears to store additional descriptive features or attributes related to the property listings. these features could include specific details such as architectural styles, unique property characteristics, or other notable attributes that are not covered by other columns. this field allows for up to 255
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier fld_feature_2:
+
+fld_feature_2, field_feature_2
+
+Using the following text extracted from a data dictionary:
+" hse_feature_3 " : { " column_description " : " the column `hse_feature_3` in the `properties` table is of type varchar(255) and contains additional descriptive features of a house that are not covered by other columns. this column may include unique attributes such as architectural details, special amenities, or other notable characteristics. it serves to provide supplementary information that enhances the
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier hse_feature_3:
+
+hse_feature_3, house_feature_3
+
+Using the following text extracted from a data dictionary:
+" property_feature_description " : { " column_description " : " the `property_feature_description` column in the `other_property_features` table is a varchar(80) field that provides a brief textual description of unique or additional features of a property. this may include attributes such as architectural styles, special amenities, or notable characteristics that distinguish the property. the descriptions are concise, ensuring they fit within the
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier property_feature_description:
+
+property_feature_description, property_feature_description
+
+Using the following text extracted from a data dictionary:
+" property_id " : { " column_description " : " the `property_id` column in the properties table is an integer type that uniquely identifies each property within the database. it serves as the primary key for the table, ensuring that each property record is distinct. this column is essential for indexing and efficient retrieval of property data. " , " type
+" property_id " : { " column_description " : " the `property_id` column in the `other_property_features` table is an integer that uniquely identifies each property. it serves as a foreign key linking to the primary key in the main property table, ensuring data integrity and relational consistency. this column is essential for associating additional features with their respective properties. " ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier property_id:
+
+property_id, property_id
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

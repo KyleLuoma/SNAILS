@@ -1,0 +1,90 @@
+{
+    "Ref_Template_Types": {
+        "table_description": "The Ref_Template_Types table serves as a reference table that categorizes different types of templates used within the system. It contains unique codes and descriptions for each template type, facilitating standardized identification and usage across various modules. This table is essential for maintaining consistency and ensuring accurate template type references in the database.",
+        "columns": {
+            "Template_Type_Code": {
+                "column_description": "The column `Template_Type_Code` in the `Ref_Template_Types` table, defined as `CHAR(15)`, stores unique alphanumeric codes that identify different types of templates used within the system. These codes serve as references for categorizing and managing various template types.",
+                "type": "CHAR(15)"
+            },
+            "Template_Type_Description": {
+                "column_description": "The column \"Template_Type_Description\" in the \"Ref_Template_Types\" table contains textual descriptions of various template types used within the system. These descriptions provide detailed information about the purpose and characteristics of each template type, aiding users in selecting the appropriate template for their needs. The data type for this column is VARCHAR(255), allowing for a maximum of 255 characters per description.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Templates": {
+        "table_description": "The Templates table stores information about various templates used within the system, including their versions, types, and effective date ranges. It is designed to track the lifecycle and details of each template, ensuring that the correct version is applied during its effective period. This table is essential for managing template consistency and historical reference.",
+        "columns": {
+            "Template_ID": {
+                "column_description": "The column `Template_ID` in the `Templates` table is an INTEGER type that uniquely identifies each template within the database. It serves as the primary key for the table, ensuring that each template can be distinctly referenced. This column is essential for maintaining the integrity and organization of template records.",
+                "type": "INTEGER"
+            },
+            "Version_Number": {
+                "column_description": "The column `Version_Number` in the `Templates` table is an INTEGER type that represents the versioning of each template. The values in this column indicate the sequential version numbers assigned to templates, starting from 1 and incrementing by 1 for each new version. This helps in tracking changes and maintaining the history of template modifications.",
+                "type": "INTEGER"
+            },
+            "Template_Type_Code": {
+                "column_description": "The column Template_Type_Code in the Templates table is a CHAR(15) field that categorizes templates based on their specific type or function. The values in this column represent distinct codes that identify different template categories used within the system. This description helps in understanding the purpose and classification of each template type.",
+                "type": "CHAR(15)"
+            },
+            "Date_Effective_From": {
+                "column_description": "The column `Date_Effective_From` in the `Templates` table, of type DATETIME, represents the date and time from which the template becomes effective. This column is used to track the activation start date for each template entry. It ensures that templates are applied only from the specified effective date and time.",
+                "type": "DATETIME"
+            },
+            "Date_Effective_To": {
+                "column_description": "The column `Date_Effective_To` in the `Templates` table, of type DATETIME, represents the date and time until which a particular template remains effective or valid. It indicates the expiration or end date of the template's applicability. This column is crucial for managing the lifecycle and validity period of templates within the database.",
+                "type": "DATETIME"
+            },
+            "Template_Details": {
+                "column_description": "The column `Template_Details` in the `Templates` table contains descriptive information about each template, such as its purpose, usage guidelines, and any specific attributes or configurations. This field is a VARCHAR(255) type, allowing for up to 255 characters of text. It provides essential context to understand the template's function and application within the system.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Documents": {
+        "table_description": "The Documents table stores information related to various documents within the system. It includes details such as the document's unique identifier, associated template, name, description, and other relevant information. This table is essential for managing and retrieving document metadata efficiently.",
+        "columns": {
+            "Document_ID": {
+                "column_description": "The column `Document_ID` in the `Documents` table is an INTEGER type that uniquely identifies each document within the database. It serves as the primary key for the table, ensuring that each document can be distinctly referenced. This column is essential for maintaining the integrity and organization of the document records.",
+                "type": "INTEGER"
+            },
+            "Template_ID": {
+                "column_description": "The Template_ID column in the Documents table is an INTEGER type that uniquely identifies the template associated with each document. This ID links documents to their respective templates, facilitating template management and document generation processes. Each value in this column corresponds to a specific template stored in the system.",
+                "type": "INTEGER"
+            },
+            "Document_Name": {
+                "column_description": "The column `Document_Name` in the `Documents` table contains the names or titles of documents stored in the database. Each entry is a string with a maximum length of 255 characters. This column is used to uniquely identify and reference documents within the system.",
+                "type": "VARCHAR(255)"
+            },
+            "Document_Description": {
+                "column_description": "The column \"Document_Description\" in the \"Documents\" table contains brief textual summaries or explanations of the content or purpose of each document. These descriptions provide context and aid in identifying the document's relevance and subject matter. The data type for this column is VARCHAR(255), allowing for a maximum of 255 characters per description.",
+                "type": "VARCHAR(255)"
+            },
+            "Other_Details": {
+                "column_description": "The \"Other_Details\" column in the Documents table contains additional information or notes related to each document. This may include comments, special instructions, or any other relevant details that do not fit into the predefined columns. The data is stored as a VARCHAR(255) type, allowing for up to 255 characters of text.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Paragraphs": {
+        "table_description": "The Paragraphs table stores individual paragraphs associated with various documents. Each entry in the table links a specific paragraph to a document and includes the text of the paragraph along with additional details. This structure allows for efficient organization and retrieval of paragraph-level information within a larger document management system.",
+        "columns": {
+            "Paragraph_ID": {
+                "column_description": "The `Paragraph_ID` column in the `Paragraphs` table is an INTEGER type that uniquely identifies each paragraph within the table. It serves as the primary key, ensuring that each paragraph entry can be distinctly referenced. This column is essential for maintaining the integrity and organization of the paragraph data.",
+                "type": "INTEGER"
+            },
+            "Document_ID": {
+                "column_description": "The column Document_ID in the Paragraphs table is an INTEGER type that uniquely identifies each document associated with a paragraph. It serves as a foreign key linking paragraphs to their respective documents in the database. This ensures that each paragraph can be traced back to its source document for reference and organizational purposes.",
+                "type": "INTEGER"
+            },
+            "Paragraph_Text": {
+                "column_description": "The \"Paragraph_Text\" column in the \"Paragraphs\" table contains textual data representing individual paragraphs, each up to 255 characters in length. This column is used to store concise blocks of text, which may include sentences, phrases, or other forms of written content. It is designed to capture and manage short, standalone pieces of information within the database.",
+                "type": "VARCHAR(255)"
+            },
+            "Other_Details": {
+                "column_description": "The column \"Other_Details\" in the Paragraphs table is of type VARCHAR(255) and contains additional information or context related to the paragraph that is not captured in other columns. This may include notes, comments, or supplementary details that provide further clarification or background. The content is typically free-form text and can vary widely in nature.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+The database element renaming rules for catories N5 through N1:
+N5: Plain english words that communicate semantic meaning of the data within a table
+N4: Plain english words that describe the entity that the table represents
+N3: Abbreviation of N5, omitting most vowels from words
+N2: Abbreviation of N4, omitting most vowels from words
+N1: Abbreviation of original table name with a t_ preceding the result for tables
+
+Here are some example table renamings:
+TABLE_NAME	N5	N4	N3	N2	N1
+tbl_Db_Meta	Database_Update_Meta_Data	DatabaseMeta	DbMeta	db_meta	t_db_met
+tbl_Density	Bird_Density	Density	Densty	brd_dnsty	t_den
+tbl_Detections	Bird_Detections	Detections	Detctns	brd_dtctns	t_det
+tbl_Event_Details	Observation_Event_Details	ObservationDetails	ObsrvtnDtls	obs_dtls	t_evt_det
+tbl_Events	Observation_Events	Events	Evnts	obs_evnts	t_evt
+tbl_Habitat	Habitat_Measurements	Habitat	Hbtt	hab_msmt	t_hab
+tbl_Locations	Site_Location_Data	LocationData	LoctnDta	st_loc_dta	t_loc
+tbl_Observations	Observation_Lookup	Observations	Obsrvtns	obs_lkp	t_obs
+tbl_Plot	Station_Plot_Data	PlotData	PltDta	st_plt_dta	t_sta_plt_dta
+
+Include only CSV file output. Do not provide any additional text or explanations
+
+Rename the {database_name} database  {element_type}s and put into CSV format:

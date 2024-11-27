@@ -1,0 +1,61 @@
+
+Using the following text extracted from a data dictionary:
+" created " : { " column_description " : " the \ " created \ " column in the votes table is of the timestamp type and records the exact date and time when a vote was cast. this column is essential for tracking the chronological order of votes and analyzing voting patterns over time. it ensures data integrity by providing
+" created \ " column in the votes table is of the timestamp type and records the exact date and time when a vote was cast. this column is essential for tracking the chronological order of votes and analyzing voting patterns over time. it ensures data integrity by providing a precise temporal context for each vote. " , " type "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier created:
+
+created, created
+
+Using the following text extracted from a data dictionary:
+the state associated with a given area code. this table is useful for applications that require geographic information based on telephone numbers. " , " columns " : { " area_code " : { " column_description " : " the column `area_code` in the `area_code_state` table represents the numerical code assigned to specific geographic regions within a state for telephone numbering
+a state for telephone numbering purposes. these codes are used to route calls to the appropriate local exchanges. each `area_code` is an integer value that uniquely identifies a distinct area within the state. " , " type " : " integer " } , " state " : { " column_description " : " the \ " state \ " column
+" state " : { " column_description " : " the \ " state \ " column in the area_code_state table, of type varchar(2), represents the two-letter postal abbreviations for u.s. states and territories. this column is used to identify the state or territory associated with a specific area code. examples of values include \ " ca \ " for california,
+" state \ " column in the area_code_state table, of type varchar(2), represents the two-letter postal abbreviations for u.s. states and territories. this column is used to identify the state or territory associated with a specific area code. examples of values include \ " ca \ " for california, \ " ny \ " for new york, and \ " tx
+the state or territory associated with a specific area code. examples of values include \ " ca \ " for california, \ " ny \ " for new york, and \ " tx \ " for texas. " , " type " : " varchar(2) " } } } , " contestants " : { " table_description " : " the
+the state from which the vote was cast, the contestant being voted for, and the timestamp of when the vote was created. this table is used to track and analyze voting patterns and results for the contest. " , " columns " : { " vote_id " : { " column_description " : " the `vote_id` column in the votes table
+" state " : { " column_description " : " the \ " state \ " column in the votes table, of type varchar(2), represents the two-letter postal abbreviations for u.s. states and territories. this column is used to identify the geographic location associated with each vote. examples of values include \ " ca \ " for california, \ " ny
+" state \ " column in the votes table, of type varchar(2), represents the two-letter postal abbreviations for u.s. states and territories. this column is used to identify the geographic location associated with each vote. examples of values include \ " ca \ " for california, \ " ny \ " for new york, and \ " tx \ " for
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier state:
+
+state, state
+
+Using the following text extracted from a data dictionary:
+" phone_number " : { " column_description " : " the column `phone_number` in the `votes` table contains integer values representing the last four digits of voters' phone numbers. this column is used for partial anonymization and verification purposes. it ensures that each vote is associated with a unique identifier while maintaining voter privacy. " , " type " : "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier phone_number:
+
+phone_number, phone_number
+
+Using the following text extracted from a data dictionary:
+" votes " : { " table_description " : " the votes table records individual votes cast in a contest, capturing essential details about each vote. it includes information such as the unique identifier for each vote, the phone number of the voter, the state from which the vote was cast, the contestant being voted for, and the timestamp of when
+the votes table records individual votes cast in a contest, capturing essential details about each vote. it includes information such as the unique identifier for each vote, the phone number of the voter, the state from which the vote was cast, the contestant being voted for, and the timestamp of when the vote was created. this table is used to track
+individual votes cast in a contest, capturing essential details about each vote. it includes information such as the unique identifier for each vote, the phone number of the voter, the state from which the vote was cast, the contestant being voted for, and the timestamp of when the vote was created. this table is used to track and analyze voting patterns
+the votes table is an integer type that uniquely identifies each vote entry. it serves as the primary key for the table, ensuring that each vote is distinct and can be referenced individually. this column is essential for maintaining the integrity and traceability of voting records within the database. " , " type " : " integer " } , "
+the votes table, of type varchar(2), represents the two-letter postal abbreviations for u.s. states and territories. this column is used to identify the geographic location associated with each vote. examples of values include \ " ca \ " for california, \ " ny \ " for new york, and \ " tx \ " for texas. " , " type "
+tally votes for individual contestants. each contestant is assigned a distinct number to ensure accurate vote counting and identification. " , " type " : " integer " } , " created " : { " column_description " : " the \ " created \ " column in the votes table is of the timestamp type and records the exact date
+the votes table is of the timestamp type and records the exact date and time when a vote was cast. this column is essential for tracking the chronological order of votes and analyzing voting patterns over time. it ensures data integrity by providing a precise temporal context for each vote. " , " type " : " timestamp " } }
+of votes and analyzing voting patterns over time. it ensures data integrity by providing a precise temporal context for each vote. " , " type " : " timestamp " } } } } 
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier votes:
+
+votes, votes
+
+Using the following text extracted from a data dictionary:
+" contestant_name " : { " column_description " : " the column `contestant_name` in the `contestants` table contains the names of individuals participating in a contest or competition. each entry is a string of up to 50 characters, representing the full name of a contestant. this column is used to identify and differentiate participants within the database. " , " type
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier contestant_name:
+
+contestant_name, contestant_name
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

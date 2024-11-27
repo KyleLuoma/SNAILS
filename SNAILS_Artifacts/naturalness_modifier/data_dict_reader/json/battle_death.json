@@ -1,0 +1,89 @@
+{
+    "battle": {
+        "table_description": "The \"battle\" table records historical battles, capturing essential details about each event. It includes information such as the battle's name, date, commanders from both the Bulgarian and Latin sides, and the outcome of the battle. This table serves as a comprehensive reference for analyzing and studying historical military engagements.",
+        "columns": {
+            "id": {
+                "column_description": "The column \"id\" in the \"battle\" table is of type INT and serves as a unique identifier for each battle record. It ensures that each entry in the table can be distinctly referenced. This column is essential for maintaining data integrity and enabling efficient querying and indexing.",
+                "type": "INT"
+            },
+            "name": {
+                "column_description": "The column in the \"battle\" table contains textual descriptions or narratives related to various battles. These entries provide detailed accounts, context, or commentary about the battles. This column is essential for capturing qualitative data that complements the quantitative attributes of the battles.",
+                "type": "TEXT"
+            },
+            "date": {
+                "column_description": "The column \"date\" in the \"battle\" table contains values in the format \"YYYY-MM-DD,\" representing the date on which each battle occurred. This column is of the TEXT data type and stores dates as strings. It is used to chronologically organize and reference the events in the database.",
+                "type": "TEXT"
+            },
+            "bulgarian_commander": {
+                "column_description": "The column \"bulgarian_commander\" in the \"battle\" table contains the names of the commanders who led the Bulgarian forces in various battles. This column is of the TEXT type, allowing for the inclusion of full names and titles. It provides crucial historical data on military leadership in Bulgarian history.",
+                "type": "TEXT"
+            },
+            "latin_commander": {
+                "column_description": "The column \"latin_commander\" in the \"battle\" table contains the names of Roman military leaders who commanded forces in various historical battles. This column is of type TEXT and includes entries such as \"Julius Caesar,\" \"Scipio Africanus,\" and \"Pompey the Great.\" It serves to identify the key Roman figures leading the battles recorded in the database.",
+                "type": "TEXT"
+            },
+            "result": {
+                "column_description": "The \"result\" column in the \"battle\" table records the outcome of each battle. Possible values include \"victory,\" \"defeat,\" \"draw,\" and \"ongoing,\" indicating whether the battle was won, lost, ended in a stalemate, or is still in progress. This column helps in tracking the status and outcome of battles for analytical and reporting purposes.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "ship": {
+        "table_description": "The \"ship\" table is designed to store detailed information about various ships, including their status and characteristics. It captures data on whether ships were lost in battle, their unique identifiers, names, tonnage, types, current locations, and their final disposition. This table is essential for tracking and managing ship-related information within a maritime or historical database.",
+        "columns": {
+            "lost_in_battle": {
+                "column_description": "The column `lost_in_battle` in the `ship` table is of type INT and records the number of ships lost during battles. It quantifies the total count of ships that have been destroyed or rendered inoperable in combat scenarios. This column helps in analyzing the impact of battles on fleet strength.",
+                "type": "INT"
+            },
+            "id": {
+                "column_description": "The column \"id\" in the \"ship\" table is of type INT and serves as a unique identifier for each record in the table. It is used to distinguish between different ships and ensure data integrity. This column typically auto-increments with each new entry, providing a sequential and unique value for each ship.",
+                "type": "INT"
+            },
+            "name": {
+                "column_description": "The column in the \"ship\" database table contains textual descriptions or names of ships. It stores various ship-related information in a free-text format, allowing for detailed and flexible entries. This column is essential for capturing descriptive data that may not fit into predefined categories.",
+                "type": "TEXT"
+            },
+            "tonnage": {
+                "column_description": "The \"tonnage\" column in the \"ship\" table contains textual descriptions of the ship's weight or cargo capacity. Values in this column may include specific tonnage measurements, such as \"5000 tons,\" or general descriptions like \"lightweight\" or \"heavy cargo.\" This column is used to provide a qualitative or quantitative indication of the ship's carrying capacity.",
+                "type": "TEXT"
+            },
+            "ship_type": {
+                "column_description": "The `ship_type` column in the `ship` table categorizes the type of ship. The possible values include 'Cargo', 'Tanker', 'Passenger', 'Fishing', and 'Military'. This column helps in identifying the primary function or purpose of each ship.",
+                "type": "TEXT"
+            },
+            "location": {
+                "column_description": "The \"location\" column in the \"ship\" database table stores textual information indicating the specific position or area where a ship is situated. This can include coordinates, dock names, or general descriptions of the ship's location. The data type for this column is TEXT, allowing for a wide range of descriptive entries.",
+                "type": "TEXT"
+            },
+            "disposition_of_ship": {
+                "column_description": "The column \"disposition_of_ship\" in the \"ship\" table records the current status or outcome of the ship. Possible values include \"active,\" \"decommissioned,\" \"sunk,\" \"scrapped,\" and \"museum.\" This column provides a textual description of what has happened to the ship.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "death": {
+        "table_description": "The \"death\" table records incidents involving ships that resulted in casualties. It captures details about the ship responsible, the number of people killed or injured, and any additional notes related to the incident. This table is essential for tracking and analyzing maritime accidents and their impacts.",
+        "columns": {
+            "caused_by_ship_id": {
+                "column_description": "The column `caused_by_ship_id` in the `death` table is an integer that references the unique identifier of the ship responsible for the death. This column links each death record to a specific ship in the database. It is used to track and analyze incidents and fatalities associated with individual ships.",
+                "type": "INT"
+            },
+            "id": {
+                "column_description": "The column \"id\" in the \"death\" table is of type INT and serves as a unique identifier for each record in the table. It is used to ensure that each entry can be distinctly referenced and accessed. This column typically auto-increments with each new record added to the table.",
+                "type": "INT"
+            },
+            "note": {
+                "column_description": "The \"note\" column in the \"death\" table contains textual information providing additional context or details about the death record. This may include remarks, observations, or specific circumstances related to the death. The content is free-form text, allowing for a wide range of descriptive entries.",
+                "type": "TEXT"
+            },
+            "killed": {
+                "column_description": "The \"killed\" column in the \"death\" table represents the number of fatalities recorded for each entry. It is an integer (INT) type, indicating whole numbers. This column quantifies the total deaths associated with each specific record in the table.",
+                "type": "INT"
+            },
+            "injured": {
+                "column_description": "The \"injured\" column in the \"death\" table records the number of individuals who sustained injuries in an incident. It is of the type INT, indicating it stores integer values. This column helps quantify the non-fatal impact of incidents documented in the table.",
+                "type": "INT"
+            }
+        }
+    }
+}

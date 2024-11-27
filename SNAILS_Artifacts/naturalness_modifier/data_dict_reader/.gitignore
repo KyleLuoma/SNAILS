@@ -1,0 +1,6 @@
+/venv/
+/pdf/*.pdf
+/xml/*.xml
+/csv/*.csv
+/.local/
+__pycache__/

@@ -1,0 +1,45 @@
+{
+    "Highschooler": {
+        "table_description": "The Highschooler table stores information about students in a high school. It includes unique identifiers for each student, their names, and their respective grades. This table is used to manage and query student data for various administrative and academic purposes.",
+        "columns": {
+            "ID": {
+                "column_description": "The column \"ID\" in the Highschooler table is an integer type that uniquely identifies each high school student. It serves as the primary key for the table, ensuring that each entry is distinct. This column is essential for maintaining data integrity and enabling efficient querying and relationship mapping within the database.",
+                "type": "INT"
+            },
+            "name": {
+                "column_description": "The column \"name\" in the Highschooler table contains the full names of the high school students. This column stores text values representing each student's name. It is used to identify and differentiate individual students within the database.",
+                "type": "TEXT"
+            },
+            "grade": {
+                "column_description": "The \"grade\" column in the Highschooler table is an integer representing the academic year of the student. The values range from 9 to 12, corresponding to freshman, sophomore, junior, and senior years, respectively. This column helps identify the student's current level in high school.",
+                "type": "INT"
+            }
+        }
+    },
+    "Friend": {
+        "table_description": "The \"Friend\" table is designed to represent the relationships between students, where each row indicates a friendship between two students. The table contains pairs of student IDs, with each pair signifying that the student identified by \"student_id\" is friends with the student identified by \"friend_id\". This structure allows for the mapping and querying of social connections within a student population.",
+        "columns": {
+            "student_id": {
+                "column_description": "The `student_id` column in the `Friend` table is an integer type that uniquely identifies each student. It serves as a foreign key linking to the primary key in the `Student` table, ensuring referential integrity. This column is essential for establishing relationships between students and their friends within the database.",
+                "type": "INT"
+            },
+            "friend_id": {
+                "column_description": "The `friend_id` column in the `Friend` table is an integer that uniquely identifies each friend entry. It serves as the primary key for the table, ensuring that each friend has a distinct identifier. This column is essential for establishing relationships and referencing friends within the database.",
+                "type": "INT"
+            }
+        }
+    },
+    "Likes": {
+        "table_description": "The Likes table records the relationships between students where one student likes another. Each row represents a unique instance of one student (student_id) liking another student (liked_id). This table is used to track and analyze social interactions and preferences among students.",
+        "columns": {
+            "student_id": {
+                "column_description": "The `student_id` column in the `Likes` table is an integer that uniquely identifies each student who has expressed a preference or interest. This column serves as a foreign key linking to the primary key in the `Students` table, ensuring referential integrity. It is used to track which students have liked specific items or entities within the database.",
+                "type": "INT"
+            },
+            "liked_id": {
+                "column_description": "The `liked_id` column in the `Likes` table is an integer that uniquely identifies the entity (such as a post, comment, or user) that has been liked. This column serves as a foreign key linking to the primary key of the respective entity's table. It is used to track and manage likes within the database.",
+                "type": "INT"
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+
+Using the following text extracted from a data dictionary:
+" name " : { " column_description " : " the column \ " name \ " in the highschooler table contains the full names of the high school students. this column stores text values representing each student's name. it is used to identify and differentiate individual students within the database. " , " type " : " text " }
+" name \ " in the highschooler table contains the full names of the high school students. this column stores text values representing each student's name. it is used to identify and differentiate individual students within the database. " , " type " : " text " } , " grade " : { " column_description " : " the \
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier name:
+
+"name, full_name"
+
+Using the following text extracted from a data dictionary:
+" grade " : { " column_description " : " the \ " grade \ " column in the highschooler table is an integer representing the academic year of the student. the values range from 9 to 12, corresponding to freshman, sophomore, junior, and senior years, respectively. this column helps identify the student's current level in high school. " , "
+" grade \ " column in the highschooler table is an integer representing the academic year of the student. the values range from 9 to 12, corresponding to freshman, sophomore, junior, and senior years, respectively. this column helps identify the student's current level in high school. " , " type " : " int " } } } , " friend
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier grade:
+
+grade, grade
+
+Using the following text extracted from a data dictionary:
+" student_id \ " is friends with the student identified by \ " friend_id \ " . this structure allows for the mapping and querying of social connections within a student population. " , " columns " : { " student_id " : { " column_description " : " the `student_id` column in the `friend` table is an integer type that
+" student_id " : { " column_description " : " the `student_id` column in the `friend` table is an integer type that uniquely identifies each student. it serves as a foreign key linking to the primary key in the `student` table, ensuring referential integrity. this column is essential for establishing relationships between students and their friends within the database. " ,
+" student_id " : { " column_description " : " the `student_id` column in the `likes` table is an integer that uniquely identifies each student who has expressed a preference or interest. this column serves as a foreign key linking to the primary key in the `students` table, ensuring referential integrity. it is used to track which students have liked specific
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier student_id:
+
+student_id, student_id
+
+Using the following text extracted from a data dictionary:
+" friend_id \ " . this structure allows for the mapping and querying of social connections within a student population. " , " columns " : { " student_id " : { " column_description " : " the `student_id` column in the `friend` table is an integer type that uniquely identifies each student. it serves as a foreign key linking to
+" friend_id " : { " column_description " : " the `friend_id` column in the `friend` table is an integer that uniquely identifies each friend entry. it serves as the primary key for the table, ensuring that each friend has a distinct identifier. this column is essential for establishing relationships and referencing friends within the database. " , " type "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier friend_id:
+
+friend_id, friend_id
+
+Using the following text extracted from a data dictionary:
+" liked_id " : { " column_description " : " the `liked_id` column in the `likes` table is an integer that uniquely identifies the entity (such as a post, comment, or user) that has been liked. this column serves as a foreign key linking to the primary key of the respective entity's table. it is used to track and manage likes
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier liked_Id:
+
+liked_id, liked_id
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

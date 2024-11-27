@@ -1,0 +1,48 @@
+
+Using the following text extracted from a data dictionary:
+" loser_ht " : { " column_description " : " the column `loser_ht` in the `matches` table represents the height of the losing player in a match, measured in centimeters. this column is of type int and contains numerical values corresponding to the height. it is used to record and analyze the physical attributes of players who did not win their
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier loser_ht:
+
+loser_ht, loser_height
+
+Using the following text extracted from a data dictionary:
+" loser_ioc " : { " column_description " : " the column \ " loser_ioc \ " in the \ " matches \ " table contains the international olympic committee (ioc) country codes representing the countries of the losing participants in the matches. these codes are standardized three-letter abbreviations used to identify each country. this column helps in identifying the nationality
+" loser_ioc \ " in the \ " matches \ " table contains the international olympic committee (ioc) country codes representing the countries of the losing participants in the matches. these codes are standardized three-letter abbreviations used to identify each country. this column helps in identifying the nationality of the losing competitor in each match. " , " type " :
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier loser_ioc:
+
+loser_ioc, loser_international_olympic_country_code
+
+Using the following text extracted from a data dictionary:
+" match_num " : { " column_description " : " the `match_num` column in the `matches` table is an integer that uniquely identifies each match. it serves as a primary key to distinguish between different match records. this column ensures that each match entry is distinct and can be referenced individually. " , " type " : " int " }
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier match_num:
+
+match_num, match_number
+
+Using the following text extracted from a data dictionary:
+" ranking_date " : { " column_description " : " the `ranking_date` column in the `rankings` table represents the specific date on which the ranking data was recorded or updated. this column is of the date type, ensuring that each entry is stored in a standard date format. it is used to track the temporal aspect of the rankings, allowing for
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ranking_date:
+
+ranking_date, ranking_date
+
+Using the following text extracted from a data dictionary:
+" winner_ioc " : { " column_description " : " the column \ " winner_ioc \ " in the \ " matches \ " table contains the international olympic committee (ioc) country codes representing the country of the winning team or individual in a match. these codes are standardized three-letter abbreviations used to identify each country. this column helps in identifying
+" winner_ioc \ " in the \ " matches \ " table contains the international olympic committee (ioc) country codes representing the country of the winning team or individual in a match. these codes are standardized three-letter abbreviations used to identify each country. this column helps in identifying the nationality of the winner in a structured and consistent manner. " ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier winner_ioc:
+
+winner_ioc, winner_international_olympic_country_code
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

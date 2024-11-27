@@ -1,0 +1,4504 @@
+TABLE_NAME,COLUMN_NAME,DATABASE_NAME
+perpetrator,perpetrator id,perpetrator
+perpetrator,people id,perpetrator
+perpetrator,date,perpetrator
+perpetrator,year,perpetrator
+perpetrator,location,perpetrator
+perpetrator,country,perpetrator
+perpetrator,killed,perpetrator
+perpetrator,injured,perpetrator
+people,people id,perpetrator
+people,name,perpetrator
+people,height,perpetrator
+people,weight,perpetrator
+people,home town,perpetrator
+classroom,building,college_2
+classroom,room number,college_2
+classroom,capacity,college_2
+department,department name,college_2
+department,building,college_2
+department,budget,college_2
+course,course id,college_2
+course,title,college_2
+course,department name,college_2
+course,credits,college_2
+instructor,id,college_2
+instructor,name,college_2
+instructor,department name,college_2
+instructor,salary,college_2
+section,course id,college_2
+section,section id,college_2
+section,semester,college_2
+section,year,college_2
+section,building,college_2
+section,room number,college_2
+section,time slot id,college_2
+teaches,id,college_2
+teaches,course id,college_2
+teaches,section id,college_2
+teaches,semester,college_2
+teaches,year,college_2
+student,id,college_2
+student,name,college_2
+student,department name,college_2
+student,total credits,college_2
+takes classes,id,college_2
+takes classes,course id,college_2
+takes classes,section id,college_2
+takes classes,semester,college_2
+takes classes,year,college_2
+takes classes,grade,college_2
+advisor,student id,college_2
+advisor,instructor id,college_2
+time slot,time slot id,college_2
+time slot,day,college_2
+time slot,start hour,college_2
+time slot,start minute,college_2
+time slot,end hour,college_2
+time slot,end minute,college_2
+prerequisite,course id,college_2
+prerequisite,prerequisite id,college_2
+airport,id,flight_company
+airport,city,flight_company
+airport,country,flight_company
+airport,iata,flight_company
+airport,icao,flight_company
+airport,name,flight_company
+operate company,id,flight_company
+operate company,name,flight_company
+operate company,type,flight_company
+operate company,principal activities,flight_company
+operate company,incorporated in,flight_company
+operate company,group equity shareholding,flight_company
+flight,id,flight_company
+flight,vehicle flight number,flight_company
+flight,date,flight_company
+flight,pilot,flight_company
+flight,velocity,flight_company
+flight,altitude,flight_company
+flight,airport id,flight_company
+flight,company id,flight_company
+institution,institution id,icfp_1
+institution,name,icfp_1
+institution,country,icfp_1
+authors,author id,icfp_1
+authors,last name,icfp_1
+authors,first name,icfp_1
+papers,paper id,icfp_1
+papers,title,icfp_1
+authorship count,author id,icfp_1
+authorship count,institution id,icfp_1
+authorship count,paper id,icfp_1
+authorship count,author count,icfp_1
+body builder,body builder id,body_builder
+body builder,people id,body_builder
+body builder,snatch,body_builder
+body builder,clean jerk,body_builder
+body builder,total,body_builder
+people,people id,body_builder
+people,name,body_builder
+people,height,body_builder
+people,weight,body_builder
+people,birth date,body_builder
+people,birth place,body_builder
+storm,storm id,storm_record
+storm,name,storm_record
+storm,dates active,storm_record
+storm,max speed,storm_record
+storm,damage millions usd,storm_record
+storm,number deaths,storm_record
+region,region id,storm_record
+region,region code,storm_record
+region,region name,storm_record
+affected region,region id,storm_record
+affected region,storm id,storm_record
+affected region,number city affected,storm_record
+aircraft,aircraft id,pilot_record
+aircraft,order year,pilot_record
+aircraft,manufacturer,pilot_record
+aircraft,model,pilot_record
+aircraft,fleet series,pilot_record
+aircraft,powertrain,pilot_record
+aircraft,fuel propulsion,pilot_record
+pilot,pilot id,pilot_record
+pilot,pilot name,pilot_record
+pilot,rank,pilot_record
+pilot,age,pilot_record
+pilot,nationality,pilot_record
+pilot,position,pilot_record
+pilot,join year,pilot_record
+pilot,team,pilot_record
+pilot record,record id,pilot_record
+pilot record,pilot id,pilot_record
+pilot record,aircraft id,pilot_record
+pilot record,date,pilot_record
+race,race id,race_track
+race,name,race_track
+race,class,race_track
+race,date,race_track
+race,track id,race_track
+track,track id,race_track
+track,name,race_track
+track,location,race_track
+track,seating,race_track
+track,year opened,race_track
+author,aid,academic
+author,homepage,academic
+author,name,academic
+author,oid,academic
+conference,cid,academic
+conference,homepage,academic
+conference,name,academic
+domain,did,academic
+domain,name,academic
+domain author,aid,academic
+domain author,did,academic
+domain conference,cid,academic
+domain conference,did,academic
+journal,homepage,academic
+journal,jid,academic
+journal,name,academic
+domain journal,did,academic
+domain journal,jid,academic
+keyword,keyword,academic
+keyword,kid,academic
+domain keyword,did,academic
+domain keyword,kid,academic
+publication,abstract,academic
+publication,cid,academic
+publication,citation num,academic
+publication,jid,academic
+publication,pid,academic
+publication,reference num,academic
+publication,title,academic
+publication,year,academic
+domain publication,did,academic
+domain publication,pid,academic
+organization,continent,academic
+organization,homepage,academic
+organization,name,academic
+organization,oid,academic
+publication keyword,pid,academic
+publication keyword,kid,academic
+writes,aid,academic
+writes,pid,academic
+cite,cited,academic
+cite,citing,academic
+addresses,address id,department_store
+addresses,address details,department_store
+staff,staff id,department_store
+staff,staff gender,department_store
+staff,staff name,department_store
+suppliers,supplier id,department_store
+suppliers,supplier name,department_store
+suppliers,supplier phone,department_store
+department store chain,department store chain id,department_store
+department store chain,department store chain name,department_store
+customers,customer id,department_store
+customers,payment method code,department_store
+customers,customer code,department_store
+customers,customer name,department_store
+customers,customer address,department_store
+customers,customer phone,department_store
+customers,customer email,department_store
+products,product id,department_store
+products,product type code,department_store
+products,product name,department_store
+products,product price,department_store
+supplier addresses,supplier id,department_store
+supplier addresses,address id,department_store
+supplier addresses,date from,department_store
+supplier addresses,date to,department_store
+customer addresses,customer id,department_store
+customer addresses,address id,department_store
+customer addresses,date from,department_store
+customer addresses,date to,department_store
+customer orders,order id,department_store
+customer orders,customer id,department_store
+customer orders,order status code,department_store
+customer orders,order date,department_store
+department stores,department store id,department_store
+department stores,department store chain id,department_store
+department stores,store name,department_store
+department stores,store address,department_store
+department stores,store phone,department_store
+department stores,store email,department_store
+departments,department id,department_store
+departments,department store id,department_store
+departments,department name,department_store
+order items,order item id,department_store
+order items,order id,department_store
+order items,product id,department_store
+product suppliers,product id,department_store
+product suppliers,supplier id,department_store
+product suppliers,date supplied from,department_store
+product suppliers,date supplied to,department_store
+product suppliers,total amount purchased,department_store
+product suppliers,total value purchased,department_store
+staff department assignments,staff id,department_store
+staff department assignments,department id,department_store
+staff department assignments,date assigned from,department_store
+staff department assignments,job title code,department_store
+staff department assignments,date assigned to,department_store
+artist,artist id,music_4
+artist,artist,music_4
+artist,age,music_4
+artist,famous title,music_4
+artist,famous release date,music_4
+volume,volume id,music_4
+volume,volume issue,music_4
+volume,issue date,music_4
+volume,weeks on top,music_4
+volume,song,music_4
+volume,artist id,music_4
+music festival,id,music_4
+music festival,music festival,music_4
+music festival,date of ceremony,music_4
+music festival,category,music_4
+music festival,volume,music_4
+music festival,result,music_4
+customers,customer id,insurance_fnol
+customers,customer name,insurance_fnol
+services,service id,insurance_fnol
+services,service name,insurance_fnol
+available policies,policy id,insurance_fnol
+available policies,policy type code,insurance_fnol
+available policies,customer phone,insurance_fnol
+customers policies,customer id,insurance_fnol
+customers policies,policy id,insurance_fnol
+customers policies,date opened,insurance_fnol
+customers policies,date closed,insurance_fnol
+first notification of loss,fnol id,insurance_fnol
+first notification of loss,customer id,insurance_fnol
+first notification of loss,policy id,insurance_fnol
+first notification of loss,service id,insurance_fnol
+claims,claim id,insurance_fnol
+claims,fnol id,insurance_fnol
+claims,effective date,insurance_fnol
+settlements,settlement id,insurance_fnol
+settlements,claim id,insurance_fnol
+settlements,effective date,insurance_fnol
+settlements,settlement amount,insurance_fnol
+film,film id,cinema
+film,rank in series,cinema
+film,number in season,cinema
+film,title,cinema
+film,directed by,cinema
+film,original air date,cinema
+film,production code,cinema
+cinema,cinema id,cinema
+cinema,name,cinema
+cinema,openning year,cinema
+cinema,capacity,cinema
+cinema,location,cinema
+schedule,cinema id,cinema
+schedule,film id,cinema
+schedule,date,cinema
+schedule,show times per day,cinema
+schedule,price,cinema
+college,college id,decoration_competition
+college,name,decoration_competition
+college,leader name,decoration_competition
+college,college location,decoration_competition
+member,member id,decoration_competition
+member,name,decoration_competition
+member,country,decoration_competition
+member,college id,decoration_competition
+round,round id,decoration_competition
+round,member id,decoration_competition
+round,decoration theme,decoration_competition
+round,rank in round,decoration_competition
+phone,name,phone_market
+phone,phone id,phone_market
+phone,memory in g,phone_market
+phone,carrier,phone_market
+phone,price,phone_market
+market,market id,phone_market
+market,district,phone_market
+market,num of employees,phone_market
+market,num of shops,phone_market
+market,ranking,phone_market
+phone market,market id,phone_market
+phone market,phone id,phone_market
+phone market,num of stock,phone_market
+product,product id,store_product
+product,product,store_product
+product,dimensions,store_product
+product,dpi,store_product
+product,pages per minute color,store_product
+product,max page size,store_product
+product,interface,store_product
+store,store id,store_product
+store,store name,store_product
+store,type,store_product
+store,area size,store_product
+store,number of product category,store_product
+store,ranking,store_product
+district,district id,store_product
+district,district name,store_product
+district,headquartered city,store_product
+district,city population,store_product
+district,city area,store_product
+store product,store id,store_product
+store product,product id,store_product
+store district,store id,store_product
+store district,district id,store_product
+third party companies,company id,assets_maintenance
+third party companies,company type,assets_maintenance
+third party companies,company name,assets_maintenance
+third party companies,company address,assets_maintenance
+third party companies,other company details,assets_maintenance
+maintenance contracts,maintenance contract id,assets_maintenance
+maintenance contracts,maintenance contract company id,assets_maintenance
+maintenance contracts,contract start date,assets_maintenance
+maintenance contracts,contract end date,assets_maintenance
+maintenance contracts,other contract details,assets_maintenance
+parts,part id,assets_maintenance
+parts,part name,assets_maintenance
+parts,chargeable yn,assets_maintenance
+parts,chargeable amount,assets_maintenance
+parts,other part details,assets_maintenance
+skills,skill id,assets_maintenance
+skills,skill code,assets_maintenance
+skills,skill description,assets_maintenance
+staff,staff id,assets_maintenance
+staff,staff name,assets_maintenance
+staff,gender,assets_maintenance
+staff,other staff details,assets_maintenance
+assets,asset id,assets_maintenance
+assets,maintenance contract id,assets_maintenance
+assets,supplier company id,assets_maintenance
+assets,asset details,assets_maintenance
+assets,asset make,assets_maintenance
+assets,asset model,assets_maintenance
+assets,asset acquired date,assets_maintenance
+assets,asset disposed date,assets_maintenance
+assets,other asset details,assets_maintenance
+asset parts,asset id,assets_maintenance
+asset parts,part id,assets_maintenance
+maintenance engineers,engineer id,assets_maintenance
+maintenance engineers,company id,assets_maintenance
+maintenance engineers,first name,assets_maintenance
+maintenance engineers,last name,assets_maintenance
+maintenance engineers,other details,assets_maintenance
+engineer skills,engineer id,assets_maintenance
+engineer skills,skill id,assets_maintenance
+fault log,fault log entry id,assets_maintenance
+fault log,asset id,assets_maintenance
+fault log,recorded by staff id,assets_maintenance
+fault log,fault log entry datetime,assets_maintenance
+fault log,fault description,assets_maintenance
+fault log,other fault details,assets_maintenance
+engineer visits,engineer visit id,assets_maintenance
+engineer visits,contact staff id,assets_maintenance
+engineer visits,engineer id,assets_maintenance
+engineer visits,fault log entry id,assets_maintenance
+engineer visits,fault status,assets_maintenance
+engineer visits,visit start datetime,assets_maintenance
+engineer visits,visit end datetime,assets_maintenance
+engineer visits,other visit details,assets_maintenance
+part faults,part fault id,assets_maintenance
+part faults,part id,assets_maintenance
+part faults,fault short name,assets_maintenance
+part faults,fault description,assets_maintenance
+part faults,other fault details,assets_maintenance
+fault log parts,fault log entry id,assets_maintenance
+fault log parts,part fault id,assets_maintenance
+fault log parts,fault status,assets_maintenance
+skills required to fix,part fault id,assets_maintenance
+skills required to fix,skill id,assets_maintenance
+addresses,address id,student_assessment
+addresses,line 1,student_assessment
+addresses,line 2,student_assessment
+addresses,city,student_assessment
+addresses,zip postcode,student_assessment
+addresses,state province county,student_assessment
+addresses,country,student_assessment
+people,person id,student_assessment
+people,first name,student_assessment
+people,middle name,student_assessment
+people,last name,student_assessment
+people,cell mobile number,student_assessment
+people,email address,student_assessment
+people,login name,student_assessment
+people,password,student_assessment
+students,student id,student_assessment
+students,student details,student_assessment
+courses,course id,student_assessment
+courses,course name,student_assessment
+courses,course description,student_assessment
+courses,other details,student_assessment
+people addresses,person address id,student_assessment
+people addresses,person id,student_assessment
+people addresses,address id,student_assessment
+people addresses,date from,student_assessment
+people addresses,date to,student_assessment
+student course registrations,student id,student_assessment
+student course registrations,course id,student_assessment
+student course registrations,registration date,student_assessment
+student course attendance,student id,student_assessment
+student course attendance,course id,student_assessment
+student course attendance,date of attendance,student_assessment
+candidates,candidate id,student_assessment
+candidates,candidate details,student_assessment
+candidate assessments,candidate id,student_assessment
+candidate assessments,qualification,student_assessment
+candidate assessments,assessment date,student_assessment
+candidate assessments,asessment outcome code,student_assessment
+breeds,breed code,dog_kennels
+breeds,breed name,dog_kennels
+charges,charge id,dog_kennels
+charges,charge type,dog_kennels
+charges,charge amount,dog_kennels
+sizes,size code,dog_kennels
+sizes,size description,dog_kennels
+treatment types,treatment type code,dog_kennels
+treatment types,treatment type description,dog_kennels
+owners,owner id,dog_kennels
+owners,first name,dog_kennels
+owners,last name,dog_kennels
+owners,street,dog_kennels
+owners,city,dog_kennels
+owners,state,dog_kennels
+owners,zip code,dog_kennels
+owners,email address,dog_kennels
+owners,home phone,dog_kennels
+owners,cell number,dog_kennels
+dogs,dog id,dog_kennels
+dogs,owner id,dog_kennels
+dogs,abandoned yes or no,dog_kennels
+dogs,breed code,dog_kennels
+dogs,size code,dog_kennels
+dogs,name,dog_kennels
+dogs,age,dog_kennels
+dogs,date of birth,dog_kennels
+dogs,gender,dog_kennels
+dogs,weight,dog_kennels
+dogs,date arrived,dog_kennels
+dogs,date adopted,dog_kennels
+dogs,date departed,dog_kennels
+professionals,professional id,dog_kennels
+professionals,role code,dog_kennels
+professionals,first name,dog_kennels
+professionals,street,dog_kennels
+professionals,city,dog_kennels
+professionals,state,dog_kennels
+professionals,zip code,dog_kennels
+professionals,last name,dog_kennels
+professionals,email address,dog_kennels
+professionals,home phone,dog_kennels
+professionals,cell number,dog_kennels
+treatments,treatment id,dog_kennels
+treatments,dog id,dog_kennels
+treatments,professional id,dog_kennels
+treatments,treatment type code,dog_kennels
+treatments,date of treatment,dog_kennels
+treatments,cost of treatment,dog_kennels
+genre,genre name,music_1
+genre,rating,music_1
+genre,most popular in,music_1
+artist,artist name,music_1
+artist,country,music_1
+artist,gender,music_1
+artist,preferred genre,music_1
+files,song id,music_1
+files,artist name,music_1
+files,file size,music_1
+files,duration,music_1
+files,formats,music_1
+song,song name,music_1
+song,artist name,music_1
+song,country,music_1
+song,song id,music_1
+song,genre is,music_1
+song,rating,music_1
+song,languages,music_1
+song,releasedate,music_1
+song,resolution,music_1
+people,people id,company_employee
+people,age,company_employee
+people,name,company_employee
+people,nationality,company_employee
+people,graduation college,company_employee
+company,company id,company_employee
+company,name,company_employee
+company,headquarters,company_employee
+company,industry,company_employee
+company,sales in billion,company_employee
+company,profits in billion,company_employee
+company,assets in billion,company_employee
+company,market value in billion,company_employee
+employment,company id,company_employee
+employment,people id,company_employee
+employment,year working,company_employee
+city,city id,farm
+city,official name,farm
+city,status,farm
+city,area km 2,farm
+city,population,farm
+city,census ranking,farm
+farm,farm id,farm
+farm,year,farm
+farm,total horses,farm
+farm,working horses,farm
+farm,total cattle,farm
+farm,oxen,farm
+farm,bulls,farm
+farm,cows,farm
+farm,pigs,farm
+farm,sheep and goats,farm
+farm competition,competition id,farm
+farm competition,year,farm
+farm competition,theme,farm
+farm competition,host city id,farm
+farm competition,hosts,farm
+competition record,competition id,farm
+competition record,farm id,farm
+competition record,rank,farm
+addresses,address id,solvency_ii
+addresses,address details,solvency_ii
+locations,location id,solvency_ii
+locations,other details,solvency_ii
+products,product id,solvency_ii
+products,product type code,solvency_ii
+products,product name,solvency_ii
+products,product price,solvency_ii
+parties,party id,solvency_ii
+parties,party details,solvency_ii
+assets,asset id,solvency_ii
+assets,other details,solvency_ii
+channels,channel id,solvency_ii
+channels,other details,solvency_ii
+finances,finance id,solvency_ii
+finances,other details,solvency_ii
+events,event id,solvency_ii
+events,address id,solvency_ii
+events,channel id,solvency_ii
+events,event type code,solvency_ii
+events,finance id,solvency_ii
+events,location id,solvency_ii
+products in events,product in event id,solvency_ii
+products in events,event id,solvency_ii
+products in events,product id,solvency_ii
+parties in events,party id,solvency_ii
+parties in events,event id,solvency_ii
+parties in events,role code,solvency_ii
+agreements,document id,solvency_ii
+agreements,event id,solvency_ii
+assets in events,asset id,solvency_ii
+assets in events,event id,solvency_ii
+city,city id,city_record
+city,city,city_record
+city,hanzi,city_record
+city,hanyu pinyin,city_record
+city,regional population,city_record
+city,gdp,city_record
+match,match id,city_record
+match,date,city_record
+match,venue,city_record
+match,score,city_record
+match,result,city_record
+match,competition,city_record
+temperature,city id,city_record
+temperature,jan,city_record
+temperature,feb,city_record
+temperature,mar,city_record
+temperature,apr,city_record
+temperature,jun,city_record
+temperature,jul,city_record
+temperature,aug,city_record
+temperature,sep,city_record
+temperature,oct,city_record
+temperature,nov,city_record
+temperature,dec,city_record
+hosting city,year,city_record
+hosting city,match id,city_record
+hosting city,host city,city_record
+swimmer,id,swimming
+swimmer,name,swimming
+swimmer,nationality,swimming
+swimmer,meter 100,swimming
+swimmer,meter 200,swimming
+swimmer,meter 300,swimming
+swimmer,meter 400,swimming
+swimmer,meter 500,swimming
+swimmer,meter 600,swimming
+swimmer,meter 700,swimming
+swimmer,time,swimming
+stadium,id,swimming
+stadium,name,swimming
+stadium,capacity,swimming
+stadium,city,swimming
+stadium,country,swimming
+stadium,opening year,swimming
+event,id,swimming
+event,name,swimming
+event,stadium id,swimming
+event,year,swimming
+record,id,swimming
+record,result,swimming
+record,swimmer id,swimming
+record,event id,swimming
+airlines,airline id,flight_2
+airlines,airline name,flight_2
+airlines,abbreviation,flight_2
+airlines,country,flight_2
+airports,city,flight_2
+airports,airport code,flight_2
+airports,airport name,flight_2
+airports,country,flight_2
+airports,country abbrev,flight_2
+flights,airline,flight_2
+flights,flight number,flight_2
+flights,source airport,flight_2
+flights,destination airport,flight_2
+county,county id,election
+county,county name,election
+county,population,election
+county,zip code,election
+party,party id,election
+party,year,election
+party,party,election
+party,governor,election
+party,lieutenant governor,election
+party,comptroller,election
+party,attorney general,election
+party,us senate,election
+election,election id,election
+election,counties represented,election
+election,district,election
+election,delegate,election
+election,party,election
+election,first elected,election
+election,committee,election
+manufacturers,code,manufactory_1
+manufacturers,name,manufactory_1
+manufacturers,headquarter,manufactory_1
+manufacturers,founder,manufactory_1
+manufacturers,revenue,manufactory_1
+products,code,manufactory_1
+products,name,manufactory_1
+products,price,manufactory_1
+products,manufacturer,manufactory_1
+people,people id,debate
+people,district,debate
+people,name,debate
+people,party,debate
+people,age,debate
+debate,debate id,debate
+debate,date,debate
+debate,venue,debate
+debate,num of audience,debate
+debate people,debate id,debate
+debate people,affirmative,debate
+debate people,negative,debate
+debate people,if affirmative win,debate
+person,name,network_2
+person,age,network_2
+person,city,network_2
+person,gender,network_2
+person,job,network_2
+person friend,name,network_2
+person friend,friend,network_2
+person friend,year,network_2
+services,service id,local_govt_in_alabama
+services,service type code,local_govt_in_alabama
+participants,participant id,local_govt_in_alabama
+participants,participant type code,local_govt_in_alabama
+participants,participant details,local_govt_in_alabama
+events,event id,local_govt_in_alabama
+events,service id,local_govt_in_alabama
+events,event details,local_govt_in_alabama
+participants in events,event id,local_govt_in_alabama
+participants in events,participant id,local_govt_in_alabama
+mountain,mountain id,climbing
+mountain,name,climbing
+mountain,height,climbing
+mountain,prominence,climbing
+mountain,range,climbing
+mountain,country,climbing
+climber,climber id,climbing
+climber,name,climbing
+climber,country,climbing
+climber,time,climbing
+climber,points,climbing
+climber,mountain id,climbing
+course authors and tutors,author id,e_learning
+course authors and tutors,author tutor atb,e_learning
+course authors and tutors,login name,e_learning
+course authors and tutors,password,e_learning
+course authors and tutors,personal name,e_learning
+course authors and tutors,middle name,e_learning
+course authors and tutors,family name,e_learning
+course authors and tutors,gender mf,e_learning
+course authors and tutors,address line 1,e_learning
+students,student id,e_learning
+students,date of registration,e_learning
+students,date of latest logon,e_learning
+students,login name,e_learning
+students,password,e_learning
+students,personal name,e_learning
+students,middle name,e_learning
+students,family name,e_learning
+subjects,subject id,e_learning
+subjects,subject name,e_learning
+courses,course id,e_learning
+courses,author id,e_learning
+courses,subject id,e_learning
+courses,course name,e_learning
+courses,course description,e_learning
+student course enrolment,registration id,e_learning
+student course enrolment,student id,e_learning
+student course enrolment,course id,e_learning
+student course enrolment,date of enrolment,e_learning
+student course enrolment,date of completion,e_learning
+student tests taken,registration id,e_learning
+student tests taken,date test taken,e_learning
+student tests taken,test result,e_learning
+scientists,ssn,scientist_1
+scientists,name,scientist_1
+projects,code,scientist_1
+projects,name,scientist_1
+projects,hours,scientist_1
+assigned to,scientist,scientist_1
+assigned to,project,scientist_1
+captain,captain id,ship_1
+captain,name,ship_1
+captain,ship id,ship_1
+captain,age,ship_1
+captain,class,ship_1
+captain,rank,ship_1
+ship,ship id,ship_1
+ship,name,ship_1
+ship,type,ship_1
+ship,built year,ship_1
+ship,class,ship_1
+ship,flag,ship_1
+festival detail,festival id,entertainment_awards
+festival detail,festival name,entertainment_awards
+festival detail,chair name,entertainment_awards
+festival detail,location,entertainment_awards
+festival detail,year,entertainment_awards
+festival detail,num of audience,entertainment_awards
+artwork,artwork id,entertainment_awards
+artwork,type,entertainment_awards
+artwork,name,entertainment_awards
+nomination,artwork id,entertainment_awards
+nomination,festival id,entertainment_awards
+nomination,result,entertainment_awards
+allergy type,allergy name,allergy_1
+allergy type,allergy type,allergy_1
+has allergy,stuid,allergy_1
+has allergy,allergy,allergy_1
+student,stuid,allergy_1
+student,last name,allergy_1
+student,first name,allergy_1
+student,age,allergy_1
+student,sex,allergy_1
+student,major,allergy_1
+student,advisor,allergy_1
+student,city code,allergy_1
+actor,aid,imdb
+actor,gender,imdb
+actor,name,imdb
+actor,nationality,imdb
+actor,birth city,imdb
+actor,birth year,imdb
+copyright,id,imdb
+copyright,msid,imdb
+copyright,cid,imdb
+cast,id,imdb
+cast,msid,imdb
+cast,aid,imdb
+cast,role,imdb
+genre,gid,imdb
+genre,genre,imdb
+classification,id,imdb
+classification,msid,imdb
+classification,gid,imdb
+company,id,imdb
+company,name,imdb
+company,country code,imdb
+director,did,imdb
+director,gender,imdb
+director,name,imdb
+director,nationality,imdb
+director,birth city,imdb
+director,birth year,imdb
+producer,pid,imdb
+producer,gender,imdb
+producer,name,imdb
+producer,nationality,imdb
+producer,birth city,imdb
+producer,birth year,imdb
+directed by,id,imdb
+directed by,msid,imdb
+directed by,did,imdb
+keyword,id,imdb
+keyword,keyword,imdb
+made by,id,imdb
+made by,msid,imdb
+made by,pid,imdb
+movie,mid,imdb
+movie,title,imdb
+movie,release year,imdb
+movie,title aka,imdb
+movie,budget,imdb
+tags,id,imdb
+tags,msid,imdb
+tags,kid,imdb
+tv series,sid,imdb
+tv series,title,imdb
+tv series,release year,imdb
+tv series,num of seasons,imdb
+tv series,num of episodes,imdb
+tv series,title aka,imdb
+tv series,budget,imdb
+writer,wid,imdb
+writer,gender,imdb
+writer,name,imdb
+writer,nationality,imdb
+writer,num of episodes,imdb
+writer,birth city,imdb
+writer,birth year,imdb
+written by,id,imdb
+written by,msid,imdb
+written by,wid,imdb
+discount coupons,coupon id,products_for_hire
+discount coupons,date issued,products_for_hire
+discount coupons,coupon amount,products_for_hire
+customers,customer id,products_for_hire
+customers,coupon id,products_for_hire
+customers,good or bad customer,products_for_hire
+customers,first name,products_for_hire
+customers,last name,products_for_hire
+customers,gender,products_for_hire
+customers,date became customer,products_for_hire
+customers,date last hire,products_for_hire
+bookings,booking id,products_for_hire
+bookings,customer id,products_for_hire
+bookings,booking status code,products_for_hire
+bookings,returned damaged yes or no,products_for_hire
+bookings,booking start date,products_for_hire
+bookings,booking end date,products_for_hire
+bookings,count hired,products_for_hire
+bookings,amount payable,products_for_hire
+bookings,amount of discount,products_for_hire
+bookings,amount outstanding,products_for_hire
+bookings,amount of refund,products_for_hire
+products for hire,product id,products_for_hire
+products for hire,product type code,products_for_hire
+products for hire,daily hire cost,products_for_hire
+products for hire,product name,products_for_hire
+products for hire,product description,products_for_hire
+payments,payment id,products_for_hire
+payments,booking id,products_for_hire
+payments,customer id,products_for_hire
+payments,payment type code,products_for_hire
+payments,amount paid in full yn,products_for_hire
+payments,payment date,products_for_hire
+payments,amount due,products_for_hire
+payments,amount paid,products_for_hire
+products booked,booking id,products_for_hire
+products booked,product id,products_for_hire
+products booked,returned yes or no,products_for_hire
+products booked,returned late yes or no,products_for_hire
+products booked,booked count,products_for_hire
+products booked,booked amount,products_for_hire
+view product availability,product id,products_for_hire
+view product availability,booking id,products_for_hire
+view product availability,status date,products_for_hire
+view product availability,available yes or no,products_for_hire
+candidate,candidate id,candidate_poll
+candidate,people id,candidate_poll
+candidate,poll source,candidate_poll
+candidate,date,candidate_poll
+candidate,support rate,candidate_poll
+candidate,consider rate,candidate_poll
+candidate,oppose rate,candidate_poll
+candidate,unsure rate,candidate_poll
+people,people id,candidate_poll
+people,sex,candidate_poll
+people,name,candidate_poll
+people,date of birth,candidate_poll
+people,height,candidate_poll
+people,weight,candidate_poll
+album,album id,chinook_1
+album,title,chinook_1
+album,artist id,chinook_1
+artist,artist id,chinook_1
+artist,name,chinook_1
+customer,customer id,chinook_1
+customer,first name,chinook_1
+customer,last name,chinook_1
+customer,company,chinook_1
+customer,address,chinook_1
+customer,city,chinook_1
+customer,state,chinook_1
+customer,country,chinook_1
+customer,postal code,chinook_1
+customer,phone,chinook_1
+customer,fax,chinook_1
+customer,email,chinook_1
+customer,support representative id,chinook_1
+employee,employee id,chinook_1
+employee,last name,chinook_1
+employee,first name,chinook_1
+employee,title,chinook_1
+employee,reports to,chinook_1
+employee,birth date,chinook_1
+employee,hire date,chinook_1
+employee,address,chinook_1
+employee,city,chinook_1
+employee,state,chinook_1
+employee,country,chinook_1
+employee,postal code,chinook_1
+employee,phone,chinook_1
+employee,fax,chinook_1
+employee,email,chinook_1
+genre,genre id,chinook_1
+genre,name,chinook_1
+invoice,invoice id,chinook_1
+invoice,customer id,chinook_1
+invoice,invoice date,chinook_1
+invoice,billing address,chinook_1
+invoice,billing city,chinook_1
+invoice,billing state,chinook_1
+invoice,billing country,chinook_1
+invoice,billing postal code,chinook_1
+invoice,total,chinook_1
+invoice line,invoice line id,chinook_1
+invoice line,invoice id,chinook_1
+invoice line,track id,chinook_1
+invoice line,unit price,chinook_1
+invoice line,quantity,chinook_1
+media type,media type id,chinook_1
+media type,name,chinook_1
+playlist,play list id,chinook_1
+playlist,name,chinook_1
+playlist track,play list id,chinook_1
+playlist track,track id,chinook_1
+track,track id,chinook_1
+track,name,chinook_1
+track,album id,chinook_1
+track,media type id,chinook_1
+track,genre id,chinook_1
+track,composer,chinook_1
+track,milliseconds,chinook_1
+track,bytes,chinook_1
+track,unit price,chinook_1
+routes,route id,flight_4
+routes,destination airport id,flight_4
+routes,destination airport,flight_4
+routes,source airport id,flight_4
+routes,source airport,flight_4
+routes,airline id,flight_4
+routes,airline,flight_4
+routes,code share,flight_4
+airports,airport id,flight_4
+airports,name,flight_4
+airports,city,flight_4
+airports,country,flight_4
+airports,x,flight_4
+airports,y,flight_4
+airports,elevation,flight_4
+airports,iata,flight_4
+airports,icao,flight_4
+airlines,airline id,flight_4
+airlines,name,flight_4
+airlines,iata,flight_4
+airlines,icao,flight_4
+airlines,call sign,flight_4
+airlines,country,flight_4
+airlines,active,flight_4
+student,student id,pets_1
+student,last name,pets_1
+student,first name,pets_1
+student,age,pets_1
+student,sex,pets_1
+student,major,pets_1
+student,advisor,pets_1
+student,city code,pets_1
+has pet,student id,pets_1
+has pet,pet id,pets_1
+pets,pet id,pets_1
+pets,pet type,pets_1
+pets,pet age,pets_1
+pets,weight,pets_1
+student,student id,dorm_1
+student,last name,dorm_1
+student,first name,dorm_1
+student,age,dorm_1
+student,sex,dorm_1
+student,major,dorm_1
+student,advisor,dorm_1
+student,city code,dorm_1
+dorm,dorm id,dorm_1
+dorm,dorm name,dorm_1
+dorm,student capacity,dorm_1
+dorm,gender,dorm_1
+dorm amenity,amenity id,dorm_1
+dorm amenity,amenity name,dorm_1
+has amenity,dorm id,dorm_1
+has amenity,amenity id,dorm_1
+lives in,student id,dorm_1
+lives in,dorm id,dorm_1
+lives in,room number,dorm_1
+journal,journal id,journal_committee
+journal,date,journal_committee
+journal,theme,journal_committee
+journal,sales,journal_committee
+editor,editor id,journal_committee
+editor,name,journal_committee
+editor,age,journal_committee
+journal committee,editor id,journal_committee
+journal committee,journal id,journal_committee
+journal committee,work type,journal_committee
+flight,flight number,flight_1
+flight,origin,flight_1
+flight,destination,flight_1
+flight,distance,flight_1
+flight,departure date,flight_1
+flight,arrival date,flight_1
+flight,price,flight_1
+flight,airline id,flight_1
+aircraft,airline id,flight_1
+aircraft,name,flight_1
+aircraft,distance,flight_1
+employee,employee id,flight_1
+employee,name,flight_1
+employee,salary,flight_1
+certificate,employee id,flight_1
+certificate,airline id,flight_1
+medicine,id,medicine_enzyme_interaction
+medicine,name,medicine_enzyme_interaction
+medicine,trade name,medicine_enzyme_interaction
+medicine,fda approved,medicine_enzyme_interaction
+enzyme,id,medicine_enzyme_interaction
+enzyme,name,medicine_enzyme_interaction
+enzyme,location,medicine_enzyme_interaction
+enzyme,product,medicine_enzyme_interaction
+enzyme,chromosome,medicine_enzyme_interaction
+enzyme,omim,medicine_enzyme_interaction
+enzyme,porphyria,medicine_enzyme_interaction
+medicine enzyme interaction,enzyme id,medicine_enzyme_interaction
+medicine enzyme interaction,medicine id,medicine_enzyme_interaction
+medicine enzyme interaction,interaction type,medicine_enzyme_interaction
+customers,customer id,local_govt_and_lot
+customers,customer details,local_govt_and_lot
+properties,property id,local_govt_and_lot
+properties,property type code,local_govt_and_lot
+properties,property address,local_govt_and_lot
+properties,other details,local_govt_and_lot
+residents,resident id,local_govt_and_lot
+residents,property id,local_govt_and_lot
+residents,date moved in,local_govt_and_lot
+residents,date moved out,local_govt_and_lot
+residents,other details,local_govt_and_lot
+organizations,organization id,local_govt_and_lot
+organizations,parent organization id,local_govt_and_lot
+organizations,organization details,local_govt_and_lot
+services,service id,local_govt_and_lot
+services,organization id,local_govt_and_lot
+services,service type code,local_govt_and_lot
+services,service details,local_govt_and_lot
+residents services,resident id,local_govt_and_lot
+residents services,service id,local_govt_and_lot
+residents services,date moved in,local_govt_and_lot
+residents services,property id,local_govt_and_lot
+residents services,date requested,local_govt_and_lot
+residents services,date provided,local_govt_and_lot
+residents services,other details,local_govt_and_lot
+things,thing id,local_govt_and_lot
+things,organization id,local_govt_and_lot
+things,type of thing code,local_govt_and_lot
+things,service type code,local_govt_and_lot
+things,service details,local_govt_and_lot
+customer events,customer event id,local_govt_and_lot
+customer events,customer id,local_govt_and_lot
+customer events,date moved in,local_govt_and_lot
+customer events,property id,local_govt_and_lot
+customer events,resident id,local_govt_and_lot
+customer events,thing id,local_govt_and_lot
+customer event notes,customer event note id,local_govt_and_lot
+customer event notes,customer event id,local_govt_and_lot
+customer event notes,service type code,local_govt_and_lot
+customer event notes,resident id,local_govt_and_lot
+customer event notes,property id,local_govt_and_lot
+customer event notes,date moved in,local_govt_and_lot
+timed status of things,thing id,local_govt_and_lot
+timed status of things,date and date,local_govt_and_lot
+timed status of things,status of thing code,local_govt_and_lot
+timed locations of things,thing id,local_govt_and_lot
+timed locations of things,date and time,local_govt_and_lot
+timed locations of things,location code,local_govt_and_lot
+train,id,station_weather
+train,train number,station_weather
+train,name,station_weather
+train,origin,station_weather
+train,destination,station_weather
+train,time,station_weather
+train,interval,station_weather
+station,id,station_weather
+station,network name,station_weather
+station,services,station_weather
+station,local authority,station_weather
+route,train id,station_weather
+route,station id,station_weather
+weekly weather,station id,station_weather
+weekly weather,day of week,station_weather
+weekly weather,high temperature,station_weather
+weekly weather,low temperature,station_weather
+weekly weather,precipitation,station_weather
+weekly weather,wind speed mph,station_weather
+member,member id,shop_membership
+member,card number,shop_membership
+member,name,shop_membership
+member,hometown,shop_membership
+member,level,shop_membership
+branch,branch id,shop_membership
+branch,name,shop_membership
+branch,open year,shop_membership
+branch,address road,shop_membership
+branch,city,shop_membership
+branch,membership amount,shop_membership
+membership register branch,member id,shop_membership
+membership register branch,branch id,shop_membership
+membership register branch,register year,shop_membership
+purchase,member id,shop_membership
+purchase,branch id,shop_membership
+purchase,year,shop_membership
+purchase,total pounds,shop_membership
+addresses,address id,driving_school
+addresses,line 1 number building,driving_school
+addresses,city,driving_school
+addresses,zip postcode,driving_school
+addresses,state province county,driving_school
+addresses,country,driving_school
+staff,staff id,driving_school
+staff,staff address id,driving_school
+staff,nickname,driving_school
+staff,first name,driving_school
+staff,middle name,driving_school
+staff,last name,driving_school
+staff,date of birth,driving_school
+staff,date joined staff,driving_school
+staff,date left staff,driving_school
+vehicles,vehicle id,driving_school
+vehicles,vehicle details,driving_school
+customers,customer id,driving_school
+customers,customer address id,driving_school
+customers,customer status code,driving_school
+customers,date became customer,driving_school
+customers,date of birth,driving_school
+customers,first name,driving_school
+customers,last name,driving_school
+customers,amount outstanding,driving_school
+customers,email address,driving_school
+customers,phone number,driving_school
+customers,cell mobile phone number,driving_school
+customer payments,customer id,driving_school
+customer payments,datetime payment,driving_school
+customer payments,payment method code,driving_school
+customer payments,amount payment,driving_school
+lessons,lesson id,driving_school
+lessons,customer id,driving_school
+lessons,lesson status code,driving_school
+lessons,staff id,driving_school
+lessons,vehicle id,driving_school
+lessons,lesson date,driving_school
+lessons,lesson time,driving_school
+lessons,price,driving_school
+stadium,stadium id,concert_singer
+stadium,location,concert_singer
+stadium,name,concert_singer
+stadium,capacity,concert_singer
+stadium,highest,concert_singer
+stadium,lowest,concert_singer
+stadium,average,concert_singer
+singer,singer id,concert_singer
+singer,name,concert_singer
+singer,country,concert_singer
+singer,song name,concert_singer
+singer,song release year,concert_singer
+singer,age,concert_singer
+singer,is male,concert_singer
+concert,concert id,concert_singer
+concert,concert name,concert_singer
+concert,theme,concert_singer
+concert,stadium id,concert_singer
+concert,year,concert_singer
+singer in concert,concert id,concert_singer
+singer in concert,singer id,concert_singer
+songs,song id,music_2
+songs,title,music_2
+albums,aid,music_2
+albums,title,music_2
+albums,year,music_2
+albums,label,music_2
+albums,type,music_2
+band,id,music_2
+band,first name,music_2
+band,last name,music_2
+instruments,song id,music_2
+instruments,bandmate id,music_2
+instruments,instrument,music_2
+performance,song id,music_2
+performance,bandmate,music_2
+performance,stage position,music_2
+track lists,album id,music_2
+track lists,position,music_2
+track lists,song id,music_2
+vocals,song id,music_2
+vocals,bandmate,music_2
+vocals,type,music_2
+club,club id,sports_competition
+club,name,sports_competition
+club,region,sports_competition
+club,start year,sports_competition
+club rank,rank,sports_competition
+club rank,club id,sports_competition
+club rank,gold,sports_competition
+club rank,silver,sports_competition
+club rank,bronze,sports_competition
+club rank,total,sports_competition
+player,player id,sports_competition
+player,name,sports_competition
+player,position,sports_competition
+player,club id,sports_competition
+player,apps,sports_competition
+player,tries,sports_competition
+player,goals,sports_competition
+player,points,sports_competition
+competition,competition id,sports_competition
+competition,year,sports_competition
+competition,competition type,sports_competition
+competition,country,sports_competition
+competition result,competition id,sports_competition
+competition result,club id 1,sports_competition
+competition result,club id 2,sports_competition
+competition result,score,sports_competition
+railway,railway id,railway
+railway,railway,railway
+railway,builder,railway
+railway,built,railway
+railway,wheels,railway
+railway,location,railway
+railway,objectnumber,railway
+train,train id,railway
+train,train num,railway
+train,name,railway
+train,from,railway
+train,arrival,railway
+train,railway id,railway
+manager,manager id,railway
+manager,name,railway
+manager,country,railway
+manager,working year starts,railway
+manager,age,railway
+manager,level,railway
+railway manage,railway id,railway
+railway manage,manager id,railway
+railway manage,from year,railway
+rooms,room id,inn_1
+rooms,room name,inn_1
+rooms,beds,inn_1
+rooms,bed type,inn_1
+rooms,max occupancy,inn_1
+rooms,base price,inn_1
+rooms,decor,inn_1
+reservations,code,inn_1
+reservations,room,inn_1
+reservations,check in,inn_1
+reservations,check out,inn_1
+reservations,rate,inn_1
+reservations,last name,inn_1
+reservations,first name,inn_1
+reservations,adults,inn_1
+reservations,kids,inn_1
+museum,museum id,museum_visit
+museum,name,museum_visit
+museum,num of staff,museum_visit
+museum,open year,museum_visit
+customer,customer id,museum_visit
+customer,name,museum_visit
+customer,level of membership,museum_visit
+customer,age,museum_visit
+visit,museum id,museum_visit
+visit,customer id,museum_visit
+visit,num of ticket,museum_visit
+visit,total spent,museum_visit
+web client accelerator,id,browser_web
+web client accelerator,name,browser_web
+web client accelerator,operating system,browser_web
+web client accelerator,client,browser_web
+web client accelerator,connection,browser_web
+browser,id,browser_web
+browser,name,browser_web
+browser,market share,browser_web
+accelerator compatible browser,accelerator id,browser_web
+accelerator compatible browser,browser id,browser_web
+accelerator compatible browser,compatible since year,browser_web
+all star,player id,baseball_1
+all star,year,baseball_1
+all star,game num,baseball_1
+all star,game id,baseball_1
+all star,team id,baseball_1
+all star,league id,baseball_1
+all star,gp,baseball_1
+all star,starting pos,baseball_1
+appearances,year,baseball_1
+appearances,team id,baseball_1
+appearances,league id,baseball_1
+appearances,player id,baseball_1
+appearances,g all,baseball_1
+appearances,gs,baseball_1
+appearances,g batting,baseball_1
+appearances,g defense,baseball_1
+appearances,g p,baseball_1
+appearances,g c,baseball_1
+appearances,g 1b,baseball_1
+appearances,g 2b,baseball_1
+appearances,g 3b,baseball_1
+appearances,g ss,baseball_1
+appearances,g lf,baseball_1
+appearances,g cf,baseball_1
+appearances,g rf,baseball_1
+appearances,g of,baseball_1
+appearances,g dh,baseball_1
+appearances,g ph,baseball_1
+appearances,g pr,baseball_1
+manager award,player id,baseball_1
+manager award,award id,baseball_1
+manager award,year,baseball_1
+manager award,league id,baseball_1
+manager award,tie,baseball_1
+manager award,notes,baseball_1
+player award,player id,baseball_1
+player award,award id,baseball_1
+player award,year,baseball_1
+player award,league id,baseball_1
+player award,tie,baseball_1
+player award,notes,baseball_1
+manager award vote,award id,baseball_1
+manager award vote,year,baseball_1
+manager award vote,league id,baseball_1
+manager award vote,player id,baseball_1
+manager award vote,points won,baseball_1
+manager award vote,points max,baseball_1
+manager award vote,votes first,baseball_1
+player award vote,award id,baseball_1
+player award vote,year,baseball_1
+player award vote,league id,baseball_1
+player award vote,player id,baseball_1
+player award vote,points won,baseball_1
+player award vote,points max,baseball_1
+player award vote,votes first,baseball_1
+batting,player id,baseball_1
+batting,year,baseball_1
+batting,stint,baseball_1
+batting,team id,baseball_1
+batting,league id,baseball_1
+batting,g,baseball_1
+batting,ab,baseball_1
+batting,r,baseball_1
+batting,h,baseball_1
+batting,double,baseball_1
+batting,triple,baseball_1
+batting,hr,baseball_1
+batting,rbi,baseball_1
+batting,sb,baseball_1
+batting,cs,baseball_1
+batting,bb,baseball_1
+batting,so,baseball_1
+batting,ibb,baseball_1
+batting,hbp,baseball_1
+batting,sh,baseball_1
+batting,sf,baseball_1
+batting,g idp,baseball_1
+batting postseason,year,baseball_1
+batting postseason,round,baseball_1
+batting postseason,player id,baseball_1
+batting postseason,team id,baseball_1
+batting postseason,league id,baseball_1
+batting postseason,g,baseball_1
+batting postseason,ab,baseball_1
+batting postseason,r,baseball_1
+batting postseason,h,baseball_1
+batting postseason,double,baseball_1
+batting postseason,triple,baseball_1
+batting postseason,hr,baseball_1
+batting postseason,rbi,baseball_1
+batting postseason,sb,baseball_1
+batting postseason,cs,baseball_1
+batting postseason,bb,baseball_1
+batting postseason,so,baseball_1
+batting postseason,ibb,baseball_1
+batting postseason,hbp,baseball_1
+batting postseason,sh,baseball_1
+batting postseason,sf,baseball_1
+batting postseason,g idp,baseball_1
+player college,player id,baseball_1
+player college,college id,baseball_1
+player college,year,baseball_1
+fielding,player id,baseball_1
+fielding,year,baseball_1
+fielding,stint,baseball_1
+fielding,team id,baseball_1
+fielding,league id,baseball_1
+fielding,pos,baseball_1
+fielding,g,baseball_1
+fielding,gs,baseball_1
+fielding,inn outs,baseball_1
+fielding,po,baseball_1
+fielding,a,baseball_1
+fielding,e,baseball_1
+fielding,dp,baseball_1
+fielding,pb,baseball_1
+fielding,wp,baseball_1
+fielding,sb,baseball_1
+fielding,cs,baseball_1
+fielding,zr,baseball_1
+fielding outfield,player id,baseball_1
+fielding outfield,year,baseball_1
+fielding outfield,stint,baseball_1
+fielding outfield,glf,baseball_1
+fielding outfield,gcf,baseball_1
+fielding outfield,grf,baseball_1
+fielding postseason,player id,baseball_1
+fielding postseason,year,baseball_1
+fielding postseason,team id,baseball_1
+fielding postseason,league id,baseball_1
+fielding postseason,round,baseball_1
+fielding postseason,pos,baseball_1
+fielding postseason,g,baseball_1
+fielding postseason,gs,baseball_1
+fielding postseason,inn outs,baseball_1
+fielding postseason,po,baseball_1
+fielding postseason,a,baseball_1
+fielding postseason,e,baseball_1
+fielding postseason,dp,baseball_1
+fielding postseason,tp,baseball_1
+fielding postseason,pb,baseball_1
+fielding postseason,sb,baseball_1
+fielding postseason,cs,baseball_1
+hall of fame,player id,baseball_1
+hall of fame,yearid,baseball_1
+hall of fame,votedby,baseball_1
+hall of fame,ballots,baseball_1
+hall of fame,needed,baseball_1
+hall of fame,votes,baseball_1
+hall of fame,inducted,baseball_1
+hall of fame,category,baseball_1
+hall of fame,needed note,baseball_1
+home game,year,baseball_1
+home game,league id,baseball_1
+home game,team id,baseball_1
+home game,park id,baseball_1
+home game,span first,baseball_1
+home game,span last,baseball_1
+home game,games,baseball_1
+home game,openings,baseball_1
+home game,attendance,baseball_1
+manager,player id,baseball_1
+manager,year,baseball_1
+manager,team id,baseball_1
+manager,league id,baseball_1
+manager,inseason,baseball_1
+manager,g,baseball_1
+manager,w,baseball_1
+manager,l,baseball_1
+manager,rank,baseball_1
+manager,plyr mgr,baseball_1
+manager half,player id,baseball_1
+manager half,year,baseball_1
+manager half,team id,baseball_1
+manager half,league id,baseball_1
+manager half,inseason,baseball_1
+manager half,half,baseball_1
+manager half,g,baseball_1
+manager half,w,baseball_1
+manager half,l,baseball_1
+manager half,rank,baseball_1
+player,player id,baseball_1
+player,birth year,baseball_1
+player,birth month,baseball_1
+player,birth day,baseball_1
+player,birth country,baseball_1
+player,birth state,baseball_1
+player,birth city,baseball_1
+player,death year,baseball_1
+player,death month,baseball_1
+player,death day,baseball_1
+player,death country,baseball_1
+player,death state,baseball_1
+player,death city,baseball_1
+player,name first,baseball_1
+player,name last,baseball_1
+player,name given,baseball_1
+player,weight,baseball_1
+player,height,baseball_1
+player,bats,baseball_1
+player,throws,baseball_1
+player,debut,baseball_1
+player,final game,baseball_1
+player,retro id,baseball_1
+player,bbref id,baseball_1
+park,park id,baseball_1
+park,park name,baseball_1
+park,park alias,baseball_1
+park,city,baseball_1
+park,state,baseball_1
+park,country,baseball_1
+pitching,player id,baseball_1
+pitching,year,baseball_1
+pitching,stint,baseball_1
+pitching,team id,baseball_1
+pitching,league id,baseball_1
+pitching,w,baseball_1
+pitching,l,baseball_1
+pitching,g,baseball_1
+pitching,gs,baseball_1
+pitching,cg,baseball_1
+pitching,sho,baseball_1
+pitching,sv,baseball_1
+pitching,ipouts,baseball_1
+pitching,h,baseball_1
+pitching,er,baseball_1
+pitching,hr,baseball_1
+pitching,bb,baseball_1
+pitching,so,baseball_1
+pitching,baopp,baseball_1
+pitching,era,baseball_1
+pitching,ibb,baseball_1
+pitching,wp,baseball_1
+pitching,hbp,baseball_1
+pitching,bk,baseball_1
+pitching,bfp,baseball_1
+pitching,gf,baseball_1
+pitching,r,baseball_1
+pitching,sh,baseball_1
+pitching,sf,baseball_1
+pitching,g idp,baseball_1
+pitching postseason,player id,baseball_1
+pitching postseason,year,baseball_1
+pitching postseason,round,baseball_1
+pitching postseason,team id,baseball_1
+pitching postseason,league id,baseball_1
+pitching postseason,w,baseball_1
+pitching postseason,l,baseball_1
+pitching postseason,g,baseball_1
+pitching postseason,gs,baseball_1
+pitching postseason,cg,baseball_1
+pitching postseason,sho,baseball_1
+pitching postseason,sv,baseball_1
+pitching postseason,ipouts,baseball_1
+pitching postseason,h,baseball_1
+pitching postseason,er,baseball_1
+pitching postseason,hr,baseball_1
+pitching postseason,bb,baseball_1
+pitching postseason,so,baseball_1
+pitching postseason,baopp,baseball_1
+pitching postseason,era,baseball_1
+pitching postseason,ibb,baseball_1
+pitching postseason,wp,baseball_1
+pitching postseason,hbp,baseball_1
+pitching postseason,bk,baseball_1
+pitching postseason,bfp,baseball_1
+pitching postseason,gf,baseball_1
+pitching postseason,r,baseball_1
+pitching postseason,sh,baseball_1
+pitching postseason,sf,baseball_1
+pitching postseason,g idp,baseball_1
+salary,year,baseball_1
+salary,team id,baseball_1
+salary,league id,baseball_1
+salary,player id,baseball_1
+salary,salary,baseball_1
+college,college id,baseball_1
+college,name full,baseball_1
+college,city,baseball_1
+college,state,baseball_1
+college,country,baseball_1
+postseason,year,baseball_1
+postseason,round,baseball_1
+postseason,team id winner,baseball_1
+postseason,league id winner,baseball_1
+postseason,team id loser,baseball_1
+postseason,league id loser,baseball_1
+postseason,wins,baseball_1
+postseason,losses,baseball_1
+postseason,ties,baseball_1
+team,year,baseball_1
+team,league id,baseball_1
+team,team id,baseball_1
+team,franchise id,baseball_1
+team,div id,baseball_1
+team,rank,baseball_1
+team,g,baseball_1
+team,ghome,baseball_1
+team,w,baseball_1
+team,l,baseball_1
+team,div win,baseball_1
+team,wc win,baseball_1
+team,lg win,baseball_1
+team,ws win,baseball_1
+team,r,baseball_1
+team,ab,baseball_1
+team,h,baseball_1
+team,double,baseball_1
+team,triple,baseball_1
+team,hr,baseball_1
+team,bb,baseball_1
+team,so,baseball_1
+team,sb,baseball_1
+team,cs,baseball_1
+team,hbp,baseball_1
+team,sf,baseball_1
+team,ra,baseball_1
+team,er,baseball_1
+team,era,baseball_1
+team,cg,baseball_1
+team,sho,baseball_1
+team,sv,baseball_1
+team,ipouts,baseball_1
+team,ha,baseball_1
+team,hra,baseball_1
+team,bba,baseball_1
+team,soa,baseball_1
+team,e,baseball_1
+team,dp,baseball_1
+team,fp,baseball_1
+team,name,baseball_1
+team,park,baseball_1
+team,attendance,baseball_1
+team,bpf,baseball_1
+team,ppf,baseball_1
+team,team id br,baseball_1
+team,team id lahman45,baseball_1
+team,team id retro,baseball_1
+team franchise,franchise id,baseball_1
+team franchise,franchise name,baseball_1
+team franchise,active,baseball_1
+team franchise,na assoc,baseball_1
+team half,year,baseball_1
+team half,league id,baseball_1
+team half,team id,baseball_1
+team half,half,baseball_1
+team half,div id,baseball_1
+team half,div win,baseball_1
+team half,rank,baseball_1
+team half,g,baseball_1
+team half,w,baseball_1
+team half,l,baseball_1
+architect,id,architecture
+architect,name,architecture
+architect,nationality,architecture
+architect,gender,architecture
+bridge,architect id,architecture
+bridge,id,architecture
+bridge,name,architecture
+bridge,location,architecture
+bridge,length meters,architecture
+bridge,length feet,architecture
+mill,architect id,architecture
+mill,id,architecture
+mill,location,architecture
+mill,name,architecture
+mill,type,architecture
+mill,built year,architecture
+mill,notes,architecture
+campuses,id,csu_1
+campuses,campus,csu_1
+campuses,location,csu_1
+campuses,county,csu_1
+campuses,year,csu_1
+csu fees,campus,csu_1
+csu fees,year,csu_1
+csu fees,campus fee,csu_1
+degrees,year,csu_1
+degrees,campus,csu_1
+degrees,degrees,csu_1
+discipline enrollments,campus,csu_1
+discipline enrollments,discipline,csu_1
+discipline enrollments,year,csu_1
+discipline enrollments,undergraduate,csu_1
+discipline enrollments,graduate,csu_1
+enrollments,campus,csu_1
+enrollments,year,csu_1
+enrollments,totalenrollment ay,csu_1
+enrollments,fte ay,csu_1
+faculty,campus,csu_1
+faculty,year,csu_1
+faculty,faculty,csu_1
+customers,customer id,tracking_orders
+customers,customer name,tracking_orders
+customers,customer details,tracking_orders
+invoices,invoice number,tracking_orders
+invoices,invoice date,tracking_orders
+invoices,invoice details,tracking_orders
+orders,order id,tracking_orders
+orders,customer id,tracking_orders
+orders,order status,tracking_orders
+orders,date order placed,tracking_orders
+orders,order details,tracking_orders
+products,product id,tracking_orders
+products,product name,tracking_orders
+products,product details,tracking_orders
+order items,order item id,tracking_orders
+order items,product id,tracking_orders
+order items,order id,tracking_orders
+order items,order item status,tracking_orders
+order items,order item details,tracking_orders
+shipments,shipment id,tracking_orders
+shipments,order id,tracking_orders
+shipments,invoice number,tracking_orders
+shipments,shipment tracking number,tracking_orders
+shipments,shipment date,tracking_orders
+shipments,other shipment details,tracking_orders
+shipment items,shipment id,tracking_orders
+shipment items,order item id,tracking_orders
+customers,customer id,insurance_policies
+customers,customer details,insurance_policies
+customer policies,policy id,insurance_policies
+customer policies,customer id,insurance_policies
+customer policies,policy type code,insurance_policies
+customer policies,start date,insurance_policies
+customer policies,end date,insurance_policies
+claims,claim id,insurance_policies
+claims,policy id,insurance_policies
+claims,date claim made,insurance_policies
+claims,date claim settled,insurance_policies
+claims,amount claimed,insurance_policies
+claims,amount settled,insurance_policies
+settlements,settlement id,insurance_policies
+settlements,claim id,insurance_policies
+settlements,date claim made,insurance_policies
+settlements,date claim settled,insurance_policies
+settlements,amount claimed,insurance_policies
+settlements,amount settled,insurance_policies
+settlements,customer policy id,insurance_policies
+payments,payment id,insurance_policies
+payments,settlement id,insurance_policies
+payments,payment method code,insurance_policies
+payments,date payment made,insurance_policies
+payments,amount payment,insurance_policies
+company,company id,gas_company
+company,rank,gas_company
+company,company,gas_company
+company,headquarters,gas_company
+company,main industry,gas_company
+company,sales billion,gas_company
+company,profits billion,gas_company
+company,assets billion,gas_company
+company,market value,gas_company
+gas station,station id,gas_company
+gas station,open year,gas_company
+gas station,location,gas_company
+gas station,manager name,gas_company
+gas station,vice manager name,gas_company
+gas station,representative name,gas_company
+station company,station id,gas_company
+station company,company id,gas_company
+station company,rank of the year,gas_company
+addresses,address id,e_government
+addresses,line 1 number building,e_government
+addresses,town city,e_government
+addresses,zip postcode,e_government
+addresses,state province county,e_government
+addresses,country,e_government
+services,service id,e_government
+services,service type code,e_government
+services,service name,e_government
+services,service descriptio,e_government
+forms,form id,e_government
+forms,form type code,e_government
+forms,service id,e_government
+forms,form number,e_government
+forms,form name,e_government
+forms,form description,e_government
+individuals,individual id,e_government
+individuals,individual first name,e_government
+individuals,individual middle name,e_government
+individuals,inidividual phone,e_government
+individuals,individual email,e_government
+individuals,individual address,e_government
+individuals,individual last name,e_government
+organizations,organization id,e_government
+organizations,date formed,e_government
+organizations,organization name,e_government
+organizations,uk vat number,e_government
+parties,party id,e_government
+parties,payment method code,e_government
+parties,party phone,e_government
+parties,party email,e_government
+organization contact individuals,individual id,e_government
+organization contact individuals,organization id,e_government
+organization contact individuals,date contact from,e_government
+organization contact individuals,date contact to,e_government
+party addresses,party id,e_government
+party addresses,address id,e_government
+party addresses,date address from,e_government
+party addresses,address type code,e_government
+party addresses,date address to,e_government
+party forms,party id,e_government
+party forms,form id,e_government
+party forms,date completion started,e_government
+party forms,form status code,e_government
+party forms,date fully completed,e_government
+party services,booking id,e_government
+party services,customer id,e_government
+party services,service id,e_government
+party services,service datetime,e_government
+party services,booking made date,e_government
+driver,driver id,school_bus
+driver,name,school_bus
+driver,party,school_bus
+driver,home city,school_bus
+driver,age,school_bus
+school,school id,school_bus
+school,grade,school_bus
+school,school,school_bus
+school,location,school_bus
+school,type,school_bus
+school bus,school id,school_bus
+school bus,driver id,school_bus
+school bus,years working,school_bus
+school bus,if full time,school_bus
+repair,repair id,machine_repair
+repair,name,machine_repair
+repair,launch date,machine_repair
+repair,notes,machine_repair
+machine,machine id,machine_repair
+machine,making year,machine_repair
+machine,class,machine_repair
+machine,team,machine_repair
+machine,machine series,machine_repair
+machine,value points,machine_repair
+machine,quality rank,machine_repair
+technician,technician id,machine_repair
+technician,name,machine_repair
+technician,team,machine_repair
+technician,starting year,machine_repair
+technician,age,machine_repair
+repair assignment,technician id,machine_repair
+repair assignment,repair id,machine_repair
+repair assignment,machine id,machine_repair
+artist,artist id,theme_gallery
+artist,name,theme_gallery
+artist,country,theme_gallery
+artist,year join,theme_gallery
+artist,age,theme_gallery
+exhibition,exhibition id,theme_gallery
+exhibition,year,theme_gallery
+exhibition,theme,theme_gallery
+exhibition,artist id,theme_gallery
+exhibition,ticket price,theme_gallery
+exhibition record,exhibition id,theme_gallery
+exhibition record,date,theme_gallery
+exhibition record,attendance,theme_gallery
+film,film id,film_rank
+film,title,film_rank
+film,studio,film_rank
+film,director,film_rank
+film,gross in dollar,film_rank
+market,market id,film_rank
+market,country,film_rank
+market,number cities,film_rank
+film market estimation,estimation id,film_rank
+film market estimation,low estimate,film_rank
+film market estimation,high estimate,film_rank
+film market estimation,film id,film_rank
+film market estimation,type,film_rank
+film market estimation,market id,film_rank
+film market estimation,year,film_rank
+region,region id,party_people
+region,region name,party_people
+region,date,party_people
+region,label,party_people
+region,format,party_people
+region,catalogue,party_people
+party,party id,party_people
+party,minister,party_people
+party,took office,party_people
+party,left office,party_people
+party,region id,party_people
+party,party name,party_people
+member,member id,party_people
+member,member name,party_people
+member,party id,party_people
+member,in office,party_people
+party events,event id,party_people
+party events,event name,party_people
+party events,party id,party_people
+party events,member in charge id,party_people
+physician,employee id,hospital_1
+physician,name,hospital_1
+physician,position,hospital_1
+physician,ssn,hospital_1
+department,departmentid,hospital_1
+department,name,hospital_1
+department,head,hospital_1
+affiliated with,physician,hospital_1
+affiliated with,department,hospital_1
+affiliated with,primary affiliation,hospital_1
+procedures,code,hospital_1
+procedures,name,hospital_1
+procedures,cost,hospital_1
+trained in,physician,hospital_1
+trained in,treatment,hospital_1
+trained in,certification date,hospital_1
+trained in,certification expires,hospital_1
+patient,ssn,hospital_1
+patient,name,hospital_1
+patient,address,hospital_1
+patient,phone,hospital_1
+patient,insurance id,hospital_1
+patient,pcp,hospital_1
+nurse,employee id,hospital_1
+nurse,name,hospital_1
+nurse,position,hospital_1
+nurse,registered,hospital_1
+nurse,ssn,hospital_1
+appointment,appointment id,hospital_1
+appointment,patient,hospital_1
+appointment,prep nurse,hospital_1
+appointment,physician,hospital_1
+appointment,start,hospital_1
+appointment,end,hospital_1
+appointment,examination room,hospital_1
+medication,code,hospital_1
+medication,name,hospital_1
+medication,brand,hospital_1
+medication,description,hospital_1
+prescribes,physician,hospital_1
+prescribes,patient,hospital_1
+prescribes,medication,hospital_1
+prescribes,date,hospital_1
+prescribes,appointment,hospital_1
+prescribes,dose,hospital_1
+block,block floor,hospital_1
+block,block code,hospital_1
+room,roomnumber,hospital_1
+room,room type,hospital_1
+room,block floor,hospital_1
+room,block code,hospital_1
+room,unavailable,hospital_1
+on call,nurse,hospital_1
+on call,block floor,hospital_1
+on call,block code,hospital_1
+on call,oncall start,hospital_1
+on call,oncall end,hospital_1
+stay,stay id,hospital_1
+stay,patient,hospital_1
+stay,room,hospital_1
+stay,stay start,hospital_1
+stay,stay end,hospital_1
+undergoes,patient,hospital_1
+undergoes,procedures,hospital_1
+undergoes,stay,hospital_1
+undergoes,date undergoes,hospital_1
+undergoes,physician,hospital_1
+undergoes,assisting nurse,hospital_1
+premises,premise id,customers_campaigns_ecommerce
+premises,premises type,customers_campaigns_ecommerce
+premises,premise details,customers_campaigns_ecommerce
+products,product id,customers_campaigns_ecommerce
+products,product category,customers_campaigns_ecommerce
+products,product name,customers_campaigns_ecommerce
+customers,customer id,customers_campaigns_ecommerce
+customers,payment method,customers_campaigns_ecommerce
+customers,customer name,customers_campaigns_ecommerce
+customers,customer phone,customers_campaigns_ecommerce
+customers,customer email,customers_campaigns_ecommerce
+customers,customer address,customers_campaigns_ecommerce
+customers,customer login,customers_campaigns_ecommerce
+customers,customer password,customers_campaigns_ecommerce
+mailshot campaigns,mailshot id,customers_campaigns_ecommerce
+mailshot campaigns,product category,customers_campaigns_ecommerce
+mailshot campaigns,mailshot name,customers_campaigns_ecommerce
+mailshot campaigns,mailshot start date,customers_campaigns_ecommerce
+mailshot campaigns,mailshot end date,customers_campaigns_ecommerce
+customer addresses,customer id,customers_campaigns_ecommerce
+customer addresses,premise id,customers_campaigns_ecommerce
+customer addresses,date address from,customers_campaigns_ecommerce
+customer addresses,address type code,customers_campaigns_ecommerce
+customer addresses,date address to,customers_campaigns_ecommerce
+customer orders,order id,customers_campaigns_ecommerce
+customer orders,customer id,customers_campaigns_ecommerce
+customer orders,order status code,customers_campaigns_ecommerce
+customer orders,shipping method code,customers_campaigns_ecommerce
+customer orders,order placed datetime,customers_campaigns_ecommerce
+customer orders,order delivered datetime,customers_campaigns_ecommerce
+customer orders,order shipping charges,customers_campaigns_ecommerce
+mailshot customers,mailshot id,customers_campaigns_ecommerce
+mailshot customers,customer id,customers_campaigns_ecommerce
+mailshot customers,outcome code,customers_campaigns_ecommerce
+mailshot customers,mailshot customer date,customers_campaigns_ecommerce
+order items,item id,customers_campaigns_ecommerce
+order items,order item status code,customers_campaigns_ecommerce
+order items,order id,customers_campaigns_ecommerce
+order items,product id,customers_campaigns_ecommerce
+order items,item status code,customers_campaigns_ecommerce
+order items,item delivered datetime,customers_campaigns_ecommerce
+order items,item order quantity,customers_campaigns_ecommerce
+gymnast,gymnast id,gymnast
+gymnast,floor exercise points,gymnast
+gymnast,pommel horse points,gymnast
+gymnast,rings points,gymnast
+gymnast,vault points,gymnast
+gymnast,parallel bars points,gymnast
+gymnast,horizontal bar points,gymnast
+gymnast,total points,gymnast
+people,people id,gymnast
+people,name,gymnast
+people,age,gymnast
+people,height,gymnast
+people,hometown,gymnast
+geographic,city name,restaurants
+geographic,county,restaurants
+geographic,region,restaurants
+restaurant,id,restaurants
+restaurant,name,restaurants
+restaurant,food type,restaurants
+restaurant,city name,restaurants
+restaurant,rating,restaurants
+location,restaurant id,restaurants
+location,house number,restaurants
+location,street name,restaurants
+location,city name,restaurants
+mountain,id,mountain_photos
+mountain,name,mountain_photos
+mountain,height,mountain_photos
+mountain,prominence,mountain_photos
+mountain,range,mountain_photos
+mountain,country,mountain_photos
+camera lens,id,mountain_photos
+camera lens,brand,mountain_photos
+camera lens,name,mountain_photos
+camera lens,focal length mm,mountain_photos
+camera lens,max aperture,mountain_photos
+photos,id,mountain_photos
+photos,camera lens id,mountain_photos
+photos,mountain id,mountain_photos
+photos,color,mountain_photos
+photos,name,mountain_photos
+battle,id,battle_death
+battle,name,battle_death
+battle,date,battle_death
+battle,bulgarian commander,battle_death
+battle,latin commander,battle_death
+battle,result,battle_death
+ship,lost in battle,battle_death
+ship,id,battle_death
+ship,name,battle_death
+ship,tonnage,battle_death
+ship,ship type,battle_death
+ship,location,battle_death
+ship,disposition of ship,battle_death
+death,caused by ship id,battle_death
+death,id,battle_death
+death,note,battle_death
+death,killed,battle_death
+death,injured,battle_death
+reference document types,document type code,cre_Doc_Control_Systems
+reference document types,document type description,cre_Doc_Control_Systems
+roles,role code,cre_Doc_Control_Systems
+roles,role description,cre_Doc_Control_Systems
+addresses,address id,cre_Doc_Control_Systems
+addresses,address details,cre_Doc_Control_Systems
+reference document status,document status code,cre_Doc_Control_Systems
+reference document status,document status description,cre_Doc_Control_Systems
+reference shipping agents,shipping agent code,cre_Doc_Control_Systems
+reference shipping agents,shipping agent name,cre_Doc_Control_Systems
+reference shipping agents,shipping agent description,cre_Doc_Control_Systems
+documents,document id,cre_Doc_Control_Systems
+documents,document status code,cre_Doc_Control_Systems
+documents,document type code,cre_Doc_Control_Systems
+documents,shipping agent code,cre_Doc_Control_Systems
+documents,receipt date,cre_Doc_Control_Systems
+documents,receipt number,cre_Doc_Control_Systems
+documents,other details,cre_Doc_Control_Systems
+employees,employee id,cre_Doc_Control_Systems
+employees,role code,cre_Doc_Control_Systems
+employees,employee name,cre_Doc_Control_Systems
+employees,other details,cre_Doc_Control_Systems
+document drafts,document id,cre_Doc_Control_Systems
+document drafts,draft number,cre_Doc_Control_Systems
+document drafts,draft details,cre_Doc_Control_Systems
+draft copies,document id,cre_Doc_Control_Systems
+draft copies,draft number,cre_Doc_Control_Systems
+draft copies,copy number,cre_Doc_Control_Systems
+circulation history,document id,cre_Doc_Control_Systems
+circulation history,draft number,cre_Doc_Control_Systems
+circulation history,copy number,cre_Doc_Control_Systems
+circulation history,employee id,cre_Doc_Control_Systems
+documents mailed,document id,cre_Doc_Control_Systems
+documents mailed,mailed to address id,cre_Doc_Control_Systems
+documents mailed,mailing date,cre_Doc_Control_Systems
+investors,investor id,tracking_share_transactions
+investors,investor details,tracking_share_transactions
+lots,lot id,tracking_share_transactions
+lots,investor id,tracking_share_transactions
+lots,lot details,tracking_share_transactions
+reference transaction types,transaction type code,tracking_share_transactions
+reference transaction types,transaction type description,tracking_share_transactions
+transactions,transaction id,tracking_share_transactions
+transactions,investor id,tracking_share_transactions
+transactions,transaction type code,tracking_share_transactions
+transactions,date of transaction,tracking_share_transactions
+transactions,amount of transaction,tracking_share_transactions
+transactions,share count,tracking_share_transactions
+transactions,other details,tracking_share_transactions
+sales,sales transaction id,tracking_share_transactions
+sales,sales details,tracking_share_transactions
+purchases,purchase transaction id,tracking_share_transactions
+purchases,purchase details,tracking_share_transactions
+transactions lots,transaction id,tracking_share_transactions
+transactions lots,lot id,tracking_share_transactions
+apartment buildings,building id,apartment_rentals
+apartment buildings,building short name,apartment_rentals
+apartment buildings,building full name,apartment_rentals
+apartment buildings,building description,apartment_rentals
+apartment buildings,building address,apartment_rentals
+apartment buildings,building manager,apartment_rentals
+apartment buildings,building phone,apartment_rentals
+apartments,apartment id,apartment_rentals
+apartments,building id,apartment_rentals
+apartments,apartment type code,apartment_rentals
+apartments,apartment number,apartment_rentals
+apartments,bathroom count,apartment_rentals
+apartments,bedroom count,apartment_rentals
+apartments,room count,apartment_rentals
+apartment facilities,apartment id,apartment_rentals
+apartment facilities,facility code,apartment_rentals
+guests,guest id,apartment_rentals
+guests,gender code,apartment_rentals
+guests,guest first name,apartment_rentals
+guests,guest last name,apartment_rentals
+guests,date of birth,apartment_rentals
+apartment bookings,apartment booking id,apartment_rentals
+apartment bookings,apartment id,apartment_rentals
+apartment bookings,guest id,apartment_rentals
+apartment bookings,booking status code,apartment_rentals
+apartment bookings,booking start date,apartment_rentals
+apartment bookings,booking end date,apartment_rentals
+view unit status,apartment id,apartment_rentals
+view unit status,apartment booking id,apartment_rentals
+view unit status,status date,apartment_rentals
+view unit status,available yes or no,apartment_rentals
+addresses,address id,student_transcripts_tracking
+addresses,line 1,student_transcripts_tracking
+addresses,line 2,student_transcripts_tracking
+addresses,line 3,student_transcripts_tracking
+addresses,city,student_transcripts_tracking
+addresses,zip postcode,student_transcripts_tracking
+addresses,state province county,student_transcripts_tracking
+addresses,country,student_transcripts_tracking
+addresses,other address details,student_transcripts_tracking
+courses,course id,student_transcripts_tracking
+courses,course name,student_transcripts_tracking
+courses,course description,student_transcripts_tracking
+courses,other details,student_transcripts_tracking
+departments,department id,student_transcripts_tracking
+departments,department name,student_transcripts_tracking
+departments,department description,student_transcripts_tracking
+departments,other details,student_transcripts_tracking
+degree programs,degree program id,student_transcripts_tracking
+degree programs,department id,student_transcripts_tracking
+degree programs,degree summary name,student_transcripts_tracking
+degree programs,degree summary description,student_transcripts_tracking
+degree programs,other details,student_transcripts_tracking
+sections,section id,student_transcripts_tracking
+sections,course id,student_transcripts_tracking
+sections,section name,student_transcripts_tracking
+sections,section description,student_transcripts_tracking
+sections,other details,student_transcripts_tracking
+semesters,semester id,student_transcripts_tracking
+semesters,semester name,student_transcripts_tracking
+semesters,semester description,student_transcripts_tracking
+semesters,other details,student_transcripts_tracking
+students,student id,student_transcripts_tracking
+students,current address id,student_transcripts_tracking
+students,permanent address id,student_transcripts_tracking
+students,first name,student_transcripts_tracking
+students,middle name,student_transcripts_tracking
+students,last name,student_transcripts_tracking
+students,cell mobile number,student_transcripts_tracking
+students,email address,student_transcripts_tracking
+students,ssn,student_transcripts_tracking
+students,date first registered,student_transcripts_tracking
+students,date left,student_transcripts_tracking
+students,other student details,student_transcripts_tracking
+student enrolment,student enrolment id,student_transcripts_tracking
+student enrolment,degree program id,student_transcripts_tracking
+student enrolment,semester id,student_transcripts_tracking
+student enrolment,student id,student_transcripts_tracking
+student enrolment,other details,student_transcripts_tracking
+student enrolment courses,student course id,student_transcripts_tracking
+student enrolment courses,course id,student_transcripts_tracking
+student enrolment courses,student enrolment id,student_transcripts_tracking
+transcripts,transcript id,student_transcripts_tracking
+transcripts,transcript date,student_transcripts_tracking
+transcripts,other details,student_transcripts_tracking
+transcript contents,student course id,student_transcripts_tracking
+transcript contents,transcript id,student_transcripts_tracking
+reference document types,document type code,cre_Docs_and_Epenses
+reference document types,document type name,cre_Docs_and_Epenses
+reference document types,document type description,cre_Docs_and_Epenses
+reference budget codes,budget type code,cre_Docs_and_Epenses
+reference budget codes,budget type description,cre_Docs_and_Epenses
+projects,project id,cre_Docs_and_Epenses
+projects,project details,cre_Docs_and_Epenses
+documents,document id,cre_Docs_and_Epenses
+documents,document type code,cre_Docs_and_Epenses
+documents,project id,cre_Docs_and_Epenses
+documents,document date,cre_Docs_and_Epenses
+documents,document name,cre_Docs_and_Epenses
+documents,document description,cre_Docs_and_Epenses
+documents,other details,cre_Docs_and_Epenses
+statements,statement id,cre_Docs_and_Epenses
+statements,statement details,cre_Docs_and_Epenses
+documents with expenses,document id,cre_Docs_and_Epenses
+documents with expenses,budget type code,cre_Docs_and_Epenses
+documents with expenses,document details,cre_Docs_and_Epenses
+accounts,account id,cre_Docs_and_Epenses
+accounts,statement id,cre_Docs_and_Epenses
+accounts,account details,cre_Docs_and_Epenses
+mission,mission id,ship_mission
+mission,ship id,ship_mission
+mission,code,ship_mission
+mission,launched year,ship_mission
+mission,location,ship_mission
+mission,speed knots,ship_mission
+mission,fate,ship_mission
+ship,ship id,ship_mission
+ship,name,ship_mission
+ship,type,ship_mission
+ship,nationality,ship_mission
+ship,tonnage,ship_mission
+buildings,id,company_office
+buildings,name,company_office
+buildings,city,company_office
+buildings,height,company_office
+buildings,stories,company_office
+buildings,status,company_office
+companies,id,company_office
+companies,name,company_office
+companies,headquarters,company_office
+companies,industry,company_office
+companies,sales billion,company_office
+companies,profits billion,company_office
+companies,assets billion,company_office
+companies,market value billion,company_office
+office locations,building id,company_office
+office locations,company id,company_office
+office locations,move in year,company_office
+problem category codes,problem category code,tracking_software_problems
+problem category codes,problem category description,tracking_software_problems
+problem log,problem log id,tracking_software_problems
+problem log,assigned to staff id,tracking_software_problems
+problem log,problem id,tracking_software_problems
+problem log,problem category code,tracking_software_problems
+problem log,problem status code,tracking_software_problems
+problem log,log entry date,tracking_software_problems
+problem log,log entry description,tracking_software_problems
+problem log,log entry fix,tracking_software_problems
+problem log,other log details,tracking_software_problems
+problem status codes,problem status code,tracking_software_problems
+problem status codes,problem status description,tracking_software_problems
+product,product id,tracking_software_problems
+product,product name,tracking_software_problems
+product,product details,tracking_software_problems
+staff,staff id,tracking_software_problems
+staff,staff first name,tracking_software_problems
+staff,staff last name,tracking_software_problems
+staff,other staff details,tracking_software_problems
+problems,problem id,tracking_software_problems
+problems,product id,tracking_software_problems
+problems,closure authorised by staff id,tracking_software_problems
+problems,reported by staff id,tracking_software_problems
+problems,date problem reported,tracking_software_problems
+problems,date problem closed,tracking_software_problems
+problems,problem description,tracking_software_problems
+problems,other problem details,tracking_software_problems
+reference characteristic types,characteristic type code,products_gen_characteristics
+reference characteristic types,characteristic type description,products_gen_characteristics
+reference colors,color code,products_gen_characteristics
+reference colors,color description,products_gen_characteristics
+reference product categories,product category code,products_gen_characteristics
+reference product categories,product category description,products_gen_characteristics
+reference product categories,unit of measure,products_gen_characteristics
+characteristics,characteristic id,products_gen_characteristics
+characteristics,characteristic type code,products_gen_characteristics
+characteristics,characteristic data type,products_gen_characteristics
+characteristics,characteristic name,products_gen_characteristics
+characteristics,other characteristic details,products_gen_characteristics
+products,product id,products_gen_characteristics
+products,color code,products_gen_characteristics
+products,product category code,products_gen_characteristics
+products,product name,products_gen_characteristics
+products,typical buying price,products_gen_characteristics
+products,typical selling price,products_gen_characteristics
+products,product description,products_gen_characteristics
+products,other product details,products_gen_characteristics
+product characteristics,product id,products_gen_characteristics
+product characteristics,characteristic id,products_gen_characteristics
+product characteristics,product characteristic value,products_gen_characteristics
+shop,shop id,coffee_shop
+shop,address,coffee_shop
+shop,num of staff,coffee_shop
+shop,score,coffee_shop
+shop,open year,coffee_shop
+member,member id,coffee_shop
+member,name,coffee_shop
+member,membership card,coffee_shop
+member,age,coffee_shop
+member,time of purchase,coffee_shop
+member,level of membership,coffee_shop
+member,address,coffee_shop
+happy hour,hh id,coffee_shop
+happy hour,shop id,coffee_shop
+happy hour,month,coffee_shop
+happy hour,num of shaff in charge,coffee_shop
+happy hour member,hh id,coffee_shop
+happy hour member,member id,coffee_shop
+happy hour member,total amount,coffee_shop
+player,player id,riding_club
+player,sponsor name,riding_club
+player,player name,riding_club
+player,gender,riding_club
+player,residence,riding_club
+player,occupation,riding_club
+player,votes,riding_club
+player,rank,riding_club
+club,club id,riding_club
+club,club name,riding_club
+club,region,riding_club
+club,start year,riding_club
+coach,coach id,riding_club
+coach,player name,riding_club
+coach,gender,riding_club
+coach,club id,riding_club
+coach,rank,riding_club
+player coach,player id,riding_club
+player coach,coach id,riding_club
+player coach,starting year,riding_club
+match result,rank,riding_club
+match result,club id,riding_club
+match result,gold,riding_club
+match result,big silver,riding_club
+match result,small silver,riding_club
+match result,bronze,riding_club
+match result,points,riding_club
+accounts,account id,customers_card_transactions
+accounts,customer id,customers_card_transactions
+accounts,account name,customers_card_transactions
+accounts,other account details,customers_card_transactions
+customers,customer id,customers_card_transactions
+customers,customer first name,customers_card_transactions
+customers,customer last name,customers_card_transactions
+customers,customer address,customers_card_transactions
+customers,customer phone,customers_card_transactions
+customers,customer email,customers_card_transactions
+customers,other customer details,customers_card_transactions
+customers cards,card id,customers_card_transactions
+customers cards,customer id,customers_card_transactions
+customers cards,card type code,customers_card_transactions
+customers cards,card number,customers_card_transactions
+customers cards,date valid from,customers_card_transactions
+customers cards,date valid to,customers_card_transactions
+customers cards,other card details,customers_card_transactions
+financial transactions,transaction id,customers_card_transactions
+financial transactions,previous transaction id,customers_card_transactions
+financial transactions,account id,customers_card_transactions
+financial transactions,card id,customers_card_transactions
+financial transactions,transaction type,customers_card_transactions
+financial transactions,transaction date,customers_card_transactions
+financial transactions,transaction amount,customers_card_transactions
+financial transactions,transaction comment,customers_card_transactions
+financial transactions,other transaction details,customers_card_transactions
+county public safety,county id,county_public_safety
+county public safety,name,county_public_safety
+county public safety,population,county_public_safety
+county public safety,police officers,county_public_safety
+county public safety,residents per officer,county_public_safety
+county public safety,case burden,county_public_safety
+county public safety,crime rate,county_public_safety
+county public safety,police force,county_public_safety
+county public safety,location,county_public_safety
+city,city id,county_public_safety
+city,county id,county_public_safety
+city,name,county_public_safety
+city,white,county_public_safety
+city,black,county_public_safety
+city,amerindian,county_public_safety
+city,asian,county_public_safety
+city,multiracial,county_public_safety
+city,hispanic,county_public_safety
+member,member id,performance_attendance
+member,name,performance_attendance
+member,nationality,performance_attendance
+member,role,performance_attendance
+performance,performance id,performance_attendance
+performance,date,performance_attendance
+performance,host,performance_attendance
+performance,location,performance_attendance
+performance,attendance,performance_attendance
+member attendance,member id,performance_attendance
+member attendance,performance id,performance_attendance
+member attendance,num of pieces,performance_attendance
+student,student id,club_1
+student,last name,club_1
+student,first name,club_1
+student,age,club_1
+student,sex,club_1
+student,major,club_1
+student,advisor,club_1
+student,city code,club_1
+club,club id,club_1
+club,club name,club_1
+club,club description,club_1
+club,club location,club_1
+member of club,student id,club_1
+member of club,club id,club_1
+member of club,position,club_1
+singer,singer id,singer
+singer,name,singer
+singer,birth year,singer
+singer,net worth millions,singer
+singer,citizenship,singer
+song,song id,singer
+song,title,singer
+song,singer id,singer
+song,sales,singer
+song,highest position,singer
+book club,book club id,culture_company
+book club,year,culture_company
+book club,author or editor,culture_company
+book club,book title,culture_company
+book club,publisher,culture_company
+book club,category,culture_company
+book club,result,culture_company
+movie,movie id,culture_company
+movie,title,culture_company
+movie,year,culture_company
+movie,director,culture_company
+movie,budget million,culture_company
+movie,gross worldwide,culture_company
+culture company,company name,culture_company
+culture company,type,culture_company
+culture company,incorporated in,culture_company
+culture company,group equity shareholding,culture_company
+culture company,book club id,culture_company
+culture company,movie id,culture_company
+reference template types,template type code,cre_Doc_Template_Mgt
+reference template types,template type description,cre_Doc_Template_Mgt
+templates,template id,cre_Doc_Template_Mgt
+templates,version number,cre_Doc_Template_Mgt
+templates,template type code,cre_Doc_Template_Mgt
+templates,date effective from,cre_Doc_Template_Mgt
+templates,date effective to,cre_Doc_Template_Mgt
+templates,template details,cre_Doc_Template_Mgt
+documents,document id,cre_Doc_Template_Mgt
+documents,template id,cre_Doc_Template_Mgt
+documents,document name,cre_Doc_Template_Mgt
+documents,document description,cre_Doc_Template_Mgt
+documents,other details,cre_Doc_Template_Mgt
+paragraphs,paragraph id,cre_Doc_Template_Mgt
+paragraphs,document id,cre_Doc_Template_Mgt
+paragraphs,paragraph text,cre_Doc_Template_Mgt
+paragraphs,other details,cre_Doc_Template_Mgt
+musical,musical id,musical
+musical,name,musical
+musical,year,musical
+musical,award,musical
+musical,category,musical
+musical,nominee,musical
+musical,result,musical
+actor,actor id,musical
+actor,name,musical
+actor,musical id,musical
+actor,character,musical
+actor,duration,musical
+actor,age,musical
+city,id,world_1
+city,name,world_1
+city,country code,world_1
+city,district,world_1
+city,population,world_1
+sqlite sequence,name,world_1
+sqlite sequence,seq,world_1
+country,code,world_1
+country,name,world_1
+country,continent,world_1
+country,region,world_1
+country,surface area,world_1
+country,indepdent year,world_1
+country,population,world_1
+country,life expectancy,world_1
+country,gnp,world_1
+country,gnp old,world_1
+country,local name,world_1
+country,government form,world_1
+country,head of state,world_1
+country,capital,world_1
+country,code2,world_1
+countrylanguage,countrycode,world_1
+countrylanguage,language,world_1
+countrylanguage,is official,world_1
+countrylanguage,percentage,world_1
+device,device id,device
+device,device,device
+device,carrier,device
+device,package version,device
+device,applications,device
+device,software platform,device
+shop,shop id,device
+shop,shop name,device
+shop,location,device
+shop,open date,device
+shop,open year,device
+stock,shop id,device
+stock,device id,device
+stock,quantity,device
+document types,document type code,tracking_grants_for_research
+document types,document description,tracking_grants_for_research
+documents,document id,tracking_grants_for_research
+documents,document type code,tracking_grants_for_research
+documents,grant id,tracking_grants_for_research
+documents,sent date,tracking_grants_for_research
+documents,response received date,tracking_grants_for_research
+documents,other details,tracking_grants_for_research
+grants,grant id,tracking_grants_for_research
+grants,organisation id,tracking_grants_for_research
+grants,grant amount,tracking_grants_for_research
+grants,grant start date,tracking_grants_for_research
+grants,grant end date,tracking_grants_for_research
+grants,other details,tracking_grants_for_research
+organisation types,organisation type,tracking_grants_for_research
+organisation types,organisation type description,tracking_grants_for_research
+organisations,organisation id,tracking_grants_for_research
+organisations,organisation type,tracking_grants_for_research
+organisations,organisation details,tracking_grants_for_research
+project outcomes,project id,tracking_grants_for_research
+project outcomes,outcome code,tracking_grants_for_research
+project outcomes,outcome details,tracking_grants_for_research
+project staff,staff id,tracking_grants_for_research
+project staff,project id,tracking_grants_for_research
+project staff,role code,tracking_grants_for_research
+project staff,date from,tracking_grants_for_research
+project staff,date to,tracking_grants_for_research
+project staff,other details,tracking_grants_for_research
+projects,project id,tracking_grants_for_research
+projects,organisation id,tracking_grants_for_research
+projects,project details,tracking_grants_for_research
+research outcomes,outcome code,tracking_grants_for_research
+research outcomes,outcome description,tracking_grants_for_research
+research staff,staff id,tracking_grants_for_research
+research staff,employer organisation id,tracking_grants_for_research
+research staff,staff details,tracking_grants_for_research
+staff roles,role code,tracking_grants_for_research
+staff roles,role description,tracking_grants_for_research
+tasks,task id,tracking_grants_for_research
+tasks,project id,tracking_grants_for_research
+tasks,task details,tracking_grants_for_research
+tasks,eg agree objectives,tracking_grants_for_research
+employee,employee id,employee_hire_evaluation
+employee,name,employee_hire_evaluation
+employee,age,employee_hire_evaluation
+employee,city,employee_hire_evaluation
+shop,shop id,employee_hire_evaluation
+shop,name,employee_hire_evaluation
+shop,location,employee_hire_evaluation
+shop,district,employee_hire_evaluation
+shop,number products,employee_hire_evaluation
+shop,manager name,employee_hire_evaluation
+hiring,shop id,employee_hire_evaluation
+hiring,employee id,employee_hire_evaluation
+hiring,start from,employee_hire_evaluation
+hiring,is full time,employee_hire_evaluation
+evaluation,employee id,employee_hire_evaluation
+evaluation,year awarded,employee_hire_evaluation
+evaluation,bonus,employee_hire_evaluation
+movie,movie id,movie_1
+movie,title,movie_1
+movie,year,movie_1
+movie,director,movie_1
+reviewer,reviewer id,movie_1
+reviewer,name,movie_1
+rating,reviewer id,movie_1
+rating,movie id,movie_1
+rating,rating stars,movie_1
+rating,rating date,movie_1
+high schooler,id,network_1
+high schooler,name,network_1
+high schooler,grade,network_1
+friend,student id,network_1
+friend,friend id,network_1
+likes,student id,network_1
+likes,liked id,network_1
+poker player,poker player id,poker_player
+poker player,people id,poker_player
+poker player,final table made,poker_player
+poker player,best finish,poker_player
+poker player,money rank,poker_player
+poker player,earnings,poker_player
+people,people id,poker_player
+people,nationality,poker_player
+people,name,poker_player
+people,birth date,poker_player
+people,height,poker_player
+program,program id,program_share
+program,name,program_share
+program,origin,program_share
+program,launch,program_share
+program,owner,program_share
+channel,channel id,program_share
+channel,name,program_share
+channel,owner,program_share
+channel,share in percent,program_share
+channel,rating in percent,program_share
+broadcast,channel id,program_share
+broadcast,program id,program_share
+broadcast,time of day,program_share
+broadcast share,channel id,program_share
+broadcast share,program id,program_share
+broadcast share,date,program_share
+broadcast share,share in percent,program_share
+pilot,pilot id,aircraft
+pilot,name,aircraft
+pilot,age,aircraft
+aircraft,aircraft id,aircraft
+aircraft,aircraft,aircraft
+aircraft,description,aircraft
+aircraft,max gross weight,aircraft
+aircraft,total disk area,aircraft
+aircraft,max disk loading,aircraft
+match,round,aircraft
+match,location,aircraft
+match,country,aircraft
+match,date,aircraft
+match,fastest qualifying,aircraft
+match,winning pilot,aircraft
+match,winning aircraft,aircraft
+airport,airport id,aircraft
+airport,airport name,aircraft
+airport,total passengers,aircraft
+airport,% change 2007,aircraft
+airport,international passengers,aircraft
+airport,domestic passengers,aircraft
+airport,transit passengers,aircraft
+airport,aircraft movements,aircraft
+airport,freight metric tonnes,aircraft
+airport aircraft,id,aircraft
+airport aircraft,airport id,aircraft
+airport aircraft,aircraft id,aircraft
+student,student id,restaurant_1
+student,last name,restaurant_1
+student,first name,restaurant_1
+student,age,restaurant_1
+student,sex,restaurant_1
+student,major,restaurant_1
+student,advisor,restaurant_1
+student,city code,restaurant_1
+restaurant,restaurant id,restaurant_1
+restaurant,restaurant name,restaurant_1
+restaurant,address,restaurant_1
+restaurant,rating,restaurant_1
+type of restaurant,restaurant id,restaurant_1
+type of restaurant,restaurant type id,restaurant_1
+restaurant type,restaurant type id,restaurant_1
+restaurant type,restaurant type name,restaurant_1
+restaurant type,restaurant type description,restaurant_1
+visits restaurant,student id,restaurant_1
+visits restaurant,restaurant id,restaurant_1
+visits restaurant,time,restaurant_1
+visits restaurant,spent,restaurant_1
+customers,customer id,customers_and_invoices
+customers,customer first name,customers_and_invoices
+customers,customer middle initial,customers_and_invoices
+customers,customer last name,customers_and_invoices
+customers,gender,customers_and_invoices
+customers,email address,customers_and_invoices
+customers,login name,customers_and_invoices
+customers,login password,customers_and_invoices
+customers,phone number,customers_and_invoices
+customers,town city,customers_and_invoices
+customers,state county province,customers_and_invoices
+customers,country,customers_and_invoices
+orders,order id,customers_and_invoices
+orders,customer id,customers_and_invoices
+orders,date order placed,customers_and_invoices
+orders,order details,customers_and_invoices
+invoices,invoice number,customers_and_invoices
+invoices,order id,customers_and_invoices
+invoices,invoice date,customers_and_invoices
+accounts,account id,customers_and_invoices
+accounts,customer id,customers_and_invoices
+accounts,date account opened,customers_and_invoices
+accounts,account name,customers_and_invoices
+accounts,other account details,customers_and_invoices
+product categories,production type code,customers_and_invoices
+product categories,product type description,customers_and_invoices
+product categories,vat rating,customers_and_invoices
+products,product id,customers_and_invoices
+products,parent product id,customers_and_invoices
+products,production type code,customers_and_invoices
+products,unit price,customers_and_invoices
+products,product name,customers_and_invoices
+products,product color,customers_and_invoices
+products,product size,customers_and_invoices
+financial transactions,transaction id,customers_and_invoices
+financial transactions,account id,customers_and_invoices
+financial transactions,invoice number,customers_and_invoices
+financial transactions,transaction type,customers_and_invoices
+financial transactions,transaction date,customers_and_invoices
+financial transactions,transaction amount,customers_and_invoices
+financial transactions,transaction comment,customers_and_invoices
+financial transactions,other transaction details,customers_and_invoices
+order items,order item id,customers_and_invoices
+order items,order id,customers_and_invoices
+order items,product id,customers_and_invoices
+order items,product quantity,customers_and_invoices
+order items,other order item details,customers_and_invoices
+invoice line items,order item id,customers_and_invoices
+invoice line items,invoice number,customers_and_invoices
+invoice line items,product id,customers_and_invoices
+invoice line items,product title,customers_and_invoices
+invoice line items,product quantity,customers_and_invoices
+invoice line items,product price,customers_and_invoices
+invoice line items,derived product cost,customers_and_invoices
+invoice line items,derived vat payable,customers_and_invoices
+invoice line items,derived total cost,customers_and_invoices
+customers,customer id,insurance_and_eClaims
+customers,customer details,insurance_and_eClaims
+staff,staff id,insurance_and_eClaims
+staff,staff details,insurance_and_eClaims
+policies,policy id,insurance_and_eClaims
+policies,customer id,insurance_and_eClaims
+policies,policy type code,insurance_and_eClaims
+policies,start date,insurance_and_eClaims
+policies,end date,insurance_and_eClaims
+claim headers,claim header id,insurance_and_eClaims
+claim headers,claim status code,insurance_and_eClaims
+claim headers,claim type code,insurance_and_eClaims
+claim headers,policy id,insurance_and_eClaims
+claim headers,date of claim,insurance_and_eClaims
+claim headers,date of settlement,insurance_and_eClaims
+claim headers,amount claimed,insurance_and_eClaims
+claim headers,amount piad,insurance_and_eClaims
+claims documents,claim id,insurance_and_eClaims
+claims documents,document type code,insurance_and_eClaims
+claims documents,created by staff id,insurance_and_eClaims
+claims documents,created date,insurance_and_eClaims
+claims processing stages,claim stage id,insurance_and_eClaims
+claims processing stages,next claim stage id,insurance_and_eClaims
+claims processing stages,claim status name,insurance_and_eClaims
+claims processing stages,claim status description,insurance_and_eClaims
+claims processing,claim processing id,insurance_and_eClaims
+claims processing,claim id,insurance_and_eClaims
+claims processing,claim outcome code,insurance_and_eClaims
+claims processing,claim stage id,insurance_and_eClaims
+claims processing,staff id,insurance_and_eClaims
+class,class code,college_1
+class,course code,college_1
+class,class section,college_1
+class,class time,college_1
+class,class room,college_1
+class,professor employee number,college_1
+course,course code,college_1
+course,department code,college_1
+course,course description,college_1
+course,course credit,college_1
+department,department code,college_1
+department,department name,college_1
+department,school code,college_1
+department,employee number,college_1
+department,department address,college_1
+department,department extension,college_1
+employee,employee number,college_1
+employee,employee last name,college_1
+employee,employee first name,college_1
+employee,employee initial,college_1
+employee,employee job code,college_1
+employee,employee hire date,college_1
+employee,employee date of birth,college_1
+enroll,class code,college_1
+enroll,student number,college_1
+enroll,enroll grade,college_1
+professor,employee number,college_1
+professor,department code,college_1
+professor,professor office,college_1
+professor,professor extension,college_1
+professor,professor high degree,college_1
+student,student num,college_1
+student,student last name,college_1
+student,student first name,college_1
+student,student init,college_1
+student,student date of birth,college_1
+student,student class hours took,college_1
+student,student class,college_1
+student,student gpa,college_1
+student,student transfer,college_1
+student,department code,college_1
+student,student phone,college_1
+student,professor number,college_1
+customer master index,master customer id,local_govt_mdm
+customer master index,cmi details,local_govt_mdm
+cmi cross references,cmi cross reference id,local_govt_mdm
+cmi cross references,master customer id,local_govt_mdm
+cmi cross references,source system code,local_govt_mdm
+council tax,council tax id,local_govt_mdm
+council tax,cmi cross reference id,local_govt_mdm
+business rates,business rates id,local_govt_mdm
+business rates,cmi cross reference id,local_govt_mdm
+benefits overpayments,council tax id,local_govt_mdm
+benefits overpayments,cmi cross ref id,local_govt_mdm
+parking fines,council tax id,local_govt_mdm
+parking fines,cmi cross reference id,local_govt_mdm
+rent arrears,council tax id,local_govt_mdm
+rent arrears,cmi cross reference id,local_govt_mdm
+electoral register,electoral register id,local_govt_mdm
+electoral register,cmi cross reference id,local_govt_mdm
+publication,publication id,book_2
+publication,book id,book_2
+publication,publisher,book_2
+publication,publication date,book_2
+publication,price,book_2
+book,book id,book_2
+book,title,book_2
+book,issues,book_2
+book,writer,book_2
+regions,region id,hr_1
+regions,region name,hr_1
+countries,country id,hr_1
+countries,country name,hr_1
+countries,region id,hr_1
+departments,department id,hr_1
+departments,department name,hr_1
+departments,manager id,hr_1
+departments,location id,hr_1
+jobs,job id,hr_1
+jobs,job title,hr_1
+jobs,min salary,hr_1
+jobs,max salary,hr_1
+employees,employee id,hr_1
+employees,first name,hr_1
+employees,last name,hr_1
+employees,email,hr_1
+employees,phone number,hr_1
+employees,hire date,hr_1
+employees,job id,hr_1
+employees,salary,hr_1
+employees,commission pct,hr_1
+employees,manager id,hr_1
+employees,department id,hr_1
+job history,employee id,hr_1
+job history,start date,hr_1
+job history,end date,hr_1
+job history,job id,hr_1
+job history,department id,hr_1
+locations,location id,hr_1
+locations,street address,hr_1
+locations,postal code,hr_1
+locations,city,hr_1
+locations,state province,hr_1
+locations,country id,hr_1
+player attributes,id,soccer_1
+player attributes,player fifa api id,soccer_1
+player attributes,player api id,soccer_1
+player attributes,date,soccer_1
+player attributes,overall rating,soccer_1
+player attributes,potential,soccer_1
+player attributes,preferred foot,soccer_1
+player attributes,attacking work rate,soccer_1
+player attributes,defensive work rate,soccer_1
+player attributes,crossing,soccer_1
+player attributes,finishing,soccer_1
+player attributes,heading accuracy,soccer_1
+player attributes,short passing,soccer_1
+player attributes,volleys,soccer_1
+player attributes,dribbling,soccer_1
+player attributes,curve,soccer_1
+player attributes,free kick accuracy,soccer_1
+player attributes,long passing,soccer_1
+player attributes,ball control,soccer_1
+player attributes,acceleration,soccer_1
+player attributes,sprint speed,soccer_1
+player attributes,agility,soccer_1
+player attributes,reactions,soccer_1
+player attributes,balance,soccer_1
+player attributes,shot power,soccer_1
+player attributes,jumping,soccer_1
+player attributes,stamina,soccer_1
+player attributes,strength,soccer_1
+player attributes,long shots,soccer_1
+player attributes,aggression,soccer_1
+player attributes,interceptions,soccer_1
+player attributes,positioning,soccer_1
+player attributes,vision,soccer_1
+player attributes,penalties,soccer_1
+player attributes,marking,soccer_1
+player attributes,standing tackle,soccer_1
+player attributes,sliding tackle,soccer_1
+player attributes,gk diving,soccer_1
+player attributes,gk handling,soccer_1
+player attributes,gk kicking,soccer_1
+player attributes,gk positioning,soccer_1
+player attributes,gk reflexes,soccer_1
+sqlite sequence,name,soccer_1
+sqlite sequence,seq,soccer_1
+player,id,soccer_1
+player,player api id,soccer_1
+player,player name,soccer_1
+player,player fifa api id,soccer_1
+player,birthday,soccer_1
+player,height,soccer_1
+player,weight,soccer_1
+league,id,soccer_1
+league,country id,soccer_1
+league,name,soccer_1
+country,id,soccer_1
+country,name,soccer_1
+team,id,soccer_1
+team,team api id,soccer_1
+team,team fifa api id,soccer_1
+team,team long name,soccer_1
+team,team short name,soccer_1
+team attributes,id,soccer_1
+team attributes,team fifa api id,soccer_1
+team attributes,team api id,soccer_1
+team attributes,date,soccer_1
+team attributes,buildup play speed,soccer_1
+team attributes,buildup play speed class,soccer_1
+team attributes,buildup play dribbling,soccer_1
+team attributes,buildup play dribbling class,soccer_1
+team attributes,buildup play passing,soccer_1
+team attributes,buildup play passing class,soccer_1
+team attributes,buildup play positioning class,soccer_1
+team attributes,chance creation passing,soccer_1
+team attributes,chance creation passing class,soccer_1
+team attributes,chance creation crossing,soccer_1
+team attributes,chance creation crossing class,soccer_1
+team attributes,chance creation shooting,soccer_1
+team attributes,chance creation shooting class,soccer_1
+team attributes,chance creation positioning class,soccer_1
+team attributes,defence pressure,soccer_1
+team attributes,defence pressure class,soccer_1
+team attributes,defence aggression,soccer_1
+team attributes,defence aggression class,soccer_1
+team attributes,defence team width,soccer_1
+team attributes,defence team width class,soccer_1
+team attributes,defence defender line class,soccer_1
+actor,actor id,sakila_1
+actor,first name,sakila_1
+actor,last name,sakila_1
+actor,last update,sakila_1
+address,address id,sakila_1
+address,address,sakila_1
+address,address2,sakila_1
+address,district,sakila_1
+address,city id,sakila_1
+address,postal code,sakila_1
+address,phone,sakila_1
+address,last update,sakila_1
+category,category id,sakila_1
+category,name,sakila_1
+category,last update,sakila_1
+city,city id,sakila_1
+city,city,sakila_1
+city,country id,sakila_1
+city,last update,sakila_1
+country,country id,sakila_1
+country,country,sakila_1
+country,last update,sakila_1
+customer,customer id,sakila_1
+customer,store id,sakila_1
+customer,first name,sakila_1
+customer,last name,sakila_1
+customer,email,sakila_1
+customer,address id,sakila_1
+customer,active,sakila_1
+customer,create date,sakila_1
+customer,last update,sakila_1
+film,film id,sakila_1
+film,title,sakila_1
+film,description,sakila_1
+film,release year,sakila_1
+film,language id,sakila_1
+film,original language id,sakila_1
+film,rental duration,sakila_1
+film,rental rate,sakila_1
+film,length,sakila_1
+film,replacement cost,sakila_1
+film,rating,sakila_1
+film,special features,sakila_1
+film,last update,sakila_1
+film actor,actor id,sakila_1
+film actor,film id,sakila_1
+film actor,last update,sakila_1
+film category,film id,sakila_1
+film category,category id,sakila_1
+film category,last update,sakila_1
+film text,film id,sakila_1
+film text,title,sakila_1
+film text,description,sakila_1
+inventory,inventory id,sakila_1
+inventory,film id,sakila_1
+inventory,store id,sakila_1
+inventory,last update,sakila_1
+language,language id,sakila_1
+language,name,sakila_1
+language,last update,sakila_1
+payment,payment id,sakila_1
+payment,customer id,sakila_1
+payment,staff id,sakila_1
+payment,rental id,sakila_1
+payment,amount,sakila_1
+payment,payment date,sakila_1
+payment,last update,sakila_1
+rental,rental id,sakila_1
+rental,rental date,sakila_1
+rental,inventory id,sakila_1
+rental,customer id,sakila_1
+rental,return date,sakila_1
+rental,staff id,sakila_1
+rental,last update,sakila_1
+staff,staff id,sakila_1
+staff,first name,sakila_1
+staff,last name,sakila_1
+staff,address id,sakila_1
+staff,picture,sakila_1
+staff,email,sakila_1
+staff,store id,sakila_1
+staff,active,sakila_1
+staff,username,sakila_1
+staff,password,sakila_1
+staff,last update,sakila_1
+store,store id,sakila_1
+store,manager staff id,sakila_1
+store,address id,sakila_1
+store,last update,sakila_1
+reference feature types,feature type code,real_estate_properties
+reference feature types,feature type name,real_estate_properties
+reference property types,property type code,real_estate_properties
+reference property types,property type description,real_estate_properties
+other available features,feature id,real_estate_properties
+other available features,feature type code,real_estate_properties
+other available features,feature name,real_estate_properties
+other available features,feature description,real_estate_properties
+properties,property id,real_estate_properties
+properties,property type code,real_estate_properties
+properties,date on market,real_estate_properties
+properties,date sold,real_estate_properties
+properties,property name,real_estate_properties
+properties,property address,real_estate_properties
+properties,room count,real_estate_properties
+properties,vendor requested price,real_estate_properties
+properties,buyer offered price,real_estate_properties
+properties,agreed selling price,real_estate_properties
+properties,apt feature 1,real_estate_properties
+properties,apt feature 2,real_estate_properties
+properties,apt feature 3,real_estate_properties
+properties,fld feature 1,real_estate_properties
+properties,fld feature 2,real_estate_properties
+properties,fld feature 3,real_estate_properties
+properties,hse feature 1,real_estate_properties
+properties,hse feature 2,real_estate_properties
+properties,hse feature 3,real_estate_properties
+properties,oth feature 1,real_estate_properties
+properties,oth feature 2,real_estate_properties
+properties,oth feature 3,real_estate_properties
+properties,shp feature 1,real_estate_properties
+properties,shp feature 2,real_estate_properties
+properties,shp feature 3,real_estate_properties
+properties,other property details,real_estate_properties
+other property features,property id,real_estate_properties
+other property features,feature id,real_estate_properties
+other property features,property feature description,real_estate_properties
+student,student id,college_3
+student,last name,college_3
+student,first name,college_3
+student,age,college_3
+student,sex,college_3
+student,major,college_3
+student,advisor,college_3
+student,city code,college_3
+faculty,faculty id,college_3
+faculty,last name,college_3
+faculty,first name,college_3
+faculty,rank,college_3
+faculty,sex,college_3
+faculty,phone,college_3
+faculty,room,college_3
+faculty,building,college_3
+department,department number,college_3
+department,division,college_3
+department,department name,college_3
+department,room,college_3
+department,building,college_3
+department,department phone,college_3
+member of,faculty id,college_3
+member of,department number,college_3
+member of,appt type,college_3
+course,course id,college_3
+course,course name,college_3
+course,credits,college_3
+course,instructor,college_3
+course,days,college_3
+course,hours,college_3
+course,department number,college_3
+minor in,student id,college_3
+minor in,department number,college_3
+enrolled in,student id,college_3
+enrolled in,course id,college_3
+enrolled in,grade,college_3
+grade conversion,letter grade,college_3
+grade conversion,grade point,college_3
+course,course id,course_teach
+course,staring date,course_teach
+course,course,course_teach
+teacher,teacher id,course_teach
+teacher,name,course_teach
+teacher,age,course_teach
+teacher,hometown,course_teach
+course arrange,course id,course_teach
+course arrange,teacher id,course_teach
+course arrange,grade,course_teach
+roller coaster,roller coaster id,roller_coaster
+roller coaster,name,roller_coaster
+roller coaster,park,roller_coaster
+roller coaster,country id,roller_coaster
+roller coaster,length,roller_coaster
+roller coaster,height,roller_coaster
+roller coaster,speed,roller_coaster
+roller coaster,opened,roller_coaster
+roller coaster,status,roller_coaster
+country,country id,roller_coaster
+country,name,roller_coaster
+country,population,roller_coaster
+country,area,roller_coaster
+country,languages,roller_coaster
+products,product id,customer_deliveries
+products,product name,customer_deliveries
+products,product price,customer_deliveries
+products,product description,customer_deliveries
+addresses,address id,customer_deliveries
+addresses,address details,customer_deliveries
+addresses,city,customer_deliveries
+addresses,zip postcode,customer_deliveries
+addresses,state province county,customer_deliveries
+addresses,country,customer_deliveries
+customers,customer id,customer_deliveries
+customers,payment method,customer_deliveries
+customers,customer name,customer_deliveries
+customers,customer phone,customer_deliveries
+customers,customer email,customer_deliveries
+customers,date became customer,customer_deliveries
+regular orders,regular order id,customer_deliveries
+regular orders,distributer id,customer_deliveries
+regular order products,regular order id,customer_deliveries
+regular order products,product id,customer_deliveries
+actual orders,actual order id,customer_deliveries
+actual orders,order status code,customer_deliveries
+actual orders,regular order id,customer_deliveries
+actual orders,actual order date,customer_deliveries
+actual order products,actual order id,customer_deliveries
+actual order products,product id,customer_deliveries
+customer addresses,customer id,customer_deliveries
+customer addresses,address id,customer_deliveries
+customer addresses,date from,customer_deliveries
+customer addresses,address type,customer_deliveries
+customer addresses,date to,customer_deliveries
+delivery routes,route id,customer_deliveries
+delivery routes,route name,customer_deliveries
+delivery routes,other route details,customer_deliveries
+delivery route locations,location code,customer_deliveries
+delivery route locations,route id,customer_deliveries
+delivery route locations,location address id,customer_deliveries
+delivery route locations,location name,customer_deliveries
+trucks,truck id,customer_deliveries
+trucks,truck licence number,customer_deliveries
+trucks,truck details,customer_deliveries
+employees,employee id,customer_deliveries
+employees,employee address id,customer_deliveries
+employees,employee name,customer_deliveries
+employees,employee phone,customer_deliveries
+order deliveries,location code,customer_deliveries
+order deliveries,actual order id,customer_deliveries
+order deliveries,delivery status code,customer_deliveries
+order deliveries,driver employee id,customer_deliveries
+order deliveries,truck id,customer_deliveries
+order deliveries,delivery date,customer_deliveries
+stadium,id,game_injury
+stadium,name,game_injury
+stadium,home games,game_injury
+stadium,average attendance,game_injury
+stadium,total attendance,game_injury
+stadium,capacity percentage,game_injury
+game,stadium id,game_injury
+game,id,game_injury
+game,season,game_injury
+game,date,game_injury
+game,home team,game_injury
+game,away team,game_injury
+game,score,game_injury
+game,competition,game_injury
+injury accident,game id,game_injury
+injury accident,id,game_injury
+injury accident,player,game_injury
+injury accident,injury,game_injury
+injury accident,number of matches,game_injury
+injury accident,source,game_injury
+school,school id,school_finance
+school,school name,school_finance
+school,location,school_finance
+school,mascot,school_finance
+school,enrollment,school_finance
+school,ihsaa class,school_finance
+school,ihsaa football class,school_finance
+school,county,school_finance
+budget,school id,school_finance
+budget,year,school_finance
+budget,budgeted,school_finance
+budget,total budget percent budgeted,school_finance
+budget,invested,school_finance
+budget,total budget percent invested,school_finance
+budget,budget invested percent,school_finance
+endowment,endowment id,school_finance
+endowment,school id,school_finance
+endowment,donator name,school_finance
+endowment,amount,school_finance
+venue,venue id,scholar
+venue,venue name,scholar
+author,author id,scholar
+author,author name,scholar
+dataset,dataset id,scholar
+dataset,dataset name,scholar
+journal,journal id,scholar
+journal,journal name,scholar
+key phrase,key phrase id,scholar
+key phrase,key phrase name,scholar
+paper,paper id,scholar
+paper,title,scholar
+paper,venue id,scholar
+paper,year,scholar
+paper,number citing,scholar
+paper,number cited by,scholar
+paper,journal id,scholar
+cite,citing paper id,scholar
+cite,cited paper id,scholar
+paper dataset,paper id,scholar
+paper dataset,dataset id,scholar
+paper key phrase,paper id,scholar
+paper key phrase,key phrase id,scholar
+writes,paper id,scholar
+writes,author id,scholar
+area code state,area code,voter_1
+area code state,state,voter_1
+contestants,contestant number,voter_1
+contestants,contestant name,voter_1
+votes,vote id,voter_1
+votes,phone number,voter_1
+votes,state,voter_1
+votes,contestant number,voter_1
+votes,created,voter_1
+country,country id,match_season
+country,country name,match_season
+country,capital,match_season
+country,official native language,match_season
+team,team id,match_season
+team,name,match_season
+match season,season,match_season
+match season,player,match_season
+match season,position,match_season
+match season,country,match_season
+match season,team,match_season
+match season,draft pick number,match_season
+match season,draft class,match_season
+match season,college,match_season
+player,player id,match_season
+player,player,match_season
+player,years played,match_season
+player,total wl,match_season
+player,singles wl,match_season
+player,doubles wl,match_season
+player,team,match_season
+accounts,customer id,small_bank_1
+accounts,name,small_bank_1
+savings,customer id,small_bank_1
+savings,balance,small_bank_1
+checking,customer id,small_bank_1
+checking,balance,small_bank_1
+players,player id,wta_1
+players,first name,wta_1
+players,last name,wta_1
+players,hand,wta_1
+players,birth date,wta_1
+players,country code,wta_1
+matches,best of,wta_1
+matches,draw size,wta_1
+matches,loser age,wta_1
+matches,loser entry,wta_1
+matches,loser hand,wta_1
+matches,loser ht,wta_1
+matches,loser id,wta_1
+matches,loser ioc,wta_1
+matches,loser name,wta_1
+matches,loser rank,wta_1
+matches,loser rank points,wta_1
+matches,loser seed,wta_1
+matches,match num,wta_1
+matches,minutes,wta_1
+matches,round,wta_1
+matches,score,wta_1
+matches,surface,wta_1
+matches,tourney date,wta_1
+matches,tourney id,wta_1
+matches,tourney level,wta_1
+matches,tourney name,wta_1
+matches,winner age,wta_1
+matches,winner entry,wta_1
+matches,winner hand,wta_1
+matches,winner ht,wta_1
+matches,winner id,wta_1
+matches,winner ioc,wta_1
+matches,winner name,wta_1
+matches,winner rank,wta_1
+matches,winner rank points,wta_1
+matches,winner seed,wta_1
+matches,year,wta_1
+rankings,ranking date,wta_1
+rankings,ranking,wta_1
+rankings,player id,wta_1
+rankings,ranking points,wta_1
+rankings,tours,wta_1
+business,bid,yelp
+business,business id,yelp
+business,name,yelp
+business,full address,yelp
+business,city,yelp
+business,latitude,yelp
+business,longitude,yelp
+business,review count,yelp
+business,is open,yelp
+business,rating,yelp
+business,state,yelp
+category,id,yelp
+category,business id,yelp
+category,category name,yelp
+user,uid,yelp
+user,user id,yelp
+user,name,yelp
+checkin,cid,yelp
+checkin,business id,yelp
+checkin,count,yelp
+checkin,day,yelp
+neighbourhood,id,yelp
+neighbourhood,business id,yelp
+neighbourhood,neighbourhood name,yelp
+review,rid,yelp
+review,business id,yelp
+review,user id,yelp
+review,rating,yelp
+review,text,yelp
+review,year,yelp
+review,month,yelp
+tip,tip id,yelp
+tip,business id,yelp
+tip,text,yelp
+tip,user id,yelp
+tip,likes,yelp
+tip,year,yelp
+tip,month,yelp
+list,last name,student_1
+list,first name,student_1
+list,grade,student_1
+list,class room,student_1
+teachers,last name,student_1
+teachers,first name,student_1
+teachers,class room,student_1
+manufacturer,manufacturer id,manufacturer
+manufacturer,open year,manufacturer
+manufacturer,name,manufacturer
+manufacturer,num of factories,manufacturer
+manufacturer,num of shops,manufacturer
+furniture,furniture id,manufacturer
+furniture,name,manufacturer
+furniture,num of component,manufacturer
+furniture,market rate,manufacturer
+furniture manufacte,manufacturer id,manufacturer
+furniture manufacte,furniture id,manufacturer
+furniture manufacte,price in dollar,manufacturer
+sqlite sequence,name,store_1
+sqlite sequence,seq,store_1
+artists,id,store_1
+artists,name,store_1
+albums,id,store_1
+albums,title,store_1
+albums,artist id,store_1
+employees,id,store_1
+employees,last name,store_1
+employees,first name,store_1
+employees,title,store_1
+employees,reports to,store_1
+employees,birth date,store_1
+employees,hire date,store_1
+employees,address,store_1
+employees,city,store_1
+employees,state,store_1
+employees,country,store_1
+employees,postal code,store_1
+employees,phone,store_1
+employees,fax,store_1
+employees,email,store_1
+customers,id,store_1
+customers,first name,store_1
+customers,last name,store_1
+customers,company,store_1
+customers,address,store_1
+customers,city,store_1
+customers,state,store_1
+customers,country,store_1
+customers,postal code,store_1
+customers,phone,store_1
+customers,fax,store_1
+customers,email,store_1
+customers,support rep id,store_1
+genres,id,store_1
+genres,name,store_1
+invoices,id,store_1
+invoices,customer id,store_1
+invoices,invoice date,store_1
+invoices,billing address,store_1
+invoices,billing city,store_1
+invoices,billing state,store_1
+invoices,billing country,store_1
+invoices,billing postal code,store_1
+invoices,total,store_1
+media types,id,store_1
+media types,name,store_1
+tracks,id,store_1
+tracks,name,store_1
+tracks,album id,store_1
+tracks,media type id,store_1
+tracks,genre id,store_1
+tracks,composer,store_1
+tracks,milliseconds,store_1
+tracks,bytes,store_1
+tracks,unit price,store_1
+invoice lines,id,store_1
+invoice lines,invoice id,store_1
+invoice lines,track id,store_1
+invoice lines,unit price,store_1
+invoice lines,quantity,store_1
+playlists,id,store_1
+playlists,name,store_1
+playlist tracks,playlist id,store_1
+playlist tracks,track id,store_1
+station,station id,train_station
+station,name,train_station
+station,annual entry exit,train_station
+station,annual interchanges,train_station
+station,total passengers,train_station
+station,location,train_station
+station,main services,train_station
+station,number of platforms,train_station
+train,train id,train_station
+train,name,train_station
+train,time,train_station
+train,service,train_station
+train station,train id,train_station
+train station,station id,train_station
+roles,role code,document_management
+roles,role description,document_management
+users,user id,document_management
+users,role code,document_management
+users,user name,document_management
+users,user login,document_management
+users,password,document_management
+document structures,document structure code,document_management
+document structures,parent document structure code,document_management
+document structures,document structure description,document_management
+functional areas,functional area code,document_management
+functional areas,parent functional area code,document_management
+functional areas,functional area description,document_management
+images,image id,document_management
+images,image alt text,document_management
+images,image name,document_management
+images,image url,document_management
+documents,document code,document_management
+documents,document structure code,document_management
+documents,document type code,document_management
+documents,access count,document_management
+documents,document name,document_management
+document functional areas,document code,document_management
+document functional areas,functional area code,document_management
+document sections,section id,document_management
+document sections,document code,document_management
+document sections,section sequence,document_management
+document sections,section code,document_management
+document sections,section title,document_management
+document sections images,section id,document_management
+document sections images,image id,document_management
+circuits,circuit id,formula_1
+circuits,circuit reference,formula_1
+circuits,name,formula_1
+circuits,location,formula_1
+circuits,country,formula_1
+circuits,latitude,formula_1
+circuits,longitude,formula_1
+circuits,altitude,formula_1
+circuits,url,formula_1
+races,race id,formula_1
+races,year,formula_1
+races,round,formula_1
+races,circuit id,formula_1
+races,name,formula_1
+races,date,formula_1
+races,time,formula_1
+races,url,formula_1
+drivers,driver id,formula_1
+drivers,driver reference,formula_1
+drivers,number,formula_1
+drivers,code,formula_1
+drivers,forename,formula_1
+drivers,surname,formula_1
+drivers,dob,formula_1
+drivers,nationality,formula_1
+drivers,url,formula_1
+status,status id,formula_1
+status,status,formula_1
+seasons,year,formula_1
+seasons,url,formula_1
+constructors,constructor id,formula_1
+constructors,constructor reference,formula_1
+constructors,name,formula_1
+constructors,nationality,formula_1
+constructors,url,formula_1
+constructor standings,constructor standings id,formula_1
+constructor standings,race id,formula_1
+constructor standings,constructor id,formula_1
+constructor standings,points,formula_1
+constructor standings,position,formula_1
+constructor standings,position text,formula_1
+constructor standings,wins,formula_1
+results,result id,formula_1
+results,race id,formula_1
+results,driver id,formula_1
+results,constructor id,formula_1
+results,number,formula_1
+results,grid,formula_1
+results,position,formula_1
+results,position text,formula_1
+results,position order,formula_1
+results,points,formula_1
+results,laps,formula_1
+results,time,formula_1
+results,milliseconds,formula_1
+results,fastest lap,formula_1
+results,rank,formula_1
+results,fastest lap time,formula_1
+results,fastest lap speed,formula_1
+results,status id,formula_1
+driver standings,driver standings id,formula_1
+driver standings,race id,formula_1
+driver standings,driver id,formula_1
+driver standings,points,formula_1
+driver standings,position,formula_1
+driver standings,position text,formula_1
+driver standings,wins,formula_1
+constructor results,constructor results id,formula_1
+constructor results,race id,formula_1
+constructor results,constructor id,formula_1
+constructor results,points,formula_1
+constructor results,status,formula_1
+qualifying,qualify id,formula_1
+qualifying,race id,formula_1
+qualifying,driver id,formula_1
+qualifying,constructor id,formula_1
+qualifying,number,formula_1
+qualifying,position,formula_1
+qualifying,q1,formula_1
+qualifying,q2,formula_1
+qualifying,q3,formula_1
+pit stops,race id,formula_1
+pit stops,driver id,formula_1
+pit stops,stop,formula_1
+pit stops,lap,formula_1
+pit stops,time,formula_1
+pit stops,duration,formula_1
+pit stops,milliseconds,formula_1
+lap times,race id,formula_1
+lap times,driver id,formula_1
+lap times,lap,formula_1
+lap times,position,formula_1
+lap times,time,formula_1
+lap times,milliseconds,formula_1
+student,student id,game_1
+student,last name,game_1
+student,first name,game_1
+student,age,game_1
+student,sex,game_1
+student,major,game_1
+student,advisor,game_1
+student,city code,game_1
+video games,game id,game_1
+video games,game name,game_1
+video games,game type,game_1
+plays games,student id,game_1
+plays games,game id,game_1
+plays games,hours played,game_1
+sports info,student id,game_1
+sports info,sport name,game_1
+sports info,hours per week,game_1
+sports info,games played,game_1
+sports info,on scholarship,game_1
+bank,branch id,loan_1
+bank,bname,loan_1
+bank,no of customers,loan_1
+bank,city,loan_1
+bank,state,loan_1
+customer,customer id,loan_1
+customer,customer name,loan_1
+customer,account type,loan_1
+customer,account balance,loan_1
+customer,number of loans,loan_1
+customer,credit score,loan_1
+customer,branch id,loan_1
+customer,state,loan_1
+loan,loan id,loan_1
+loan,loan type,loan_1
+loan,customer id,loan_1
+loan,branch id,loan_1
+loan,amount,loan_1
+station,id,bike_1
+station,name,bike_1
+station,latitude,bike_1
+station,longitude,bike_1
+station,dock count,bike_1
+station,city,bike_1
+station,installation date,bike_1
+status,station id,bike_1
+status,bikes available,bike_1
+status,docks available,bike_1
+status,time,bike_1
+trip,id,bike_1
+trip,duration,bike_1
+trip,start date,bike_1
+trip,start station name,bike_1
+trip,start station id,bike_1
+trip,end date,bike_1
+trip,end station name,bike_1
+trip,end station id,bike_1
+trip,bike id,bike_1
+trip,subscription type,bike_1
+trip,zip code,bike_1
+weather,date,bike_1
+weather,max temperature f,bike_1
+weather,mean temperature f,bike_1
+weather,min temperature f,bike_1
+weather,max dew point f,bike_1
+weather,mean dew point f,bike_1
+weather,min dew point f,bike_1
+weather,max humidity,bike_1
+weather,mean humidity,bike_1
+weather,min humidity,bike_1
+weather,max sea level pressure inches,bike_1
+weather,mean sea level pressure inches,bike_1
+weather,min sea level pressure inches,bike_1
+weather,max visibility miles,bike_1
+weather,mean visibility miles,bike_1
+weather,min visibility miles,bike_1
+weather,max wind speed mph,bike_1
+weather,mean wind speed mph,bike_1
+weather,max gust speed mph,bike_1
+weather,precipitation inches,bike_1
+weather,cloud cover,bike_1
+weather,events,bike_1
+weather,wind dir degrees,bike_1
+weather,zip code,bike_1
+entrepreneur,entrepreneur id,entrepreneur
+entrepreneur,people id,entrepreneur
+entrepreneur,company,entrepreneur
+entrepreneur,money requested,entrepreneur
+entrepreneur,investor,entrepreneur
+people,people id,entrepreneur
+people,name,entrepreneur
+people,height,entrepreneur
+people,weight,entrepreneur
+people,date of birth,entrepreneur
+conductor,conductor id,orchestra
+conductor,name,orchestra
+conductor,age,orchestra
+conductor,nationality,orchestra
+conductor,year of work,orchestra
+orchestra,orchestra id,orchestra
+orchestra,orchestra,orchestra
+orchestra,conductor id,orchestra
+orchestra,record company,orchestra
+orchestra,year of founded,orchestra
+orchestra,major record format,orchestra
+performance,performance id,orchestra
+performance,orchestra id,orchestra
+performance,type,orchestra
+performance,date,orchestra
+performance,official ratings (millions),orchestra
+performance,weekly rank,orchestra
+performance,share,orchestra
+show,show id,orchestra
+show,performance id,orchestra
+show,if first show,orchestra
+show,result,orchestra
+show,attendance,orchestra
+reference payment methods,payment method code,cre_Drama_Workshop_Groups
+reference payment methods,payment method description,cre_Drama_Workshop_Groups
+reference service types,service type code,cre_Drama_Workshop_Groups
+reference service types,parent service type code,cre_Drama_Workshop_Groups
+reference service types,service type description,cre_Drama_Workshop_Groups
+addresses,address id,cre_Drama_Workshop_Groups
+addresses,line 1,cre_Drama_Workshop_Groups
+addresses,line 2,cre_Drama_Workshop_Groups
+addresses,city town,cre_Drama_Workshop_Groups
+addresses,state county,cre_Drama_Workshop_Groups
+addresses,other details,cre_Drama_Workshop_Groups
+products,product id,cre_Drama_Workshop_Groups
+products,product name,cre_Drama_Workshop_Groups
+products,product price,cre_Drama_Workshop_Groups
+products,product description,cre_Drama_Workshop_Groups
+products,other product service details,cre_Drama_Workshop_Groups
+marketing regions,marketing region code,cre_Drama_Workshop_Groups
+marketing regions,marketing region name,cre_Drama_Workshop_Groups
+marketing regions,marketing region descriptrion,cre_Drama_Workshop_Groups
+marketing regions,other details,cre_Drama_Workshop_Groups
+clients,client id,cre_Drama_Workshop_Groups
+clients,address id,cre_Drama_Workshop_Groups
+clients,customer email address,cre_Drama_Workshop_Groups
+clients,customer name,cre_Drama_Workshop_Groups
+clients,customer phone,cre_Drama_Workshop_Groups
+clients,other details,cre_Drama_Workshop_Groups
+drama workshop groups,workshop group id,cre_Drama_Workshop_Groups
+drama workshop groups,address id,cre_Drama_Workshop_Groups
+drama workshop groups,currency code,cre_Drama_Workshop_Groups
+drama workshop groups,marketing region code,cre_Drama_Workshop_Groups
+drama workshop groups,store name,cre_Drama_Workshop_Groups
+drama workshop groups,store phone,cre_Drama_Workshop_Groups
+drama workshop groups,store email address,cre_Drama_Workshop_Groups
+drama workshop groups,other details,cre_Drama_Workshop_Groups
+performers,performer id,cre_Drama_Workshop_Groups
+performers,address id,cre_Drama_Workshop_Groups
+performers,customer name,cre_Drama_Workshop_Groups
+performers,customer phone,cre_Drama_Workshop_Groups
+performers,customer email address,cre_Drama_Workshop_Groups
+performers,other details,cre_Drama_Workshop_Groups
+customers,customer id,cre_Drama_Workshop_Groups
+customers,address id,cre_Drama_Workshop_Groups
+customers,customer name,cre_Drama_Workshop_Groups
+customers,customer phone,cre_Drama_Workshop_Groups
+customers,customer email address,cre_Drama_Workshop_Groups
+customers,other details,cre_Drama_Workshop_Groups
+stores,store id,cre_Drama_Workshop_Groups
+stores,address id,cre_Drama_Workshop_Groups
+stores,marketing region code,cre_Drama_Workshop_Groups
+stores,store name,cre_Drama_Workshop_Groups
+stores,store phone,cre_Drama_Workshop_Groups
+stores,store email address,cre_Drama_Workshop_Groups
+stores,other details,cre_Drama_Workshop_Groups
+bookings,booking id,cre_Drama_Workshop_Groups
+bookings,customer id,cre_Drama_Workshop_Groups
+bookings,workshop group id,cre_Drama_Workshop_Groups
+bookings,status code,cre_Drama_Workshop_Groups
+bookings,store id,cre_Drama_Workshop_Groups
+bookings,order date,cre_Drama_Workshop_Groups
+bookings,planned delivery date,cre_Drama_Workshop_Groups
+bookings,actual delivery date,cre_Drama_Workshop_Groups
+bookings,other order details,cre_Drama_Workshop_Groups
+performers in bookings,order id,cre_Drama_Workshop_Groups
+performers in bookings,performer id,cre_Drama_Workshop_Groups
+customer orders,order id,cre_Drama_Workshop_Groups
+customer orders,customer id,cre_Drama_Workshop_Groups
+customer orders,store id,cre_Drama_Workshop_Groups
+customer orders,order date,cre_Drama_Workshop_Groups
+customer orders,planned delivery date,cre_Drama_Workshop_Groups
+customer orders,actual delivery date,cre_Drama_Workshop_Groups
+customer orders,other order details,cre_Drama_Workshop_Groups
+order items,order item id,cre_Drama_Workshop_Groups
+order items,order id,cre_Drama_Workshop_Groups
+order items,product id,cre_Drama_Workshop_Groups
+order items,order quantity,cre_Drama_Workshop_Groups
+order items,other item details,cre_Drama_Workshop_Groups
+invoices,invoice id,cre_Drama_Workshop_Groups
+invoices,order id,cre_Drama_Workshop_Groups
+invoices,payment method code,cre_Drama_Workshop_Groups
+invoices,product id,cre_Drama_Workshop_Groups
+invoices,order quantity,cre_Drama_Workshop_Groups
+invoices,other item details,cre_Drama_Workshop_Groups
+invoices,order item id,cre_Drama_Workshop_Groups
+services,service id,cre_Drama_Workshop_Groups
+services,service type code,cre_Drama_Workshop_Groups
+services,workshop group id,cre_Drama_Workshop_Groups
+services,product description,cre_Drama_Workshop_Groups
+services,product name,cre_Drama_Workshop_Groups
+services,product price,cre_Drama_Workshop_Groups
+services,other product service details,cre_Drama_Workshop_Groups
+bookings services,order id,cre_Drama_Workshop_Groups
+bookings services,product id,cre_Drama_Workshop_Groups
+invoice items,invoice item id,cre_Drama_Workshop_Groups
+invoice items,invoice id,cre_Drama_Workshop_Groups
+invoice items,order id,cre_Drama_Workshop_Groups
+invoice items,order item id,cre_Drama_Workshop_Groups
+invoice items,product id,cre_Drama_Workshop_Groups
+invoice items,order quantity,cre_Drama_Workshop_Groups
+invoice items,other item details,cre_Drama_Workshop_Groups
+continents,cont id,car_1
+continents,continent,car_1
+countries,country id,car_1
+countries,country name,car_1
+countries,continent,car_1
+car makers,id,car_1
+car makers,maker,car_1
+car makers,full name,car_1
+car makers,country,car_1
+model list,model id,car_1
+model list,maker,car_1
+model list,model,car_1
+car names,make id,car_1
+car names,model,car_1
+car names,make,car_1
+cars data,id,car_1
+cars data,mpg,car_1
+cars data,cylinders,car_1
+cars data,edispl,car_1
+cars data,horsepower,car_1
+cars data,weight,car_1
+cars data,accelerate,car_1
+cars data,year,car_1
+state,state name,geo
+state,population,geo
+state,area,geo
+state,country name,geo
+state,capital,geo
+state,density,geo
+city,city name,geo
+city,population,geo
+city,country name,geo
+city,state name,geo
+border info,state name,geo
+border info,border,geo
+highlow,state name,geo
+highlow,highest elevation,geo
+highlow,lowest point,geo
+highlow,highest point,geo
+highlow,lowest elevation,geo
+lake,lake name,geo
+lake,area,geo
+lake,country name,geo
+lake,state name,geo
+mountain,mountain name,geo
+mountain,mountain altitude,geo
+mountain,country name,geo
+mountain,state name,geo
+river,river name,geo
+river,length,geo
+river,country name,geo
+river,traverse,geo
+reference address types,address type code,behavior_monitoring
+reference address types,address type description,behavior_monitoring
+reference detention type,detention type code,behavior_monitoring
+reference detention type,detention type description,behavior_monitoring
+reference incident type,incident type code,behavior_monitoring
+reference incident type,incident type description,behavior_monitoring
+addresses,address id,behavior_monitoring
+addresses,line 1,behavior_monitoring
+addresses,line 2,behavior_monitoring
+addresses,line 3,behavior_monitoring
+addresses,city,behavior_monitoring
+addresses,zip postcode,behavior_monitoring
+addresses,state province county,behavior_monitoring
+addresses,country,behavior_monitoring
+addresses,other address details,behavior_monitoring
+students,student id,behavior_monitoring
+students,address id,behavior_monitoring
+students,first name,behavior_monitoring
+students,middle name,behavior_monitoring
+students,last name,behavior_monitoring
+students,cell mobile number,behavior_monitoring
+students,email address,behavior_monitoring
+students,date first rental,behavior_monitoring
+students,date left university,behavior_monitoring
+students,other student details,behavior_monitoring
+teachers,teacher id,behavior_monitoring
+teachers,address id,behavior_monitoring
+teachers,first name,behavior_monitoring
+teachers,middle name,behavior_monitoring
+teachers,last name,behavior_monitoring
+teachers,gender,behavior_monitoring
+teachers,cell mobile number,behavior_monitoring
+teachers,email address,behavior_monitoring
+teachers,other details,behavior_monitoring
+assessment notes,notes id,behavior_monitoring
+assessment notes,student id,behavior_monitoring
+assessment notes,teacher id,behavior_monitoring
+assessment notes,date of notes,behavior_monitoring
+assessment notes,text of notes,behavior_monitoring
+assessment notes,other details,behavior_monitoring
+behavior incident,incident id,behavior_monitoring
+behavior incident,incident type code,behavior_monitoring
+behavior incident,student id,behavior_monitoring
+behavior incident,date incident start,behavior_monitoring
+behavior incident,date incident end,behavior_monitoring
+behavior incident,incident summary,behavior_monitoring
+behavior incident,recommendations,behavior_monitoring
+behavior incident,other details,behavior_monitoring
+detention,detention id,behavior_monitoring
+detention,detention type code,behavior_monitoring
+detention,teacher id,behavior_monitoring
+detention,datetime detention start,behavior_monitoring
+detention,datetime detention end,behavior_monitoring
+detention,detention summary,behavior_monitoring
+detention,other details,behavior_monitoring
+student addresses,student id,behavior_monitoring
+student addresses,address id,behavior_monitoring
+student addresses,date address from,behavior_monitoring
+student addresses,date address to,behavior_monitoring
+student addresses,monthly rental,behavior_monitoring
+student addresses,other details,behavior_monitoring
+students in detention,student id,behavior_monitoring
+students in detention,detention id,behavior_monitoring
+students in detention,incident id,behavior_monitoring
+reference document types,document type code,cre_Doc_Tracking_DB
+reference document types,document type name,cre_Doc_Tracking_DB
+reference document types,document type description,cre_Doc_Tracking_DB
+reference calendar,calendar date,cre_Doc_Tracking_DB
+reference calendar,day number,cre_Doc_Tracking_DB
+reference locations,location code,cre_Doc_Tracking_DB
+reference locations,location name,cre_Doc_Tracking_DB
+reference locations,location description,cre_Doc_Tracking_DB
+roles,role code,cre_Doc_Tracking_DB
+roles,role name,cre_Doc_Tracking_DB
+roles,role description,cre_Doc_Tracking_DB
+all documents,document id,cre_Doc_Tracking_DB
+all documents,date stored,cre_Doc_Tracking_DB
+all documents,document type code,cre_Doc_Tracking_DB
+all documents,document name,cre_Doc_Tracking_DB
+all documents,document description,cre_Doc_Tracking_DB
+all documents,other details,cre_Doc_Tracking_DB
+employees,employee id,cre_Doc_Tracking_DB
+employees,role code,cre_Doc_Tracking_DB
+employees,employee name,cre_Doc_Tracking_DB
+employees,gender mfu,cre_Doc_Tracking_DB
+employees,date of birth,cre_Doc_Tracking_DB
+employees,other details,cre_Doc_Tracking_DB
+document locations,document id,cre_Doc_Tracking_DB
+document locations,location code,cre_Doc_Tracking_DB
+document locations,date in location from,cre_Doc_Tracking_DB
+document locations,date in locaton to,cre_Doc_Tracking_DB
+documents to be destroyed,document id,cre_Doc_Tracking_DB
+documents to be destroyed,destruction authorised by employee id,cre_Doc_Tracking_DB
+documents to be destroyed,destroyed by employee id,cre_Doc_Tracking_DB
+documents to be destroyed,planned destruction date,cre_Doc_Tracking_DB
+documents to be destroyed,actual destruction date,cre_Doc_Tracking_DB
+documents to be destroyed,other details,cre_Doc_Tracking_DB
+basketball match,team id,university_basketball
+basketball match,school id,university_basketball
+basketball match,team name,university_basketball
+basketball match,acc regular season,university_basketball
+basketball match,acc percent,university_basketball
+basketball match,acc home,university_basketball
+basketball match,acc road,university_basketball
+basketball match,all games,university_basketball
+basketball match,all games percent,university_basketball
+basketball match,all home,university_basketball
+basketball match,all road,university_basketball
+basketball match,all neutral,university_basketball
+university,school id,university_basketball
+university,school,university_basketball
+university,location,university_basketball
+university,founded,university_basketball
+university,affiliation,university_basketball
+university,enrollment,university_basketball
+university,nickname,university_basketball
+university,primary conference,university_basketball
+college,college name,soccer_2
+college,state,soccer_2
+college,enrollment,soccer_2
+player,player id,soccer_2
+player,player name,soccer_2
+player,yes card,soccer_2
+player,training hours,soccer_2
+tryout,player id,soccer_2
+tryout,college name,soccer_2
+tryout,player position,soccer_2
+tryout,decision,soccer_2
+activity,activity id,activity_1
+activity,activity name,activity_1
+participates in,student id,activity_1
+participates in,activity id,activity_1
+faculty participates in,faculty id,activity_1
+faculty participates in,activity id,activity_1
+student,student id,activity_1
+student,last name,activity_1
+student,first name,activity_1
+student,age,activity_1
+student,sex,activity_1
+student,major,activity_1
+student,advisor,activity_1
+student,city code,activity_1
+faculty,faculty id,activity_1
+faculty,last name,activity_1
+faculty,first name,activity_1
+faculty,rank,activity_1
+faculty,sex,activity_1
+faculty,phone,activity_1
+faculty,room,activity_1
+faculty,building,activity_1
+ref hotel star ratings,star rating code,cre_Theme_park
+ref hotel star ratings,star rating description,cre_Theme_park
+locations,location id,cre_Theme_park
+locations,location name,cre_Theme_park
+locations,address,cre_Theme_park
+locations,other details,cre_Theme_park
+ref attraction types,attraction type code,cre_Theme_park
+ref attraction types,attraction type description,cre_Theme_park
+visitors,tourist id,cre_Theme_park
+visitors,tourist details,cre_Theme_park
+features,feature id,cre_Theme_park
+features,feature details,cre_Theme_park
+hotels,hotel id,cre_Theme_park
+hotels,star rating code,cre_Theme_park
+hotels,pets allowed yn,cre_Theme_park
+hotels,price range,cre_Theme_park
+hotels,other hotel details,cre_Theme_park
+tourist attractions,tourist attraction id,cre_Theme_park
+tourist attractions,attraction type code,cre_Theme_park
+tourist attractions,location id,cre_Theme_park
+tourist attractions,how to get there,cre_Theme_park
+tourist attractions,name,cre_Theme_park
+tourist attractions,description,cre_Theme_park
+tourist attractions,opening hours,cre_Theme_park
+tourist attractions,other details,cre_Theme_park
+street markets,market id,cre_Theme_park
+street markets,market details,cre_Theme_park
+shops,shop id,cre_Theme_park
+shops,shop details,cre_Theme_park
+museums,museum id,cre_Theme_park
+museums,museum details,cre_Theme_park
+royal family,royal family id,cre_Theme_park
+royal family,royal family details,cre_Theme_park
+theme parks,theme park id,cre_Theme_park
+theme parks,theme park details,cre_Theme_park
+visits,visit id,cre_Theme_park
+visits,tourist attraction id,cre_Theme_park
+visits,tourist id,cre_Theme_park
+visits,visit date,cre_Theme_park
+visits,visit details,cre_Theme_park
+photos,photo id,cre_Theme_park
+photos,tourist attraction id,cre_Theme_park
+photos,name,cre_Theme_park
+photos,description,cre_Theme_park
+photos,filename,cre_Theme_park
+photos,other details,cre_Theme_park
+staff,staff id,cre_Theme_park
+staff,tourist attraction id,cre_Theme_park
+staff,name,cre_Theme_park
+staff,other details,cre_Theme_park
+tourist attraction features,tourist attraction id,cre_Theme_park
+tourist attraction features,feature id,cre_Theme_park
+follows,user id,twitter_1
+follows,follower id,twitter_1
+tweets,id,twitter_1
+tweets,user id,twitter_1
+tweets,text,twitter_1
+tweets,create date,twitter_1
+user profiles,uid,twitter_1
+user profiles,name,twitter_1
+user profiles,email,twitter_1
+user profiles,partition id,twitter_1
+user profiles,followers,twitter_1
+election,election id,election_representative
+election,representative id,election_representative
+election,date,election_representative
+election,votes,election_representative
+election,vote percent,election_representative
+election,seats,election_representative
+election,place,election_representative
+representative,representative id,election_representative
+representative,name,election_representative
+representative,state,election_representative
+representative,party,election_representative
+representative,lifespan,election_representative
+student,student id,voter_2
+student,last name,voter_2
+student,first name,voter_2
+student,age,voter_2
+student,sex,voter_2
+student,major,voter_2
+student,advisor,voter_2
+student,city code,voter_2
+voting record,student id,voter_2
+voting record,registration date,voter_2
+voting record,election cycle,voter_2
+voting record,president vote,voter_2
+voting record,vice president vote,voter_2
+voting record,secretary vote,voter_2
+voting record,treasurer vote,voter_2
+voting record,class president vote,voter_2
+voting record,class senator vote,voter_2
+people,people id,wedding
+people,name,wedding
+people,country,wedding
+people,is male,wedding
+people,age,wedding
+church,church id,wedding
+church,name,wedding
+church,organized by,wedding
+church,open date,wedding
+church,continuation of,wedding
+wedding,church id,wedding
+wedding,male id,wedding
+wedding,female id,wedding
+wedding,year,wedding
+event,event id,news_report
+event,date,news_report
+event,venue,news_report
+event,name,news_report
+event,event attendance,news_report
+journalist,journalist id,news_report
+journalist,name,news_report
+journalist,nationality,news_report
+journalist,age,news_report
+journalist,years working,news_report
+news report,journalist id,news_report
+news report,event id,news_report
+news report,work type,news_report
+grapes,id,wine_1
+grapes,grape,wine_1
+grapes,color,wine_1
+appellations,no,wine_1
+appellations,appelation,wine_1
+appellations,county,wine_1
+appellations,state,wine_1
+appellations,area,wine_1
+appellations,isava,wine_1
+wine,no,wine_1
+wine,grape,wine_1
+wine,winery,wine_1
+wine,appelation,wine_1
+wine,state,wine_1
+wine,name,wine_1
+wine,year,wine_1
+wine,price,wine_1
+wine,score,wine_1
+wine,cases,wine_1
+wine,drink,wine_1
+addresses,address id,customers_and_addresses
+addresses,address content,customers_and_addresses
+addresses,city,customers_and_addresses
+addresses,zip postcode,customers_and_addresses
+addresses,state province county,customers_and_addresses
+addresses,country,customers_and_addresses
+addresses,other address details,customers_and_addresses
+products,product id,customers_and_addresses
+products,product details,customers_and_addresses
+customers,customer id,customers_and_addresses
+customers,payment method,customers_and_addresses
+customers,customer name,customers_and_addresses
+customers,date became customer,customers_and_addresses
+customers,other customer details,customers_and_addresses
+customer addresses,customer id,customers_and_addresses
+customer addresses,address id,customers_and_addresses
+customer addresses,date address from,customers_and_addresses
+customer addresses,address type,customers_and_addresses
+customer addresses,date address to,customers_and_addresses
+customer contact channels,customer id,customers_and_addresses
+customer contact channels,channel code,customers_and_addresses
+customer contact channels,active from date,customers_and_addresses
+customer contact channels,active to date,customers_and_addresses
+customer contact channels,contact number,customers_and_addresses
+customer orders,order id,customers_and_addresses
+customer orders,customer id,customers_and_addresses
+customer orders,order status,customers_and_addresses
+customer orders,order date,customers_and_addresses
+customer orders,order details,customers_and_addresses
+order items,order id,customers_and_addresses
+order items,product id,customers_and_addresses
+order items,order quantity,customers_and_addresses
+building,building id,protein_institute
+building,name,protein_institute
+building,street address,protein_institute
+building,years as tallest,protein_institute
+building,height feet,protein_institute
+building,floors,protein_institute
+institution,institution id,protein_institute
+institution,institution,protein_institute
+institution,location,protein_institute
+institution,founded,protein_institute
+institution,type,protein_institute
+institution,enrollment,protein_institute
+institution,team,protein_institute
+institution,primary conference,protein_institute
+institution,building id,protein_institute
+protein,common name,protein_institute
+protein,protein name,protein_institute
+protein,divergence from human lineage,protein_institute
+protein,accession number,protein_institute
+protein,sequence length,protein_institute
+protein,sequence identity to human protein,protein_institute
+protein,institution id,protein_institute
+school,school id,school_player
+school,school,school_player
+school,location,school_player
+school,enrollment,school_player
+school,founded,school_player
+school,denomination,school_player
+school,boys or girls,school_player
+school,day or boarding,school_player
+school,year entered competition,school_player
+school,school colors,school_player
+school details,school id,school_player
+school details,nickname,school_player
+school details,colors,school_player
+school details,league,school_player
+school details,class,school_player
+school details,division,school_player
+school performance,school id,school_player
+school performance,school year,school_player
+school performance,class a,school_player
+school performance,class aa,school_player
+player,player id,school_player
+player,player,school_player
+player,team,school_player
+player,age,school_player
+player,position,school_player
+player,school id,school_player
+chip model,model name,phone_1
+chip model,launch year,phone_1
+chip model,ram mib,phone_1
+chip model,rom mib,phone_1
+chip model,slots,phone_1
+chip model,wifi,phone_1
+chip model,bluetooth,phone_1
+screen mode,graphics mode,phone_1
+screen mode,char cells,phone_1
+screen mode,pixels,phone_1
+screen mode,hardware colours,phone_1
+screen mode,used kb,phone_1
+screen mode,map,phone_1
+screen mode,type,phone_1
+phone,company name,phone_1
+phone,hardware model name,phone_1
+phone,accreditation type,phone_1
+phone,accreditation level,phone_1
+phone,date,phone_1
+phone,chip model,phone_1
+phone,screen mode,phone_1
+tv channel,id,tvshow
+tv channel,series name,tvshow
+tv channel,country,tvshow
+tv channel,language,tvshow
+tv channel,content,tvshow
+tv channel,pixel aspect ratio par,tvshow
+tv channel,hight definition tv,tvshow
+tv channel,pay per view ppv,tvshow
+tv channel,package option,tvshow
+tv series,id,tvshow
+tv series,episode,tvshow
+tv series,air date,tvshow
+tv series,rating,tvshow
+tv series,share,tvshow
+tv series,18 49 rating share,tvshow
+tv series,viewers m,tvshow
+tv series,weekly rank,tvshow
+tv series,channel,tvshow
+cartoon,id,tvshow
+cartoon,title,tvshow
+cartoon,directed by,tvshow
+cartoon,written by,tvshow
+cartoon,original air date,tvshow
+cartoon,production code,tvshow
+cartoon,channel,tvshow
+wrestler,wrestler id,wrestler
+wrestler,name,wrestler
+wrestler,reign,wrestler
+wrestler,days held,wrestler
+wrestler,location,wrestler
+wrestler,event,wrestler
+elimination,elimination id,wrestler
+elimination,wrestler id,wrestler
+elimination,team,wrestler
+elimination,eliminated by,wrestler
+elimination,elimination move,wrestler
+elimination,time,wrestler
+staff,staff id,customer_complaints
+staff,gender,customer_complaints
+staff,first name,customer_complaints
+staff,last name,customer_complaints
+staff,email address,customer_complaints
+staff,phone number,customer_complaints
+customers,customer id,customer_complaints
+customers,customer type code,customer_complaints
+customers,address line 1,customer_complaints
+customers,address line 2,customer_complaints
+customers,town city,customer_complaints
+customers,state,customer_complaints
+customers,email address,customer_complaints
+customers,phone number,customer_complaints
+products,product id,customer_complaints
+products,parent product id,customer_complaints
+products,product category code,customer_complaints
+products,date product first available,customer_complaints
+products,date product discontinued,customer_complaints
+products,product name,customer_complaints
+products,product description,customer_complaints
+products,product price,customer_complaints
+complaints,complaint id,customer_complaints
+complaints,product id,customer_complaints
+complaints,customer id,customer_complaints
+complaints,complaint outcome code,customer_complaints
+complaints,complaint status code,customer_complaints
+complaints,complaint type code,customer_complaints
+complaints,date complaint raised,customer_complaints
+complaints,date complaint closed,customer_complaints
+complaints,staff id,customer_complaints
+department,department id,department_management
+department,name,department_management
+department,creation,department_management
+department,ranking,department_management
+department,budget in billions,department_management
+department,num employees,department_management
+head,head id,department_management
+head,name,department_management
+head,born state,department_management
+head,age,department_management
+management,department id,department_management
+management,head id,department_management
+management,temporary acting,department_management
+addresses,address id,customers_and_products_contacts
+addresses,line 1 number building,customers_and_products_contacts
+addresses,city,customers_and_products_contacts
+addresses,zip postcode,customers_and_products_contacts
+addresses,state province county,customers_and_products_contacts
+addresses,country,customers_and_products_contacts
+products,product id,customers_and_products_contacts
+products,product type code,customers_and_products_contacts
+products,product name,customers_and_products_contacts
+products,product price,customers_and_products_contacts
+customers,customer id,customers_and_products_contacts
+customers,payment method code,customers_and_products_contacts
+customers,customer number,customers_and_products_contacts
+customers,customer name,customers_and_products_contacts
+customers,customer address,customers_and_products_contacts
+customers,customer phone,customers_and_products_contacts
+customers,customer email,customers_and_products_contacts
+contacts,contact id,customers_and_products_contacts
+contacts,customer id,customers_and_products_contacts
+contacts,gender,customers_and_products_contacts
+contacts,first name,customers_and_products_contacts
+contacts,last name,customers_and_products_contacts
+contacts,contact phone,customers_and_products_contacts
+customer address history,customer id,customers_and_products_contacts
+customer address history,address id,customers_and_products_contacts
+customer address history,date from,customers_and_products_contacts
+customer address history,date to,customers_and_products_contacts
+customer orders,order id,customers_and_products_contacts
+customer orders,customer id,customers_and_products_contacts
+customer orders,order date,customers_and_products_contacts
+customer orders,order status code,customers_and_products_contacts
+order items,order item id,customers_and_products_contacts
+order items,order id,customers_and_products_contacts
+order items,product id,customers_and_products_contacts
+order items,order quantity,customers_and_products_contacts
+works on,employee ssn,company_1
+works on,project number,company_1
+works on,hours,company_1
+employee,first name,company_1
+employee,minit,company_1
+employee,last name,company_1
+employee,ssn,company_1
+employee,birth date,company_1
+employee,address,company_1
+employee,sex,company_1
+employee,salary,company_1
+employee,super ssn,company_1
+employee,department no,company_1
+department,department name,company_1
+department,department number,company_1
+department,manager ssn,company_1
+department,manager start date,company_1
+project,dependent name,company_1
+project,dependent number,company_1
+project,dependent location,company_1
+project,department number,company_1
+dependent,employee ssn,company_1
+dependent,dependent name,company_1
+dependent,sex,company_1
+dependent,birth date,company_1
+dependent,relationship,company_1
+department locations,department number,company_1
+department locations,department location,company_1
+workshop,workshop id,workshop_paper
+workshop,date,workshop_paper
+workshop,venue,workshop_paper
+workshop,name,workshop_paper
+submission,submission id,workshop_paper
+submission,scores,workshop_paper
+submission,author,workshop_paper
+submission,college,workshop_paper
+acceptance,submission id,workshop_paper
+acceptance,workshop id,workshop_paper
+acceptance,result,workshop_paper
+item,item id,epinions_1
+item,title,epinions_1
+review,a id,epinions_1
+review,user id,epinions_1
+review,item id,epinions_1
+review,rating,epinions_1
+review,rank,epinions_1
+useracct,user id,epinions_1
+useracct,name,epinions_1
+trust,source user id,epinions_1
+trust,target user id,epinions_1
+trust,trust,epinions_1
+party,party id,party_host
+party,party theme,party_host
+party,location,party_host
+party,first year,party_host
+party,last year,party_host
+party,number of hosts,party_host
+host,host id,party_host
+host,name,party_host
+host,nationality,party_host
+host,age,party_host
+party host,party id,party_host
+party host,host id,party_host
+party host,is main in charge,party_host
+attribute definitions,attribute id,product_catalog
+attribute definitions,attribute name,product_catalog
+attribute definitions,attribute data type,product_catalog
+catalogs,catalog id,product_catalog
+catalogs,catalog name,product_catalog
+catalogs,catalog publisher,product_catalog
+catalogs,date of publication,product_catalog
+catalogs,date of latest revision,product_catalog
+catalog structure,catalog level number,product_catalog
+catalog structure,catalog id,product_catalog
+catalog structure,catalog level name,product_catalog
+catalog contents,catalog entry id,product_catalog
+catalog contents,catalog level number,product_catalog
+catalog contents,parent entry id,product_catalog
+catalog contents,previous entry id,product_catalog
+catalog contents,next entry id,product_catalog
+catalog contents,catalog entry name,product_catalog
+catalog contents,product stock number,product_catalog
+catalog contents,price in dollars,product_catalog
+catalog contents,price in euros,product_catalog
+catalog contents,price in pounds,product_catalog
+catalog contents,capacity,product_catalog
+catalog contents,length,product_catalog
+catalog contents,height,product_catalog
+catalog contents,width,product_catalog
+catalog contents additional attributes,catalog entry id,product_catalog
+catalog contents additional attributes,catalog level number,product_catalog
+catalog contents additional attributes,attribute id,product_catalog
+catalog contents additional attributes,attribute value,product_catalog

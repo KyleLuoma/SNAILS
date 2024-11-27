@@ -1,0 +1,66 @@
+
+Using the following text extracted from a data dictionary:
+" ssn " : { " column_description " : " the column \ " ssn \ " in the students table contains social security numbers formatted as strings, with a maximum length of 40 characters. this column is used to uniquely identify students within the database. the values are expected to follow the standard ssn format (xxx-xx-xxxx) but are stored as
+" ssn \ " in the students table contains social security numbers formatted as strings, with a maximum length of 40 characters. this column is used to uniquely identify students within the database. the values are expected to follow the standard ssn format (xxx-xx-xxxx) but are stored as varchar to accommodate any variations or additional characters. " , " type "
+standard ssn format (xxx-xx-xxxx) but are stored as varchar to accommodate any variations or additional characters. " , " type " : " varchar(40) " } , " date_first_registered " : { " column_description " : " the column `date_first_registered` in the students table, of type datetime, records the exact date and time when a student first registered in the system.
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ssn:
+
+ssn, social_security_number
+
+Using the following text extracted from a data dictionary:
+" other_details " : { " column_description " : " the \ " other_details \ " column in the courses table contains additional information about the course that does not fit into other predefined columns. this may include special requirements, unique features, or supplementary notes relevant to the course. the data type for this column is varchar(255), allowing for up to
+" other_details \ " column in the courses table contains additional information about the course that does not fit into other predefined columns. this may include special requirements, unique features, or supplementary notes relevant to the course. the data type for this column is varchar(255), allowing for up to 255 characters of text. " , " type " : " varchar(255)
+" other_details " : { " column_description " : " the \ " other_details \ " column in the departments table contains additional information about the department that does not fit into other predefined columns. this may include notes on departmental policies, special instructions, or miscellaneous comments. the data is stored as a varchar(255) type, allowing for up to 255 characters
+" other_details \ " column in the departments table contains additional information about the department that does not fit into other predefined columns. this may include notes on departmental policies, special instructions, or miscellaneous comments. the data is stored as a varchar(255) type, allowing for up to 255 characters of text. " , " type " : " varchar(255) " }
+" other_details " : { " column_description " : " the \ " other_details \ " column in the degree_programs table contains additional information about the degree programs that do not fit into other predefined columns. this may include special requirements, unique features, or supplementary notes relevant to the program. the data is stored as a varchar(255) type, allowing for up
+" other_details \ " column in the degree_programs table contains additional information about the degree programs that do not fit into other predefined columns. this may include special requirements, unique features, or supplementary notes relevant to the program. the data is stored as a varchar(255) type, allowing for up to 255 characters of text. " , " type " : "
+" other_details " : { " column_description " : " the \ " other_details \ " column in the sections table contains additional information or notes related to each section, which may include special instructions, unique identifiers, or miscellaneous comments. this column is used to store any supplementary details that do not fit into the predefined columns of the table. the
+" other_details \ " column in the sections table contains additional information or notes related to each section, which may include special instructions, unique identifiers, or miscellaneous comments. this column is used to store any supplementary details that do not fit into the predefined columns of the table. the data is stored as a varchar(255) type, allowing for a maximum of
+" other_details " : { " column_description " : " the `other_details` column in the semesters table contains additional information about each semester, such as special notes, unique identifiers, or specific conditions related to that semester. this field is used to store any supplementary details that do not fit into the predefined columns of the table. the data type is varchar(255),
+" other_details " : { " column_description " : " the column \ " other_details \ " in the student_enrolment table is a varchar(255) field used to store additional information about the student's enrollment that is not covered by other columns. this may include special accommodations, notes on enrollment status, or other relevant remarks. the content is typically free-form text provided
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier other_details:
+
+other_details, other_details
+
+Using the following text extracted from a data dictionary:
+" transcript_date " : { " column_description " : " the `transcript_date` column in the transcripts table is of the datetime type and records the date and time when each transcript was created or last modified. this column ensures accurate tracking of transcript history and updates. example values include '2023-01-15 14 : 30 : 00' and '2023-02-20 09 : 45 :
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier transcript_date:
+
+transcript_date, transcript_datetime
+
+Using the following text extracted from a data dictionary:
+" other_details " : { " column_description " : " the \ " other_details \ " column in the courses table contains additional information about the course that does not fit into other predefined columns. this may include special requirements, unique features, or supplementary notes relevant to the course. the data type for this column is varchar(255), allowing for up to
+" other_details \ " column in the courses table contains additional information about the course that does not fit into other predefined columns. this may include special requirements, unique features, or supplementary notes relevant to the course. the data type for this column is varchar(255), allowing for up to 255 characters of text. " , " type " : " varchar(255)
+" other_details " : { " column_description " : " the \ " other_details \ " column in the departments table contains additional information about the department that does not fit into other predefined columns. this may include notes on departmental policies, special instructions, or miscellaneous comments. the data is stored as a varchar(255) type, allowing for up to 255 characters
+" other_details \ " column in the departments table contains additional information about the department that does not fit into other predefined columns. this may include notes on departmental policies, special instructions, or miscellaneous comments. the data is stored as a varchar(255) type, allowing for up to 255 characters of text. " , " type " : " varchar(255) " }
+" other_details " : { " column_description " : " the \ " other_details \ " column in the degree_programs table contains additional information about the degree programs that do not fit into other predefined columns. this may include special requirements, unique features, or supplementary notes relevant to the program. the data is stored as a varchar(255) type, allowing for up
+" other_details \ " column in the degree_programs table contains additional information about the degree programs that do not fit into other predefined columns. this may include special requirements, unique features, or supplementary notes relevant to the program. the data is stored as a varchar(255) type, allowing for up to 255 characters of text. " , " type " : "
+" other_details " : { " column_description " : " the \ " other_details \ " column in the sections table contains additional information or notes related to each section, which may include special instructions, unique identifiers, or miscellaneous comments. this column is used to store any supplementary details that do not fit into the predefined columns of the table. the
+" other_details \ " column in the sections table contains additional information or notes related to each section, which may include special instructions, unique identifiers, or miscellaneous comments. this column is used to store any supplementary details that do not fit into the predefined columns of the table. the data is stored as a varchar(255) type, allowing for a maximum of
+" other_details " : { " column_description " : " the `other_details` column in the semesters table contains additional information about each semester, such as special notes, unique identifiers, or specific conditions related to that semester. this field is used to store any supplementary details that do not fit into the predefined columns of the table. the data type is varchar(255),
+" other_details " : { " column_description " : " the column \ " other_details \ " in the student_enrolment table is a varchar(255) field used to store additional information about the student's enrollment that is not covered by other columns. this may include special accommodations, notes on enrollment status, or other relevant remarks. the content is typically free-form text provided
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier other_details:
+
+other_details, other_details
+
+Using the following text extracted from a data dictionary:
+" date_left " : { " column_description " : " the `date_left` column in the students table, of type datetime, records the date and time when a student officially left the institution. this column includes values such as '2023-05-15 14 : 30 : 00' and '2022-12-20 09 : 00 : 00', indicating the precise moment of departure. it is used for
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier date_left:
+
+date_left, departure_datetime
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

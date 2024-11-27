@@ -1,0 +1,71 @@
+Using the following text extracted from a data dictionary:
+r school  Text  255
+YEAR  Reporting Year (2021 for 2020 -21; 2022 for 2021 -22) Number  4
+NUM_TEACH  Number of teachers as reported in the Student Information Repository System
+(SIRS)  Number  12
+NUM_TEACH_INEXP  Number of teachers with fewer than four years of experience in their positions  Number  12
+PER_TEACH_INEXP  Percent of teachers with fewer than four years of experience in their posi
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier num_teach_inexp:
+
+num_teach_inexp, number_of_teachers_inexperienced
+
+
+Using the following text extracted from a data dictionary:
+ experience in their positions  Number  12
+PER_ PRINC _INEXP  Percent of principals with fewer than four years of experience in their positions
+(NUM_ PRINC _INEXP  / NUM_PRINC  * 100)  Number  12
+TOT_PRINC_LOW  Number of principals in low -poverty schools statewide  Number  12
+n
+low-poverty schools statewide  Number  12
+PER_ PRINC _LOW  Percent of principals with fewer than four years of experience in their positions in
+low-poverty schools statewide  (NUM_ PRINC _LOW  / TOT_PRINC_LOW  * 100)  Number  12
+TOT_PRINC_HIGH  Number of principals in high -poverty schools statewide  Number  12
+NUM_ PRINC _HIGH  Number of principals with fewer than four years of experience
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier tot_princ_low:
+
+TOT_PRINC_LOW, Total_Principals_Low_Poverty
+
+
+Using the following text extracted from a data dictionary:
+TIFIER
+ 3  CASENO   Num  3  11.  11.  SEQUENTIAL CASE NUMBER     
+ 4  CASENUMBER Char 16  $20. $20.  CASE NUMBER
+ 22 CASEWGT Num  8   26.20  CASE WEIGHT
+ 5 CATEGORY Num 3  11.  11.  CASE CATEGORY
+ 8  GAWRFRONT Num 4  GWR21F.  11.  GROSS AXLE WEIGHT RATING - FRONT
+ 9  GAWRREAR Num    4  GWR21F.   11.  GROSS AXLE WEIGHT RATING - REAR
+ 7 GVWR  Num  4 GWR21F.  11.  GROSS VEHICLE WEIGHT RATING
+ 2
+SS AXLE WEIGHT RATING - FRONT
+The front gross axle weight rating (GAWR) is the maximum weight in kilograms (kgs) that the
+front axle, suspension, and tire system is designed to carry.
+COLUMN Name: GAWRFRONT
+SAS
+Value  Value Text
+440 - 3742 [Actual value]
+9999 Unknown
+GROSS AXLE WEIGHT RATING - REAR
+The rear gross axle weight rating (GAWR) is the maximum weight in kilograms (kgs) that th
+NUMBER N/A [Actual value] # # # # #
+TIREPLAC CASE WEIGHT CASEWGT N/A [Actual value] # # # # #
+TIREPLAC CASE CATEGORY CATEGORY N/A [Actual value] # # # # #
+TIREPLAC GROSS AXLE WEIGHT RATING - FRONT GAWRFRONT GWRXXF [Actual value] # # # # #
+        Unknown 9998 9998 9999 9999 9999
+TIREPLAC GROSS AXLE WEIGHT RATING - REAR GAWRREAR GWRXXF [Actual value] # # # # #
+        Unknown 9998 9998 9999 9
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier gawrfront:
+
+GAWRFRONT, GrossAxleWeightRatingFront
+
+
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:

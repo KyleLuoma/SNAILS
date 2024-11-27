@@ -1,0 +1,52 @@
+{
+    "singer": {
+        "table_description": "The \"singer\" table stores information about various singers, including their unique identification, personal details, and financial status. It is designed to provide a comprehensive overview of each singer's identity, birth year, net worth in millions, and citizenship. This table can be used for querying and analyzing data related to singers' demographics and financial standings.",
+        "columns": {
+            "Singer_ID": {
+                "column_description": "The column Singer_ID in the singer table is an integer type that uniquely identifies each singer in the database. It serves as the primary key for the table, ensuring that each singer has a distinct and unique identifier. This column is essential for establishing relationships with other tables that reference singers.",
+                "type": "INT"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"singer\" table contains textual data representing the names of singers. This column is used to store the full names of individual singers, which may include first names, last names, and potentially middle names or initials. The data type for this column is TEXT, allowing for a wide range of characters and lengths to accommodate various naming conventions.",
+                "type": "TEXT"
+            },
+            "Birth_Year": {
+                "column_description": "The column \"Birth_Year\" in the \"singer\" database table contains the birth years of the singers, represented as REAL numbers. This column stores the year of birth for each singer, which can be used for age calculations and demographic analysis. The values in this column range from the early 20th century to the late 20th century, reflecting the birth years of various singers in the database.",
+                "type": "REAL"
+            },
+            "Net_Worth_Millions": {
+                "column_description": "The column \"Net_Worth_Millions\" in the \"singer\" database table represents the net worth of each singer in millions of dollars. This column is of the type REAL, indicating that it can store decimal values. The values in this column quantify the financial worth of the singers, providing insight into their economic status.",
+                "type": "REAL"
+            },
+            "Citizenship": {
+                "column_description": "The \"Citizenship\" column in the \"singer\" database table records the nationality or legal citizenship status of each singer. This column contains textual data representing the country or countries where the singer holds citizenship. It is used to identify the legal nationality of the individuals listed in the table.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "song": {
+        "table_description": "The \"song\" table stores information about individual songs, including their unique identifiers, titles, associated singers, and performance metrics. It is designed to track both commercial success and chart performance of each song. This table is essential for analyzing music sales and popularity trends.",
+        "columns": {
+            "Song_ID": {
+                "column_description": "The `Song_ID` column in the `song` table is an integer type that uniquely identifies each song in the database. It serves as the primary key for the table, ensuring that each song entry is distinct. This column is essential for indexing and referencing songs in related tables.",
+                "type": "INT"
+            },
+            "Title": {
+                "column_description": "The \"Title\" column in the \"song\" database table is of type TEXT and stores the names of songs. This column contains the titles of individual songs, which are typically unique and descriptive, providing a clear identifier for each song entry. The values in this column are essential for cataloging and referencing songs within the database.",
+                "type": "TEXT"
+            },
+            "Singer_ID": {
+                "column_description": "The column `Singer_ID` in the `song` table is of type INT and serves as a unique identifier for each singer associated with a song. This column likely references the primary key in a separate `singer` table, establishing a relationship between songs and their respective singers. The values in this column are integers that correspond to specific singers in the database.",
+                "type": "INT"
+            },
+            "Sales": {
+                "column_description": "The \"Sales\" column in the \"song\" database table represents the revenue generated from song sales, measured in monetary units. The values are of type REAL, indicating they can include decimal points for precise financial data. This column tracks the financial performance of individual songs.",
+                "type": "REAL"
+            },
+            "Highest_Position": {
+                "column_description": "The column \"Highest_Position\" in the \"song\" table represents the peak chart position achieved by a song, with values ranging from 1 to 100. This column is of type REAL, indicating that it can store decimal values, although typically it will contain whole numbers. It is used to track the highest ranking a song has reached on music charts.",
+                "type": "REAL"
+            }
+        }
+    }
+}

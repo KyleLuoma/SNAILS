@@ -1,0 +1,53 @@
+
+Using the following text extracted from a data dictionary:
+<attrlabl> mpd </attrlabl> <attrdef> midpoint diameter in meters </attrdef> <attrdefs> nps </attrdefs> <attrtype> double </attrtype> <attwidth>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier MPD:
+
+MPD, MidpointDiameter
+
+Using the following text extracted from a data dictionary:
+<attrlabl> y_coord </attrlabl> <attrdef> y coordinate used to map deadwood location on plot map </attrdef> <attrdefs>
+<attrlabl> y_coord </attrlabl> <attrdef> y coordinate </attrdef> <attrdefs> nps </attrdefs> <attrtype> long integer </attrtype> <attwidth> 4
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier Y_coord:
+
+y_coord, y_coordinate
+
+Using the following text extracted from a data dictionary:
+to tbl_events </attrdef> <attrdefs> nps </attrdefs> <attrtype> long integer </attrtype> <attwidth> 4 </attwidth> <attrdomv> <udom> no
+<enttypl> tbl_events </enttypl> <enttypd> m. sampling events. </enttypd> <enttypds> nps </enttypds> </enttyp> <attr> <attrlabl> event_id </attrlabl>
+for tbl_events </attrdef> <attrdefs> nps </attrdefs> <attrtype> long integer </attrtype> <attwidth> 4 </attwidth> <attrdomv> <udom> no
+to tbl_events </attrdef> <attrdefs> nps </attrdefs> <attrtype> text </attrtype> <attwidth> 50 </attwidth> <attrdomv> <udom> no domain
+to tbl_events </attrdef> <attrdefs> nps </attrdefs> <attrtype> long integer </attrtype> <attwidth> 4 </attwidth> <attrdomv> <udom> no
+to tbl_events </attrdef> <attrdefs> nps </attrdefs> <attrtype> long integer </attrtype> <attwidth> 4 </attwidth> <attrdomv> <udom> no
+to tbl_events </attrdef> <attrdefs> nps </attrdefs> <attrtype> long integer </attrtype> <attwidth> 4 </attwidth> <attrdomv> <udom> no
+to tbl_events </attrdef> <attrdefs> nps </attrdefs> <attrtype> long integer </attrtype> <attwidth> 4 </attwidth> <attrdomv> <udom> no
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier tbl_Events:
+
+tbl_Events, table_Events
+
+Using the following text extracted from a data dictionary:
+<attrlabl> coord_units </attrlabl> <attrdef> coordinate distance units (coord_unit) </attrdef> <attrdefs> nps </attrdefs> <attrtype> text </attrtype> <attwidth>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier Coord_Units:
+
+coord_units, coordinate_distance_units
+
+Using the following text extracted from a data dictionary:
+<attrlabl> coord_system </attrlabl> <attrdef> coordinate system (coord_syst) </attrdef> <attrdefs> nps </attrdefs> <attrtype> text </attrtype> <attwidth> 50
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier Coord_System:
+
+coord_system, coordinate_system
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:

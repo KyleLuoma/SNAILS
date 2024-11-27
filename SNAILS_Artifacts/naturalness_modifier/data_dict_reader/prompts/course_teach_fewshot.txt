@@ -1,0 +1,53 @@
+
+Using the following text extracted from a data dictionary:
+" staring_date " : { " column_description " : " the column \ " staring_date \ " in the course table contains date values formatted as text, representing the start dates of various courses. the dates are typically in the format \ " yyyy-mm-dd \ " (e.g., \ " 2023-01-15 \ " ). this column is used to indicate when each
+" staring_date \ " in the course table contains date values formatted as text, representing the start dates of various courses. the dates are typically in the format \ " yyyy-mm-dd \ " (e.g., \ " 2023-01-15 \ " ). this column is used to indicate when each course begins. " , " type " : " text " } ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier staring_date:
+
+staring_date, starting_date
+
+Using the following text extracted from a data dictionary:
+" teacher_id " : { " column_description " : " the `teacher_id` column in the `teacher` table is an integer type that uniquely identifies each teacher. it serves as the primary key for the table, ensuring that each teacher has a distinct and unique identifier. the values in this column are non-negative integers. " , " type " : " int
+" teacher_id " : { " column_description " : " the column `teacher_id` in the `course_arrange` table is of type int and stores unique integer identifiers for teachers. these ids are used to link courses to the respective teachers responsible for them. this ensures efficient management and retrieval of course-teacher relationships within the database. " , " type " : "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier teacher_id:
+
+teacher_id, teacher_id
+
+Using the following text extracted from a data dictionary:
+" name " : { " column_description " : " the \ " name \ " column in the \ " teacher \ " table contains textual data representing the names of teachers. this column stores individual teacher names, which may include first names, last names, or full names. the data type for this column is text, allowing for a wide
+" name \ " column in the \ " teacher \ " table contains textual data representing the names of teachers. this column stores individual teacher names, which may include first names, last names, or full names. the data type for this column is text, allowing for a wide range of characters and lengths to accommodate various naming conventions. " ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier name:
+
+name, name
+
+Using the following text extracted from a data dictionary:
+" age " : { " column_description " : " the \ " age \ " column in the \ " teacher \ " database table contains textual representations of age values. these values are stored as strings rather than numerical data, which may include numeric characters and potentially other text. the description should clarify that this column holds age information
+" age \ " column in the \ " teacher \ " database table contains textual representations of age values. these values are stored as strings rather than numerical data, which may include numeric characters and potentially other text. the description should clarify that this column holds age information in a text format, which may require parsing or conversion for numerical
+of age values. these values are stored as strings rather than numerical data, which may include numeric characters and potentially other text. the description should clarify that this column holds age information in a text format, which may require parsing or conversion for numerical operations. " , " type " : " text " } , " hometown " : {
+holds age information in a text format, which may require parsing or conversion for numerical operations. " , " type " : " text " } , " hometown " : { " column_description " : " the \ " hometown \ " column in the \ " teacher \ " database table is of type text and stores the names
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier age:
+
+age, age
+
+Using the following text extracted from a data dictionary:
+" course_id " : { " column_description " : " the `course_id` column in the `course` table is an integer (int) that uniquely identifies each course. it serves as the primary key for the table, ensuring that each course entry is distinct. this column is essential for referencing courses in other related tables. " , " type " : " int
+" course_id " : { " column_description " : " the column `course_id` in the `course_arrange` table is of type int and uniquely identifies each course arrangement. it serves as a primary key to distinguish between different course schedules or offerings. this column ensures that each course arrangement can be referenced and managed distinctly within the database. " , " type
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier course_id:
+
+course_id, course_id
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

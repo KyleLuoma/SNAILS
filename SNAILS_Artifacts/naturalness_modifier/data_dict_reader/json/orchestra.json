@@ -1,0 +1,114 @@
+{
+    "conductor": {
+        "table_description": "The \"conductor\" table stores information about conductors in a music organization or database. It includes details such as their unique identifier, personal information, nationality, and professional experience. This table is essential for managing and referencing conductor data within the system.",
+        "columns": {
+            "Conductor_ID": {
+                "column_description": "The `Conductor_ID` column in the `conductor` table is an integer type that uniquely identifies each conductor in the database. This column serves as the primary key for the table, ensuring that each conductor has a unique identifier. It is used to reference conductors in other related tables within the database.",
+                "type": "INT"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"conductor\" table contains textual data representing the names of conductors. This column is used to store the full names of individuals who are conductors, which may include first names, last names, and potentially middle names or initials. The data type for this column is TEXT, allowing for a wide range of name formats and lengths.",
+                "type": "TEXT"
+            },
+            "Age": {
+                "column_description": "The \"Age\" column in the \"conductor\" table, of type INT, represents the age of the conductors in years. The values range from 25 to 65, indicating the minimum and maximum ages of the conductors. This column is essential for demographic analysis and workforce planning.",
+                "type": "INT"
+            },
+            "Nationality": {
+                "column_description": "The \"Nationality\" column in the \"conductor\" table contains textual data representing the country or region of origin of each conductor. Values in this column include various country names such as \"American,\" \"British,\" \"German,\" \"French,\" and \"Italian.\" This column is used to identify the national background of the conductors listed in the database.",
+                "type": "TEXT"
+            },
+            "Year_of_Work": {
+                "column_description": "The \"Year_of_Work\" column in the \"conductor\" table represents the year in which the conductor's work or performance took place. This column is of the INT type, indicating it stores numerical values corresponding to specific calendar years. It is used to track and reference the timeline of the conductor's professional activities.",
+                "type": "INT"
+            }
+        }
+    },
+    "orchestra": {
+        "table_description": "The \"orchestra\" table stores information about various orchestras, including their unique identifiers, names, and associated conductors. It also captures details about their record companies, the year they were founded, and their primary recording formats. This table is essential for managing and querying data related to orchestral groups and their recording histories.",
+        "columns": {
+            "Orchestra_ID": {
+                "column_description": "The column \"Orchestra_ID\" in the \"orchestra\" table is an integer type that uniquely identifies each orchestra entry. It serves as the primary key for the table, ensuring that each orchestra has a distinct and unique identifier. This ID is used to reference orchestras in related tables and queries within the database.",
+                "type": "INT"
+            },
+            "Orchestra": {
+                "column_description": "The \"Orchestra\" column in the \"orchestra\" table contains textual data representing the names of various orchestras. This column is used to store and identify different orchestral groups within the database. It is essential for categorizing and referencing orchestral entities in related records.",
+                "type": "TEXT"
+            },
+            "Conductor_ID": {
+                "column_description": "The column `Conductor_ID` in the `orchestra` table is of type INT and serves as a unique identifier for each conductor in the database. This column likely references a primary key in a related table that contains detailed information about each conductor. The values in this column are used to link orchestral performances to their respective conductors.",
+                "type": "INT"
+            },
+            "Record_Company": {
+                "column_description": "The \"Record_Company\" column in the \"orchestra\" table contains the names of the record companies associated with the orchestra's recordings. This column stores textual data representing various record labels. It is used to identify and categorize the record companies that have produced or distributed the orchestra's music.",
+                "type": "TEXT"
+            },
+            "Year_of_Founded": {
+                "column_description": "The column \"Year_of_Founded\" in the \"orchestra\" table, of type REAL, represents the year in which each orchestra was established. The values in this column are numerical and denote the founding year, allowing for historical analysis and chronological sorting of orchestras. This column is essential for understanding the longevity and historical context of each orchestra.",
+                "type": "REAL"
+            },
+            "Major_Record_Format": {
+                "column_description": "The \"Major_Record_Format\" column in the \"orchestra\" table contains textual data that specifies the primary format or structure of records within the dataset. This column is used to categorize and identify the major format types of the records, which can include various predefined formats relevant to the dataset. The values in this column help in organizing and processing the records based on their format type.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "performance": {
+        "table_description": "The \"performance\" table stores information about various performances by orchestras, including details such as the type of performance, the date it occurred, and its reception in terms of official ratings, weekly rank, and share. This table is used to track and analyze the performance metrics of different orchestras over time. It serves as a comprehensive record for evaluating the popularity and success of each performance.",
+        "columns": {
+            "Performance_ID": {
+                "column_description": "The column `Performance_ID` in the `performance` table is an integer type that uniquely identifies each performance entry. It serves as the primary key for the table, ensuring that each performance record can be distinctly referenced. This ID is auto-incremented for each new performance added to the database.",
+                "type": "INT"
+            },
+            "Orchestra_ID": {
+                "column_description": "The column \"Orchestra_ID\" in the \"performance\" table is an integer type that uniquely identifies each orchestra involved in a performance. The values in this column correspond to specific orchestras, allowing for the association of performances with their respective orchestras. This ID is used to link performance records to the orchestras' details in related tables.",
+                "type": "INT"
+            },
+            "Type": {
+                "column_description": "The \"Type\" column in the \"performance\" table categorizes the nature of each performance entry. It includes values such as \"concert,\" \"recital,\" \"rehearsal,\" and \"audition,\" indicating the specific kind of performance event. This classification helps in organizing and filtering performance data for analysis and reporting purposes.",
+                "type": "TEXT"
+            },
+            "Date": {
+                "column_description": "The \"Date\" column in the \"performance\" table contains values formatted as text, representing specific calendar dates. These dates are likely used to track the timing of performance-related events or records. The format and context suggest it is essential for chronological data organization and analysis.",
+                "type": "TEXT"
+            },
+            "Official_ratings_(millions)": {
+                "column_description": "The column \"Official_ratings_(millions)\" in the performance table represents the official viewership ratings, measured in millions, for a given performance or event. The values in this column are of type REAL, indicating they can include decimal points for more precise ratings. This data is used to quantify and analyze the audience size for various performances.",
+                "type": "REAL"
+            },
+            "Weekly_rank": {
+                "column_description": "The column \"Weekly_rank\" in the database table \"performance\" contains text values representing the rank of an entity on a weekly basis. The values in this column indicate the position or standing of the entity for each week. This ranking is used to track and compare performance over time.",
+                "type": "TEXT"
+            },
+            "Share": {
+                "column_description": "The \"Share\" column in the \"performance\" table contains textual data that likely represents the distribution or allocation of resources, responsibilities, or performance metrics among different entities or individuals. This column is used to document how specific aspects of performance are shared or divided. The values in this column provide insights into the proportional or categorical distribution relevant to the performance metrics being tracked.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "show": {
+        "table_description": "The \"show\" table records information about various performances, including whether they are the first show, the outcome of the performance, and the attendance figures. It serves to track and analyze the details and results of each performance. This table is essential for performance management and reporting purposes.",
+        "columns": {
+            "Show_ID": {
+                "column_description": "The column `Show_ID` in the `show` table is an integer type that uniquely identifies each show in the database. It serves as the primary key for the table, ensuring that each show entry is distinct. This ID is used to reference shows in related tables and queries.",
+                "type": "INT"
+            },
+            "Performance_ID": {
+                "column_description": "The column Performance_ID in the database table \"show\" is an integer type that uniquely identifies each performance entry. It serves as a primary key to distinguish individual performances within the table. This ID is essential for referencing and managing performance-related data.",
+                "type": "INT"
+            },
+            "If_first_show": {
+                "column_description": "The `If_first_show` column in the `show` table is a boolean field that indicates whether a particular show is the first in its series or sequence. A value of `true` signifies that the show is the inaugural episode or event, while a value of `false` denotes that it is not the first. This column helps in identifying and differentiating the initial show from subsequent ones in the database.",
+                "type": "bool"
+            },
+            "Result": {
+                "column_description": "The \"Result\" column in the \"show\" database table contains textual data representing the outcome or status of an event or process. Typical values include descriptions such as \"Success,\" \"Failure,\" \"Pending,\" and \"Cancelled.\" This column is used to provide a clear and concise summary of the result for each record in the table.",
+                "type": "TEXT"
+            },
+            "Attendance": {
+                "column_description": "The \"Attendance\" column in the \"show\" database table represents the number of attendees for each show, recorded as a real number to accommodate fractional values. The values range from 0.0 to 100.0, indicating the percentage of total capacity filled. This column helps in analyzing the popularity and audience engagement for each show.",
+                "type": "REAL"
+            }
+        }
+    }
+}

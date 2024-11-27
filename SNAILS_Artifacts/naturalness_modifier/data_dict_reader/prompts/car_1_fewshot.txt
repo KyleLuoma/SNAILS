@@ -1,0 +1,60 @@
+
+Using the following text extracted from a data dictionary:
+each continent has a distinct identifier. this column is essential for establishing relationships with other tables that reference continents. " , " type " : " integer " } , " continent " : { " column_description " : " the \ " continent \ " column in the \ " continents \ " database table contains textual data representing the
+" continent " : { " column_description " : " the \ " continent \ " column in the \ " continents \ " database table contains textual data representing the names of the world's continents. this column is used to categorize and identify the continent to which a particular record pertains. examples of values include \ " africa, \ "
+" continent \ " column in the \ " continents \ " database table contains textual data representing the names of the world's continents. this column is used to categorize and identify the continent to which a particular record pertains. examples of values include \ " africa, \ " \ " asia, \ " \ " europe, \ " \ "
+the continent to which a particular record pertains. examples of values include \ " africa, \ " \ " asia, \ " \ " europe, \ " \ " north america, \ " \ " south america, \ " \ " australia, \ " and \ " antarctica. \ " " , " type " : " text " } }
+" continent " : { " column_description " : " the \ " continent \ " column in the \ " countries \ " table is of type integer and represents the continent to which each country belongs. the values in this column correspond to specific continents, where each integer is a unique identifier for a continent. this column is used
+" continent \ " column in the \ " countries \ " table is of type integer and represents the continent to which each country belongs. the values in this column correspond to specific continents, where each integer is a unique identifier for a continent. this column is used to categorize countries by their respective continents for data organization and retrieval
+the continent to which each country belongs. the values in this column correspond to specific continents, where each integer is a unique identifier for a continent. this column is used to categorize countries by their respective continents for data organization and retrieval purposes. " , " type " : " integer " } } } , " car_makers " : {
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier continent:
+
+continent, continent
+
+Using the following text extracted from a data dictionary:
+" contid " : { " column_description " : " the column `contid` in the `continents` table is of type integer and uniquely identifies each continent. it serves as a primary key for the table, ensuring that each continent has a distinct identifier. this column is essential for establishing relationships with other tables that reference continents. " , " type "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier contid:
+
+contid, continent_id
+
+Using the following text extracted from a data dictionary:
+" countryname " : { " column_description " : " the column \ " countryname \ " in the \ " countries \ " table contains textual data representing the names of countries. this column stores the official or commonly recognized names of countries as strings. it is used to identify and differentiate between various countries in the database. " ,
+" countryname \ " in the \ " countries \ " table contains textual data representing the names of countries. this column stores the official or commonly recognized names of countries as strings. it is used to identify and differentiate between various countries in the database. " , " type " : " text " } , " continent " :
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier countryname:
+
+countryname, countryname
+
+Using the following text extracted from a data dictionary:
+car maker entry. this column ensures that each car maker can be distinctly referenced within the database. it is an auto-incrementing primary key, providing a sequential and unique value for each new record. " , " type " : " integer " } , " maker " : { " column_description " : " the column \ " maker \ "
+car maker can be distinctly referenced within the database. it is an auto-incrementing primary key, providing a sequential and unique value for each new record. " , " type " : " integer " } , " maker " : { " column_description " : " the column \ " maker \ " in the \ " car_makers \ " database
+" maker " : { " column_description " : " the column \ " maker \ " in the \ " car_makers \ " database table contains textual data representing the names of car manufacturers. this column includes values such as \ " toyota, \ " \ " ford, \ " \ " bmw, \ " and \ " honda. \
+" maker \ " in the \ " car_makers \ " database table contains textual data representing the names of car manufacturers. this column includes values such as \ " toyota, \ " \ " ford, \ " \ " bmw, \ " and \ " honda. \ " it is used to identify the brand or company that produces the
+" maker " : { " column_description " : " the column \ " maker \ " in the \ " model_list \ " table is of type integer and represents the unique identifier for the manufacturer or maker of the models listed. this column is used to link each model to its corresponding maker, typically referencing an id in a
+" maker \ " in the \ " model_list \ " table is of type integer and represents the unique identifier for the manufacturer or maker of the models listed. this column is used to link each model to its corresponding maker, typically referencing an id in a separate \ " makers \ " table. the values in this column are
+or maker of the models listed. this column is used to link each model to its corresponding maker, typically referencing an id in a separate \ " makers \ " table. the values in this column are integers that serve as foreign keys to ensure data integrity and facilitate efficient querying. " , " type " : " integer " }
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier maker:
+
+maker, maker
+
+Using the following text extracted from a data dictionary:
+" make " : { " column_description " : " the \ " make \ " column in the \ " car_names \ " table contains textual data representing the manufacturer or brand of the car. examples of values in this column include \ " toyota, \ " \ " ford, \ " \ " honda, \ " and \ "
+" make \ " column in the \ " car_names \ " table contains textual data representing the manufacturer or brand of the car. examples of values in this column include \ " toyota, \ " \ " ford, \ " \ " honda, \ " and \ " chevrolet. \ " this column is used to identify the company that
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier make:
+
+make, make
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

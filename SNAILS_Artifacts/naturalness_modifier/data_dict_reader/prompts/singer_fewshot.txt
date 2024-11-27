@@ -1,0 +1,61 @@
+
+Using the following text extracted from a data dictionary:
+" birth_year " : { " column_description " : " the column \ " birth_year \ " in the \ " singer \ " database table contains the birth years of the singers, represented as real numbers. this column stores the year of birth for each singer, which can be used for age calculations and demographic analysis. the values in this
+" birth_year \ " in the \ " singer \ " database table contains the birth years of the singers, represented as real numbers. this column stores the year of birth for each singer, which can be used for age calculations and demographic analysis. the values in this column range from the early 20th century to the late 20th century, reflecting
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier birth_year:
+
+birth_year, birth_year
+
+Using the following text extracted from a data dictionary:
+" net_worth_millions " : { " column_description " : " the column \ " net_worth_millions \ " in the \ " singer \ " database table represents the net worth of each singer in millions of dollars. this column is of the type real, indicating that it can store decimal values. the values in this column quantify the financial worth of
+" net_worth_millions \ " in the \ " singer \ " database table represents the net worth of each singer in millions of dollars. this column is of the type real, indicating that it can store decimal values. the values in this column quantify the financial worth of the singers, providing insight into their economic status. " , " type "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier net_worth_millions:
+
+net_worth_millions, net_worth_millions
+
+Using the following text extracted from a data dictionary:
+" citizenship " : { " column_description " : " the \ " citizenship \ " column in the \ " singer \ " database table records the nationality or legal citizenship status of each singer. this column contains textual data representing the country or countries where the singer holds citizenship. it is used to identify the legal nationality of the
+" citizenship \ " column in the \ " singer \ " database table records the nationality or legal citizenship status of each singer. this column contains textual data representing the country or countries where the singer holds citizenship. it is used to identify the legal nationality of the individuals listed in the table. " , " type " : "
+legal citizenship status of each singer. this column contains textual data representing the country or countries where the singer holds citizenship. it is used to identify the legal nationality of the individuals listed in the table. " , " type " : " text " } } } , " song " : { " table_description " : " the \
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier citizenship:
+
+citizenship, citizenship
+
+Using the following text extracted from a data dictionary:
+" singer_id " : { " column_description " : " the column singer_id in the singer table is an integer type that uniquely identifies each singer in the database. it serves as the primary key for the table, ensuring that each singer has a distinct and unique identifier. this column is essential for establishing relationships with other tables that reference singers.
+column singer_id in the singer table is an integer type that uniquely identifies each singer in the database. it serves as the primary key for the table, ensuring that each singer has a distinct and unique identifier. this column is essential for establishing relationships with other tables that reference singers. " , " type " : " int " } ,
+" singer_id " : { " column_description " : " the column `singer_id` in the `song` table is of type int and serves as a unique identifier for each singer associated with a song. this column likely references the primary key in a separate `singer` table, establishing a relationship between songs and their respective singers. the values in this column are
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier singer_id:
+
+singer_id, singer_id
+
+Using the following text extracted from a data dictionary:
+" song " : { " table_description " : " the \ " song \ " table stores information about individual songs, including their unique identifiers, titles, associated singers, and performance metrics. it is designed to track both commercial success and chart performance of each song. this table is essential for analyzing music sales and popularity trends. " , " columns
+" song \ " table stores information about individual songs, including their unique identifiers, titles, associated singers, and performance metrics. it is designed to track both commercial success and chart performance of each song. this table is essential for analyzing music sales and popularity trends. " , " columns " : { " song_id " : { " column_description " :
+each song in the database. it serves as the primary key for the table, ensuring that each song entry is distinct. this column is essential for indexing and referencing songs in related tables. " , " type " : " int " } , " title " : { " column_description " : " the \ " title \ " column
+each song entry is distinct. this column is essential for indexing and referencing songs in related tables. " , " type " : " int " } , " title " : { " column_description " : " the \ " title \ " column in the \ " song \ " database table is of type text and stores the
+" song \ " database table is of type text and stores the names of songs. this column contains the titles of individual songs, which are typically unique and descriptive, providing a clear identifier for each song entry. the values in this column are essential for cataloging and referencing songs within the database. " , " type " : " text
+each song entry. the values in this column are essential for cataloging and referencing songs within the database. " , " type " : " text " } , " singer_id " : { " column_description " : " the column `singer_id` in the `song` table is of type int and serves as a unique identifier for each singer associated with
+" song \ " database table represents the revenue generated from song sales, measured in monetary units. the values are of type real, indicating they can include decimal points for precise financial data. this column tracks the financial performance of individual songs. " , " type " : " real " } , " highest_position " : { " column_description "
+from song sales, measured in monetary units. the values are of type real, indicating they can include decimal points for precise financial data. this column tracks the financial performance of individual songs. " , " type " : " real " } , " highest_position " : { " column_description " : " the column \ " highest_position \ " in
+" song \ " table represents the peak chart position achieved by a song, with values ranging from 1 to 100. this column is of type real, indicating that it can store decimal values, although typically it will contain whole numbers. it is used to track the highest ranking a song has reached on music charts. " , " type "
+a song has reached on music charts. " , " type " : " real " } } } } 
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier song:
+
+song, song
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

@@ -1,0 +1,51 @@
+
+Using the following text extracted from a data dictionary:
+<attrlabl> mpd </attrlabl> <attrdef> midpoint diameter in meters </attrdef> <attrdefs> nps </attrdefs> <attrtype> double </attrtype> <attwidth>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier mpd:
+
+mpd, midpoint_diameter
+
+Using the following text extracted from a data dictionary:
+<attrlabl> x_coord </attrlabl> <attrdef> x coordinate used to map deadwood location on plot map </attrdef> <attrdefs>
+<attrlabl> x_coord </attrlabl> <attrdef> x coordinate </attrdef> <attrdefs> nps </attrdefs> <attrtype> long integer </attrtype> <attwidth> 4
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier x_coord:
+
+x_coord, x_coordinate
+
+Using the following text extracted from a data dictionary:
+<attrlabl> coord_units </attrlabl> <attrdef> coordinate distance units (coord_unit) </attrdef> <attrdefs> nps </attrdefs> <attrtype> text </attrtype> <attwidth>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier Coord_Units:
+
+coord_units, coordinate_distance_units
+
+Using the following text extracted from a data dictionary:
+<attrlabl> est_h_error </attrlabl> <attrdef> estimated horizontal accuracy (est_h_error) </attrdef> <attrdefs> nps </attrdefs> <attrtype> single </attrtype> <attwidth>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier Est_H_Error:
+
+est_h_error, estimated_horizontal_accuracy
+
+Using the following text extracted from a data dictionary:
+<attrlabl> spcode </attrlabl> <attrdef> seven letter species code </attrdef> <attrdefs> nps </attrdefs> <attrtype> text </attrtype> <attwidth>
+<attrlabl> spcode </attrlabl> <attrdef> redundant data field for validation </attrdef> <attrdefs> nps </attrdefs> <attrtype> text </attrtype>
+<attrlabl> spcode </attrlabl> <attrdef> seven letter species code </attrdef> <attrdefs> nps </attrdefs> <attrtype> text </attrtype> <attwidth>
+<attrlabl> spcode </attrlabl> <attrdef> seven letter species code </attrdef> <attrdefs> nps </attrdefs> <attrtype> text </attrtype> <attwidth>
+<attrlabl> spcode </attrlabl> <attrdef> seven letter species code </attrdef> <attrdefs> nps </attrdefs> <attrtype> text </attrtype> <attwidth>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier SpCode:
+
+spcode, species_code
+
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:

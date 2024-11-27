@@ -1,0 +1,69 @@
+{
+    "airlines": {
+        "table_description": "The \"airlines\" table stores information about various airlines, including their unique identifiers, names, abbreviations, and the countries they are based in. It serves as a reference for airline-related data, facilitating the organization and retrieval of airline-specific information. This table is essential for applications that require detailed airline metadata for operations, reporting, or analysis.",
+        "columns": {
+            "uid": {
+                "column_description": "The column \"uid\" in the \"airlines\" table contains unique integer identifiers for each airline entry. These identifiers are used to distinguish between different airlines within the database. Each \"uid\" value is a distinct integer that ensures the uniqueness of each record.",
+                "type": "INTEGER"
+            },
+            "Airline": {
+                "column_description": "The \"Airline\" column in the \"airlines\" database table contains textual data representing the names of various airlines. This column is used to store and identify the airline associated with each record in the table. It is essential for categorizing and analyzing data related to different airlines.",
+                "type": "TEXT"
+            },
+            "Abbreviation": {
+                "column_description": "The \"Abbreviation\" column in the \"airlines\" table contains short, standardized codes representing airline names. These codes are typically two to three characters long and are used for quick identification and reference. Examples include \"AA\" for American Airlines and \"DL\" for Delta Airlines.",
+                "type": "TEXT"
+            },
+            "Country": {
+                "column_description": "The \"Country\" column in the \"airlines\" database table contains textual data representing the names of countries. This column is used to specify the country associated with each airline entry. It helps in identifying the geographical origin or operational base of the airlines listed in the table.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "airports": {
+        "table_description": "The \"airports\" table is designed to store information about various airports around the world. It includes details such as the city and country where each airport is located, along with the airport's code and name. This table is useful for applications that require airport identification and location data.",
+        "columns": {
+            "City": {
+                "column_description": "The \"City\" column in the \"airports\" table contains textual data representing the names of cities where the airports are located. This column is used to identify the geographical location of each airport within the database. The values in this column are essential for mapping and logistical purposes.",
+                "type": "TEXT"
+            },
+            "AirportCode": {
+                "column_description": "The column \"AirportCode\" in the \"airports\" table contains alphanumeric codes representing specific airports. These codes are typically three-letter IATA (International Air Transport Association) codes used for airline timetables, tickets, and baggage tags. Each code uniquely identifies an airport, facilitating efficient travel and logistics management.",
+                "type": "TEXT"
+            },
+            "AirportName": {
+                "column_description": "The column \"AirportName\" in the \"airports\" table contains the names of various airports. This column is of the TEXT data type and stores the official names of airports as recognized by aviation authorities. It is used to identify and differentiate between different airport locations in the database.",
+                "type": "TEXT"
+            },
+            "Country": {
+                "column_description": "The \"Country\" column in the \"airports\" table contains textual data representing the name of the country where each airport is located. This column is used to identify the geographical location of airports by their respective countries. The values in this column are standardized country names.",
+                "type": "TEXT"
+            },
+            "CountryAbbrev": {
+                "column_description": "The column \"CountryAbbrev\" in the \"airports\" table contains abbreviated country codes, typically in the form of two or three-letter ISO 3166-1 alpha-2 or alpha-3 codes. These abbreviations represent the country in which each airport is located. This column is of the type TEXT and is used for identifying countries in a standardized, concise format.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "flights": {
+        "table_description": "The \"flights\" table stores information about various flights operated by different airlines. It includes details such as the airline identifier, flight number, source airport, and destination airport. This table is used to track and manage flight routes and schedules.",
+        "columns": {
+            "Airline": {
+                "column_description": "The \"Airline\" column in the \"flights\" table is of type INTEGER and represents unique numerical identifiers for different airlines. Each integer corresponds to a specific airline, which can be cross-referenced with an airline lookup table for detailed information. This column is essential for identifying the operating airline for each flight record.",
+                "type": "INTEGER"
+            },
+            "FlightNo": {
+                "column_description": "The column \"FlightNo\" in the \"flights\" table represents the unique identifier for each flight, typically assigned by the airline. This integer value is used to distinguish between different flights in the database. It is essential for tracking and managing flight schedules, bookings, and operations.",
+                "type": "INTEGER"
+            },
+            "SourceAirport": {
+                "column_description": "The column \"SourceAirport\" in the \"flights\" table contains the IATA airport codes representing the departure airports for each flight. These codes are standardized three-letter codes used globally to identify airports. This column is of type TEXT and is essential for identifying the origin of each flight in the dataset.",
+                "type": "TEXT"
+            },
+            "DestAirport": {
+                "column_description": "The column \"DestAirport\" in the \"flights\" table represents the destination airport for each flight, identified by its unique IATA airport code. This code is a three-letter designation assigned by the International Air Transport Association (IATA) to airports around the world. The values in this column indicate the final airport where the flight is scheduled to land.",
+                "type": "TEXT"
+            }
+        }
+    }
+}

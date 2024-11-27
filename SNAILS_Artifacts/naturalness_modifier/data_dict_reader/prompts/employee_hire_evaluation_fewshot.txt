@@ -1,0 +1,52 @@
+
+Using the following text extracted from a data dictionary:
+" start_from " : { " column_description " : " the \ " start_from \ " column in the \ " hiring \ " table is of type text and contains values indicating the starting point or initial stage of the hiring process for a candidate. this could include specific dates, stages, or conditions under which the hiring process begins. the
+" start_from \ " column in the \ " hiring \ " table is of type text and contains values indicating the starting point or initial stage of the hiring process for a candidate. this could include specific dates, stages, or conditions under which the hiring process begins. the description should clarify that this column is used to track the commencement
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier start_from:
+
+start_from, start_initial_hiring_stage
+
+Using the following text extracted from a data dictionary:
+" year_awarded " : { " column_description " : " the column \ " year_awarded \ " in the \ " evaluation \ " table contains text values representing the year in which an award was granted. the values are formatted as four-digit years (e.g., \ " 2021 \ " , \ " 2022 \ " ). this column is used
+" year_awarded \ " in the \ " evaluation \ " table contains text values representing the year in which an award was granted. the values are formatted as four-digit years (e.g., \ " 2021 \ " , \ " 2022 \ " ). this column is used to record and reference the specific year an award was received. " ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier year_awarded:
+
+year_awarded, year_awarded
+
+Using the following text extracted from a data dictionary:
+" is_full_time " : { " column_description " : " the column \ " is_full_time \ " in the \ " hiring \ " table is a boolean field that indicates the employment status of an individual. a value of \ " true \ " signifies that the individual is employed full-time, while a value of \ " false \ "
+" is_full_time \ " in the \ " hiring \ " table is a boolean field that indicates the employment status of an individual. a value of \ " true \ " signifies that the individual is employed full-time, while a value of \ " false \ " indicates part-time employment. this column helps in categorizing employees based on their work
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier is_full_time:
+
+is_full_time, is_full_time
+
+Using the following text extracted from a data dictionary:
+the bonus was awarded, and the amount of the bonus. this table is used for analyzing and managing employee performance incentives. " , " columns " : { " employee_id " : { " column_description " : " the employee_id column in the evaluation table contains unique alphanumeric identifiers assigned to each employee. these identifiers are used to track and reference
+" bonus " : { " column_description " : " the \ " bonus \ " column in the \ " evaluation \ " table contains numerical values representing additional compensation or rewards given to employees, expressed in real numbers. these values can include decimal points, indicating precise amounts. this column is used to track and analyze the extra financial incentives
+" bonus \ " column in the \ " evaluation \ " table contains numerical values representing additional compensation or rewards given to employees, expressed in real numbers. these values can include decimal points, indicating precise amounts. this column is used to track and analyze the extra financial incentives provided to employees based on their performance evaluations. " , " type
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier bonus:
+
+bonus, bonus_compensation
+
+Using the following text extracted from a data dictionary:
+" year_awarded " : { " column_description " : " the column \ " year_awarded \ " in the \ " evaluation \ " table contains text values representing the year in which an award was granted. the values are formatted as four-digit years (e.g., \ " 2021 \ " , \ " 2022 \ " ). this column is used
+" year_awarded \ " in the \ " evaluation \ " table contains text values representing the year in which an award was granted. the values are formatted as four-digit years (e.g., \ " 2021 \ " , \ " 2022 \ " ). this column is used to record and reference the specific year an award was received. " ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier year_awarded:
+
+year_awarded, year_granted
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

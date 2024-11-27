@@ -1,0 +1,65 @@
+{
+    "museum": {
+        "table_description": "The \"museum\" table stores information about various museums, including their unique identifiers, names, staffing levels, and the years they were opened. This table is used to manage and query details related to museum operations and history. It serves as a central repository for museum-related data within the database.",
+        "columns": {
+            "Museum_ID": {
+                "column_description": "The column \"Museum_ID\" in the \"museum\" table is an integer type that uniquely identifies each museum in the database. It serves as the primary key for the table, ensuring that each museum entry is distinct. This ID is used to reference museums in related tables and queries.",
+                "type": "INT"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"museum\" database table contains textual data representing the names of various museums. This column is used to store the official names of museums for identification and reference purposes. It is a key attribute for cataloging and managing museum records within the database.",
+                "type": "TEXT"
+            },
+            "Num_of_Staff": {
+                "column_description": "The column \"Num_of_Staff\" in the \"museum\" table, of type INT, represents the number of staff members employed at each museum. The values in this column indicate the total count of personnel working in various capacities within the museum. This data is essential for understanding staffing levels and resource allocation across different museums.",
+                "type": "INT"
+            },
+            "Open_Year": {
+                "column_description": "The column \"Open_Year\" in the museum database table, of type TEXT, represents the year in which each museum was opened. The values in this column are formatted as four-digit years (e.g., 1995, 2001). This column provides historical context and helps track the operational timeline of the museums.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "visitor": {
+        "table_description": "The \"visitor\" table is designed to store information about individuals who visit a particular establishment or service. It captures essential details such as unique identifiers, personal information, membership levels, and age. This table is crucial for managing and analyzing visitor demographics and membership data.",
+        "columns": {
+            "ID": {
+                "column_description": "The column \"ID\" in the \"visitor\" table is of type INT and serves as a unique identifier for each visitor record. It is an auto-incrementing primary key that ensures each entry in the table is distinct. This column is essential for maintaining data integrity and enabling efficient querying and indexing of visitor information.",
+                "type": "INT"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"visitor\" table contains textual data representing the names of visitors. This column is used to store the full names of individuals who visit the entity being tracked by the database. The data type for this column is TEXT, allowing for a wide range of characters to accommodate various name formats.",
+                "type": "TEXT"
+            },
+            "Level_of_membership": {
+                "column_description": "The column \"Level_of_membership\" in the \"visitor\" table represents the membership tier of the visitor, with values ranging from 1 to 5. Each integer corresponds to a specific membership level, where 1 indicates the lowest tier and 5 indicates the highest tier. This column is used to categorize visitors based on their membership status.",
+                "type": "INT"
+            },
+            "Age": {
+                "column_description": "The \"Age\" column in the \"visitor\" table is an integer field representing the age of the visitors in years. It contains values ranging from 0 to 120, indicating the age of individuals from infants to centenarians. This column is essential for demographic analysis and visitor segmentation.",
+                "type": "INT"
+            }
+        }
+    },
+    "visit": {
+        "table_description": "The \"visit\" table records information about visits to a museum, capturing details of each transaction. It includes data on the museum visited, the visitor, the number of tickets purchased, and the total amount spent. This table is used to analyze visitor behavior and financial performance related to museum visits.",
+        "columns": {
+            "Museum_ID": {
+                "column_description": "The column \"Museum_ID\" in the \"visit\" table is an integer type that uniquely identifies each museum. It serves as a foreign key linking the visit records to the corresponding museums in the database. This column ensures that each visit entry is associated with a specific museum.",
+                "type": "INT"
+            },
+            "visitor_ID": {
+                "column_description": "The `visitor_ID` column in the `visit` table is a TEXT field that uniquely identifies each visitor to the site. It contains alphanumeric strings that serve as unique identifiers for tracking individual visitor sessions. This column is essential for analyzing visitor behavior and session data.",
+                "type": "TEXT"
+            },
+            "Num_of_Ticket": {
+                "column_description": "The column `Num_of_Ticket` in the `visit` table represents the number of tickets associated with each visit. This integer value indicates how many tickets were issued or used for a particular visit. It is used to track ticket usage and manage visitor entries.",
+                "type": "INT"
+            },
+            "Total_spent": {
+                "column_description": "The column \"Total_spent\" in the \"visit\" table, of type REAL, represents the total amount of money spent by a customer during a visit. The values in this column are expressed in the local currency and include all applicable taxes and fees. This column is essential for tracking customer expenditure and analyzing spending patterns.",
+                "type": "REAL"
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+
+Using the following text extracted from a data dictionary:
+" pixel_aspect_ratio_par " : { " column_description " : " the column \ " pixel_aspect_ratio_par \ " in the tv_channel table represents the ratio of the width to the height of individual pixels in a video display. common values include \ " 1 : 1 \ " for square pixels and other ratios like \ " 4 : 3 \ "
+" pixel_aspect_ratio_par \ " in the tv_channel table represents the ratio of the width to the height of individual pixels in a video display. common values include \ " 1 : 1 \ " for square pixels and other ratios like \ " 4 : 3 \ " or \ " 16 : 9 \ " for non-square pixels, indicating different
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier pixel_aspect_ratio_PAR:
+
+pixel_aspect_ratio_par, pixel_aspect_ratio_parameter
+
+Using the following text extracted from a data dictionary:
+" pay_per_view_ppv " : { " column_description " : " the column \ " pay_per_view_ppv \ " in the tv_channel table represents the pay-per-view status of a tv channel. it contains text values indicating whether a channel requires an additional fee to view specific content. this column helps in identifying channels that offer premium content on a pay-per-view basis. " ,
+" pay_per_view_ppv \ " in the tv_channel table represents the pay-per-view status of a tv channel. it contains text values indicating whether a channel requires an additional fee to view specific content. this column helps in identifying channels that offer premium content on a pay-per-view basis. " , " type " : " text " } , " package_option " :
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier pay_per_view_ppv:
+
+pay_per_view_ppv, pay_per_view
+
+Using the following text extracted from a data dictionary:
+" viewers_m " : { " column_description " : " the column \ " viewers_m \ " in the tv_series table represents the number of viewers in millions for each tv series. the values in this column are stored as text, indicating the audience size in millions. this data helps in analyzing the popularity and reach of different tv series. "
+" viewers_m \ " in the tv_series table represents the number of viewers in millions for each tv series. the values in this column are stored as text, indicating the audience size in millions. this data helps in analyzing the popularity and reach of different tv series. " , " type " : " text " } , " weekly_rank "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier viewers_m:
+
+viewers_m, viewers_in_millions
+
+Using the following text extracted from a data dictionary:
+" 18_49_rating_share " : { " column_description " : " the column \ " 18_49_rating_share \ " in the tv_series table represents the percentage of television viewers aged 18 to 49 who are watching a particular tv series at a given time. this metric is crucial for understanding the show's popularity and advertising value within this key demographic. the values are
+" 18_49_rating_share \ " in the tv_series table represents the percentage of television viewers aged 18 to 49 who are watching a particular tv series at a given time. this metric is crucial for understanding the show's popularity and advertising value within this key demographic. the values are stored as text and typically formatted as a percentage. " , " type
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier 18_49_rating_share:
+
+18_49_rating_share, rating_share_ages_18_49
+
+Using the following text extracted from a data dictionary:
+" weekly_rank " : { " column_description " : " the column \ " weekly_rank \ " in the tv_series table represents the ranking of tv series based on their weekly performance, with lower values indicating higher popularity. the values are of type real, allowing for fractional rankings. this column helps in tracking and comparing the relative success of tv series
+" weekly_rank \ " in the tv_series table represents the ranking of tv series based on their weekly performance, with lower values indicating higher popularity. the values are of type real, allowing for fractional rankings. this column helps in tracking and comparing the relative success of tv series on a weekly basis. " , " type " : " real "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier weekly_rank:
+
+weekly_rank, weekly_performance_rank
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

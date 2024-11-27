@@ -1,0 +1,18 @@
+For the database described next, provide only a sql query. do not include any text that is not valid SQL.
+#
+#Database: SBODemoUS
+#
+#MS SQL Server tables, with their properties:
+#
+#OFCT( AbsID int, Code nvarchar, Name nvarchar, UserSign smallint, StartDate datetime, EndDate datetime, FormView char)
+#MSN4( AbsEntry int, ItemCode nvarchar, Selected char, TmpForMrp char, WorDueDate datetime, DsmDueDate datetime, NorDueDate datetime, Interval smallint, Multiple numeric, MinORdrQty numeric, LeadTime int, prcrmntMtd char, ToleranDay int, CompoWH char)
+#OMSN( AbsEntry int, MsnCode nvarchar, Descr nvarchar, GrpPeriods char, PeriodsLen int, StartDate datetime, EndDate datetime, MaxLdTime int, HldaysProd char, HldaysPurc char, ItmFrom nvarchar, ItmTo nvarchar, ItmGrp int, ItmQryGrp nvarchar, ExistStock char, PurchOrder char, SalesOrder char, WorkOrder char, MinStckLvl char, FCTAbs int, SortBy char, ItmReq char, Simulation char, UpdateDate datetime, UpdateBy nvarchar, LastExecDa datetime, AllItems char, ByCompany char, IncHisData char, ResInv char, Wtrq char, InvtLevel char, RcmPO char, RcmWO char, RcmWTRQ char, RCMDefWhs char, OnlyNettbl char, ExpandedPO char, ExpandedSO char, RcmCalDate datetime, RcmCalTime int, PurchOAT char, SalesOAT char, Rots char, ExpdResINV char, ExpdWOR char, IgnoreCLT char, PurchReq char, PurchQuota char, SalesQuota char, ExpdPurReq char, ExpdPQuota char, ExpdSQuota char, ExpdPAgree char, ExpdSAgree char, ExpdTraReq char, DisSelItem char)
+#FCT1( AbsID int, LineID int, ItemCode nvarchar, Date datetime, Quantity numeric, WhsCode nvarchar)
+#MSN1( AbsEntry int, WhsCode nvarchar, ReqSel char, InvtSel char, ExtIvntSel char)
+#MSN2( AbsEntry int, ItemCode nvarchar, PeriodID int, Initial numeric, InitialOrg numeric, InStock numeric, OutStock numeric, Final numeric, FinalOrg numeric, Requests numeric)
+#ORCM( DocEntry int, ObjAbs int, ObjType int, ItemCode nvarchar, DueDate datetime, OrderType char, Quantity numeric, UOM nvarchar, CardCode nvarchar, Warehouse nvarchar, Price numeric, Currency nvarchar, Origin char, Status char, UserSign smallint, DocDate datetime, DocTime smallint, BPLid int, PriceBefDi numeric, DiscPrcnt numeric, ReleasDate datetime, PriceAftV numeric, FromWhse nvarchar, FstReqDate datetime, UomEntry int, NumPerMsr numeric, AgrNo int, AgrLnNum int, UseDiscnt char, PriceMode char, RouDatCalc char)
+#MSN3( AbsEntry int, ItemCode nvarchar, PeriodID int, Quantity numeric, BaseEntry int, BaseLine int, BaseObj nvarchar, BaseDocNum nvarchar, BaseDue datetime, StockType char, LineID int, ParentCode nvarchar, StartDate datetime, EndDate datetime, WhsCode nvarchar)
+#MSN5( AbsEntry int, DocType nvarchar, DocEntry int, Selected char, DocSubType nvarchar)
+#ODPH( AbsEntry int, UserSign nvarchar, TmpltName nvarchar, TmpltCnt ntext, CrtDate datetime)
+#
+### a sql query, written in the MS SQL Server dialect, to answer the question: 

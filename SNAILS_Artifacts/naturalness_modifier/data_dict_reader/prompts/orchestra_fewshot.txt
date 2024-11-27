@@ -1,0 +1,52 @@
+
+Using the following text extracted from a data dictionary:
+" record_company " : { " column_description " : " the \ " record_company \ " column in the \ " orchestra \ " table contains the names of the record companies associated with the orchestra's recordings. this column stores textual data representing various record labels. it is used to identify and categorize the record companies that have produced or distributed
+" record_company \ " column in the \ " orchestra \ " table contains the names of the record companies associated with the orchestra's recordings. this column stores textual data representing various record labels. it is used to identify and categorize the record companies that have produced or distributed the orchestra's music. " , " type " : " text "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier record_company:
+
+record_company, record_company
+
+Using the following text extracted from a data dictionary:
+the date it occurred, and its reception in terms of official ratings, weekly rank, and share. this table is used to track and analyze the performance metrics of different orchestras over time. it serves as a comprehensive record for evaluating the popularity and success of each performance. " , " columns " : { " performance_id " : { " column_description
+" date " : { " column_description " : " the \ " date \ " column in the \ " performance \ " table contains values formatted as text, representing specific calendar dates. these dates are likely used to track the timing of performance-related events or records. the format and context suggest it is essential for chronological data organization and
+" date \ " column in the \ " performance \ " table contains values formatted as text, representing specific calendar dates. these dates are likely used to track the timing of performance-related events or records. the format and context suggest it is essential for chronological data organization and analysis. " , " type " : " text " } ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier date:
+
+date, date
+
+Using the following text extracted from a data dictionary:
+" weekly_rank " : { " column_description " : " the column \ " weekly_rank \ " in the database table \ " performance \ " contains text values representing the rank of an entity on a weekly basis. the values in this column indicate the position or standing of the entity for each week. this ranking is used to track
+" weekly_rank \ " in the database table \ " performance \ " contains text values representing the rank of an entity on a weekly basis. the values in this column indicate the position or standing of the entity for each week. this ranking is used to track and compare performance over time. " , " type " : " text
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier weekly_rank:
+
+weekly_rank, weekly_rank
+
+Using the following text extracted from a data dictionary:
+" if_first_show " : { " column_description " : " the `if_first_show` column in the `show` table is a boolean field that indicates whether a particular show is the first in its series or sequence. a value of `true` signifies that the show is the inaugural episode or event, while a value of `false` denotes that it is not the first.
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier if_first_show:
+
+if_first_show, if_first_show
+
+Using the following text extracted from a data dictionary:
+the attendance figures. it serves to track and analyze the details and results of each performance. this table is essential for performance management and reporting purposes. " , " columns " : { " show_id " : { " column_description " : " the column `show_id` in the `show` table is an integer type that uniquely identifies each show in the
+" attendance " : { " column_description " : " the \ " attendance \ " column in the \ " show \ " database table represents the number of attendees for each show, recorded as a real number to accommodate fractional values. the values range from 0.0 to 100.0, indicating the percentage of total capacity filled. this column helps in
+" attendance \ " column in the \ " show \ " database table represents the number of attendees for each show, recorded as a real number to accommodate fractional values. the values range from 0.0 to 100.0, indicating the percentage of total capacity filled. this column helps in analyzing the popularity and audience engagement for each show. " , "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier attendance:
+
+attendance, attendance
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

@@ -1,0 +1,95 @@
+
+Using the following text extracted from a data dictionary:
+dle level to determine the Weighted 
+Average Performance Index  for the Subgroup and Subject  Text  255 
+WEIGHTED _INDEX  Weighted Average  Performance Index  for the Subgroup and Subject  Text  255 
+WGT_LEVEL  Weighted Average Performance Level for the Subgroup  Text  255 
+OVERRIDE _WEIGHTED  Y if LEVEL overridden by Office of Accountability due to appeals or other 
+circumstances   Text  255 
+OVE
+t  12 
+WEIGHTED _INDEX  Weighted Average  Performance Index  for the Subgroup by Subject  Text  12 
+WGT_LEVEL  Weighted Average Performance Level for the Subgroup  Text  255 
+OVERRIDE _WEIGHTED  Y if WGT_LEVEL  overridden by Office of Accountability due to appeal or other 
+circumstance   Text  255 
+OVERRIDE _CORE  Y if CORE_ LEVEL overridden by Office of Accountability due to appeal or other 
+circ
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier WGT_LEVEL:
+
+WGT_LEVEL, Weighted_Average_Performance_Level_Subgroup
+
+Using the following text extracted from a data dictionary:
+tive Hawaiian/Other Pacific Islander, Black or African American, 
+Hispanic or Latino, Multiracial, White, English Language Learner, Students with 
+Disabilities, Economically Disadvantaged  Text  255 
+ELL_COUNT  Number of grades K -8 English Language Learners used to determine the ELP Level  Text  12 
+BENCHMARK  ELP Benchmark  Text  12 
+PROGRESS_RATE  ELP Progress Rate  Text  255 
+SUCCESS_RATIO  EL
+tive Hawaiian/Other Pacific Islander, Black or African American, 
+Hispanic or Latino, Multiracial, White, English Language Learner, Students with 
+Disabilities, Economically Disadvantaged  Text  255 
+ELL_COUNT  Number of grades 9-12 English Language Learners used to determine the ELP Level  Text  12 
+BENCHMARK  ELP Benchmark  Text  12 
+PROGRESS_RATE  ELP Progress Rate  Text  255 
+SUCCESS_RATIO  EL
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ELL_COUNT:
+
+ELL_COUNT, English_Language_Learner_Count
+
+Using the following text extracted from a data dictionary:
+vel earned for the EM Chronic Absenteeism Indicator  (2021 -22) Text  255 
+OVERRIDE  Y if LEVEL overridden by Office of Accountability due to appeals or other 
+circumstances . (2022 only)  Text  255 
+DATA_REP_FLAG  Flag to denote whether the school or district reported the necessary attendance 
+data to calculate the absenteeism rate. Y if school or district did report necessary 
+data. N if school 
+Level earned for the HS Chronic Absenteeism Indicator  (2021 -22) Text  4 
+OVERRIDE  Y if LEVEL overridden by Office of Accountability due to appeals or other 
+circumstances . (2022 only)  Text  255 
+DATA_REP_FLAG  Flag to denote whether the school or district reported the necessary attendance data 
+to calculate the absenteeism rate. Y if school or district did report necessary data. N if 
+school 
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier DATA_REP_FLAG:
+
+DATA_REP_FLAG, data_reporting_flag
+
+Using the following text extracted from a data dictionary:
+ar’s combined data to calculate 
+results, if not enough students were in the subgroup in the current reporting year to 
+meet the minimum N for accountability. If two -year combined data were needed, 
+WT_PERF_FLAG = Y (2021 only), otherwise N (2022 only).  Text  255 
+ 
+Table: ACC HS  Participation Rate  
+Name  Description  Type  Size 
+INSTITUTION_ID  12-digit unique entity (e.g., district, school) 
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier WT_PERF_FLAG:
+
+WT_PERF_FLAG, Weighted Performance Flag
+
+Using the following text extracted from a data dictionary:
+ Text  255 
+EXEMPT_PER  Percent of students (secondary only) who received an exempt ion (2021 only)   
+(EXEMPT_PER / TOTAL ) *100  Text  255 
+TESTED  Number of students with a valid score  Text  255 
+PER_TESTED  Percent of students with a valid score  (TESTED / TOTAL ) *100  Text  255 
+LEVEL1_COUNT  Number of tested students  scoring at Level 1  Text  12 
+LEVEL1_PER  Percent of tested students  sc
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier PER_TESTED:
+
+PER_TESTED, Percent_of_students_with_valid_score
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:

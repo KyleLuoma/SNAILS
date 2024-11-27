@@ -1,0 +1,117 @@
+{
+    "TV_Channel": {
+        "table_description": "The TV_Channel table stores information about various television channels, including their series names, country of origin, language, and content type. It also includes technical details such as pixel aspect ratio, high-definition availability, and pay-per-view options, along with package options for subscription services. This table is essential for managing and querying detailed attributes of TV channels in a database.",
+        "columns": {
+            "id": {
+                "column_description": "The column \"id\" in the TV_Channel table contains unique identifiers for each TV channel, represented as text strings. These identifiers are used to distinguish and reference individual channels within the database. The values in this column are essential for maintaining the integrity and organization of the TV channel data.",
+                "type": "TEXT"
+            },
+            "series_name": {
+                "column_description": "The `series_name` column in the `TV_Channel` table contains the titles of television series broadcasted on the channel. This column is of type TEXT and stores the name of each series as a string. It is used to identify and categorize the various TV shows available on the channel.",
+                "type": "TEXT"
+            },
+            "Country": {
+                "column_description": "The \"Country\" column in the \"TV_Channel\" database table is of type TEXT and contains the names of countries where the respective TV channels are based or broadcast. This column helps in identifying the geographical origin or primary broadcast region of each TV channel listed in the table. It is essential for categorizing and filtering TV channels by their country of origin.",
+                "type": "TEXT"
+            },
+            "Language": {
+                "column_description": "The \"Language\" column in the TV_Channel table, of type TEXT, specifies the primary language in which the TV channel broadcasts its content. Typical values include \"English,\" \"Spanish,\" \"French,\" \"German,\" and other language names. This column helps users identify the linguistic audience targeted by each TV channel.",
+                "type": "TEXT"
+            },
+            "Content": {
+                "column_description": "The \"Content\" column in the TV_Channel table, of type TEXT, stores detailed descriptions or summaries of the programming available on the channel. This may include show titles, episode summaries, broadcast times, and other relevant information about the TV content. The data is intended to provide viewers with comprehensive information about what is being aired.",
+                "type": "TEXT"
+            },
+            "Pixel_aspect_ratio_PAR": {
+                "column_description": "The column \"Pixel_aspect_ratio_PAR\" in the TV_Channel table represents the ratio of the width to the height of individual pixels in a video display. Common values include \"1:1\" for square pixels and other ratios like \"4:3\" or \"16:9\" for non-square pixels, indicating different display formats. This information is crucial for ensuring proper video playback and display scaling.",
+                "type": "TEXT"
+            },
+            "Hight_definition_TV": {
+                "column_description": "The column \"Hight_definition_TV\" in the TV_Channel table indicates whether a TV channel is broadcast in high definition. The values in this column are likely to be \"Yes\" or \"No,\" signifying the presence or absence of high-definition quality. This column helps users identify which channels offer superior video quality.",
+                "type": "TEXT"
+            },
+            "Pay_per_view_PPV": {
+                "column_description": "The column \"Pay_per_view_PPV\" in the TV_Channel table represents the pay-per-view status of a TV channel. It contains text values indicating whether a channel requires an additional fee to view specific content. This column helps in identifying channels that offer premium content on a pay-per-view basis.",
+                "type": "TEXT"
+            },
+            "Package_Option": {
+                "column_description": "The column \"Package_Option\" in the TV_Channel table represents the various subscription packages available for TV channels. It includes options such as \"Basic,\" \"Standard,\" \"Premium,\" and \"Sports,\" indicating different levels of service and channel availability. This column helps categorize the channels based on the subscription package they belong to.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "TV_series": {
+        "table_description": "The TV_series table stores information about various TV show episodes, including their air dates, ratings, and viewership metrics. It is designed to provide insights into the performance and popularity of TV episodes across different channels. The table includes data on episode titles, air dates, ratings, viewership numbers, and weekly rankings.",
+        "columns": {
+            "id": {
+                "column_description": "The column \"id\" in the TV_series table, of type REAL, appears to store unique identifiers for each TV series entry. These identifiers are likely used to distinguish between different series within the database. The values in this column are numerical and may include decimal points, indicating a flexible identifier system.",
+                "type": "REAL"
+            },
+            "Episode": {
+                "column_description": "The \"Episode\" column in the TV_series table contains textual data representing the titles of individual episodes within a TV series. Each entry in this column is a unique episode title, providing a specific identifier for each episode. This column helps in cataloging and referencing episodes within the series.",
+                "type": "TEXT"
+            },
+            "Air_Date": {
+                "column_description": "The column \"Air_Date\" in the TV_series table contains dates in the format \"YYYY-MM-DD\" representing the original air dates of the TV series episodes. This column is of the TEXT data type. It is used to record and reference the specific dates when each episode was first broadcast.",
+                "type": "TEXT"
+            },
+            "Rating": {
+                "column_description": "The \"Rating\" column in the \"TV_series\" database table is of type TEXT and contains values that represent the classification or evaluation of the TV series, such as \"G\", \"PG\", \"PG-13\", \"R\", and \"NC-17\". These ratings indicate the suitability of the content for different audiences based on factors like age and content sensitivity. The column is used to help users understand the appropriate audience for each TV series.",
+                "type": "TEXT"
+            },
+            "Share": {
+                "column_description": "The \"Share\" column in the TV_series table, of type REAL, represents the percentage of the total audience that watched a particular TV series episode. Values in this column indicate the viewership share, reflecting the popularity and reach of the series among the audience. This metric is crucial for analyzing the performance and success of TV series.",
+                "type": "REAL"
+            },
+            "18_49_Rating_Share": {
+                "column_description": "The column \"18_49_Rating_Share\" in the TV_series table represents the percentage of television viewers aged 18 to 49 who are watching a particular TV series at a given time. This metric is crucial for understanding the show's popularity and advertising value within this key demographic. The values are stored as TEXT and typically formatted as a percentage.",
+                "type": "TEXT"
+            },
+            "Viewers_m": {
+                "column_description": "The column \"Viewers_m\" in the TV_series table represents the number of viewers in millions for each TV series. The values in this column are stored as text, indicating the audience size in millions. This data helps in analyzing the popularity and reach of different TV series.",
+                "type": "TEXT"
+            },
+            "Weekly_Rank": {
+                "column_description": "The column \"Weekly_Rank\" in the TV_series table represents the ranking of TV series based on their weekly performance, with lower values indicating higher popularity. The values are of type REAL, allowing for fractional rankings. This column helps in tracking and comparing the relative success of TV series on a weekly basis.",
+                "type": "REAL"
+            },
+            "Channel": {
+                "column_description": "The \"Channel\" column in the \"TV_series\" database table represents the network or platform on which the TV series is broadcast or made available. This column contains textual data indicating the name of the broadcasting channel or streaming service. It helps in identifying the distribution medium for each TV series listed in the table.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "Cartoon": {
+        "table_description": "The Cartoon table stores information about various cartoon episodes, including their titles, creators, and broadcast details. It is designed to track key metadata such as the director, writer, original air date, production code, and the channel on which the episode was aired. This table serves as a comprehensive reference for cataloging and retrieving details about cartoon episodes.",
+        "columns": {
+            "id": {
+                "column_description": "The column \"id\" in the Cartoon table, of type REAL, contains unique numerical identifiers for each cartoon entry. These identifiers are floating-point numbers, which may include decimal values. This column serves as the primary key for the table, ensuring each cartoon has a distinct and precise identifier.",
+                "type": "REAL"
+            },
+            "Title": {
+                "column_description": "The \"Title\" column in the \"Cartoon\" database table, of type TEXT, contains the names of various cartoon shows or episodes. This column is used to store the primary identifier for each cartoon entry, providing a clear and concise label for easy reference. The values in this column are unique and descriptive, ensuring that each cartoon can be distinctly recognized.",
+                "type": "TEXT"
+            },
+            "Directed_by": {
+                "column_description": "The \"Directed_by\" column in the Cartoon table contains the names of the directors who directed the cartoons. This column is of the TEXT type and stores individual or multiple director names associated with each cartoon entry. It provides essential information about the creative leadership behind each cartoon.",
+                "type": "TEXT"
+            },
+            "Written_by": {
+                "column_description": "The \"Written_by\" column in the Cartoon table contains the names of the individuals or teams responsible for writing the cartoon episodes. The values in this column are typically formatted as text strings, which may include single or multiple authors separated by commas. This column provides essential information about the creative contributors behind each cartoon.",
+                "type": "TEXT"
+            },
+            "Original_air_date": {
+                "column_description": "The column \"Original_air_date\" in the Cartoon table contains dates in the format \"YYYY-MM-DD\" representing the first broadcast date of each cartoon episode. This column is of the TEXT type to accommodate the date format. It is used to track and reference the original airing schedule of the cartoons.",
+                "type": "TEXT"
+            },
+            "Production_code": {
+                "column_description": "The column \"Production_code\" in the Cartoon table contains numerical values that likely represent unique identifiers or codes associated with the production of each cartoon episode or series. These codes are of the REAL data type, indicating they may include decimal points, suggesting a possible hierarchical or version-based system. This column is essential for tracking and referencing specific production details within the database.",
+                "type": "REAL"
+            },
+            "Channel": {
+                "column_description": "The \"Channel\" column in the Cartoon table represents the broadcasting network or platform where the cartoon is aired. Values in this column include names of various TV channels and streaming services. This column helps identify the distribution medium for each cartoon entry.",
+                "type": "TEXT"
+            }
+        }
+    }
+}

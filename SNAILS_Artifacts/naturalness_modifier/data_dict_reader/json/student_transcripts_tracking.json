@@ -1,0 +1,281 @@
+{
+    "Addresses": {
+        "table_description": "The Addresses table stores detailed information about various addresses associated with entities in the database. It includes multiple lines for street addresses, city, postal codes, and other relevant geographical and descriptive details. This table is essential for maintaining accurate and comprehensive address records for entities such as customers, suppliers, or locations.",
+        "columns": {
+            "address_id": {
+                "column_description": "The `address_id` column in the `Addresses` table is an INTEGER type that serves as a unique identifier for each address record. This column ensures that each address entry can be distinctly referenced and managed within the database. It is typically used as a primary key to maintain data integrity and facilitate efficient querying.",
+                "type": "INTEGER"
+            },
+            "line_1": {
+                "column_description": "The column `line_1` in the `Addresses` table contains the primary address information, typically including the street number, street name, and apartment or suite number if applicable. This field is used to specify the main part of the address where mail or deliveries should be directed. It is a VARCHAR(255) type to accommodate a wide range of address formats.",
+                "type": "VARCHAR(255)"
+            },
+            "line_2": {
+                "column_description": "The column `line_2` in the `Addresses` table is used to store additional address information, such as apartment numbers, suite numbers, or other secondary address details. This field is optional and complements the primary address line. It can accommodate up to 255 characters.",
+                "type": "VARCHAR(255)"
+            },
+            "line_3": {
+                "column_description": "The column `line_3` in the `Addresses` table typically contains additional address information that does not fit into the primary address lines, such as apartment numbers, suite numbers, or other secondary address details. This field is used to ensure that all relevant address information is captured for accurate delivery and location identification.",
+                "type": "VARCHAR(255)"
+            },
+            "city": {
+                "column_description": "The \"city\" column in the Addresses table contains the names of cities, represented as strings with a maximum length of 255 characters. This column is used to store the city component of an address. It is essential for identifying the specific city within an address for purposes such as shipping, billing, and location-based services.",
+                "type": "VARCHAR(255)"
+            },
+            "zip_postcode": {
+                "column_description": "The column `zip_postcode` in the `Addresses` table contains alphanumeric strings representing postal codes or ZIP codes, which can include letters, numbers, and special characters. These codes are used to identify specific geographic regions for mail delivery purposes. The maximum length of the values in this column is 20 characters.",
+                "type": "VARCHAR(20)"
+            },
+            "state_province_county": {
+                "column_description": "The column \"state_province_county\" in the Addresses table contains geographical subdivisions, which can be a state, province, or county, depending on the country. This column is used to specify the regional administrative division relevant to the address. It supports a maximum length of 255 characters.",
+                "type": "VARCHAR(255)"
+            },
+            "country": {
+                "column_description": "The \"country\" column in the Addresses table contains the names of countries in a VARCHAR(255) format. This column is used to store the country information associated with each address entry. It ensures that the address data is complete and can be used for geographical categorization and analysis.",
+                "type": "VARCHAR(255)"
+            },
+            "other_address_details": {
+                "column_description": "The column `other_address_details` in the `Addresses` table contains supplementary address information that does not fit into standard address fields. This may include details such as apartment numbers, building names, landmarks, or specific delivery instructions. The data type for this column is `VARCHAR(255)`, allowing for a maximum of 255 characters.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Courses": {
+        "table_description": "The Courses table is designed to store information about various educational courses offered by an institution. It includes details such as the unique identifier for each course, the name of the course, a brief description, and any additional relevant information. This table serves as a central repository for course-related data, facilitating easy access and management of course offerings.",
+        "columns": {
+            "course_id": {
+                "column_description": "The `course_id` column in the Courses table is an INTEGER type that uniquely identifies each course. It serves as the primary key for the table, ensuring that each course entry is distinct. This column is essential for establishing relationships with other tables in the database, such as student enrollments and course schedules.",
+                "type": "INTEGER"
+            },
+            "course_name": {
+                "column_description": "The `course_name` column in the `Courses` table contains the names of various courses offered. This column is of type VARCHAR(255), allowing for a wide range of course titles. It serves as a primary identifier for each course within the database.",
+                "type": "VARCHAR(255)"
+            },
+            "course_description": {
+                "column_description": "The `course_description` column in the `Courses` table provides a brief summary of the course content, objectives, and key topics covered. It is a VARCHAR(255) field, allowing for a concise yet informative description that helps students understand what to expect from the course. This description aids in course selection and academic planning.",
+                "type": "VARCHAR(255)"
+            },
+            "other_details": {
+                "column_description": "The \"other_details\" column in the Courses table contains additional information about the course that does not fit into other predefined columns. This may include special requirements, unique features, or supplementary notes relevant to the course. The data type for this column is VARCHAR(255), allowing for up to 255 characters of text.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Departments": {
+        "table_description": "The Departments table stores information about various departments within an organization. It includes unique identifiers, names, descriptions, and additional details pertinent to each department. This table is essential for managing and referencing departmental data across different organizational processes and systems.",
+        "columns": {
+            "department_id": {
+                "column_description": "The `department_id` column in the Departments table is an INTEGER type that uniquely identifies each department within the organization. This column serves as the primary key for the table, ensuring that each department has a distinct and unique identifier. It is used to establish relationships with other tables that reference department information.",
+                "type": "INTEGER"
+            },
+            "department_name": {
+                "column_description": "The `department_name` column in the Departments table contains the names of various departments within an organization, such as \"Human Resources,\" \"Finance,\" \"Marketing,\" and \"IT.\" This column is of type VARCHAR(255), allowing for a wide range of department names to be stored. It serves as a key identifier for categorizing and managing departmental data.",
+                "type": "VARCHAR(255)"
+            },
+            "department_description": {
+                "column_description": "The column \"department_description\" in the Departments table contains textual descriptions of various departments within an organization. These descriptions provide detailed information about the roles, functions, and responsibilities of each department. The data type for this column is VARCHAR(255), allowing for a maximum of 255 characters per description.",
+                "type": "VARCHAR(255)"
+            },
+            "other_details": {
+                "column_description": "The \"other_details\" column in the Departments table contains additional information about the department that does not fit into other predefined columns. This may include notes on departmental policies, special instructions, or miscellaneous comments. The data is stored as a VARCHAR(255) type, allowing for up to 255 characters of text.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Degree_Programs": {
+        "table_description": "The Degree_Programs table stores information about various academic degree programs offered by different departments within an institution. It includes unique identifiers for each degree program and department, along with summary details and descriptions of the degree programs. This table is essential for cataloging and managing the academic offerings and their associated details.",
+        "columns": {
+            "degree_program_id": {
+                "column_description": "The column `degree_program_id` in the `Degree_Programs` table is an INTEGER type that uniquely identifies each degree program offered by the institution. This identifier is used to reference specific degree programs in related tables and ensures data integrity across the database. Each value in this column corresponds to a distinct degree program.",
+                "type": "INTEGER"
+            },
+            "department_id": {
+                "column_description": "The `department_id` column in the `Degree_Programs` table is an INTEGER that uniquely identifies the department associated with each degree program. This column serves as a foreign key linking to the `Departments` table, ensuring referential integrity between degree programs and their respective departments. The values in this column correspond to the unique IDs assigned to each department.",
+                "type": "INTEGER"
+            },
+            "degree_summary_name": {
+                "column_description": "The column \"degree_summary_name\" in the Degree_Programs table contains brief, descriptive titles summarizing the nature and focus of each degree program. These titles are concise, typically under 255 characters, and provide an overview of the program's academic content and objectives. This column is essential for quickly identifying and differentiating between various degree offerings.",
+                "type": "VARCHAR(255)"
+            },
+            "degree_summary_description": {
+                "column_description": "The `degree_summary_description` column in the `Degree_Programs` table provides a brief overview of the key aspects and objectives of each degree program. It includes information on the core focus areas, skills developed, and potential career paths for graduates. This summary helps prospective students quickly understand what each program entails.",
+                "type": "VARCHAR(255)"
+            },
+            "other_details": {
+                "column_description": "The \"other_details\" column in the Degree_Programs table contains additional information about the degree programs that do not fit into other predefined columns. This may include special requirements, unique features, or supplementary notes relevant to the program. The data is stored as a VARCHAR(255) type, allowing for up to 255 characters of text.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Sections": {
+        "table_description": "The Sections table stores information about different sections within courses offered by an educational institution. Each record in the table represents a unique section, detailing its name, description, and other relevant details. This table is essential for organizing and managing the various sections associated with each course.",
+        "columns": {
+            "section_id": {
+                "column_description": "The `section_id` column in the Sections table is an INTEGER type that uniquely identifies each section within the database. It serves as the primary key for the table, ensuring that each section can be distinctly referenced. This column is essential for maintaining the integrity and organization of section-related data.",
+                "type": "INTEGER"
+            },
+            "course_id": {
+                "column_description": "The `course_id` column in the `Sections` table is an INTEGER that uniquely identifies each course associated with a section. It serves as a foreign key linking to the primary key in the `Courses` table, ensuring referential integrity between sections and their respective courses. This column is essential for organizing and retrieving course-specific information within the database.",
+                "type": "INTEGER"
+            },
+            "section_name": {
+                "column_description": "The `section_name` column in the `Sections` table contains the names of various sections within a larger entity, such as a document, website, or organizational structure. Each value in this column is a string with a maximum length of 255 characters. This column is used to identify and differentiate between different sections.",
+                "type": "VARCHAR(255)"
+            },
+            "section_description": {
+                "column_description": "The `section_description` column in the `Sections` table contains textual descriptions of various sections, each up to 255 characters in length. These descriptions provide detailed information about the content or purpose of each section. This column is essential for understanding the specific focus or topic of each section within the database.",
+                "type": "VARCHAR(255)"
+            },
+            "other_details": {
+                "column_description": "The \"other_details\" column in the Sections table contains additional information or notes related to each section, which may include special instructions, unique identifiers, or miscellaneous comments. This column is used to store any supplementary details that do not fit into the predefined columns of the table. The data is stored as a VARCHAR(255) type, allowing for a maximum of 255 characters.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Semesters": {
+        "table_description": "The Semesters table is designed to store information about different academic semesters. It includes unique identifiers, names, descriptions, and additional details for each semester. This table is essential for managing and referencing semester-specific data within the academic database system.",
+        "columns": {
+            "semester_id": {
+                "column_description": "The `semester_id` column in the Semesters table is an INTEGER type that uniquely identifies each academic semester. It serves as a primary key to distinguish between different semesters in the database. The values in this column are sequential integers representing individual semesters.",
+                "type": "INTEGER"
+            },
+            "semester_name": {
+                "column_description": "The `semester_name` column in the `Semesters` table contains the names of academic semesters, typically formatted as a combination of the season and year (e.g., \"Fall 2023\" or \"Spring 2024\"). This column is used to identify and differentiate between various academic periods within the institution. The maximum length for this column is 255 characters.",
+                "type": "VARCHAR(255)"
+            },
+            "semester_description": {
+                "column_description": "The `semester_description` column in the `Semesters` table provides a textual representation of the academic semester, typically including the term (e.g., Fall, Spring) and the year (e.g., 2023). This column is used to identify and describe the specific time period during which academic courses are offered. It is a VARCHAR(255) type, allowing for detailed and flexible descriptions.",
+                "type": "VARCHAR(255)"
+            },
+            "other_details": {
+                "column_description": "The `other_details` column in the Semesters table contains additional information about each semester, such as special notes, unique identifiers, or specific conditions related to that semester. This field is used to store any supplementary details that do not fit into the predefined columns of the table. The data type is VARCHAR(255), allowing for a maximum of 255 characters.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Students": {
+        "table_description": "The Students table stores comprehensive information about each student enrolled in an institution. It includes identifiers, contact details, registration dates, and other relevant personal information. This table is essential for managing student records and tracking their academic journey.",
+        "columns": {
+            "student_id": {
+                "column_description": "The `student_id` column in the Students table is an INTEGER type that uniquely identifies each student in the database. It serves as the primary key for the table, ensuring that each student record is distinct. This column is essential for maintaining data integrity and enabling efficient querying and relationship mapping with other tables.",
+                "type": "INTEGER"
+            },
+            "current_address_id": {
+                "column_description": "The `current_address_id` column in the Students table is an INTEGER that serves as a foreign key linking to the Addresses table, indicating the current address of each student. This column ensures that each student record is associated with a specific address entry, facilitating accurate and organized address management.",
+                "type": "INTEGER"
+            },
+            "permanent_address_id": {
+                "column_description": "The column `permanent_address_id` in the Students table is an INTEGER type that uniquely identifies the permanent address of each student. This ID corresponds to an entry in the Addresses table, linking students to their permanent residential addresses. It ensures accurate and consistent address information management within the database.",
+                "type": "INTEGER"
+            },
+            "first_name": {
+                "column_description": "The `first_name` column in the `Students` table, of type `VARCHAR(80)`, stores the given names of students. This column is used to record the first name or personal name of each student, which can include up to 80 characters. It is essential for identifying and differentiating individual students within the database.",
+                "type": "VARCHAR(80)"
+            },
+            "middle_name": {
+                "column_description": "The column \"middle_name\" in the Students table contains the middle names of students, stored as VARCHAR(40). This column may include full middle names, initials, or be left blank if the student does not have a middle name. It is used to uniquely identify students and provide additional personal information.",
+                "type": "VARCHAR(40)"
+            },
+            "last_name": {
+                "column_description": "The `last_name` column in the `Students` table contains the family names or surnames of the students, with a maximum length of 40 characters. This column is of type `VARCHAR(40)` and is used to store the last names for identification and record-keeping purposes.",
+                "type": "VARCHAR(40)"
+            },
+            "cell_mobile_number": {
+                "column_description": "The column `cell_mobile_number` in the Students table stores the mobile phone numbers of students. It is a VARCHAR(40) type, allowing for various phone number formats, including country codes and special characters. This field is used for contact purposes.",
+                "type": "VARCHAR(40)"
+            },
+            "email_address": {
+                "column_description": "The column `email_address` in the `Students` table contains the email addresses of students, formatted as standard email strings (e.g., \"example@domain.com\"). This column is of type VARCHAR(40), ensuring that each email address does not exceed 40 characters. It is used for communication and identification purposes within the database.",
+                "type": "VARCHAR(40)"
+            },
+            "ssn": {
+                "column_description": "The column \"ssn\" in the Students table contains Social Security Numbers formatted as strings, with a maximum length of 40 characters. This column is used to uniquely identify students within the database. The values are expected to follow the standard SSN format (XXX-XX-XXXX) but are stored as VARCHAR to accommodate any variations or additional characters.",
+                "type": "VARCHAR(40)"
+            },
+            "date_first_registered": {
+                "column_description": "The column `date_first_registered` in the Students table, of type DATETIME, records the exact date and time when a student first registered in the system. This timestamp is crucial for tracking the enrollment history and determining the duration of a student's association with the institution. It helps in generating reports related to student registration trends and academic timelines.",
+                "type": "DATETIME"
+            },
+            "date_left": {
+                "column_description": "The `date_left` column in the Students table, of type DATETIME, records the date and time when a student officially left the institution. This column includes values such as '2023-05-15 14:30:00' and '2022-12-20 09:00:00', indicating the precise moment of departure. It is used for tracking student attrition and managing alumni records.",
+                "type": "DATETIME"
+            },
+            "other_student_details": {
+                "column_description": "The column `other_student_details` in the `Students` table contains additional information about students that does not fit into other predefined columns. This may include details such as extracurricular activities, special accommodations, or other relevant notes. The data is stored as a VARCHAR(255) to allow for flexible, text-based entries.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Student_Enrolment": {
+        "table_description": "The Student_Enrolment table records the enrollment details of students in various degree programs across different semesters. It serves as a linkage between students, the degree programs they are enrolled in, and the specific semesters of their enrollment. This table is essential for tracking student progress and managing academic records.",
+        "columns": {
+            "student_enrolment_id": {
+                "column_description": "The column `student_enrolment_id` in the `Student_Enrolment` table is an INTEGER type that uniquely identifies each student's enrolment record. This identifier is used to track and manage individual enrolment entries within the database. It serves as a primary key for the `Student_Enrolment` table.",
+                "type": "INTEGER"
+            },
+            "degree_program_id": {
+                "column_description": "The column `degree_program_id` in the `Student_Enrolment` table is an INTEGER that uniquely identifies the degree program in which a student is enrolled. This ID corresponds to specific degree programs offered by the institution, such as Bachelor's, Master's, or Ph.D. programs. It serves as a foreign key linking to the `Degree_Programs` table, ensuring data integrity and facilitating the retrieval of program-specific information.",
+                "type": "INTEGER"
+            },
+            "semester_id": {
+                "column_description": "The `semester_id` column in the `Student_Enrolment` table is an INTEGER that uniquely identifies the semester during which a student is enrolled. This ID corresponds to specific academic terms, such as Fall 2022 or Spring 2023, and is used to track and manage student enrolment periods. Each `semester_id` is linked to detailed semester information in a related table.",
+                "type": "INTEGER"
+            },
+            "student_id": {
+                "column_description": "The `student_id` column in the `Student_Enrolment` table is an INTEGER type that uniquely identifies each student enrolled in the institution. This column serves as a primary key and is used to link student records across various tables in the database. Each value in this column represents a unique student.",
+                "type": "INTEGER"
+            },
+            "other_details": {
+                "column_description": "The column \"other_details\" in the Student_Enrolment table is a VARCHAR(255) field used to store additional information about the student's enrollment that is not covered by other columns. This may include special accommodations, notes on enrollment status, or other relevant remarks. The content is typically free-form text provided by administrative staff.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Student_Enrolment_Courses": {
+        "table_description": "The Student_Enrolment_Courses table is designed to track the courses in which students are enrolled. Each record in the table represents a unique enrollment of a student in a specific course. This table serves as a junction table to manage the many-to-many relationship between students and courses.",
+        "columns": {
+            "student_course_id": {
+                "column_description": "The column `student_course_id` in the `Student_Enrolment_Courses` table is an INTEGER that uniquely identifies each student's enrollment in a specific course. This identifier is used to track and manage the relationship between students and the courses they are enrolled in. It serves as a primary key for the enrollment records.",
+                "type": "INTEGER"
+            },
+            "course_id": {
+                "column_description": "The `course_id` column in the `Student_Enrolment_Courses` table is an INTEGER type that uniquely identifies each course a student is enrolled in. This column serves as a foreign key linking to the primary key in the Courses table, ensuring referential integrity. It is essential for tracking and managing student enrolments in various courses.",
+                "type": "INTEGER"
+            },
+            "student_enrolment_id": {
+                "column_description": "The column `student_enrolment_id` in the `Student_Enrolment_Courses` table is an INTEGER type that uniquely identifies each student's enrolment record. This ID serves as a primary key to link students with their respective courses. It ensures that each enrolment entry is distinct and can be referenced accurately within the database.",
+                "type": "INTEGER"
+            }
+        }
+    },
+    "Transcripts": {
+        "table_description": "The Transcripts table stores records of various transcripts, capturing essential details about each transcript. It includes information such as the unique identifier for each transcript, the date it was created, and additional relevant details. This table is used to manage and retrieve transcript information efficiently within the database.",
+        "columns": {
+            "transcript_id": {
+                "column_description": "The `transcript_id` column in the Transcripts table is an INTEGER that uniquely identifies each transcript record. It serves as the primary key for the table, ensuring that each transcript entry is distinct. This column is essential for indexing and efficient retrieval of transcript data.",
+                "type": "INTEGER"
+            },
+            "transcript_date": {
+                "column_description": "The `transcript_date` column in the Transcripts table is of the DATETIME type and records the date and time when each transcript was created or last modified. This column ensures accurate tracking of transcript history and updates. Example values include '2023-01-15 14:30:00' and '2023-02-20 09:45:00'.",
+                "type": "DATETIME"
+            },
+            "other_details": {
+                "column_description": "The \"other_details\" column in the Transcripts table contains additional information or comments related to the transcript that do not fit into other predefined fields. This may include notes on special circumstances, administrative remarks, or other relevant details. The data is stored as a VARCHAR(255) type, allowing for up to 255 characters of text.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Transcript_Contents": {
+        "table_description": "The Transcript_Contents table serves as a junction table that links student course enrollments with their corresponding transcripts. It facilitates the association between individual student course records and the transcripts that document their academic performance. This table is essential for managing and retrieving detailed transcript information for each student's course history.",
+        "columns": {
+            "student_course_id": {
+                "column_description": "The column `student_course_id` in the `Transcript_Contents` table is an INTEGER that uniquely identifies the enrollment of a student in a specific course. This ID links students to their respective courses, facilitating the tracking of academic progress and transcript generation. Each value in this column corresponds to a unique student-course pairing.",
+                "type": "INTEGER"
+            },
+            "transcript_id": {
+                "column_description": "The `transcript_id` column in the `Transcript_Contents` table is an INTEGER that uniquely identifies each transcript record. It serves as a primary key to ensure each transcript entry is distinct and can be referenced reliably. This column is essential for indexing and efficient retrieval of transcript data.",
+                "type": "INTEGER"
+            }
+        }
+    }
+}

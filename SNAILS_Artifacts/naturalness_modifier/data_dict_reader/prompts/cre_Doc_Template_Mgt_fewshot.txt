@@ -1,0 +1,50 @@
+
+Using the following text extracted from a data dictionary:
+" version_number " : { " column_description " : " the column `version_number` in the `templates` table is an integer type that represents the versioning of each template. the values in this column indicate the sequential version numbers assigned to templates, starting from 1 and incrementing by 1 for each new version. this helps in tracking changes and maintaining the history
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier version_number:
+
+version_number, version_Number
+
+Using the following text extracted from a data dictionary:
+" date_effective_to " : { " column_description " : " the column `date_effective_to` in the `templates` table, of type datetime, represents the date and time until which a particular template remains effective or valid. it indicates the expiration or end date of the template's applicability. this column is crucial for managing the lifecycle and validity period of templates within the database.
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier date_effective_to:
+
+date_effective_to, date_Effective_To
+
+Using the following text extracted from a data dictionary:
+" template_details " : { " column_description " : " the column `template_details` in the `templates` table contains descriptive information about each template, such as its purpose, usage guidelines, and any specific attributes or configurations. this field is a varchar(255) type, allowing for up to 255 characters of text. it provides essential context to understand the template's function and application within
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier template_details:
+
+template_details, template_details
+
+Using the following text extracted from a data dictionary:
+" template_type_code " : { " column_description " : " the column `template_type_code` in the `ref_template_types` table, defined as `char(15)`, stores unique alphanumeric codes that identify different types of templates used within the system. these codes serve as references for categorizing and managing various template types. " , " type " : " char(15) " } , " template_type_description " :
+" template_type_code " : { " column_description " : " the column template_type_code in the templates table is a char(15) field that categorizes templates based on their specific type or function. the values in this column represent distinct codes that identify different template categories used within the system. this description helps in understanding the purpose and classification of each template type.
+column template_type_code in the templates table is a char(15) field that categorizes templates based on their specific type or function. the values in this column represent distinct codes that identify different template categories used within the system. this description helps in understanding the purpose and classification of each template type. " , " type " : " char(15) " } ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier template_type_code:
+
+template_type_code, template_type_code
+
+Using the following text extracted from a data dictionary:
+" template_id " : { " column_description " : " the column `template_id` in the `templates` table is an integer type that uniquely identifies each template within the database. it serves as the primary key for the table, ensuring that each template can be distinctly referenced. this column is essential for maintaining the integrity and organization of template records. " ,
+" template_id " : { " column_description " : " the template_id column in the documents table is an integer type that uniquely identifies the template associated with each document. this id links documents to their respective templates, facilitating template management and document generation processes. each value in this column corresponds to a specific template stored in the system. " ,
+the template_id column in the documents table is an integer type that uniquely identifies the template associated with each document. this id links documents to their respective templates, facilitating template management and document generation processes. each value in this column corresponds to a specific template stored in the system. " , " type " : " integer " } , "
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier template_id:
+
+template_id, template_ID
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

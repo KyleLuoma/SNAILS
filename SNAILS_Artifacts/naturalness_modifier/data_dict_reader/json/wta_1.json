@@ -1,0 +1,189 @@
+{
+    "players": {
+        "table_description": "The \"players\" table stores information about individual players, including their personal details and attributes. It is designed to capture essential data such as names, handedness, birth dates, and country codes for identification and analysis purposes. This table is typically used in applications related to sports, gaming, or any domain requiring player-specific information.",
+        "columns": {
+            "player_id": {
+                "column_description": "The `player_id` column in the `players` table is an integer that uniquely identifies each player in the database. It serves as the primary key for the table, ensuring that each player has a distinct and unique identifier. This column is essential for establishing relationships with other tables and for efficiently querying player-specific data.",
+                "type": "INT"
+            },
+            "first_name": {
+                "column_description": "The `first_name` column in the `players` table contains the given names of the players, stored as text. This column is used to identify and differentiate individual players by their first names. It is a mandatory field and should not contain null values.",
+                "type": "TEXT"
+            },
+            "last_name": {
+                "column_description": "The \"last_name\" column in the \"players\" table contains the family names or surnames of the players. This column is of the TEXT type, allowing for a wide range of characters to accommodate various naming conventions. It is used to identify and differentiate players based on their last names.",
+                "type": "TEXT"
+            },
+            "hand": {
+                "column_description": "The \"hand\" column in the \"players\" table contains textual data representing the dominant hand of the player. The possible values include \"left,\" \"right,\" and \"ambidextrous.\" This column is used to identify whether a player is left-handed, right-handed, or capable of using both hands with equal skill.",
+                "type": "TEXT"
+            },
+            "birth_date": {
+                "column_description": "The `birth_date` column in the `players` table stores the date of birth of each player in the format YYYY-MM-DD. This column is of the DATE data type, ensuring that only valid dates are stored. It is used to calculate the age of players and for other age-related analyses.",
+                "type": "DATE"
+            },
+            "country_code": {
+                "column_description": "The `country_code` column in the `players` table contains two-letter country codes representing the countries of origin for the players. These codes adhere to the ISO 3166-1 alpha-2 standard. Examples include 'US' for the United States, 'CA' for Canada, and 'GB' for the United Kingdom.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "matches": {
+        "table_description": "The \"matches\" table stores detailed information about individual tennis matches, capturing both player-specific and match-specific data. It includes attributes related to the match context, such as tournament details, match duration, and scores, as well as player details for both the winner and the loser, including demographics, rankings, and performance metrics. This table is essential for analyzing match outcomes, player performance, and tournament statistics.",
+        "columns": {
+            "best_of": {
+                "column_description": "The \"best_of\" column in the \"matches\" table, of type INT, represents the maximum number of games or sets that determine the winner of a match. Common values might include 3 or 5, indicating a \"best of three\" or \"best of five\" format, respectively. This column is used to specify the length and format of the match.",
+                "type": "INT"
+            },
+            "draw_size": {
+                "column_description": "The `draw_size` column in the `matches` table, of type INT, represents the number of participants or teams in a given match or tournament draw. Values in this column indicate the total count of entries competing in the event. This helps in understanding the scale and structure of the competition.",
+                "type": "INT"
+            },
+            "loser_age": {
+                "column_description": "The column \"loser_age\" in the \"matches\" table represents the age of the player who lost the match, recorded as a floating-point number. The values in this column indicate the age in years, with possible decimal precision to account for partial years. This allows for a more accurate representation of the player's age at the time of the match.",
+                "type": "FLOAT"
+            },
+            "loser_entry": {
+                "column_description": "The \"loser_entry\" column in the \"matches\" table is of type TEXT and records the entry status of the losing participant in a match. Possible values include \"wildcard,\" \"qualifier,\" \"lucky loser,\" or \"direct acceptance,\" indicating how the losing participant entered the tournament. This column helps in identifying the entry method of participants who did not win their respective matches.",
+                "type": "TEXT"
+            },
+            "loser_hand": {
+                "column_description": "The column \"loser_hand\" in the database table \"matches\" records the final hand of the player who lost the game. The values in this column represent the specific cards or combination of cards held by the losing player at the end of the match. This information is stored as text.",
+                "type": "TEXT"
+            },
+            "loser_ht": {
+                "column_description": "The column `loser_ht` in the `matches` table represents the height of the losing player in a match, measured in centimeters. This column is of type INT and contains numerical values corresponding to the height. It is used to record and analyze the physical attributes of players who did not win their respective matches.",
+                "type": "INT"
+            },
+            "loser_id": {
+                "column_description": "The column `loser_id` in the `matches` table, of type INT, represents the unique identifier of the player who lost the match. This ID corresponds to the primary key in the players' table, ensuring referential integrity. It is used to track and analyze the performance and statistics of players who did not win their respective matches.",
+                "type": "INT"
+            },
+            "loser_ioc": {
+                "column_description": "The column \"loser_ioc\" in the \"matches\" table contains the International Olympic Committee (IOC) country codes representing the countries of the losing participants in the matches. These codes are standardized three-letter abbreviations used to identify each country. This column helps in identifying the nationality of the losing competitor in each match.",
+                "type": "TEXT"
+            },
+            "loser_name": {
+                "column_description": "The column \"loser_name\" in the database table \"matches\" contains the names of the participants who lost in each match. This column is of the type TEXT and stores the full names as strings. It is used to identify and record the losing player or team in each match entry.",
+                "type": "TEXT"
+            },
+            "loser_rank": {
+                "column_description": "The column `loser_rank` in the `matches` table represents the ranking position of the player who lost the match. The values in this column are integers that indicate the loser's rank at the time of the match. This ranking is typically based on an official ranking system, such as ATP or WTA rankings in tennis.",
+                "type": "INT"
+            },
+            "loser_rank_points": {
+                "column_description": "The column \"loser_rank_points\" in the \"matches\" table represents the ranking points of the player who lost the match. These points are typically used to determine the player's position in the overall ranking system. This column is of the type INT and stores the integer value of the loser's ranking points at the time of the match.",
+                "type": "INT"
+            },
+            "loser_seed": {
+                "column_description": "The column `loser_seed` in the `matches` table represents the seed ranking of the player who lost the match. It is an integer value indicating the player's seed position in the tournament. A lower number typically signifies a higher-ranked player.",
+                "type": "INT"
+            },
+            "match_num": {
+                "column_description": "The `match_num` column in the `matches` table is an integer that uniquely identifies each match. It serves as a primary key to distinguish between different match records. This column ensures that each match entry is distinct and can be referenced individually.",
+                "type": "INT"
+            },
+            "minutes": {
+                "column_description": "The \"minutes\" column in the \"matches\" table, of type INT, represents the duration of each match in minutes. The values in this column indicate the total time elapsed from the start to the end of a match. This column is essential for analyzing the length and pacing of matches.",
+                "type": "INT"
+            },
+            "round": {
+                "column_description": "The \"round\" column in the \"matches\" table contains textual data representing the stage or phase of a match or competition. Values in this column typically include terms such as \"Quarterfinal,\" \"Semifinal,\" \"Final,\" and other similar stages. This column helps to identify the specific round in which a match takes place within a tournament or series.",
+                "type": "TEXT"
+            },
+            "score": {
+                "column_description": "The \"score\" column in the \"matches\" table stores textual representations of match results. Typical values include numerical scores, such as \"3-2\" or \"1-1\", indicating the final scores of the competing teams or players. This column captures the outcome of each match in a human-readable format.",
+                "type": "TEXT"
+            },
+            "surface": {
+                "column_description": "The \"surface\" column in the \"matches\" database table contains textual descriptions of the playing surfaces where matches are held. Values include various types of surfaces such as grass, clay, and hard court. This column is used to specify the type of surface for each match, which can influence game play and outcomes.",
+                "type": "TEXT"
+            },
+            "tourney_date": {
+                "column_description": "The column \"tourney_date\" in the \"matches\" table represents the date on which each tournament match took place. The values in this column are formatted as YYYY-MM-DD, indicating the year, month, and day of the match. This column is essential for tracking the chronological order of matches within the tournament.",
+                "type": "DATE"
+            },
+            "tourney_id": {
+                "column_description": "The column \"tourney_id\" in the \"matches\" table is of type TEXT and uniquely identifies each tournament. It serves as a reference key linking match records to their respective tournaments. This identifier is essential for organizing and querying match data by tournament.",
+                "type": "TEXT"
+            },
+            "tourney_level": {
+                "column_description": "The column \"tourney_level\" in the \"matches\" table categorizes the level of the tournament in which the match was played. The possible values include \"G\" for Grand Slam, \"M\" for Masters, \"A\" for ATP 500, \"B\" for ATP 250, and \"C\" for Challenger events. This classification helps in identifying the prestige and ranking points associated with each tournament.",
+                "type": "TEXT"
+            },
+            "tourney_name": {
+                "column_description": "The column \"tourney_name\" in the \"matches\" table contains the names of various tournaments. This column is of type TEXT and stores the title or designation of each tournament in which the matches are played. It is used to identify and categorize matches based on the tournament they belong to.",
+                "type": "TEXT"
+            },
+            "winner_age": {
+                "column_description": "The column \"winner_age\" in the \"matches\" table represents the age of the winning participant at the time of the match. The values are of type FLOAT, indicating that the age can include decimal points for more precise age representation. This column helps in analyzing the age distribution and performance trends of winners.",
+                "type": "FLOAT"
+            },
+            "winner_entry": {
+                "column_description": "The \"winner_entry\" column in the \"matches\" table records the identifier or name of the winning participant or team for each match. This column contains text values representing the winners, which can include individual names, team names, or unique identifiers. It is used to track and reference the outcome of each match in the database.",
+                "type": "TEXT"
+            },
+            "winner_hand": {
+                "column_description": "The column \"winner_hand\" in the \"matches\" table contains textual descriptions of the winning hands in a game. The values include various poker hand rankings such as \"Royal Flush,\" \"Straight Flush,\" \"Four of a Kind,\" \"Full House,\" \"Flush,\" \"Straight,\" \"Three of a Kind,\" \"Two Pair,\" \"One Pair,\" and \"High Card.\" This column is used to record the specific hand that won each match.",
+                "type": "TEXT"
+            },
+            "winner_ht": {
+                "column_description": "The column `winner_ht` in the `matches` table represents the height of the winning player in centimeters. The values in this column are integers, typically ranging from 150 to 210, indicating the height of the player who won the match. This data is crucial for analyzing the physical attributes of successful players.",
+                "type": "INT"
+            },
+            "winner_id": {
+                "column_description": "The `winner_id` column in the `matches` table, of type INT, represents the unique identifier of the player or team that won the match. Each value corresponds to an entry in the `players` or `teams` table, linking the match to its victor. This column is essential for tracking match outcomes and analyzing performance statistics.",
+                "type": "INT"
+            },
+            "winner_ioc": {
+                "column_description": "The column \"winner_ioc\" in the \"matches\" table contains the International Olympic Committee (IOC) country codes representing the country of the winning team or individual in a match. These codes are standardized three-letter abbreviations used to identify each country. This column helps in identifying the nationality of the winner in a structured and consistent manner.",
+                "type": "TEXT"
+            },
+            "winner_name": {
+                "column_description": "The \"winner_name\" column in the \"matches\" table stores the names of the participants who won their respective matches. This column contains text values representing the winners' names. It is used to identify and record the victorious participant in each match.",
+                "type": "TEXT"
+            },
+            "winner_rank": {
+                "column_description": "The `winner_rank` column in the `matches` table, of type INT, represents the ranking position of the winning player or team in a given match. The values in this column indicate the competitive standing or rank at the time of the match. This ranking helps to identify the relative skill or performance level of the winner.",
+                "type": "INT"
+            },
+            "winner_rank_points": {
+                "column_description": "The \"winner_rank_points\" column in the \"matches\" table represents the ranking points awarded to the winner of each match. The values in this column are integers that reflect the performance and ranking status of the winning player. This metric is crucial for tracking player progress and ranking changes over time.",
+                "type": "INT"
+            },
+            "winner_seed": {
+                "column_description": "The column \"winner_seed\" in the \"matches\" table represents the seed number assigned to the player or team that won the match. The values in this column are integers, typically ranging from 1 to 32, indicating the ranking or seeding position of the winner in the tournament. This seeding helps in organizing the match fixtures and predicting potential outcomes based on player or team rankings.",
+                "type": "INT"
+            },
+            "year": {
+                "column_description": "The \"year\" column in the \"matches\" table is of type INT and represents the calendar year in which each match took place. The values in this column range from 2000 to 2023, indicating the years during which the recorded matches occurred. This column is essential for chronological data analysis and historical record-keeping of match events.",
+                "type": "INT"
+            }
+        }
+    },
+    "rankings": {
+        "table_description": "The \"rankings\" table stores historical and current ranking information for players in a competitive context. It tracks the ranking position, points, and number of tours participated by each player on specific dates. This table is essential for analyzing player performance trends over time.",
+        "columns": {
+            "ranking_date": {
+                "column_description": "The `ranking_date` column in the `rankings` table represents the specific date on which the ranking data was recorded or updated. This column is of the DATE type, ensuring that each entry is stored in a standard date format. It is used to track the temporal aspect of the rankings, allowing for historical analysis and trend observation.",
+                "type": "DATE"
+            },
+            "ranking": {
+                "column_description": "The column \"ranking\" in the database table \"rankings\" is of type INT and represents the position or level assigned to an entity based on a specific criterion. The values in this column are numerical and indicate the rank order, with lower numbers typically representing higher or better ranks. This column is used to sort or prioritize entities within the dataset.",
+                "type": "INT"
+            },
+            "player_id": {
+                "column_description": "The `player_id` column in the `rankings` table is an integer that uniquely identifies each player within the database. It serves as a primary key to link player-specific data across various tables. This column ensures that each player's ranking and related statistics are accurately tracked and referenced.",
+                "type": "INT"
+            },
+            "ranking_points": {
+                "column_description": "The column \"ranking_points\" in the \"rankings\" table represents the numerical score assigned to individuals or entities based on their performance or ranking criteria. The values in this column are integers, reflecting the accumulated points that determine their rank. This score is used to compare and order the entities within the dataset.",
+                "type": "INT"
+            },
+            "tours": {
+                "column_description": "The \"tours\" column in the \"rankings\" table is of type INT and represents the number of tours or events a player has participated in. This column is used to track the frequency of participation, which can be an indicator of experience or activity level. Values in this column are non-negative integers.",
+                "type": "INT"
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+
+Using the following text extracted from a data dictionary:
+<attrlabl> qa_notes </attrlabl> <attrdef> notes about the quality assurance procedure </attrdef> <attrdefs> nps </attrdefs> <attrtype> long
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier QA_notes:
+
+QA_notes, quality_assurance_notes
+
+Using the following text extracted from a data dictionary:
+<attrlabl> understory_comp </attrlabl> <attrdef> record the species association codes to describe the understory composition </attrdef> <attrdefs>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier Understory_Comp:
+
+understory_comp, understory_composition
+
+Using the following text extracted from a data dictionary:
+<attrlabl> loc_name </attrlabl> <attrdef> name of the location </attrdef> <attrdefs> nps </attrdefs> <attrtype> short text </attrtype>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier Loc_Name:
+
+loc_name, location_name
+
+Using the following text extracted from a data dictionary:
+<attrlabl> lat_dir </attrlabl> <attrdef> latitude direction </attrdef> <attrdefs> nps </attrdefs> <attrtype> short text </attrtype> <attwidth> 255
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier Lat_Dir:
+
+Lat_Dir, Latitude_Direction
+
+Using the following text extracted from a data dictionary:
+<attrlabl> enum_group </attrlabl> <attrdef> category for lookup value </attrdef> <attrdefs> nps </attrdefs> <attrtype> short text </attrtype>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier Enum_Group:
+
+enum_group, category_for_lookup_value
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:

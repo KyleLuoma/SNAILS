@@ -1,0 +1,124 @@
+{
+    "continents": {
+        "table_description": "The \"continents\" table is designed to store information about the world's continents. Each record in the table represents a unique continent, identified by a numerical ID and its corresponding name. This table serves as a reference for geographical data categorization.",
+        "columns": {
+            "ContId": {
+                "column_description": "The column `ContId` in the `continents` table is of type INTEGER and uniquely identifies each continent. It serves as a primary key for the table, ensuring that each continent has a distinct identifier. This column is essential for establishing relationships with other tables that reference continents.",
+                "type": "INTEGER"
+            },
+            "Continent": {
+                "column_description": "The \"Continent\" column in the \"continents\" database table contains textual data representing the names of the world's continents. This column is used to categorize and identify the continent to which a particular record pertains. Examples of values include \"Africa,\" \"Asia,\" \"Europe,\" \"North America,\" \"South America,\" \"Australia,\" and \"Antarctica.\"",
+                "type": "TEXT"
+            }
+        }
+    },
+    "countries": {
+        "table_description": "The \"countries\" table is designed to store information about various countries, including their unique identifiers, names, and the continents they belong to. It serves as a reference table that can be used to link country data with other related datasets in a database. This table is essential for applications requiring geographical categorization and analysis.",
+        "columns": {
+            "CountryId": {
+                "column_description": "The `CountryId` column in the `countries` table is an INTEGER type that uniquely identifies each country. It serves as a primary key for the table, ensuring that each country has a distinct identifier. This column is essential for establishing relationships with other tables in the database.",
+                "type": "INTEGER"
+            },
+            "CountryName": {
+                "column_description": "The column \"CountryName\" in the \"countries\" table contains textual data representing the names of countries. This column stores the official or commonly recognized names of countries as strings. It is used to identify and differentiate between various countries in the database.",
+                "type": "TEXT"
+            },
+            "Continent": {
+                "column_description": "The \"Continent\" column in the \"countries\" table is of type INTEGER and represents the continent to which each country belongs. The values in this column correspond to specific continents, where each integer is a unique identifier for a continent. This column is used to categorize countries by their respective continents for data organization and retrieval purposes.",
+                "type": "INTEGER"
+            }
+        }
+    },
+    "car_makers": {
+        "table_description": "The car_makers table stores information about various automobile manufacturers. It includes unique identifiers, names, and the countries of origin for each car maker. This table is useful for referencing and organizing data related to car manufacturers in a structured format.",
+        "columns": {
+            "Id": {
+                "column_description": "The column \"Id\" in the \"car_makers\" table is of type INTEGER and serves as the unique identifier for each car maker entry. This column ensures that each car maker can be distinctly referenced within the database. It is an auto-incrementing primary key, providing a sequential and unique value for each new record.",
+                "type": "INTEGER"
+            },
+            "Maker": {
+                "column_description": "The column \"Maker\" in the \"car_makers\" database table contains textual data representing the names of car manufacturers. This column includes values such as \"Toyota,\" \"Ford,\" \"BMW,\" and \"Honda.\" It is used to identify the brand or company that produces the vehicles listed in the database.",
+                "type": "TEXT"
+            },
+            "FullName": {
+                "column_description": "The column \"FullName\" in the \"car_makers\" table contains the full names of car manufacturing companies. This column is of type TEXT and includes entries such as \"Toyota Motor Corporation,\" \"Ford Motor Company,\" and \"Volkswagen Group.\" It serves to provide the complete official names of the car makers.",
+                "type": "TEXT"
+            },
+            "Country": {
+                "column_description": "The \"Country\" column in the \"car_makers\" table contains textual data representing the name of the country where each car manufacturer is based. This column is used to identify the geographical origin of the car makers. The values are stored as text strings.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "model_list": {
+        "table_description": "The `model_list` table stores information about various models produced by different makers. Each entry in the table represents a unique model, identified by its ModelId, and is associated with a specific maker. The table is used to catalog and reference models for inventory, sales, or manufacturing purposes.",
+        "columns": {
+            "ModelId": {
+                "column_description": "The `ModelId` column in the `model_list` table is an INTEGER type that uniquely identifies each model within the table. It serves as the primary key, ensuring that each entry is distinct and can be referenced individually. This column is essential for maintaining the integrity and organization of the model data.",
+                "type": "INTEGER"
+            },
+            "Maker": {
+                "column_description": "The column \"Maker\" in the \"model_list\" table is of type INTEGER and represents the unique identifier for the manufacturer or maker of the models listed. This column is used to link each model to its corresponding maker, typically referencing an ID in a separate \"makers\" table. The values in this column are integers that serve as foreign keys to ensure data integrity and facilitate efficient querying.",
+                "type": "INTEGER"
+            },
+            "Model": {
+                "column_description": "The \"Model\" column in the \"model_list\" table contains textual data representing various model names or identifiers. These values are used to categorize and distinguish different models within the database. The column is of type TEXT, allowing for a wide range of alphanumeric characters.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "car_names": {
+        "table_description": "The car_names table is designed to store information about various car models and their corresponding manufacturers. It serves as a reference table that links car models to their respective makes using unique identifiers. This table is essential for applications that require detailed information about car brands and their specific models.",
+        "columns": {
+            "MakeId": {
+                "column_description": "The column `MakeId` in the `car_names` table is an INTEGER type that uniquely identifies the manufacturer of each car. Each value in this column corresponds to a specific car manufacturer. This identifier is used to link car names to their respective manufacturers in the database.",
+                "type": "INTEGER"
+            },
+            "Model": {
+                "column_description": "The \"Model\" column in the \"car_names\" database table contains textual data representing the specific model names of cars. These values typically include alphanumeric characters and may encompass various car model designations from different manufacturers. This column is essential for identifying and categorizing the specific models within the car database.",
+                "type": "TEXT"
+            },
+            "Make": {
+                "column_description": "The \"Make\" column in the \"car_names\" table contains textual data representing the manufacturer or brand of the car. Examples of values in this column include \"Toyota,\" \"Ford,\" \"Honda,\" and \"Chevrolet.\" This column is used to identify the company that produced the vehicle.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "cars_data": {
+        "table_description": "The `cars_data` table contains information about various cars, capturing key performance and specification metrics. It includes data such as fuel efficiency, engine characteristics, and physical attributes, along with the model year. This table is useful for analyzing trends, comparing car models, and conducting performance evaluations.",
+        "columns": {
+            "Id": {
+                "column_description": "The column \"Id\" in the \"cars_data\" table is an INTEGER type and serves as a unique identifier for each record in the table. It ensures that each car entry can be distinctly referenced. This column is essential for maintaining data integrity and enabling efficient data retrieval.",
+                "type": "INTEGER"
+            },
+            "MPG": {
+                "column_description": "The column \"MPG\" in the \"cars_data\" table contains textual representations of fuel efficiency values, specifically miles per gallon (MPG). These values indicate the distance a car can travel per gallon of fuel. The data is stored as text strings rather than numerical values.",
+                "type": "TEXT"
+            },
+            "Cylinders": {
+                "column_description": "The \"Cylinders\" column in the \"cars_data\" table represents the number of cylinders in a car's engine, which is an integer value. This column is used to indicate the engine configuration, affecting the vehicle's performance and fuel efficiency. Typical values might range from 3 to 12 cylinders, depending on the car model and type.",
+                "type": "INTEGER"
+            },
+            "Edispl": {
+                "column_description": "The column \"Edispl\" in the \"cars_data\" table represents the engine displacement of the cars, measured in liters. Engine displacement is a key metric that indicates the total volume of all the cylinders in an engine. This value is crucial for understanding the engine's capacity and performance characteristics.",
+                "type": "REAL"
+            },
+            "Horsepower": {
+                "column_description": "The \"Horsepower\" column in the \"cars_data\" table contains textual representations of the engine power output of vehicles, measured in horsepower (HP). Values in this column are stored as text strings, which may include numeric values and potentially non-numeric characters or annotations. This column is used to describe the power capability of each car's engine.",
+                "type": "TEXT"
+            },
+            "Weight": {
+                "column_description": "The column \"Weight\" in the \"cars_data\" table contains integer values representing the weight of the cars in kilograms. This column is used to store the mass of each vehicle, which is crucial for performance and efficiency analysis. Ensure that all entries are positive integers reflecting the accurate weight of the cars.",
+                "type": "INTEGER"
+            },
+            "Accelerate": {
+                "column_description": "The \"Accelerate\" column in the \"cars_data\" table represents the acceleration performance of the cars, measured in seconds. It indicates the time taken for a car to accelerate from 0 to 60 miles per hour (0-100 km/h). This REAL type column provides a quantitative measure of a car's acceleration capability.",
+                "type": "REAL"
+            },
+            "Year": {
+                "column_description": "The \"Year\" column in the \"cars_data\" table represents the manufacturing year of the cars, stored as an INTEGER. It indicates the year in which each car was produced. This information is crucial for understanding the age and potential depreciation of the vehicles in the dataset.",
+                "type": "INTEGER"
+            }
+        }
+    }
+}

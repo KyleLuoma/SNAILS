@@ -1,0 +1,126 @@
+{
+    "city": {
+        "table_description": "The \"city\" table stores information about various cities around the world. It includes details such as the city's name, the country it belongs to, the district it is located in, and its population. This table is useful for querying and analyzing demographic and geographic data related to urban areas.",
+        "columns": {
+            "ID": {
+                "column_description": "The column \"ID\" in the \"city\" table is of type INTEGER and serves as the primary key, uniquely identifying each city record. It contains sequential integer values starting from 1. This column ensures that each city entry is distinct and can be efficiently referenced.",
+                "type": "INTEGER"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"city\" database table, of type char(35), stores the names of cities. This column is used to uniquely identify each city within the table. The names are limited to a maximum of 35 characters.",
+                "type": "char(35)"
+            },
+            "CountryCode": {
+                "column_description": "The `CountryCode` column in the `city` table is a three-character code representing the country to which the city belongs. These codes follow the ISO 3166-1 alpha-3 standard, ensuring consistency and international recognition. This column is essential for linking cities to their respective countries in the database.",
+                "type": "char(3)"
+            },
+            "District": {
+                "column_description": "The \"District\" column in the \"city\" table represents the administrative or political subdivision within which the city is located. It typically includes names of regions, provinces, states, or other local government areas. This column is of type char(20) and stores up to 20 characters of text.",
+                "type": "char(20)"
+            },
+            "Population": {
+                "column_description": "The \"Population\" column in the \"city\" database table represents the number of inhabitants in each city, with values ranging from small towns to large metropolitan areas. This column is of the INTEGER type, ensuring that only whole numbers are recorded. It provides crucial demographic data for urban planning, resource allocation, and statistical analysis.",
+                "type": "INTEGER"
+            }
+        }
+    },
+    "sqlite_sequence": {
+        "table_description": "The `sqlite_sequence` table is an internal table used by SQLite to keep track of the last sequence number used for `AUTOINCREMENT` fields in tables. It helps ensure that each new row gets a unique, incrementing value for the specified column. This table is automatically managed by SQLite and is not typically modified directly by users.",
+        "columns": {
+            "name": {
+                "column_description": "The \"name\" column in the sqlite_sequence table stores the names of the database tables that have autoincrement fields. This column is used to track the sequence numbers for these tables, ensuring unique values for the autoincremented primary keys.",
+                "type": ""
+            },
+            "seq": {
+                "column_description": "The column \"seq\" in the sqlite_sequence table stores the current highest value of the AUTOINCREMENT field for each table in the database. This value is used to ensure that the next AUTOINCREMENT value is unique and sequential. It is updated automatically by SQLite whenever a new row is inserted into a table with an AUTOINCREMENT column.",
+                "type": ""
+            }
+        }
+    },
+    "country": {
+        "table_description": "The \"country\" table stores comprehensive information about countries around the world. It includes details such as country codes, names, geographical data, demographic statistics, economic indicators, and political information. This table is essential for applications requiring detailed country-specific data for analysis, reporting, or reference purposes.",
+        "columns": {
+            "Code": {
+                "column_description": "The column \"Code\" in the \"country\" table, of type char(3), contains three-letter country codes that uniquely identify each country. These codes are typically based on the ISO 3166-1 alpha-3 standard. Examples of values in this column include \"USA\" for the United States, \"CAN\" for Canada, and \"GBR\" for the United Kingdom.",
+                "type": "char(3)"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"country\" table, defined as char(52), stores the official names of countries. This column is used to uniquely identify each country by its full name. The maximum length of 52 characters ensures that even the longest country names can be accommodated.",
+                "type": "char(52)"
+            },
+            "Continent": {
+                "column_description": "The \"Continent\" column in the \"country\" table is of type TEXT and categorizes countries based on their geographical continents. Possible values include \"Africa,\" \"Asia,\" \"Europe,\" \"North America,\" \"South America,\" \"Australia,\" and \"Antarctica.\" This column helps in regional analysis and grouping of countries by their respective continents.",
+                "type": "TEXT"
+            },
+            "Region": {
+                "column_description": "The \"Region\" column in the \"country\" table, defined as char(26), categorizes countries into specific geographical or political areas. This column helps in grouping countries based on their regional affiliations or locations. It is essential for regional analysis and reporting within the database.",
+                "type": "char(26)"
+            },
+            "SurfaceArea": {
+                "column_description": "The column \"SurfaceArea\" in the \"country\" table represents the total land area of a country measured in square kilometers, with a precision of up to two decimal places. This column is of the type float(10,2), allowing for values up to 99999999.99. It is used to store and retrieve the geographical size of each country in the database.",
+                "type": "float(10,2)"
+            },
+            "IndepYear": {
+                "column_description": "The column \"IndepYear\" in the \"country\" table represents the year in which a country gained its independence. This column is of the INTEGER type and stores four-digit years. It is used to record and reference the historical year of independence for each country listed in the table.",
+                "type": "INTEGER"
+            },
+            "Population": {
+                "column_description": "The \"Population\" column in the \"country\" table represents the total number of inhabitants in each country, recorded as an integer value. This column stores population counts, which can range from small island nations to highly populous countries. It is essential for demographic analysis and resource allocation.",
+                "type": "INTEGER"
+            },
+            "LifeExpectancy": {
+                "column_description": "The column \"LifeExpectancy\" in the \"country\" database table represents the average number of years a person is expected to live in a given country, expressed as a float with one decimal place. The values range from 0.0 to 999.9, allowing for precise representation of life expectancy figures. This metric is crucial for demographic and health-related analyses.",
+                "type": "float(3,1)"
+            },
+            "GNP": {
+                "column_description": "The GNP column in the country table represents the Gross National Product of a country, measured in billions of dollars, with a precision of up to two decimal places. This column stores economic data reflecting the total value of goods and services produced by a country's residents, both domestically and abroad, within a specific time period. The values are of the type float(10,2), ensuring accurate representation of large economic figures.",
+                "type": "float(10,2)"
+            },
+            "GNPOld": {
+                "column_description": "The column GNPOld in the country table, of type float(10,2), represents the Gross National Product (GNP) of a country in millions of USD from a previous year. This historical economic indicator helps in analyzing the economic growth and trends over time.",
+                "type": "float(10,2)"
+            },
+            "LocalName": {
+                "column_description": "The column \"LocalName\" in the \"country\" table, of type char(45), contains the local or native names of countries as used in their respective official languages. This column provides a way to reference countries by their indigenous names rather than their English equivalents. It is essential for applications that require localization and accurate representation of country names in their native contexts.",
+                "type": "char(45)"
+            },
+            "GovernmentForm": {
+                "column_description": "The \"GovernmentForm\" column in the \"country\" database table, of type char(45), categorizes the type of political system or governance structure of a country. It includes values such as \"Republic,\" \"Monarchy,\" \"Federal Republic,\" \"Constitutional Monarchy,\" and \"Communist State,\" among others. This column provides a concise classification of the governmental framework under which each country operates.",
+                "type": "char(45)"
+            },
+            "HeadOfState": {
+                "column_description": "The \"HeadOfState\" column in the \"country\" table, of type char(60), stores the name of the individual who is the current head of state for each country. This can include titles such as President, King, Queen, or other official designations. The column is used to identify the primary leader or figurehead of a nation.",
+                "type": "char(60)"
+            },
+            "Capital": {
+                "column_description": "The \"Capital\" column in the \"country\" table is of type INTEGER and represents the unique identifier (ID) of the capital city for each country. This ID corresponds to the primary key in the \"city\" table, linking each country to its respective capital city. The values in this column are used to establish a relationship between the \"country\" and \"city\" tables.",
+                "type": "INTEGER"
+            },
+            "Code2": {
+                "column_description": "The column \"Code2\" in the \"country\" table contains two-character country codes that adhere to the ISO 3166-1 alpha-2 standard. These codes uniquely identify countries and are commonly used in international data exchange. Examples include \"US\" for the United States and \"FR\" for France.",
+                "type": "char(2)"
+            }
+        }
+    },
+    "countrylanguage": {
+        "table_description": "The `countrylanguage` table stores information about the languages spoken in various countries. It includes data on the country code, the language spoken, whether the language is officially recognized, and the percentage of the population that speaks the language. This table is useful for understanding linguistic demographics and official languages across different countries.",
+        "columns": {
+            "CountryCode": {
+                "column_description": "The column \"CountryCode\" in the \"countrylanguage\" table is a three-character code that uniquely identifies a country. These codes are typically based on the ISO 3166-1 alpha-3 standard. This column is used to link languages to their respective countries.",
+                "type": "char(3)"
+            },
+            "Language": {
+                "column_description": "The \"Language\" column in the \"countrylanguage\" table, defined as char(30), stores the names of languages spoken in various countries. It includes values such as English, Spanish, French, and Mandarin, among others. This column is used to identify and categorize the primary and secondary languages associated with each country in the database.",
+                "type": "char(30)"
+            },
+            "IsOfficial": {
+                "column_description": "The column \"IsOfficial\" in the \"countrylanguage\" table is of type TEXT and indicates whether a language is officially recognized in a country. The values in this column are typically \"T\" for true (official) and \"F\" for false (not official). This designation helps identify the official languages used for government and administrative purposes.",
+                "type": "TEXT"
+            },
+            "Percentage": {
+                "column_description": "The \"Percentage\" column in the \"countrylanguage\" table represents the proportion of the population in a country that speaks a particular language, expressed as a float with one decimal place. This value indicates the linguistic distribution within the country, helping to understand the prevalence of each language. The range of values typically falls between 0.0 and 100.0, where 100.0 signifies that the language is spoken by the entire population.",
+                "type": "float(4,1)"
+            }
+        }
+    }
+}

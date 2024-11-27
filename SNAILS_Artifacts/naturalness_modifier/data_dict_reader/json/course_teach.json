@@ -1,0 +1,57 @@
+{
+    "course": {
+        "table_description": "The \"course\" table is designed to store information about various educational courses offered by an institution. It includes unique identifiers for each course, along with the starting dates and names of the courses. This table serves as a central repository for course-related data, facilitating easy retrieval and management of course schedules and details.",
+        "columns": {
+            "Course_ID": {
+                "column_description": "The `Course_ID` column in the `course` table is an integer (INT) that uniquely identifies each course. It serves as the primary key for the table, ensuring that each course entry is distinct. This column is essential for referencing courses in other related tables.",
+                "type": "INT"
+            },
+            "Staring_Date": {
+                "column_description": "The column \"Staring_Date\" in the course table contains date values formatted as text, representing the start dates of various courses. The dates are typically in the format \"YYYY-MM-DD\" (e.g., \"2023-01-15\"). This column is used to indicate when each course begins.",
+                "type": "TEXT"
+            },
+            "Course": {
+                "column_description": "The \"Course\" column in the \"course\" table contains textual data representing the names or titles of various courses offered. These values typically include course codes and titles, such as \"CS101 - Introduction to Computer Science\" or \"MATH202 - Advanced Calculus.\" This column is essential for identifying and categorizing the different courses available in the database.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "teacher": {
+        "table_description": "The \"teacher\" table stores information about teachers, including their unique identifiers, names, ages, and hometowns. It is used to maintain a record of teacher details for administrative and reporting purposes. This table is essential for managing teacher-related data within the educational institution's database.",
+        "columns": {
+            "Teacher_ID": {
+                "column_description": "The `Teacher_ID` column in the `teacher` table is an integer type that uniquely identifies each teacher. It serves as the primary key for the table, ensuring that each teacher has a distinct and unique identifier. The values in this column are non-negative integers.",
+                "type": "INT"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"teacher\" table contains textual data representing the names of teachers. This column stores individual teacher names, which may include first names, last names, or full names. The data type for this column is TEXT, allowing for a wide range of characters and lengths to accommodate various naming conventions.",
+                "type": "TEXT"
+            },
+            "Age": {
+                "column_description": "The \"Age\" column in the \"teacher\" database table contains textual representations of age values. These values are stored as strings rather than numerical data, which may include numeric characters and potentially other text. The description should clarify that this column holds age information in a text format, which may require parsing or conversion for numerical operations.",
+                "type": "TEXT"
+            },
+            "Hometown": {
+                "column_description": "The \"Hometown\" column in the \"teacher\" database table is of type TEXT and stores the names of cities or towns where the teachers are originally from. This column is used to capture the geographical background of each teacher. It helps in understanding the diversity and regional distribution of the teaching staff.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "course_arrange": {
+        "table_description": "The `course_arrange` table is designed to map the assignment of teachers to specific courses and the corresponding grade levels they teach. It serves as a reference for understanding which teacher is responsible for which course and at what grade level. This table is essential for managing and organizing the educational curriculum and staff assignments within an institution.",
+        "columns": {
+            "Course_ID": {
+                "column_description": "The column `Course_ID` in the `course_arrange` table is of type INT and uniquely identifies each course arrangement. It serves as a primary key to distinguish between different course schedules or offerings. This column ensures that each course arrangement can be referenced and managed distinctly within the database.",
+                "type": "INT"
+            },
+            "Teacher_ID": {
+                "column_description": "The column `Teacher_ID` in the `course_arrange` table is of type INT and stores unique integer identifiers for teachers. These IDs are used to link courses to the respective teachers responsible for them. This ensures efficient management and retrieval of course-teacher relationships within the database.",
+                "type": "INT"
+            },
+            "Grade": {
+                "column_description": "The column \"Grade\" in the \"course_arrange\" table is of type INT and stores numerical values representing the academic performance of students. The values typically range from 0 to 100, where higher numbers indicate better performance. This column is used to record and evaluate students' grades in their respective courses.",
+                "type": "INT"
+            }
+        }
+    }
+}

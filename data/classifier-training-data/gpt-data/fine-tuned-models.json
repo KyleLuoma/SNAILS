@@ -1,0 +1,408 @@
+{
+  "data": [
+    {
+      "created_at": 1687890164,
+      "fine_tuned_model": "davinci:ft-personal-2023-06-27-19-45-02",
+      "hyperparams": {
+        "batch_size": 1,
+        "learning_rate_multiplier": 0.1,
+        "n_epochs": 4,
+        "prompt_loss_weight": 0.01
+      },
+      "id": "ft-p9NHEvzZNqZXi7YuQPdI3xm5",
+      "model": "davinci",
+      "object": "fine-tune",
+      "organization_id": "org-3KfigYAkCvdo1DEXCpKyV1l9",
+      "result_files": [
+        {
+          "bytes": 167796,
+          "created_at": 1687895104,
+          "filename": "compiled_results.csv",
+          "id": "file-TlizdkEhMcz0byL0ZtePL2wI",
+          "object": "file",
+          "purpose": "fine-tune-results",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "status": "succeeded",
+      "training_files": [
+        {
+          "bytes": 44930,
+          "created_at": 1687890164,
+          "filename": ".\\manual-scoring\\gpt-data\\train_prepared.jsonl",
+          "id": "file-TusPl9jAt4OZ8pxdcHHCuN87",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "updated_at": 1687895105,
+      "validation_files": []
+    },
+    {
+      "created_at": 1687891410,
+      "fine_tuned_model": null,
+      "hyperparams": {
+        "batch_size": 1,
+        "classification_n_classes": 3,
+        "compute_classification_metrics": true,
+        "learning_rate_multiplier": 0.1,
+        "n_epochs": 4,
+        "prompt_loss_weight": 0.01
+      },
+      "id": "ft-4qtCyHp1DRbKkgB2VSCf73Uw",
+      "model": "davinci",
+      "object": "fine-tune",
+      "organization_id": "org-3KfigYAkCvdo1DEXCpKyV1l9",
+      "result_files": [],
+      "status": "failed",
+      "training_files": [
+        {
+          "bytes": 44930,
+          "created_at": 1687890164,
+          "filename": ".\\manual-scoring\\gpt-data\\train_prepared.jsonl",
+          "id": "file-TusPl9jAt4OZ8pxdcHHCuN87",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "updated_at": 1687897271,
+      "validation_files": [
+        {
+          "bytes": 16112,
+          "created_at": 1687891410,
+          "filename": ".\\manual-scoring\\gpt-data\\test_prepared.jsonl",
+          "id": "file-NjiUDswIlny8pe1bmho7EEVS",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ]
+    },
+    {
+      "created_at": 1687895207,
+      "fine_tuned_model": null,
+      "hyperparams": {
+        "batch_size": 1,
+        "classification_n_classes": 3,
+        "compute_classification_metrics": true,
+        "learning_rate_multiplier": 0.1,
+        "n_epochs": 4,
+        "prompt_loss_weight": 0.01
+      },
+      "id": "ft-QKB0jXj3MUEX6fzvXY3ow9Ho",
+      "model": "davinci",
+      "object": "fine-tune",
+      "organization_id": "org-3KfigYAkCvdo1DEXCpKyV1l9",
+      "result_files": [],
+      "status": "failed",
+      "training_files": [
+        {
+          "bytes": 56329,
+          "created_at": 1687895206,
+          "filename": ".\\manual-scoring\\gpt-data\\train_tagged_prepared.jsonl",
+          "id": "file-odfztjjKvU0vCQ8n7Vw3IpzI",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "updated_at": 1687900156,
+      "validation_files": [
+        {
+          "bytes": 20149,
+          "created_at": 1687895207,
+          "filename": ".\\manual-scoring\\gpt-data\\test_tagged_prepared.jsonl",
+          "id": "file-btot5kZNxDaIrIpHAakf1vjX",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ]
+    },
+    {
+      "created_at": 1687901322,
+      "fine_tuned_model": "davinci:ft-personal:multiclass-tagged-2023-06-27-22-57-22",
+      "hyperparams": {
+        "batch_size": 1,
+        "learning_rate_multiplier": 0.1,
+        "n_epochs": 4,
+        "prompt_loss_weight": 0.01
+      },
+      "id": "ft-TApFlgymDwEMPtpfIjX22HFm",
+      "model": "davinci",
+      "object": "fine-tune",
+      "organization_id": "org-3KfigYAkCvdo1DEXCpKyV1l9",
+      "result_files": [
+        {
+          "bytes": 167794,
+          "created_at": 1687906644,
+          "filename": "compiled_results.csv",
+          "id": "file-K0oKyZWICAYW9VPIJvY3CCdS",
+          "object": "file",
+          "purpose": "fine-tune-results",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "status": "succeeded",
+      "training_files": [
+        {
+          "bytes": 44930,
+          "created_at": 1687890164,
+          "filename": ".\\manual-scoring\\gpt-data\\train_prepared.jsonl",
+          "id": "file-TusPl9jAt4OZ8pxdcHHCuN87",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "updated_at": 1687906645,
+      "validation_files": []
+    },
+    {
+      "created_at": 1687906019,
+      "fine_tuned_model": "davinci:ft-personal:n1-to-n2-transform-2023-06-27-23-47-39",
+      "hyperparams": {
+        "batch_size": 1,
+        "learning_rate_multiplier": 0.1,
+        "n_epochs": 4,
+        "prompt_loss_weight": 0.01
+      },
+      "id": "ft-31mo4r61knbYKSjdZKxCoEDF",
+      "model": "davinci",
+      "object": "fine-tune",
+      "organization_id": "org-3KfigYAkCvdo1DEXCpKyV1l9",
+      "result_files": [
+        {
+          "bytes": 29610,
+          "created_at": 1687909660,
+          "filename": "compiled_results.csv",
+          "id": "file-bohMBPK6ti5W8iDvliXrIFR3",
+          "object": "file",
+          "purpose": "fine-tune-results",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "status": "succeeded",
+      "training_files": [
+        {
+          "bytes": 9423,
+          "created_at": 1687906019,
+          "filename": ".\\manual-scoring\\N1-to-N2N3-tng\\N1-to-N2_prepared.jsonl",
+          "id": "file-RbcsrUsodg92aG8H9qnGXIJu",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "updated_at": 1687909661,
+      "validation_files": []
+    },
+    {
+      "created_at": 1687906143,
+      "fine_tuned_model": "davinci:ft-personal:n1-to-n3-transform-2023-06-28-00-33-09",
+      "hyperparams": {
+        "batch_size": 1,
+        "learning_rate_multiplier": 0.1,
+        "n_epochs": 4,
+        "prompt_loss_weight": 0.01
+      },
+      "id": "ft-Yc2TGfmhnqr5zEEdN2lZTIdc",
+      "model": "davinci",
+      "object": "fine-tune",
+      "organization_id": "org-3KfigYAkCvdo1DEXCpKyV1l9",
+      "result_files": [
+        {
+          "bytes": 29131,
+          "created_at": 1687912390,
+          "filename": "compiled_results.csv",
+          "id": "file-SEINqEoW4TkdHSrdtleNMDEJ",
+          "object": "file",
+          "purpose": "fine-tune-results",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "status": "succeeded",
+      "training_files": [
+        {
+          "bytes": 8830,
+          "created_at": 1687906143,
+          "filename": ".\\manual-scoring\\N1-to-N2N3-tng\\N1-to-N3_prepared.jsonl",
+          "id": "file-yQfNP558s6hU8ArNyIdcfK61",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "updated_at": 1687912391,
+      "validation_files": []
+    },
+    {
+      "created_at": 1687906213,
+      "fine_tuned_model": "davinci:ft-personal:n2-to-n3-transform-2023-06-28-00-44-48",
+      "hyperparams": {
+        "batch_size": 1,
+        "learning_rate_multiplier": 0.1,
+        "n_epochs": 4,
+        "prompt_loss_weight": 0.01
+      },
+      "id": "ft-ffUpd5Y1hdx6YtZeH5XGBkvt",
+      "model": "davinci",
+      "object": "fine-tune",
+      "organization_id": "org-3KfigYAkCvdo1DEXCpKyV1l9",
+      "result_files": [
+        {
+          "bytes": 28781,
+          "created_at": 1687913089,
+          "filename": "compiled_results.csv",
+          "id": "file-9D1plS4pTxCAty9rZSwlGWiV",
+          "object": "file",
+          "purpose": "fine-tune-results",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "status": "succeeded",
+      "training_files": [
+        {
+          "bytes": 8204,
+          "created_at": 1687906213,
+          "filename": ".\\manual-scoring\\N1-to-N2N3-tng\\N2-to-N3_prepared.jsonl",
+          "id": "file-BeMk2CvS7htVWDpwcQQGj50Z",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "updated_at": 1687913090,
+      "validation_files": []
+    },
+    {
+      "created_at": 1687906332,
+      "fine_tuned_model": "davinci:ft-personal:n2-to-n1-transform-2023-06-28-01-41-04",
+      "hyperparams": {
+        "batch_size": 1,
+        "learning_rate_multiplier": 0.1,
+        "n_epochs": 4,
+        "prompt_loss_weight": 0.01
+      },
+      "id": "ft-tjv4QFCzM2WP1dVRdSBlOq5m",
+      "model": "davinci",
+      "object": "fine-tune",
+      "organization_id": "org-3KfigYAkCvdo1DEXCpKyV1l9",
+      "result_files": [
+        {
+          "bytes": 29064,
+          "created_at": 1687916465,
+          "filename": "compiled_results.csv",
+          "id": "file-kGBPYbfQ5HQQR3F7Bvx9L8an",
+          "object": "file",
+          "purpose": "fine-tune-results",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "status": "succeeded",
+      "training_files": [
+        {
+          "bytes": 9423,
+          "created_at": 1687906332,
+          "filename": ".\\manual-scoring\\N1-to-N2N3-tng\\N2-to-N1_prepared.jsonl",
+          "id": "file-9UITh02g5j9M9xm3XMoIxQhq",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "updated_at": 1687916466,
+      "validation_files": []
+    },
+    {
+      "created_at": 1687906600,
+      "fine_tuned_model": "davinci:ft-personal:tagged-classifier-2023-06-28-02-09-21",
+      "hyperparams": {
+        "batch_size": 1,
+        "learning_rate_multiplier": 0.1,
+        "n_epochs": 4,
+        "prompt_loss_weight": 0.01
+      },
+      "id": "ft-8gifIStgKIBRAlfdQrzwIL3C",
+      "model": "davinci",
+      "object": "fine-tune",
+      "organization_id": "org-3KfigYAkCvdo1DEXCpKyV1l9",
+      "result_files": [
+        {
+          "bytes": 168440,
+          "created_at": 1687918162,
+          "filename": "compiled_results.csv",
+          "id": "file-rFL4xcRDkNQO4IzHM388pQiM",
+          "object": "file",
+          "purpose": "fine-tune-results",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "status": "succeeded",
+      "training_files": [
+        {
+          "bytes": 56329,
+          "created_at": 1687895206,
+          "filename": ".\\manual-scoring\\gpt-data\\train_tagged_prepared.jsonl",
+          "id": "file-odfztjjKvU0vCQ8n7Vw3IpzI",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "updated_at": 1687918163,
+      "validation_files": []
+    },
+    {
+      "created_at": 1689014441,
+      "fine_tuned_model": null,
+      "hyperparams": {
+        "batch_size": null,
+        "learning_rate_multiplier": null,
+        "n_epochs": 4,
+        "prompt_loss_weight": 0.01
+      },
+      "id": "ft-mRtVeqRhWq1QHRka3HycGb6s",
+      "model": "davinci",
+      "object": "fine-tune",
+      "organization_id": "org-3KfigYAkCvdo1DEXCpKyV1l9",
+      "result_files": [],
+      "status": "pending",
+      "training_files": [
+        {
+          "bytes": 56329,
+          "created_at": 1689014441,
+          "filename": ".\\manual-scoring\\gpt-data\\train_tagged_prepared.jsonl",
+          "id": "file-MuOfZpa491ZNBEtS7V4Ujuyz",
+          "object": "file",
+          "purpose": "fine-tune",
+          "status": "processed",
+          "status_details": null
+        }
+      ],
+      "updated_at": 1689014441,
+      "validation_files": []
+    }
+  ],
+  "object": "list"
+}

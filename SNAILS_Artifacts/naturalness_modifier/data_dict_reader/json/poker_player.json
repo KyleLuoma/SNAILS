@@ -1,0 +1,56 @@
+{
+    "poker_player": {
+        "table_description": "The \"poker_player\" table stores information about individuals who participate in poker tournaments. It includes data on their performance, such as the number of final tables made, their best finishes, money rankings, and total earnings. This table is used to track and analyze the achievements and financial success of poker players.",
+        "columns": {
+            "Poker_Player_ID": {
+                "column_description": "The column `Poker_Player_ID` in the `poker_player` table is an integer type that uniquely identifies each poker player in the database. This ID serves as the primary key for the table, ensuring that each player can be distinctly referenced. It is auto-incremented to provide a unique identifier for new entries.",
+                "type": "INT"
+            },
+            "People_ID": {
+                "column_description": "The column **People_ID** in the **poker_player** table is of type INT and serves as a unique identifier for each poker player in the database. This column ensures that each player can be distinctly recognized and referenced within the system. It is likely an auto-incrementing primary key used for indexing and relational purposes.",
+                "type": "INT"
+            },
+            "Final_Table_Made": {
+                "column_description": "The column \"Final_Table_Made\" in the \"poker_player\" table, of type REAL, represents the number of final tables a player has reached in poker tournaments. The values in this column indicate the frequency with which a player has made it to the final table, providing a measure of their success and consistency in tournaments. This metric can be used for performance analysis and player ranking.",
+                "type": "REAL"
+            },
+            "Best_Finish": {
+                "column_description": "The \"Best_Finish\" column in the \"poker_player\" table represents the highest position a player has achieved in a poker tournament, with values ranging from 1.0 to 100.0. This column is of type REAL, indicating that it can store fractional positions, though typically it will contain whole numbers. The values reflect the player's best performance, with 1.0 indicating a first-place finish.",
+                "type": "REAL"
+            },
+            "Money_Rank": {
+                "column_description": "The column \"Money_Rank\" in the \"poker_player\" table represents the ranking of poker players based on their total earnings, with lower values indicating higher earnings. The values are of type REAL, allowing for fractional rankings. This ranking system helps to compare players' financial success in poker tournaments.",
+                "type": "REAL"
+            },
+            "Earnings": {
+                "column_description": "The \"Earnings\" column in the \"poker_player\" database table, of type REAL, represents the monetary winnings of a poker player. The values in this column are expressed in decimal format, indicating the total earnings in a specific currency. This column captures both positive and negative earnings, reflecting gains and losses in poker games.",
+                "type": "REAL"
+            }
+        }
+    },
+    "people": {
+        "table_description": "The \"people\" table stores information about individuals, including their unique identifiers, nationalities, names, birth dates, and heights. This table is designed to facilitate the management and retrieval of personal data for various applications, such as demographic analysis or record-keeping. It serves as a centralized repository for personal attributes and characteristics.",
+        "columns": {
+            "People_ID": {
+                "column_description": "The column \"People_ID\" in the \"people\" table is of type INT and serves as a unique identifier for each individual in the database. This column ensures that each person can be distinctly referenced and managed within the system. It is a primary key that auto-increments with each new entry, ensuring no two individuals share the same ID.",
+                "type": "INT"
+            },
+            "Nationality": {
+                "column_description": "The \"Nationality\" column in the \"people\" table contains textual data representing the country or nation to which an individual belongs or identifies with. This column includes values such as \"American,\" \"Canadian,\" \"British,\" \"Australian,\" and other nationalities. It is used to categorize individuals based on their national affiliation.",
+                "type": "TEXT"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"people\" table is of type TEXT and stores the full names of individuals. This column is used to record and identify the names of people within the database. It is essential for distinguishing between different entries and facilitating searches and data management related to individuals.",
+                "type": "TEXT"
+            },
+            "Birth_Date": {
+                "column_description": "The column \"Birth_Date\" in the \"people\" table contains dates of birth formatted as text strings. The values typically follow the \"YYYY-MM-DD\" format, representing the year, month, and day of birth. This column is used to store and reference the birth dates of individuals in the database.",
+                "type": "TEXT"
+            },
+            "Height": {
+                "column_description": "The \"Height\" column in the \"people\" table, of type REAL, represents the height of individuals measured in meters. The values in this column are floating-point numbers, allowing for precise measurements. This column is essential for analyses involving physical characteristics and demographic studies.",
+                "type": "REAL"
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+
+Using the following text extracted from a data dictionary:
+" latin_commander " : { " column_description " : " the column \ " latin_commander \ " in the \ " battle \ " table contains the names of roman military leaders who commanded forces in various historical battles. this column is of type text and includes entries such as \ " julius caesar, \ " \ " scipio africanus, \
+" latin_commander \ " in the \ " battle \ " table contains the names of roman military leaders who commanded forces in various historical battles. this column is of type text and includes entries such as \ " julius caesar, \ " \ " scipio africanus, \ " and \ " pompey the great. \ " it serves to identify
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier latin_commander:
+
+latin_commander, latin_commander
+
+Using the following text extracted from a data dictionary:
+" lost_in_battle " : { " column_description " : " the column `lost_in_battle` in the `ship` table is of type int and records the number of ships lost during battles. it quantifies the total count of ships that have been destroyed or rendered inoperable in combat scenarios. this column helps in analyzing the impact of battles on fleet strength. " ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier lost_in_battle:
+
+lost_in_battle, lost_in_battle
+
+Using the following text extracted from a data dictionary:
+" result " : { " column_description " : " the \ " result \ " column in the \ " battle \ " table records the outcome of each battle. possible values include \ " victory, \ " \ " defeat, \ " \ " draw, \ " and \ " ongoing, \ " indicating whether the battle was won,
+" result \ " column in the \ " battle \ " table records the outcome of each battle. possible values include \ " victory, \ " \ " defeat, \ " \ " draw, \ " and \ " ongoing, \ " indicating whether the battle was won, lost, ended in a stalemate, or is still in progress. this column
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier result:
+
+result, result
+
+Using the following text extracted from a data dictionary:
+" ship_type " : { " column_description " : " the `ship_type` column in the `ship` table categorizes the type of ship. the possible values include 'cargo', 'tanker', 'passenger', 'fishing', and 'military'. this column helps in identifying the primary function or purpose of each ship. " , " type " : " text " } , " location " : {
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ship_type:
+
+ship_type, ship_type
+
+Using the following text extracted from a data dictionary:
+" note " : { " column_description " : " the \ " note \ " column in the \ " death \ " table contains textual information providing additional context or details about the death record. this may include remarks, observations, or specific circumstances related to the death. the content is free-form text, allowing for a wide range of descriptive
+" note \ " column in the \ " death \ " table contains textual information providing additional context or details about the death record. this may include remarks, observations, or specific circumstances related to the death. the content is free-form text, allowing for a wide range of descriptive entries. " , " type " : " text " } ,
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier note:
+
+note, note
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

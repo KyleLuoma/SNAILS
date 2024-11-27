@@ -1,0 +1,54 @@
+
+Using the following text extracted from a data dictionary:
+" stuid " : { " column_description " : " the column **stuid** in the **student** table contains unique integer values that serve as the primary identifier for each student. these values are used to distinguish individual student records within the database. the **stuid** is essential for maintaining data integrity and enabling efficient data retrieval and management. " , " type
+" stuid " : { " column_description " : " the column `stuid` in the `has_pet` table contains unique integer identifiers for students who own pets. each value in this column corresponds to a specific student, linking them to their respective pets. this column serves as a foreign key to the primary student records in the database. " , " type
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier stuid:
+
+stuid, student_id
+
+Using the following text extracted from a data dictionary:
+" pet_age " : { " column_description " : " the column `pet_age` in the pets table represents the age of the pets in years. the values in this column are integers ranging from 0 to 15, indicating the age of each pet. this column helps in identifying the age group and life stage of the pets. " , " type
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier pet_age:
+
+pet_age, pet_age
+
+Using the following text extracted from a data dictionary:
+" weight " : { " column_description " : " the column \ " weight \ " in the pets table, of type real, represents the weight of each pet in kilograms. the values in this column are numerical and can include decimal points to account for precise measurements. this column is essential for tracking the physical health and growth of
+" weight \ " in the pets table, of type real, represents the weight of each pet in kilograms. the values in this column are numerical and can include decimal points to account for precise measurements. this column is essential for tracking the physical health and growth of the pets. " , " type " : " real " } }
+the weight of each pet in kilograms. the values in this column are numerical and can include decimal points to account for precise measurements. this column is essential for tracking the physical health and growth of the pets. " , " type " : " real " } } } } 
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier weight:
+
+weight, pet_weight
+
+Using the following text extracted from a data dictionary:
+" major " : { " column_description " : " the \ " major \ " column in the student table represents the unique identifier for each student's major field of study, with values corresponding to specific academic disciplines. this integer type column is used to link students to their respective majors through a foreign key relationship with a separate majors
+" major \ " column in the student table represents the unique identifier for each student's major field of study, with values corresponding to specific academic disciplines. this integer type column is used to link students to their respective majors through a foreign key relationship with a separate majors table. the values in this column are numeric codes that map to
+student's major field of study, with values corresponding to specific academic disciplines. this integer type column is used to link students to their respective majors through a foreign key relationship with a separate majors table. the values in this column are numeric codes that map to predefined major categories. " , " type " : " integer " } , "
+predefined major categories. " , " type " : " integer " } , " advisor " : { " column_description " : " the \ " advisor \ " column in the \ " student \ " table contains integer values that represent the unique identifiers (ids) of faculty members assigned as academic advisors to students. each id corresponds to
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier major:
+
+major, major_id
+
+Using the following text extracted from a data dictionary:
+" advisor " : { " column_description " : " the \ " advisor \ " column in the \ " student \ " table contains integer values that represent the unique identifiers (ids) of faculty members assigned as academic advisors to students. each id corresponds to a specific advisor in the faculty database. this column establishes a relationship between students
+" advisor \ " column in the \ " student \ " table contains integer values that represent the unique identifiers (ids) of faculty members assigned as academic advisors to students. each id corresponds to a specific advisor in the faculty database. this column establishes a relationship between students and their respective academic advisors. " , " type " : "
+specific advisor in the faculty database. this column establishes a relationship between students and their respective academic advisors. " , " type " : " integer " } , " city_code " : { " column_description " : " the `city_code` column in the student table is a three-character varchar field representing the unique code for each city. the values in
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier advisor:
+
+advisor, advisor_id
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+If the old identifier is already easy to understand and contains full english words, then simply restate it without modification.
+Otherwise, create a meaningful and concise database identifier using SQL compatible complete words to represent any abbreviations and acronyms for only the identifier __IDENTIFIER__:

@@ -1,0 +1,49 @@
+
+Using the following text extracted from a data dictionary:
+<attrlabl> obsinits </attrlabl> <attrdef> observer initials (max. 3 characters) </attrdef> <attrdefs> ncbn </attrdefs> <attrtype> text </attrtype>
+<attrlabl> obsinits </attrlabl> <attrdef> observer initials </attrdef> <attrdefs> ncbn </attrdefs> <attrtype> text </attrtype> <attwidth> 4 </attwidth>
+<attrlabl> obsinits </attrlabl> <attrdef> initials of observer (see observer lookup table for details) </attrdef> <attrdefs> ncbn
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier ObsInits:
+
+obsinits, observer_initials
+
+Using the following text extracted from a data dictionary:
+<attrlabl> estherror </attrlabl> <attrdef> estimated horizontal accuracy error--see users guide for complete details and examples </attrdef>
+<attrlabl> estherror </attrlabl> <attrdef> estimated horizontal accuracy error--see users guide for complete details and examples </attrdef>
+<attrlabl> estherror </attrlabl> <attrdef> estimated horizontal accuracy error--see users guide for complete details and examples </attrdef>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier EstHError:
+
+estherror, estimated_horizontal_accuracy_error
+
+Using the following text extracted from a data dictionary:
+<attrlabl> acccategory </attrlabl> <attrdef> accuracy category: 0 = unknown, 1 = gps diff corrected file &gt;100
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier AccCategory:
+
+acccategory, accuracy_category
+
+Using the following text extracted from a data dictionary:
+<attrlabl> tempc </attrlabl> <attrdef> temperature (deg. celsius) </attrdef> <attrdefs> ncbn </attrdefs> <attrtype> single </attrtype> <attwidth> 4
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier TempC:
+
+TempC, TemperatureCelsius
+
+Using the following text extracted from a data dictionary:
+<attrlabl> svl </attrlabl> <attrdef> snout to vent length (mm) </attrdef> <attrdefs> ncbn </attrdefs> <attrtype> single </attrtype>
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier SVL:
+
+SVL, SnoutToVentLength
+Using the following text extracted from a data dictionary:
+__CONTEXT__
+
+In the response, provide only the old identifier and new identifier (e.g. "old_identifier, new_identifier").
+Create a meaningful and concise database identifier using SQL compatible complete words to represent abbreviations and acronyms for only the identifier __IDENTIFIER__:

@@ -1,0 +1,101 @@
+[
+    {
+        "database": "ATBI",
+        "schema": "dbo",
+        "db-type": "sql server",
+        "driver": "ODBC Driver 17 for SQL Server",
+        "server": "DESKTOP-EJSNCNN,1433",
+        "DSN": "SQL Server",
+        "username": "username_goes_here",
+        "password": "password goes here",
+        "credential_type": "username"
+    },
+    {
+        "database": "PacificIslandLandbirds",
+        "schema": "dbo",
+        "db-type": "sql server",
+        "driver": "ODBC Driver 17 for SQL Server",
+        "server": "DESKTOP-EJSNCNN,1433",
+        "DSN": "SQL Server",
+        "username": "username_goes_here",
+        "password": "password goes here",
+        "credential_type": "username"
+    },
+    {
+        "database": "NorthernPlainsFireManagement",
+        "schema": "dbo",
+        "db-type": "sql server",
+        "driver": "ODBC Driver 17 for SQL Server",
+        "server": "DESKTOP-EJSNCNN,1433",
+        "DSN": "SQL Server",
+        "username": "username_goes_here",
+        "password": "password goes here",
+        "credential_type": "username"
+    },
+    {
+        "database": "NTSB",
+        "schema": "dbo",
+        "db-type": "sql server",
+        "driver": "ODBC Driver 17 for SQL Server",
+        "server": "DESKTOP-EJSNCNN,1433",
+        "DSN": "SQL Server",
+        "username": "username_goes_here",
+        "password": "password goes here",
+        "credential_type": "username"
+    },
+    {
+        "database": "CratersWildlifeObservations",
+        "schema": "dbo",
+        "db-type": "sql server",
+        "driver": "ODBC Driver 17 for SQL Server",
+        "server": "DESKTOP-EJSNCNN,1433",
+        "DSN": "SQL Server",
+        "username": "username_goes_here",
+        "password": "password goes here",
+        "credential_type": "username"
+    },
+    {
+        "database": "SBODemoUS",
+        "schema": "dbo",
+        "db-type": "sql server",
+        "driver": "ODBC Driver 17 for SQL Server",
+        "server": "DESKTOP-EJSNCNN,1433",
+        "DSN": "SQL Server",
+        "username": "username_goes_here",
+        "password": "password goes here",
+        "credential_type": "username"
+    },
+    {
+        "database": "ASIS_20161108_HerpInv_Database",
+        "schema": "dbo",
+        "db-type": "sql server",
+        "driver": "ODBC Driver 17 for SQL Server",
+        "server": "DESKTOP-EJSNCNN,1433",
+        "DSN": "SQL Server",
+        "username": "username_goes_here",
+        "password": "password goes here",
+        "credential_type": "username"
+    },
+    {
+        "database": "NYSED_SRC2022",
+        "schema": "dbo",
+        "db-type": "sql server",
+        "driver": "ODBC Driver 17 for SQL Server",
+        "server": "DESKTOP-EJSNCNN,1433",
+        "DSN": "SQL Server",
+        "username": "username_goes_here",
+        "password": "password goes here",
+        "credential_type": "username"
+    },
+    {
+        "database": "KlamathInvasiveSpecies",
+        "schema": "dbo",
+        "db-type": "sql server",
+        "driver": "ODBC Driver 17 for SQL Server",
+        "server": "DESKTOP-EJSNCNN,1433",
+        "DSN": "SQL Server",
+        "username": "username_goes_here",
+        "password": "password goes here",
+        "credential_type": "username"
+    }
+]

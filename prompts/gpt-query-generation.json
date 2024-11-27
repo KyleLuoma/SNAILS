@@ -1,0 +1,12 @@
+[
+    {
+        "task": "query",
+        "preamble": "For the database described next, provide only a sql query. do not include any text that is not valid SQL.\n",
+        "taskdescription": "#\n### a sql query, written in the __db_type__ dialect, to answer the question: "
+    },
+    {
+        "task": "tables",
+        "preamble": "For the database described next, provide the names of at least 15 tables that have columns that might be needed to answer the question. Provide the answer in csv format\n",
+        "taskdescription": "#\n### CSV formatted list of at least 15 table names that have columns possibly required to answer the question: "
+    }
+]

@@ -1,0 +1,90 @@
+{
+    "employee": {
+        "table_description": "The \"employee\" table is designed to store essential information about employees within an organization. It includes unique identifiers, personal details, and location data for each employee. This table is used for managing and querying employee records efficiently.",
+        "columns": {
+            "Employee_ID": {
+                "column_description": "The Employee_ID column in the employee table is an integer type that uniquely identifies each employee within the organization. It serves as the primary key for the table, ensuring that each employee record is distinct. This column is essential for maintaining data integrity and enabling efficient data retrieval and management.",
+                "type": "INT"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"employee\" table contains textual data representing the full names of employees. This column includes a variety of names, typically formatted as first name followed by last name. It is used to uniquely identify and reference employees within the organization.",
+                "type": "TEXT"
+            },
+            "Age": {
+                "column_description": "The \"Age\" column in the \"employee\" table contains integer values representing the ages of employees. The values range from 18 to 65, indicating the minimum and maximum ages of employees in the organization. This column is used to store and manage the age-related data of employees for various HR and administrative purposes.",
+                "type": "INT"
+            },
+            "City": {
+                "column_description": "The \"City\" column in the \"employee\" table contains textual data representing the names of cities where employees are located. This column is used to store the city information for each employee, which can be utilized for various purposes such as regional analysis, location-based reporting, and logistical planning. The data type for this column is TEXT, allowing for a wide range of city names to be stored.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "shop": {
+        "table_description": "The \"shop\" table stores information about various retail locations within a business. It includes details such as the shop's unique identifier, name, location, district, number of products available, and the manager's name. This table is essential for managing and querying data related to the company's retail operations.",
+        "columns": {
+            "Shop_ID": {
+                "column_description": "The column `Shop_ID` in the `shop` table is an integer type that uniquely identifies each shop within the database. It serves as the primary key for the table, ensuring that each shop has a distinct identifier. This column is essential for establishing relationships with other tables and for performing efficient queries and operations on shop-related data.",
+                "type": "INT"
+            },
+            "Name": {
+                "column_description": "The \"Name\" column in the \"shop\" database table contains textual data representing the names of various items available for purchase. This column includes values such as product names, brand names, or item descriptions. It is used to identify and differentiate between different products in the shop's inventory.",
+                "type": "TEXT"
+            },
+            "Location": {
+                "column_description": "The \"Location\" column in the \"shop\" database table contains textual data representing the geographical or physical addresses of various shop branches. This may include street addresses, city names, or other location identifiers. The data is used to specify where each shop is situated.",
+                "type": "TEXT"
+            },
+            "District": {
+                "column_description": "The \"District\" column in the \"shop\" database table contains textual data representing the specific administrative or geographical areas where the shops are located. This column helps in categorizing and identifying the location of each shop within different districts. It is essential for regional analysis and reporting purposes.",
+                "type": "TEXT"
+            },
+            "Number_products": {
+                "column_description": "The column **Number_products** in the **shop** table represents the total count of products available in each shop. This integer value indicates the inventory size for each shop entry. It is used to track and manage the stock levels of products across different shops.",
+                "type": "INT"
+            },
+            "Manager_name": {
+                "column_description": "The column \"Manager_name\" in the \"shop\" database table contains textual data representing the names of the managers overseeing the respective shops. This column is used to identify and reference the manager responsible for each shop entry. The data type for this column is TEXT, allowing for a wide range of name formats.",
+                "type": "TEXT"
+            }
+        }
+    },
+    "hiring": {
+        "table_description": "The \"hiring\" table records information about employees hired by various shops. It includes details on the shop and employee IDs, the start date of employment, and whether the employment is full-time. This table is used to track the hiring status and employment type of employees across different shops.",
+        "columns": {
+            "Shop_ID": {
+                "column_description": "The column `Shop_ID` in the `hiring` table is an integer type that uniquely identifies each shop involved in the hiring process. It serves as a primary key to distinguish between different shop locations or branches. This ID is used to link hiring data to specific shops for organizational and reporting purposes.",
+                "type": "INT"
+            },
+            "Employee_ID": {
+                "column_description": "The `Employee_ID` column in the `hiring` table is an integer type that uniquely identifies each employee within the organization. This column serves as the primary key for the table, ensuring that each employee record is distinct. It is used to reference employees in other related tables and maintain data integrity across the database.",
+                "type": "INT"
+            },
+            "Start_from": {
+                "column_description": "The \"Start_from\" column in the \"hiring\" table is of type TEXT and contains values indicating the starting point or initial stage of the hiring process for a candidate. This could include specific dates, stages, or conditions under which the hiring process begins. The description should clarify that this column is used to track the commencement details of the hiring process for each candidate.",
+                "type": "TEXT"
+            },
+            "Is_full_time": {
+                "column_description": "The column \"Is_full_time\" in the \"hiring\" table is a boolean field that indicates the employment status of an individual. A value of \"true\" signifies that the individual is employed full-time, while a value of \"false\" indicates part-time employment. This column helps in categorizing employees based on their work hours.",
+                "type": "bool"
+            }
+        }
+    },
+    "evaluation": {
+        "table_description": "The \"evaluation\" table stores information about employee performance bonuses awarded over different years. It tracks the unique identifier for each employee, the year the bonus was awarded, and the amount of the bonus. This table is used for analyzing and managing employee performance incentives.",
+        "columns": {
+            "Employee_ID": {
+                "column_description": "The Employee_ID column in the evaluation table contains unique alphanumeric identifiers assigned to each employee. These identifiers are used to track and reference employees within the database. The format and structure of these IDs are consistent with the organization's internal employee identification system.",
+                "type": "TEXT"
+            },
+            "Year_awarded": {
+                "column_description": "The column \"Year_awarded\" in the \"evaluation\" table contains text values representing the year in which an award was granted. The values are formatted as four-digit years (e.g., \"2021\", \"2022\"). This column is used to record and reference the specific year an award was received.",
+                "type": "TEXT"
+            },
+            "Bonus": {
+                "column_description": "The \"Bonus\" column in the \"evaluation\" table contains numerical values representing additional compensation or rewards given to employees, expressed in real numbers. These values can include decimal points, indicating precise amounts. This column is used to track and analyze the extra financial incentives provided to employees based on their performance evaluations.",
+                "type": "REAL"
+            }
+        }
+    }
+}

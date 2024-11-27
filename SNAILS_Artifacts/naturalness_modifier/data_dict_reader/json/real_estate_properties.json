@@ -1,0 +1,175 @@
+{
+    "Ref_Feature_Types": {
+        "table_description": "The Ref_Feature_Types table serves as a reference table that categorizes different types of features within a system. It provides a standardized list of feature types, ensuring consistency and clarity across the database. This table is essential for maintaining data integrity and facilitating efficient data retrieval and reporting.",
+        "columns": {
+            "feature_type_code": {
+                "column_description": "The column `feature_type_code` in the `Ref_Feature_Types` table is a VARCHAR(20) field that stores unique codes representing different types of features. These codes are used to categorize and identify various feature types within the database. The values in this column are essential for ensuring consistent and accurate classification of features.",
+                "type": "VARCHAR(20)"
+            },
+            "feature_type_name": {
+                "column_description": "The column \"feature_type_name\" in the Ref_Feature_Types table contains descriptive names of various feature types, such as \"Mountain,\" \"River,\" \"Forest,\" and \"Desert.\" These names categorize different natural or geographical features. This column is of type VARCHAR(80) and provides a human-readable label for each feature type.",
+                "type": "VARCHAR(80)"
+            }
+        }
+    },
+    "Ref_Property_Types": {
+        "table_description": "The Ref_Property_Types table serves as a reference table that categorizes different types of properties within the database. It contains codes and descriptions that uniquely identify and describe each property type. This table is used to standardize property type information across the database for consistency and ease of reference.",
+        "columns": {
+            "property_type_code": {
+                "column_description": "The column `property_type_code` in the `Ref_Property_Types` table is a VARCHAR(20) field that stores unique codes representing different types of properties. These codes are used to categorize and identify property types within the database. This column ensures consistent and standardized property type classification across the dataset.",
+                "type": "VARCHAR(20)"
+            },
+            "property_type_description": {
+                "column_description": "The column `property_type_description` in the `Ref_Property_Types` table contains textual descriptions of various property types, each up to 80 characters in length. This column is used to provide a detailed, human-readable explanation of the property type codes stored in the table. It helps users understand the nature and characteristics of each property type.",
+                "type": "VARCHAR(80)"
+            }
+        }
+    },
+    "Other_Available_Features": {
+        "table_description": "The Other_Available_Features table stores information about additional features that can be associated with various entities in the system. It includes unique identifiers, types, names, and descriptions of these features. This table is used to catalog and manage supplementary functionalities that enhance the primary offerings.",
+        "columns": {
+            "feature_id": {
+                "column_description": "The `feature_id` column in the `Other_Available_Features` table is an INTEGER type that uniquely identifies each feature available in the system. This column serves as a primary key to ensure each feature can be distinctly referenced. It is used to link features to other related data within the database.",
+                "type": "INTEGER"
+            },
+            "feature_type_code": {
+                "column_description": "The column `feature_type_code` in the `Other_Available_Features` table categorizes the types of features available. It is a VARCHAR(20) field that stores alphanumeric codes representing different feature types. This column helps in identifying and differentiating between various features offered in the system.",
+                "type": "VARCHAR(20)"
+            },
+            "feature_name": {
+                "column_description": "The `feature_name` column in the `Other_Available_Features` table is a VARCHAR(80) field that stores the names of various features available in the system. This column is used to identify and list distinct features that can be enabled or utilized within the application. Each entry in this column represents a unique feature name.",
+                "type": "VARCHAR(80)"
+            },
+            "feature_description": {
+                "column_description": "The `feature_description` column in the `Other_Available_Features` table contains brief textual descriptions of various features available in the system, each limited to a maximum of 80 characters. These descriptions provide concise information to help users understand the purpose or functionality of each feature. The column is designed to ensure clarity and brevity in feature documentation.",
+                "type": "VARCHAR(80)"
+            }
+        }
+    },
+    "Properties": {
+        "table_description": "The Properties table stores detailed information about various real estate properties available in the market. It includes data on property types, market dates, pricing, and specific features for different property categories such as apartments, houses, and shops. This table is essential for tracking property listings, sales, and their associated attributes.",
+        "columns": {
+            "property_id": {
+                "column_description": "The `property_id` column in the Properties table is an INTEGER type that uniquely identifies each property within the database. It serves as the primary key for the table, ensuring that each property record is distinct. This column is essential for indexing and efficient retrieval of property data.",
+                "type": "INTEGER"
+            },
+            "property_type_code": {
+                "column_description": "The column `property_type_code` in the `Properties` table is a VARCHAR(20) field that categorizes the type of property. It contains codes representing different property types, such as residential, commercial, industrial, and agricultural. This column is essential for identifying and filtering properties based on their designated use.",
+                "type": "VARCHAR(20)"
+            },
+            "date_on_market": {
+                "column_description": "The `date_on_market` column in the `Properties` table, of type DATETIME, records the date and time when a property was first listed on the market. This information is crucial for tracking the duration a property has been available for sale or rent. It helps in analyzing market trends and property performance over time.",
+                "type": "DATETIME"
+            },
+            "date_sold": {
+                "column_description": "The `date_sold` column in the `Properties` table is of the DATETIME type and records the exact date and time when a property was sold. This column is used to track the sales history of properties, providing a timestamp for each transaction. It is essential for analyzing market trends and property turnover rates.",
+                "type": "DATETIME"
+            },
+            "property_name": {
+                "column_description": "The `property_name` column in the `Properties` table contains the names or titles of various properties, each represented as a string with a maximum length of 80 characters. This column is used to uniquely identify and describe individual properties within the database. Examples of values in this column include names of real estate properties, product names, or other identifiable entities.",
+                "type": "VARCHAR(80)"
+            },
+            "property_address": {
+                "column_description": "The `property_address` column in the `Properties` table stores the full address of each property, including street number, street name, city, state, and ZIP code. This column is of type VARCHAR(255) to accommodate various address lengths and formats. It is used to uniquely identify the location of each property within the database.",
+                "type": "VARCHAR(255)"
+            },
+            "room_count": {
+                "column_description": "The `room_count` column in the `Properties` table is an INTEGER type that represents the total number of rooms in a property. This includes all types of rooms such as bedrooms, living rooms, and kitchens. The values in this column are used to quantify the size and capacity of a property.",
+                "type": "INTEGER"
+            },
+            "vendor_requested_price": {
+                "column_description": "The column `vendor_requested_price` in the `Properties` table represents the price requested by the vendor for a property, stored as a decimal value with up to 19 digits and 4 decimal places. This column captures the initial asking price set by the vendor before any negotiations or adjustments. It is crucial for financial analysis and pricing strategies in real estate transactions.",
+                "type": "DECIMAL(19,4)"
+            },
+            "buyer_offered_price": {
+                "column_description": "The column `buyer_offered_price` in the `Properties` table represents the price offered by a buyer for a property, stored with a precision of up to 19 digits and 4 decimal places. This value reflects the monetary amount proposed during the negotiation or bidding process. It is used to track and compare offers made by potential buyers.",
+                "type": "DECIMAL(19,4)"
+            },
+            "agreed_selling_price": {
+                "column_description": "The column `agreed_selling_price` in the Properties table represents the final negotiated price at which a property is sold, expressed as a decimal value with up to 19 digits in total and 4 digits after the decimal point. This column captures the agreed-upon selling price between the buyer and seller. It is used for financial and transactional records within the database.",
+                "type": "DECIMAL(19,4)"
+            },
+            "apt_feature_1": {
+                "column_description": "The column `apt_feature_1` in the `Properties` table contains specific features or amenities of an apartment, such as \"balcony,\" \"fireplace,\" \"hardwood floors,\" and \"stainless steel appliances.\" This column is used to highlight key selling points or unique characteristics of each apartment unit. The values are stored as text descriptions with a maximum length of 255 characters.",
+                "type": "VARCHAR(255)"
+            },
+            "apt_feature_2": {
+                "column_description": "The column `apt_feature_2` in the `Properties` table appears to store additional features or amenities of an apartment that are not covered by other feature columns. These features could include specific details such as flooring type, view, or unique apartment characteristics. This column is of type VARCHAR(255), allowing for a wide range of descriptive entries.",
+                "type": "VARCHAR(255)"
+            },
+            "apt_feature_3": {
+                "column_description": "The column `apt_feature_3` in the `Properties` table appears to store additional features or amenities of an apartment that are not covered by other columns. These features could include specific details such as \"balcony,\" \"fireplace,\" or \"hardwood floors.\" This column provides supplementary information to better describe the unique aspects of each apartment unit.",
+                "type": "VARCHAR(255)"
+            },
+            "fld_feature_1": {
+                "column_description": "The column `fld_feature_1` in the `Properties` table is of type `VARCHAR(255)` and contains descriptive features or attributes related to the properties. These features may include specific characteristics, amenities, or unique selling points of the properties. The values in this column are textual and provide additional context or details that enhance the understanding of each property listing.",
+                "type": "VARCHAR(255)"
+            },
+            "fld_feature_2": {
+                "column_description": "The column `fld_feature_2` in the `Properties` table appears to store additional descriptive features or attributes related to the property listings. These features could include specific details such as architectural styles, unique property characteristics, or other notable attributes that are not covered by other columns. This field allows for up to 255 characters of text to provide a flexible and detailed description.",
+                "type": "VARCHAR(255)"
+            },
+            "fld_feature_3": {
+                "column_description": "The column `fld_feature_3` in the `Properties` table appears to store additional descriptive information or attributes related to the property that are not covered by other columns. This field is a VARCHAR(255), indicating it can hold up to 255 characters of text. It is used for flexible, miscellaneous property details that may vary widely between entries.",
+                "type": "VARCHAR(255)"
+            },
+            "hse_feature_1": {
+                "column_description": "The column `hse_feature_1` in the `Properties` table is of type VARCHAR(255) and contains specific features or attributes of a house. These features may include details such as architectural style, unique design elements, or specific amenities. This column is used to provide additional descriptive information about the property that may not be covered by other columns.",
+                "type": "VARCHAR(255)"
+            },
+            "hse_feature_2": {
+                "column_description": "The column `hse_feature_2` in the `Properties` table is of type VARCHAR(255) and contains additional descriptive features of a property that are not covered by other columns. These features may include unique attributes or amenities such as architectural styles, special installations, or other notable characteristics. This column provides supplementary information to enhance the understanding of the property's distinct qualities.",
+                "type": "VARCHAR(255)"
+            },
+            "hse_feature_3": {
+                "column_description": "The column `hse_feature_3` in the `Properties` table is of type VARCHAR(255) and contains additional descriptive features of a house that are not covered by other columns. This column may include unique attributes such as architectural details, special amenities, or other notable characteristics. It serves to provide supplementary information that enhances the understanding of the property's features.",
+                "type": "VARCHAR(255)"
+            },
+            "oth_feature_1": {
+                "column_description": "The column `oth_feature_1` in the `Properties` table appears to store additional, miscellaneous features or attributes of a property that do not fall under predefined categories. This column is of type `VARCHAR(255)`, allowing for a wide range of textual descriptions. It is used to capture unique or less common property features that may be relevant for detailed listings or specific queries.",
+                "type": "VARCHAR(255)"
+            },
+            "oth_feature_2": {
+                "column_description": "The column `oth_feature_2` in the `Properties` table appears to store additional descriptive information or features related to the property that do not fall under other predefined categories. This field is used to capture miscellaneous property attributes that may be relevant for detailed listings or specific property characteristics. The values in this column are typically short text descriptions, each up to 255 characters in length.",
+                "type": "VARCHAR(255)"
+            },
+            "oth_feature_3": {
+                "column_description": "The column `oth_feature_3` in the `Properties` table contains additional property features or attributes that do not fall under standard categories. It is a VARCHAR(255) type, allowing for a wide range of textual descriptions. This column is used to capture unique or miscellaneous features specific to each property.",
+                "type": "VARCHAR(255)"
+            },
+            "shp_feature_1": {
+                "column_description": "The column `shp_feature_1` in the `Properties` table contains values that describe specific shape features of the properties, such as geometric characteristics or unique identifiers. This column is of type `VARCHAR(255)` and is used to store textual descriptions or codes related to the shape attributes of each property.",
+                "type": "VARCHAR(255)"
+            },
+            "shp_feature_2": {
+                "column_description": "The column `shp_feature_2` in the `Properties` table contains values that describe specific secondary features or characteristics of a property, such as architectural details, additional structures, or unique landscape elements. This column is used to provide supplementary information that enhances the primary property description. The data type for this column is `VARCHAR(255)`, allowing for a wide range of descriptive entries.",
+                "type": "VARCHAR(255)"
+            },
+            "shp_feature_3": {
+                "column_description": "The column `shp_feature_3` in the `Properties` table contains values that describe specific features or attributes of a property, such as \"Pool\", \"Garage\", \"Garden\", or \"Fireplace\". This column is used to store a single notable feature of the property in a textual format. It helps in categorizing and filtering properties based on these distinct features.",
+                "type": "VARCHAR(255)"
+            },
+            "other_property_details": {
+                "column_description": "The column `other_property_details` in the `Properties` table contains additional information about the property that does not fit into other predefined columns. This may include unique features, historical significance, or any other noteworthy details that enhance the property's description. The data is stored as a VARCHAR(255) to accommodate a variety of textual information.",
+                "type": "VARCHAR(255)"
+            }
+        }
+    },
+    "Other_Property_Features": {
+        "table_description": "The Other_Property_Features table stores additional characteristics and descriptions of properties that are not covered by the main property attributes. Each entry links a property to a specific feature, providing a detailed description of that feature. This table is used to enhance the information available for each property, allowing for more comprehensive property listings.",
+        "columns": {
+            "property_id": {
+                "column_description": "The `property_id` column in the `Other_Property_Features` table is an INTEGER that uniquely identifies each property. It serves as a foreign key linking to the primary key in the main property table, ensuring data integrity and relational consistency. This column is essential for associating additional features with their respective properties.",
+                "type": "INTEGER"
+            },
+            "feature_id": {
+                "column_description": "The column `feature_id` in the `Other_Property_Features` table is an INTEGER type that uniquely identifies each feature associated with a property. This column serves as a primary key to ensure that each feature entry is distinct. It is used to link specific property features to their respective properties in the database.",
+                "type": "INTEGER"
+            },
+            "property_feature_description": {
+                "column_description": "The `property_feature_description` column in the `Other_Property_Features` table is a VARCHAR(80) field that provides a brief textual description of unique or additional features of a property. This may include attributes such as architectural styles, special amenities, or notable characteristics that distinguish the property. The descriptions are concise, ensuring they fit within the 80-character limit.",
+                "type": "VARCHAR(80)"
+            }
+        }
+    }
+}
