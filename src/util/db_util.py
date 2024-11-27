@@ -369,10 +369,9 @@ def get_db_tables_cardinality(
 
 def make_db_schema_prompt_test():
     prompt = make_db_schema_prompt(
-        'NTSB',
+        'PacificIslandLandbirds',
         task = 'query',
-        identifier_tags=False,
-        use_natural_schema=False
+        identifier_tags=False
         )
     print(prompt)
 

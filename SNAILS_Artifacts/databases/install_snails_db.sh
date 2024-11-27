@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 TAR_FILE="SNAILS_database_collection.tar.gz"
 
@@ -11,5 +11,9 @@ echo "Decompressing SNAILS_database_collection.tar.gz"
 tar -xzvf "$TAR_FILE"
 echo "Decompression complete."
 
+echo "Building snails-db docker container"
 docker rm snails-db
 docker build --no-cache -t snails-db .
+
+echo "Copying dbinfo.json into .local folder"
+cp ../../.local_example/dbinfo.json ../../.local/dbinfo.json
