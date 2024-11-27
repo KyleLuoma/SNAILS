@@ -14,6 +14,7 @@ schema-tables-json/codes_format/snails_schemas_*
 !.local/README.txt
 snails_mssql/snails_volume
 *.bak
+*.ldf
 *.sqlite
 *.tar.gz
 temp_data/
