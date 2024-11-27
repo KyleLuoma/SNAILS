@@ -124,7 +124,7 @@ The nine selected databases represent data from scientific observations, crash s
 The easiest way to access the databases is to download the .bak files and restore them to a MS SQL Server RDBMS.
 For all databases, we offer compressed (.zip) MS SQL .bak files that can be imported into a MS SQL Server RDBMS. We used Microsoft SQL Server Developer (64-bit); but it should work with any recent release of SQL Server.
 
-[Download all of the available MS SQL database .bak files here](https://drive.google.com/file/d/1EMQmdNx-a20TfZSDdNkFPLmXVS48IB2b/view?usp=drive_link).
+[Download all of the available MS SQL database .bak files here](https://drive.google.com/file/d/1EMQmdNx-a20TfZSDdNkFPLmXVS48IB2b/view?usp=drive_link). Place the SNAILS_database_collection.tar.gz file in the ```./SNAILS_Artifacts/databases/``` directory.
 
 #### Sqlite Files:
 We also ported the SNAILS collection to Sqlite. You can access the Sqlite versions of the [SNAILS MS SQL databases here](https://drive.google.com/file/d/16vgE_KCZMdKDKHtXgIQhvWdwO7ufKcjz/view?usp=drive_link).
