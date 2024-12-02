@@ -17,6 +17,10 @@ scikit-learn
 statsmodels
 
 # + For 03-SNAILS-identifier-analysis.ipynb #
-torch
-torchvision
-torchaudio
+# We recommend setting the install for your OS https://pytorch.org/get-started/locally/
+#torch
+#torchvision
+#torchaudio
+
+# + For 04-SNAILS-tokenizer-analysis.ipynb #
+

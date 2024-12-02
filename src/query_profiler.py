@@ -17,6 +17,7 @@ limitations under the License.
 import pandas as pd
 import subprocess
 import json
+from sys import platform
 
 test_query = """
 SELECT a from o
@@ -53,14 +54,21 @@ class QueryProfiler:
     
     """
 
-    def __init__(self, use_shell: bool = False):
+    def __init__(self, use_shell: bool = None):
         self.__jar_path = './bin/SQLParserQueryAnalyzer_jar/SQLParserQueryAnalyzer.jar'
         self.query = None
         self.tree = None
         self.stats = None
-        self.use_shell = use_shell
-        pass
-
+        if use_shell == None:
+            if platform == "linux" or platform == "linux2":
+                self.use_shell = True
+            elif platform == "darwin":
+                self.use_shell = True
+            elif platform == "win32":
+                self.use_shell = False
+        else:
+            self.use_shell = use_shell
+            
 
     def profile_query(self, query: str) -> dict:
         stats = self.__parse_query(query)
