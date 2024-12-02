@@ -17,4 +17,6 @@ scikit-learn
 statsmodels
 
 # + For 03-SNAILS-identifier-analysis.ipynb #
-
+torch
+torchvision
+torchaudio
