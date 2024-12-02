@@ -64,9 +64,15 @@ def call_vertex(
         prompt: str,
         model: str = "gemini-1.5-pro-latest"
 ) -> str:
-    vertex_info_file = open(".local/vertex.json")
-    vertex_info = json.loads(vertex_info_file.read())
-    vertex_info_file.close()
+    try:
+        vertex_info_file = open(".local/vertex.json")
+        vertex_info = json.loads(vertex_info_file.read())
+        vertex_info_file.close()
+    except FileNotFoundError as e:
+        print(e)
+        print("Follow instructions in ./.local/README.txt to create the required vertex.json in the .local folder.")
+        raise e
+    
     genai.configure(api_key=vertex_info["api_key"])
 
     generation_config = {
@@ -141,9 +147,14 @@ def call_codey(
         max_tokens = 800,
         verbose = True
 ) -> str:
-    codey_info_file = open(".local/codey.json")
-    codey_info = json.loads(codey_info_file.read())
-    codey_info_file.close()
+    try:
+        codey_info_file = open(".local/codey.json")
+        codey_info = json.loads(codey_info_file.read())
+        codey_info_file.close()
+    except FileNotFoundError as e:
+        print(e)
+        print("Follow instructions in ./.local/README.txt to create the required openai.json in the .local folder.")
+        raise e
 
     parameters = {
         "temperature": codey_info['temperature'],

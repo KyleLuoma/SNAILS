@@ -35,9 +35,14 @@ def call_code_llama(
     query : str
         Generated SQL query
     """
-    f = open('.local/codellama.json')
-    llama_params = json.load(f)
-    f.close()
+    try:
+        f = open('.local/codellama.json')
+        llama_params = json.load(f)
+        f.close()
+    except FileNotFoundError as e:
+        print(e)
+        print("Follow instructions in ./.local/README.txt to create the required codellama.json in the .local folder.")
+        raise e
 
     url = llama_params['aws_url']
 

@@ -27,6 +27,7 @@ from tqdm import tqdm
 import os
 from itertools import product
 import multiprocessing as mp
+from sys import platform
 
 NUM_PROCESSES = 16
 
@@ -38,10 +39,17 @@ def main(
         bypass_nl_sql_inference: bool = True,
         db_list_file: str = ".local/dbinfo.json"
         ):
+    
+    # Determine the os and adjust shell usage for jar execution in profiler and mp function
+    if platform == "linux" or platform == "linux2":
+        use_shell = True
+    elif platform == "darwin":
+        use_shell = True
+    elif platform == "win32":
+        use_shell = False
 
     date = time.strftime("%m-%d-%Y")
-    spider_db_list = os.listdir("./db/spider/db")
-    all_databases = [db.replace(".sqlite", "") for db in spider_db_list]
+
     if "SBO" in database:
         database_subname = database.split("-")[1]
     else:
@@ -175,7 +183,8 @@ def main(
                                     },
                                 db_name=config_dict["database_name"],
                                 filename_prefix=xwalk_prefix,
-                                syntax=config_dict["sql_dialect"]
+                                syntax=config_dict["sql_dialect"],
+                                profiler_use_shell=use_shell
                             ) 
                         )
     
@@ -242,21 +251,21 @@ def main(
     print("### Generate gold query statistics and naturalness scores ###")
     bypass = False
     if not bypass:
-        # execute java jar in os.system
-        # java -jar ./bin/SQLParserQueryAnalyzer_jar/SQLParserQueryAnalyzer.jar
-
+        
         mp_query_data_list = []
         for row in q_nl_df.itertuples():
             mp_query_data_list.append((
                 row.number,
                 row.query_gold.upper().replace('"', "'"),
-                config_dict['sql_dialect']
+                config_dict['sql_dialect'],
+                use_shell
             ))
 
         pool = mp.Pool(processes=NUM_PROCESSES)
         mp_query_stats = pool.map(
             mp_query_parse_function,
-            mp_query_data_list
+            mp_query_data_list,
+            use_shell
         )
         query_stats_dict = {s[0]: s[1] for s in mp_query_stats}
         q_nl_df['query_stats'] = q_nl_df.apply(
@@ -274,7 +283,7 @@ def main(
         
     ### Make a list of all aliases in all queries ###
     print("### Make a list of all aliases in all queries ###")
-    profiler = qpr.QueryProfiler()
+    profiler = qpr.QueryProfiler(use_shell=use_shell)
     alias_list = []
 
     mp_tag_df_gold_list = pool.map(
@@ -535,7 +544,8 @@ def main(
         mp_linking_eval_data.append((
             row.number,
             row.query_gold,
-            qp
+            qp,
+            use_shell
         ))
 
     mp_linking_res = pool.map(mp_schema_linking_eval, mp_linking_eval_data)
@@ -637,7 +647,8 @@ def mp_query_parse_function(query_data: tuple) -> tuple:
             query,
             syntax
             ),
-        capture_output=True
+        capture_output=True,
+        shell=query_data[3]
     )
     if "@BEGINJSON" not in str(result):
         return (question_num, f"Unable to parse query {question_num}: {query}")
@@ -653,7 +664,7 @@ def mp_schema_linking_eval(data: tuple) -> tuple:
     query_gold = data[1]
     predicted = data[2]
     linking_res = src.schema_linking_eval.compare_query_schema_elements(
-        gold=query_gold, predicted=predicted
+        gold=query_gold, predicted=predicted, profiler_use_shell=data[3]
     )
     return (number, linking_res)
 

@@ -22,7 +22,8 @@ from multiprocessing import Process
 
 def compare_query_schema_elements(
         gold: str, predicted: str,
-        verbose: bool = False
+        verbose: bool = False,
+        profiler_use_shell: bool = False
         ) -> dict:
     """
     Compares the schema elements (tables and columns) of two SQL queries and calculates
@@ -44,7 +45,7 @@ def compare_query_schema_elements(
             - precision (float): The precision score of the predicted query.
             - f1 (float): The F1 score of the predicted query.
     """
-    profiler = qp.QueryProfiler()
+    profiler = qp.QueryProfiler(use_shell=profiler_use_shell)
 
     gold_df = profiler.get_identifiers_and_labels_df(
         query=gold.strip().lower(),

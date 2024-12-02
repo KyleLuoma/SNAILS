@@ -29,9 +29,15 @@ def call_gpt(
         ):
     try_again = True
     
-    f = open('.local/openai.json')
-    openai_params = json.load(f)
-    f.close()
+    try:
+        f = open('.local/openai.json')
+        openai_params = json.load(f)
+        f.close()
+    except FileNotFoundError as e:
+        print(e)
+        print("Follow instructions in ./.local/README.txt to create the required openai.json in the .local folder.")
+        raise e
+    
     openai.api_key = openai_params['api_key']
     # openai.Model.list()
     num_attempts = 0

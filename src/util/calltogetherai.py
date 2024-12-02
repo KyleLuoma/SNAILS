@@ -29,9 +29,15 @@ def call_togetherai(
     if model in model_lookup_dict.keys():
         model = model_lookup_dict[model]
 
-    f = open(".local/togetherai.json")
-    togetherai_params = json.load(f)
-    f.close()
+    try:
+        f = open(".local/togetherai.json")
+        togetherai_params = json.load(f)
+        f.close()
+    except FileNotFoundError as e:
+        print(e)
+        print("Follow instructions in ./.local/README.txt to create the required togetherai.json in the .local folder.")
+        raise e
+    
     api_key = togetherai_params["api_key"]
 
     client = Together(

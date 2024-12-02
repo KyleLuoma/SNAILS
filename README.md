@@ -89,6 +89,9 @@ Which will create natural view .sql files for the SNAILS NYSED database using th
 ### Dependencies
 The dependency list is available in [requirements.txt](./requirements.txt). It is quite large, as we make use of several API services and libraries. We recommend using a virtual environment to install the dependencies.
 
+#### Java Runtime
+The SQL Parser can run using OpenJDK version 11 or greater
+
 ### Database Setup
 Retrieve the .bak files from the project repository and restore them to a MS SQL Server RDBMS. We used Microsoft SQL Server Developer (64-bit); but it should work with any recent release of SQL Server.
 

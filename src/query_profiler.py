@@ -38,6 +38,9 @@ class QueryProfiler:
         the tree representation of the query
     stats : dict
         the statistics of the query
+    use_shell : bool (default False)
+        Whether or not to use the shell=True argument in subprocess.run
+        some OS require True (Windows), others False (Linux distributions)
 
     Methods
     -------
@@ -50,11 +53,12 @@ class QueryProfiler:
     
     """
 
-    def __init__(self):
+    def __init__(self, use_shell: bool = False):
         self.__jar_path = './bin/SQLParserQueryAnalyzer_jar/SQLParserQueryAnalyzer.jar'
         self.query = None
         self.tree = None
         self.stats = None
+        self.use_shell = use_shell
         pass
 
 
@@ -201,7 +205,8 @@ class QueryProfiler:
                 q = query,
                 s = syntax
             ),
-            capture_output=True
+            capture_output=True,
+            shell=self.use_shell
         )
         response = str(response)
         # print("\nDEBUG:", response)
@@ -263,7 +268,8 @@ class QueryProfiler:
                 j = self.__jar_path,
                 q = query_to_parse
             ),
-            capture_output=True
+            capture_output=True,
+            shell=self.use_shell
         )
         response = str(response)
         response = response.replace("\\n", "")

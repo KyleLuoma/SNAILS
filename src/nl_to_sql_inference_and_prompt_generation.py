@@ -107,10 +107,6 @@ def do_single_question(
                 print(e)
                 time.sleep(60)
 
-            except Exception as e:
-                print(e)
-                time.sleep(5)
-
     elif service == "togetherai":
         response = call_togetherai(prompt=prompt, model=model_name)
         print("DEBUG: response object from call_together_ai function:", response)
@@ -275,7 +271,8 @@ def denaturalize_query(
         filename_suffix: str = 'GPT-FT',
         filename_prefix: str = '',
         syntax="tsql",
-        target_naturalness: str = "native"
+        target_naturalness: str = "native",
+        profiler_use_shell: bool = False
         ) -> str:
     """Denaturalize a query by replacing natural language table and column names with their native identifiers.
 
@@ -315,7 +312,7 @@ def denaturalize_query(
             3: "N3"
         }[int(naturalness["column"])]
 
-    profiler = QueryProfiler()
+    profiler = QueryProfiler(use_shell=profiler_use_shell)
     xwalk_filename = f"{filename_prefix}{db_name}-consolidated-xwalk.xlsx"
     xwalk_df = pd.read_excel(xwalk_directory + xwalk_filename)
     xwalk_df[f"{target_naturalness}_identifier"] = xwalk_df[f"{target_naturalness}_identifier"].str.upper()

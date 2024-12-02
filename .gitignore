@@ -27,3 +27,5 @@ schemapile_identifiers.csv
 schemapile_schemas.csv
 schemapile_scores.csv
 **/.vscode/
+logs/*.txt
+data/nl-to-sql_performance_annotations/pending_evaluation/*
