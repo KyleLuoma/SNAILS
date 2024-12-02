@@ -22,14 +22,8 @@ statsmodels
 #torchvision
 #torchaudio
 
-# + For 04-SNAILS-tokenizer-analysis.ipynb #
-
 # + For 05-SNAILS-token-naturalness-analysis.ipynb #
 Levenshtein
-
-# + For 06-SNAILS-naturalness-comparisons.ipynb #
-
-# + For 07-schemapile-naturalness.ipynb #
 
 # + For 08b #
 igraph
