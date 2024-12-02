@@ -1,9 +1,17 @@
+# For 01-SNAILS-NL-to-SQL-Inference-and-Scoring.ipynb #
 pandas
 openpyxl
 pyodbc
-openai==0.27.28
+openai==0.27.3
 tiktoken
 google-generativeai
 google-cloud-aiplatform
 transformers
 together
+
+# For 02-SNAILS-NL-to-SQL-results-analysis.ipynb #
+seaborn
+scipy
+jinja2
+scikit-learn
+statsmodels

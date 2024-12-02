@@ -279,7 +279,6 @@ class ConsolidatedResultsLoader:
         try:
             print("Loading identifier token analysis files...")
             token_df = pd.read_excel(f'{file_directory}/identifier-tokens-all-models.xlsx')
-            print(token_df.head())
         except FileNotFoundError as e:
             print(e)
             print("File not found. Be sure to run the tokenizer_analysis.ipynb notebook to generate the file.")
@@ -492,8 +491,6 @@ class ConsolidatedResultsLoader:
             temp_df['Qg_identifier_N3_pct'] = temp_df.apply(
                 lambda row: row.Qg_identifier_N3 / (row.Qg_tot_tabs + row.Qg_tot_cols), axis = 1
             )
-
-            print(file)
             temp_df['model_order'] = temp_df.model.apply(
                 lambda x: self.config_dict['model_order'][x]
             )
