@@ -1,0 +1,47 @@
+[
+    {
+        "database": "ATBI",
+        "db-type": "sqlite",
+        "path": "./db/snails_sqlite/ATBI.sqlite"
+    },
+    {
+        "database": "PacificIslandLandbirds",
+        "db-type": "sqlite",
+        "path": "./db/snails_sqlite/PacificIslandLandbirds.sqlite"
+    },
+    {
+        "database": "NorthernPlainsFireManagement",
+        "db-type": "sqlite",
+        "path": "./db/snails_sqlite/NorthernPlainsFireManagement.sqlite"
+    },
+    {
+        "database": "NTSB",
+        "db-type": "sqlite",
+        "path": "./db/snails_sqlite/NTSB.sqlite"
+    },
+    {
+        "database": "CratersWildlifeObservations",
+        "db-type": "sqlite",
+        "path": "./db/snails_sqlite/CratersWildlifeObservations.sqlite"
+    },
+    {
+        "database": "ASIS_20161108_HerpInv_Database",
+        "db-type": "sqlite",
+        "path": "./db/snails_sqlite/ASIS_20161108_HerpInv_Database.sqlite"
+    },
+    {
+        "database": "KlamathInvasiveSpecies",
+        "db-type": "sqlite",
+        "path": "./db/snails_sqlite/KlamathInvasiveSpecies.sqlite"
+    },
+    {
+        "database": "SBODemoUS",
+        "db-type": "sqlite",
+        "path": "./db/snails_sqlite/SBODemoUS.sqlite"
+    },
+    {
+        "database": "NYSED_SRC2022",
+        "db-type": "sqlite",
+        "path": "./db/snails_sqlite/NYSED_SRC2022.sqlite"
+    }
+]

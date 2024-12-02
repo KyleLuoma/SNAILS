@@ -312,7 +312,7 @@ def denaturalize_query(
             3: "N3"
         }[int(naturalness["column"])]
 
-    profiler = QueryProfiler(use_shell=profiler_use_shell)
+    profiler = QueryProfiler()
     xwalk_filename = f"{filename_prefix}{db_name}-consolidated-xwalk.xlsx"
     xwalk_df = pd.read_excel(xwalk_directory + xwalk_filename)
     xwalk_df[f"{target_naturalness}_identifier"] = xwalk_df[f"{target_naturalness}_identifier"].str.upper()

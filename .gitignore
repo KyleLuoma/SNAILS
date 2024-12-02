@@ -4,6 +4,7 @@ birdsql/
 spider/
 tokenizer_analysis/*.xlsx
 db/queries/*.sql
+db/queries/snails_sqlite_queries/*.sql
 tokenizer_analysis/plots/*.png
 schema-tables-json/codes_format/*
 schema-tables-json/codes_format/snails_schemas_*
@@ -12,6 +13,7 @@ schema-tables-json/codes_format/snails_schemas_*
 **/.local/*
 !**/.local/
 !.local/README.txt
+!.local/dbinfo_sqlite.json
 snails_mssql/snails_volume
 *.bak
 *.ldf
