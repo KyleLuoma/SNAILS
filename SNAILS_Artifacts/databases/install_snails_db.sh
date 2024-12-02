@@ -9,6 +9,7 @@ fi
 
 echo "Decompressing SNAILS_database_collection.tar.gz"
 tar -xzvf "$TAR_FILE"
+mv *.bak ./bak/
 echo "Decompression complete."
 
 echo "Building snails-db docker container"
