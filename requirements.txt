@@ -26,3 +26,5 @@ statsmodels
 
 # + For 05-SNAILS-token-naturalness-analysis.ipynb #
 Levenshtein
+
+# + For 06-SNAILS-naturalness-comparisons.ipynb #
