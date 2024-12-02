@@ -24,3 +24,5 @@ statsmodels
 
 # + For 04-SNAILS-tokenizer-analysis.ipynb #
 
+# + For 05-SNAILS-token-naturalness-analysis.ipynb #
+Levenshtein

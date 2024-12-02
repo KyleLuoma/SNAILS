@@ -421,7 +421,6 @@ class NaturalnessCalculator:
         sublists = [[] for i in range(0, num_processes)]
         for ix, identifier in enumerate(word_list):
             sublists[ix % num_processes].append(identifier)
-        print(sublists)
         manager = mp.Manager()
         process_results = [
             manager.dict() for i in range(0, num_processes)
