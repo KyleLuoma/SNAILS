@@ -9,9 +9,12 @@ google-cloud-aiplatform
 transformers
 together
 
-# For 02-SNAILS-NL-to-SQL-results-analysis.ipynb #
+# + For 02-SNAILS-NL-to-SQL-results-analysis.ipynb #
 seaborn
 scipy
 jinja2
 scikit-learn
 statsmodels
+
+# + For 03-SNAILS-identifier-analysis.ipynb #
+
