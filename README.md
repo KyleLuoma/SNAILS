@@ -87,15 +87,36 @@ Which will create natural view .sql files for the SNAILS NYSED database using th
  This section describes the steps necessary to reproduce our findings. We recognize that they can be quite complex. If you have any questions or trouble with the steps below, please reach out to us!
 
 ### Dependencies
-The dependency list is available in [requirements.txt](./requirements.txt). It is quite large, as we make use of several API services and libraries. We recommend using a virtual environment to install the dependencies.
+
+```shell
+pip install -r requirements.txt
+```
 
 #### Java Runtime
 The SQL Parser can run using OpenJDK version 11 or greater
 
 ### Database Setup
-Retrieve the .bak files from the project repository and restore them to a MS SQL Server RDBMS. We used Microsoft SQL Server Developer (64-bit); but it should work with any recent release of SQL Server.
+
+Download the SNAILS collection into ```/SNAILS_Artifacts/databases``` using the link in ```/SNAILS_Artifacts/databases/SNAILS_mssql_download_link.txt```
+
+We also ported the SNAILS collection to Sqlite. You can access the Sqlite versions of the [SNAILS MS SQL databases here](https://drive.google.com/file/d/16vgE_KCZMdKDKHtXgIQhvWdwO7ufKcjz/view?usp=drive_link). These are required if you want to run notebooks 08a and 08b.
+
+#### For Windows:
+Manually retrieve the .bak files from the SNAILS collection .tar.gz and restore them to a MS SQL Server RDBMS. We used Microsoft SQL Server Developer (64-bit); but it should work with any recent release of SQL Server.
 
 Update the dbinfo.json file in the .local folder with your database connection information. Note that this requires the database to be accessible from the machine running the analysis using the username and password credentials provided.
+
+#### Linux / WSL / Mac
+
+We provide an automated process for extracting the .bak files and building a MS SQL Server docker image. The script will copy a dbinfo.json file into the .local folder automatically. Use the following commands, starting in the project root folder:
+
+```shell
+cd SNAILS/SNAILS_Artifacts/databases/
+bash run_docker_snails_db.sh
+bash install_snails_db.sh
+bash run_docker_snails_db.sh
+```
+As long as the docker container is up, and the dbinfo.json file is in .local, all Notebooks and .py scripts that require the databases, should work.
 
 ### Accounts and API Keys
 Some analysis relies on access to the OpenAI, TogetherAI, and Google Vertex APIs. API key information belongs in the .local folder and should be stored in .json format. Example files are provided in the .local folder.
@@ -109,28 +130,15 @@ Modify ./local/openai.json with your OpenAI API key.
 #### Phind-CodeLlama
 Phind-CodeLlama inference relied on an endpoint hosted by TogetherAI which is no longer available. If you wish to reproduce NL-to-SQL inference using this model, a self-hosted solution will be required.
 
-#### NL-to-SQL Experiment Quick Start
-To rerun the NL-to-SQL experiments, you will need to, you may use the notebooks listed below. This does not include the identifier naturalness classification experiments--these are described in more detail later in this document. You can also find more detailed descriptions of these notebooks in the Experiment Notebooks section below.
- 1. Generate NL-to-SQL and evaluate: run end-to-end-data-prep-and-prediction.py
- 2. Evaluate tokens: tokenizer_analysis.ipynb
- 3. Run query-level experiments: end-to-end-prototype-schema-and-query-analysis.ipynb
- 4. Run identifier-level tokens: identifier-analysis.ipynb
+This completes the setup section.
 
+# References and Sources:
 
 ## Real-World Database Collections and Question-Query Pairs
 
 ### Data Sources
 Data was retrieved from multiple public-facing data repositories.
 The nine selected databases represent data from scientific observations, crash sampling data, school system evaluations, and an enterprise resource planning system. All databases were migrated from their source formats into a MS SQL database.
-
-#### MS SQL BAK Files:
-The easiest way to access the databases is to download the .bak files and restore them to a MS SQL Server RDBMS.
-For all databases, we offer compressed (.zip) MS SQL .bak files that can be imported into a MS SQL Server RDBMS. We used Microsoft SQL Server Developer (64-bit); but it should work with any recent release of SQL Server.
-
-[Download all of the available MS SQL database .bak files here](https://drive.google.com/file/d/1EMQmdNx-a20TfZSDdNkFPLmXVS48IB2b/view?usp=drive_link). Place the SNAILS_database_collection.tar.gz file in the ```./SNAILS_Artifacts/databases/``` directory.
-
-#### Sqlite Files:
-We also ported the SNAILS collection to Sqlite. You can access the Sqlite versions of the [SNAILS MS SQL databases here](https://drive.google.com/file/d/16vgE_KCZMdKDKHtXgIQhvWdwO7ufKcjz/view?usp=drive_link).
 
 #### Database Names and Data Source References:
 
@@ -158,7 +166,7 @@ https://irma.nps.gov/DataStore/Reference/Profile/2297267. Accessed: April 2023.
 ### Natural Language Questions and Gold Queries
 Question - query pairs are stored as executable .sql files with questions entered as SQL comments.
 Each question is delinated by a ';' expression terminator.
-In this repository, we [store them in a .zip file](./queries/NL-Questions-and-Gold-Queries.zip) to avoid inadvertent inclusion in future LLM training data sets.
+In this repository, we [store them in a .zip file](./db/queries/NL-Questions-and-Gold-Queries.zip) to avoid inadvertent inclusion in future LLM training data sets.
 
 **Example NL Question - Query Pair**
 ```
@@ -182,12 +190,12 @@ Using this dataset, we then trained a local model based on Canine that outperfor
 
 ### Benchmark Identifier Naturalness Classification Gold data:
 
-Gold classification category data used for analysis is located in the [gold-data](./gold-data/) folder.
-You can refer to the [Gold Data readme](./gold-data/README.md) for specifics on each file.
+Gold classification category data used for analysis is located in the [gold-data](./data/gold-data/) folder.
+You can refer to the [Gold Data readme](./data/gold-data/README.md) for specifics on each file.
 
 ### Classification Models
 
-Model performance data is logged in the [auto-scoring](./classifier-inference-results) directory, and includes outputs and classification score calculations for the models described below. 
+Model performance data is logged in the [auto-scoring](./data/classifier-inference-results) directory, and includes outputs and classification score calculations for the models described below. 
 
 #### Classes
 - N1: Regular
@@ -195,14 +203,13 @@ Model performance data is logged in the [auto-scoring](./classifier-inference-re
 - N3: Least
 
 #### The Tagging Feature
-If a model below is referred to as "tagged", it means that we employed a feature we call character tagging implemented in [tokenprocessing.py](./tokenprocessing.py). 
+If a model below is referred to as "tagged", it means that we employed a feature we call character tagging implemented in [tokenprocessing.py](./src/util/tokenprocessing.py). 
 
 
 #### GPT 3.5 Turbo Fewshot Classification
 No training was required for the fewshot classification approach, we simply use the OpenAI API and a pre-written completions prompt.
 
 [The prompt](./prompts/fewshot-categoryexplanations.txt) |
-[ml-naturalness-gpt-fewshot-classification.py](./ml-naturalness-gpt-fewshot-classification.py)
 
 #### GPT Davinci Fine Tune
 
@@ -212,40 +219,33 @@ Finetuning was accomplished using the OpenAI API training endpoint.
 Example command:
 ```openai api fine_tunes.create -t .\manual-scoring\gpt-data\train_tagged_prepared.jsonl -m davinci --suffix "tagged_classifier"```
 
-[Untagged Training Data](./manual-scoring/gpt-data/train_prepared.jsonl) |
-[Tagged Training Data](./manual-scoring/gpt-data/train_tagged_prepared.jsonl) |
-[Tagged Validation Data](./manual-scoring/gpt-data/validation_tagged_prepared.jsonl)
-[Test Data](./manual-scoring/gpt-data/test-set.csv)
+[Untagged Training Data](./classifier-training-data/gpt-data/train_prepared.jsonl) |
+[Tagged Training Data](./classifier-training-data/gpt-data/train_tagged_prepared.jsonl) |
+[Tagged Validation Data](./classifier-training-data/gpt-data/validation_tagged_prepared.jsonl)
+[Test Data](./classifier-training-data/gpt-data/test-set.csv)
 
-##### Inference
-Inference is accomplished with:
-[ml-naturalness-gpt-classification-finetuning.py](./ml-naturalness-gpt-classification-finetuning.py)
-
-Note that this code relies upon the availability of an active openai account and a finetuned classifier model.
 
 #### Canine
 
 ##### Training
-Training is performed using: [snails_naturalness_classifier_training.py](./snails_naturalness_classifier_training.py) which is saved in the state that contains the optimal hyperparameters used for the best-performing generation 1 and 2 models.
+Training is performed using: [snails_naturalness_classifier_training.py](./SNAILS_Artifacts/naturalness_classifiers/snails_naturalness_classifier_training.py) which is saved in the state that contains the optimal hyperparameters used for the best-performing generation 1 and 2 models.
 
 We trained the models using an Nvidia GTX 1080 GPU with 8GiB of VRAM using transformers libraries, CUDA 12.1 and Torch 2.0.1.
 
-Refer to requirements.txt for specific library versions.
-
 ##### Collection 1 data:
 Generation 1 used the same human-generated training data as the davinci finetune in .csv format:
-[Training Data](./manual-scoring/gpt-data/train.csv) |
-[Validation Data](./manual-scoring/gpt-data/validation.csv) |
-[Test Data](./manual-scoring/gpt-data/test-set.csv)
+[Training Data](./classifier-training-data/gpt-data/train.csv) |
+[Validation Data](./classifier-training-data/gpt-data/validation.csv) |
+[Test Data](./classifier-training-data/gpt-data/test-set.csv)
 
 ##### Collection 2 data:
 Generation 2 was trained on an expanded set of training data that was generated by the davinci fine tune and curated by human researchers:
-[Training Data](./manual-scoring/canine2/train.csv) |
-[Test Data](./manual-scoring/canine2/test.csv) |
-[Validation Data](./manual-scoring/canine2/validation.csv)
+[Training Data](./classifier-training-data/canine2/train.csv) |
+[Test Data](./classifier-training-data/canine2/test.csv) |
+[Validation Data](./classifier-training-data/canine2/validation.csv)
 
 ##### Inference (Collections 1 and 2)
-Inference is accomplished with the CanineIdentifierClassifier class in [snails_naturalness_classifier.py](./snails_naturalness_classifier.py).
+Inference is accomplished with the CanineIdentifierClassifier class in [snails_naturalness_classifier.py](./SNAILS_Artifacts/naturalness_classifiers/snails_naturalness_classifier.py).
 
 This class assumes the availability of a canine-based model trained using the steps described above.
 The best-performing classifier is available on HuggingFace: https://huggingface.co/kyleluoma/SNAILS-word-naturalness-classifier
@@ -253,14 +253,14 @@ The best-performing classifier is available on HuggingFace: https://huggingface.
 
 ### Classification Heuristics
 Our heuristics-based approach is called Word List Matching, and is implemented in 
-[word-list-matching.py](word-list-matching.py)
+[word-list-matching.py](./src/word-list-matching.py)
 Matching scores are generated by calculating using the following Heuristics:
 
 ## Schema Identifier Transformation and Naturalness-Modified Identifier Generation
 
 To better observe the effect of naturalness levels on linking performance, we create alternate versions of all identifiers in the benchmark datasets.
 
-Naturalness modification is performed the using [schemarenamer.py](schemarenamer.py) do_fewshot_identifier_transform function.
+Naturalness modification is performed the using [schemarenamer.py](/src/schemarenamer.py) do_fewshot_identifier_transform function.
 
 ### More natural to less natural
 Creating a less natural version of a natural identifier is a task of abbreviation. Less natural identifiers should contain elements of the full words that they represent.
@@ -273,11 +273,11 @@ in cases of transformation from higher to lower naturalness levels, do_fewshot_i
 
 ### Less natural to more natural
 
-Less natural to more natural transformation makes use of the program in the [data_dict_reader](./data_dict_reader/) subfolder. This program uses database metadata (xml, pdf, or csv format) and GPT fewshot prompting to expand abbreviated identifiers.
+Less natural to more natural transformation makes use of the program in the [data_dict_reader](./SNAILS_Artifacts/naturalness_modifier/data_dict_reader/) subfolder. This program uses database metadata (xml, pdf, or csv format) and GPT fewshot prompting to expand abbreviated identifiers.
 
 ## Query Inference
 
-Query inference and performance analysis is performed in the [end-to-end-prototype-data-prep-and-prediction](./end-to-end-prototype-data-prep-and-prediction.ipynb) notebook.
+Query inference and performance analysis is performed in the [01-SNAILS-NL-to-SQL-Inference-and-Scoring](./01-SNAILS-NL-to-SQL-Inference-and-Scoring.ipynb) notebook.
 
 ### Utilities
 
@@ -288,12 +288,12 @@ We call respective LLM APIs using:
 - [callgooglenl.py](./callgooglenl.py)
 - [calltogetherai.py](./calltogetherai.py)
 
-We interact with target databases to generate prompts from system tables and extract resultsets using gold and predicted queries using [db_util.py](./db_util.py).
+We interact with target databases to generate prompts from system tables and extract resultsets using gold and predicted queries using [db_util.py](./src/util/db_util.py).
 
 Queries require parsing for complexity analysis and identifier set comparisons.
 The [query_profiler.py] QueryProfiler class interacts with our Antlr-based parser to extract the required data.
 
-The [Java code and Antlr modified T-SQL and SQLITE grammar and lexer](./sql_parser_query_analyzer) are available at https://github.com/KyleLuoma/SQLParserQueryAnalyzer.
+The [Java code and Antlr modified T-SQL and SQLITE grammar and lexer](./bin/SQLParserQueryAnalyzer_jar) are available at https://github.com/KyleLuoma/SQLParserQueryAnalyzer.
 We also provide the [compiled binary .jar file ](./bin/SQLParserQueryAnalyzer_jar/SQLParserQueryAnalyzer.jar) which is required for parsing performed during query inference and performance evaluation.
 
 ## More on Performance Analysis 
