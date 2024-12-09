@@ -244,9 +244,9 @@ def evaluate_queries_in_workbook(init_file_open_dir=None, init_filename=None) ->
         file_open_dir = tk.StringVar(value=init_file_open_dir)
         filename = tk.StringVar(value=init_filename)
     else:
-        file_open_dir = tk.StringVar(value="./nl-to-sql_performance_annotations/pending_evaluation/")
+        file_open_dir = tk.StringVar(value="./data/nl-to-sql_performance_annotations/pending_evaluation/")
         filename = tk.StringVar(value='example.xlsx')
-    file_save_dir = tk.StringVar(value="./nl-to-sql_performance_annotations/")
+    file_save_dir = tk.StringVar(value="./data/nl-to-sql_performance_annotations/")
     workbook = load_workbook(f"{file_open_dir.get()}{filename.get()}")
     workbook_var = DfVariable(value=workbook)
     highest_q_num = tk.IntVar(value = max(workbook.index))
