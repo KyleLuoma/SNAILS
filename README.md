@@ -1,6 +1,8 @@
 # Schema Naming Assessments for Improved LLM-Based SQL Inference
 This repository contains datasets, code, and analysis described in the paper: SNAILS: Schema Naming Assessments for Improved LLM Systems.
 
+For indepth documentation, visit the [SNAILS website](https://snails.jp8.dev).
+
 ## What is SNAILS?
 SNAILS is a set of NL-to-SQL-related artifacts designed to explore the effects of schema naming on LLM-based NL-to-SQL performance.
 It includes a set of real-world databases and associated natural language (NL) : SQL gold query pairs, human-labeled data containing naturalness classifications the tables and columns in the database collection, a model and method for ML-based naturalness classification, and prompting strategies for improving schema identifier naturalness.
