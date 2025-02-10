@@ -3,7 +3,7 @@ This repository contains datasets, code, and analysis described in the paper: SN
 
 For indepth documentation, visit the [SNAILS website](https://snails.jp8.dev).
 
-For questions and assistance, contact the first author at [kluoma@ucsd.edu]
+For questions and assistance, contact the first author at kluoma@ucsd.edu.
 
 ## What is SNAILS?
 SNAILS is a set of NL-to-SQL-related artifacts designed to explore the effects of schema naming on LLM-based NL-to-SQL performance.
