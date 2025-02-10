@@ -3,6 +3,8 @@ This repository contains datasets, code, and analysis described in the paper: SN
 
 For indepth documentation, visit the [SNAILS website](https://snails.jp8.dev).
 
+For questions and assistance, contact the first author at [kluoma@ucsd.edu]
+
 ## What is SNAILS?
 SNAILS is a set of NL-to-SQL-related artifacts designed to explore the effects of schema naming on LLM-based NL-to-SQL performance.
 It includes a set of real-world databases and associated natural language (NL) : SQL gold query pairs, human-labeled data containing naturalness classifications the tables and columns in the database collection, a model and method for ML-based naturalness classification, and prompting strategies for improving schema identifier naturalness.
