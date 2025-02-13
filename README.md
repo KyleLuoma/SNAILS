@@ -102,6 +102,7 @@ It also provides a histogram plot of the count of different clauses within each 
 
 
 ## Citation
+```
 @article{10.1145/3709727,
    author = {Luoma, Kyle and Kumar, Arun},
    title = {SNAILS: Schema Naming Assessments for Improved LLM-Based SQL Inference},
@@ -117,6 +118,7 @@ It also provides a histogram plot of the count of different clauses within each 
    articleno = {77},
    numpages = {26}
 }
+```
 
 
 
