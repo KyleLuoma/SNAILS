@@ -101,7 +101,22 @@ It gives a view of the tables and columns and indicates which ones have already 
 It also provides a histogram plot of the count of different clauses within each query to provide a visual understanding of the distribution of query complexity for each question set.
 
 
-
+## Citation
+@article{10.1145/3709727,
+   author = {Luoma, Kyle and Kumar, Arun},
+   title = {SNAILS: Schema Naming Assessments for Improved LLM-Based SQL Inference},
+   year = {2025},
+   issue_date = {February 2025},
+   publisher = {Association for Computing Machinery},
+   address = {New York, NY, USA},
+   volume = {3},
+   number = {1},
+   url = {https://doi.org/10.1145/3709727},
+   doi = {10.1145/3709727},
+   month = feb,
+   articleno = {77},
+   numpages = {26}
+}
 
 
 
