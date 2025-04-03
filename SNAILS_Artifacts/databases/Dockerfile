@@ -18,6 +18,6 @@ COPY ./bak/PacificIslandLandbirds.bak /var/opt/mssql/backup/PacificIslandLandbir
 COPY ./bak/SBODemoUS.bak /var/opt/mssql/backup/SBODemoUS.bak
 
 COPY ./restore_snails_backups.sql restore_snails_backups.sql
-RUN (/opt/mssql/bin/sqlservr --accept-eula & ) | sleep 15 && /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'SN@ILS123!!' -i restore_snails_backups.sql
+RUN (/opt/mssql/bin/sqlservr --accept-eula & ) | sleep 15 && /opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P 'SN@ILS123!!' -i restore_snails_backups.sql
 
 CMD ["/opt/mssql/bin/sqlservr"]
