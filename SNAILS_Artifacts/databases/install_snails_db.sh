@@ -7,10 +7,15 @@ if [ ! -f "$TAR_FILE" ]; then
     exit 1
 fi
 
-echo "Decompressing SNAILS_database_collection.tar.gz"
-tar -xzvf "$TAR_FILE"
-mv *.bak ./bak/
-echo "Decompression complete."
+chmod 777 ./restore_snails_backups.sql
+chmod -R 777 ./bak
+
+if [ ! -f "./bak/SBODemoUS.bak" ]; then
+    echo "Decompressing SNAILS_database_collection.tar.gz"
+    tar -xzvf "$TAR_FILE"
+    mv *.bak ./bak/
+    echo "Decompression complete."
+fi
 
 echo "Building snails-db docker container"
 docker rm snails-db
