@@ -17,6 +17,9 @@ if [ ! -f "./bak/SBODemoUS.bak" ]; then
     echo "Decompression complete."
 fi
 
+echo "Downloading SBODemoUS.bak"
+wget https://d.dam.sap.com/a/mZu2WcN -O ./bak/SBODemoUS.bak
+
 echo "Building snails-db docker container"
 docker rm snails-db
 docker build --no-cache -t snails-db .
