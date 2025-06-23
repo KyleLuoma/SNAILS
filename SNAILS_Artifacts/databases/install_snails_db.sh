@@ -10,15 +10,17 @@ fi
 chmod 777 ./restore_snails_backups.sql
 chmod -R 777 ./bak
 
-if [ ! -f "./bak/SBODemoUS.bak" ]; then
+if [ ! -f "./bak/ATBI.bak" ]; then
     echo "Decompressing SNAILS_database_collection.tar.gz"
     tar -xzvf "$TAR_FILE"
     mv *.bak ./bak/
     echo "Decompression complete."
 fi
 
-echo "Downloading SBODemoUS.bak"
-wget https://d.dam.sap.com/a/mZu2WcN -O ./bak/SBODemoUS.bak
+if [ ! -f "./bak/SBODemoUS.bak" ]; then
+    echo "Downloading SBODemoUS.bak"
+    wget https://d.dam.sap.com/a/mZu2WcN -O ./bak/SBODemoUS.bak
+fi
 
 echo "Building snails-db docker container"
 docker rm snails-db
